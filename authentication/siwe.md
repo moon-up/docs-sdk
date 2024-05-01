@@ -8,7 +8,7 @@ Moon allows an app to authenticate a user using `SIWE`.
 
 The process to implement SIWE into Moon app currently involves creating a **siwe.tsx** file that handles login in a few steps:
 
-1️⃣ \*\*Step 1: Fetch a Nonce from Moon\*\*
+#### Step 1: Fetch a Nonce from Moon
 
 The first step in the SIWE authentication process is to obtain a **nonce** by sending a POST request to Moon’s server with the user's Ethereum address. Moon will then generate a nonce, associate it with the user's session, then return it in the response.
 
@@ -35,7 +35,7 @@ const {
 } = await nonceResponse.json();
 ```
 
-2️⃣ \*\*Step 2: User Signs a Message\*\*
+#### Step 2: User Signs a Message
 
 Once the nonce is fetched, the user is promoted to sign a message. This message includes the nonce and other details about the sign-in request, structured according to the SIWE format. This step is crucial for verifying the user's control over the Ethereum address without exposing any sensitive information like private keys.
 
@@ -63,7 +63,7 @@ const signedMessage = await signMessage({
 
     The above example uses `signMessage` function to prompt the user to connect their wallet through their wallet connector (like MetaMask or Coinbase Wallet) and then have the user “sign the message” which logs them into the app!
 
-3️⃣ \*\*Step 3: Send the Signed Message to Your API\*\*
+#### Step 3: Send the Signed Message to Your API
 
 After obtaining the signed message, the next step is to send the signed message to Moon’s server for verification. This involves making another POST request to Moon with the signed message and the user's Ethereum address.
 
@@ -84,7 +84,7 @@ const response = await fetch(`https://beta.usemoon.ai/auth/ethereum/login`, {
 });
 ```
 
-4️⃣ \*\*Step 4: Handle Final Response from Moon’s Server\*\*
+#### Step 4: Handle Final Response from Moon’s Server
 
 If a user has been successfully authorized, `setAccessToken` on an active **MoonSDK** instance will finish authenticating the user!
 

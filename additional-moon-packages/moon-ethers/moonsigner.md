@@ -2,9 +2,9 @@
 
 `MoonSigner` is an [Ethers signer](https://docs.ethers.org/v5/api/signer/#Signer) works with Moon’s wallet infrastructure..
 
-📖 “A \*\*Signer\*\* in \*ethers\* is an abstraction of an Ethereum Account, which can be used to sign messages and transactions and send signed transactions to the Ethereum Network to execute state changing operations.” -Ethers docs
+“A **Signer** in \*ethers\* is an abstraction of an Ethereum Account, which can be used to sign messages and transactions and send signed transactions to the Ethereum Network to execute state changing operations.” -Ethers docs
 
-**TDLR:** MoonSigner is mainly for **signing**, **creating**, and **sending transactions** over the blockchain
+**TLDR:** MoonSigner is mainly for **signing**, **creating**, and **sending transactions** over the blockchain
 
 ### Configuration:
 

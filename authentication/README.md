@@ -1,26 +1,26 @@
 # Authentication
 
-## Authentication
+
 
 ## Authenticating a user
 
 Moon users can be authenticated using an **email and password** or **Ethereum address**.
 
-📧 \*\*Email and Password login using OAuth 2.0:\*\*
+#### Email and Password login using OAuth 2.0:
 
 A user can login with their email and password using OAuth 2.0.
 
 More details here:
 
-[OAuth 2.0](oauth-2-0-bb827a25ff8f4952abd36548961d97be.md)
+[OAuth 2.0](oauth-2-0.md)
 
-⛓️ \*\*Ethereum Address login using SIWE (Sign In With Ethereum):\*\*
+#### Ethereum Address login using SIWE (Sign In With Ethereum):
 
 You can log a user in with their Ethereum address using SIWE.
 
 More details here:
 
-[SIWE](siwe-d911f742cd684feca1f334c41c785602.md)
+[SIWE](siwe.md)
 
 ## **Authentication for Development and Automation**
 

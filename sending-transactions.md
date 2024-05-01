@@ -4,7 +4,7 @@
 
 Below is a tutorial on how to send a transaction using **MoonSDK**.
 
-1️⃣ \*\*Step 1: Prepare the transaction data:\*\*
+#### Step 1: Prepare the transaction data:
 
 *   Store data pertaining to the transaction in an **`InputBody`** object:
 
@@ -21,7 +21,7 @@ Below is a tutorial on how to send a transaction using **MoonSDK**.
     };
     ```
 
-2️⃣ \*\*Step 2: Sign the transaction:\*\*
+#### Step 2: Sign the transaction:
 
 *   Next, use the `signTransaction` function to sign the transaction and get the **raw transaction string** to broadcast the transaction.
 

@@ -4,9 +4,9 @@
 
 `MoonProvider` is an [Ethers provider](https://docs.ethers.org/v5/api/providers/provider/) that works with Moon’s wallet infrastructure.
 
-📖 “A \*\*Provider\*\* in ethers is a read-only abstraction to access the blockchain data.” -Ethers docs
+📖 “A **Provider** in ethers is a read-only abstraction to access the blockchain data.” -Ethers docs
 
-**TDLR:** MoonProvider is mainly for **read-only** operations for interacting with the blockchain
+**TLDR:** MoonProvider is mainly for **read-only** operations for interacting with the blockchain
 
 ### Configuration:
 

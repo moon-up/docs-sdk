@@ -7,7 +7,7 @@ When leveraging React, the Moon SDK seamlessly integrates with a project's codeb
 1. **Moon SDK React Component:** A React Component that loads the SDK and manages state.
 2. **useMoonHook:** a React Hook that returns the SDK's key methods and state variables.
 
-## 🌚**MoonSDK React Component**
+## **MoonSDK React Component**
 
 Import into a React project with the following import statement:
 
@@ -29,7 +29,7 @@ const initialize = async () => {
 };
 ```
 
-## 🪝**useMoonHook**
+## **useMoonHook**
 
 The Moon SDK class defines methods for performing various tasks related to blockchain operations. These methods encompass functions for logging in, refreshing tokens, listing accounts, signing transactions/messages/typed data, sending transactions, and updating configurations.
 

@@ -8,7 +8,7 @@ Moon allows users to authenticate using an `OAuth 2.0` system.
 
 The process to implement OAuth 2.0 into a Moon integrated app currently involves four steps which are detailed using examples below:
 
-1️⃣ \*\*Step 1: Grab environment variables from Moon:\*\*
+#### Step 1: Grab environment variables from Moon:
 
 Visit here () to grab the environment variables needed, then add to the project’s .env file.
 
@@ -31,7 +31,7 @@ NODE_CLIENT_SECRET=
 NODE_REDIRECT_URI=http://example.com/callback
 ```
 
-2️⃣ \*\*Step 2: Initiating the Authentication Process\*\*
+#### Step 2: Initiating the Authentication Process
 
 To start the authentication process, redirect the user to **Moon's OAuth 2.0 authorization page**. This can be done by triggering a redirect from the application's login interface. Here, the environment variables detailed above will be used.
 
@@ -58,7 +58,7 @@ function LoginButton() {
 export default LoginButton;
 ```
 
-3️⃣ \*\*Step 3: Handling the Redirect from the Authorization Server\*\*
+#### Step 3: Handling the Redirect from the Authorization Server
 
 After the user logs in in Moon’s separate login page and authorizes the application, they will be redirected back to your application to the URI specified by **`redirect_uri`**. The application needs to handle this redirection and extract the authorization code from the URL. **Example:**
 
@@ -104,7 +104,7 @@ export default OAuth2Callback;
 
 ```
 
-4️⃣ \*\*Step 4: Exchanging the Authorization Code for an Access Token\*\*
+#### Step 4: Exchanging the Authorization Code for an Access Token
 
 The final step involves exchanging the authorization code for an access token. This step is usually performed by the backend server to keep the client secret confidential.
 

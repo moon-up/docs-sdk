@@ -4,13 +4,14 @@ Setting up Moon is as simple as running a few commands!
 
 Create a new project with **Moon Create** or add Moon to an existing project.
 
-## ✨ Create a New Project with Moon Create
+## Create a New Project with Moon Create
 
 Moon Create guides users through the process of establishing a tailored React & Next.JS boilerplate.
 
 1.  Create the Next.JS and React boilerplate using create moonup in the desired directory:
 
-    🪄 \*\*To create the boilerplate:\*\*
+    \
+    **To create the boilerplate:**
 
 {% tabs %}
 {% tab title="npx" %}
@@ -52,7 +53,7 @@ yarn create @moonup
 
 Adding Moon to an existing website, app, or dApp is as simple as **installing the MoonSDK**:
 
-🛠 \*\*To install the SDK:\*\*
+**To install the SDK:**
 
 
 

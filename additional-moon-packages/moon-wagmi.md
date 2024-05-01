@@ -1,4 +1,4 @@
-# Moon Wagmi
+# @moonup/wagmi-connector
 
 ## Moon Wagmi
 
@@ -6,7 +6,7 @@
 
 **Moon Wagmi**, as its name suggests, is a package with Moon-compatible **Wagmi** utilities.
 
-#### 💡 What is Wagmi?
+#### What is Wagmi?
 
 [**Wagmi**](https://wagmi.sh/react/getting-started) is a React library built upon [**Ethers.js**](https://docs.ethers.org/v5/) that further simplifies the development of Ethereum React-based applications.
 
@@ -17,11 +17,9 @@ It offers a set of React hooks and components that abstract away the complexity 
 
 ## **Installing Moon Wagmi:**
 
-\*\*\*\*To use the Moon Wagmi package, first install it to a project:
+To use the Moon Wagmi package, first install it to a project:
 
-🛠 \*\*To install the Moon Wagmi:\*\*
-
-
+#### To install Moon Wagmi:
 
 {% tabs %}
 {% tab title="npm" %}

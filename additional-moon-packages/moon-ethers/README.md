@@ -1,4 +1,4 @@
-# Moon Ethers
+# @moonup/ethers
 
 ## Moon Ethers
 
@@ -12,9 +12,9 @@
 
 ## **Installing Moon Ethers:**
 
-\*\*\*\*To utilize the Moon Ethers package, first install it to the desired directory of the project:
+To utilize the Moon Ethers package, first install it to the desired directory of the project:
 
-🛠 \*\*To install the Moon Ethers:\*\*
+#### To install Moon Ethers:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -44,16 +44,16 @@ This will add an “ethers” package to the project’s @moonup node module.
 
 Like [**Ethers.js**](https://docs.ethers.org/v5/), **Moon Ethers** organizes its functionalities into two abstractions: **provider** and **signer**:
 
-🔍 \*\*The Provider:\*\* \`MoonProvider\`
+**The Provider:** MoonProvider\`
 
 * offers functions that are **read-only**
 *   Documentation here:
 
-    [`MoonProvider`](moonprovider-98424fc361554e529b42c6618739e9be.md)
+    [`MoonProvider`](moonprovider.md)
 
-✍️  \*\*The Signer:\*\* \`MoonSigner\`
+**The Signer:** \`MoonSigner\`
 
 * offers functions that handle **signing**, **creating**, and **sending transactions**
 *   Documentation here:
 
-    [MoonSigner](moonsigner-48c2980a33ab459b98198d189f18f641.md)
+    [MoonSigner](moonsigner.md)
