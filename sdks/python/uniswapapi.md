@@ -1,0 +1,348 @@
+# UniSwapApi
+
+## moonsdk.UniSwapApi
+
+All URIs are relative to _https://beta.usemoon.ai_
+
+| Method                                                                                 | HTTP request                                          | Description |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**add\_liquidity**](uniswapapi.md#add\_liquidity)                                     | **POST** /uniswap/{name}/add-liquidity                |             |
+| [**remove\_liquidity**](uniswapapi.md#remove\_liquidity)                               | **POST** /uniswap/{name}/remove-liquidity             |             |
+| [**swap\_exact\_eth\_for\_tokens**](uniswapapi.md#swap\_exact\_eth\_for\_tokens)       | **POST** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**swap\_exact\_tokens\_for\_tokens**](uniswapapi.md#swap\_exact\_tokens\_for\_tokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
+
+## **add\_liquidity**
+
+> TransactionAPIResponse add\_liquidity(authorization, name, uniswap\_input)
+
+#### Example
+
+* Api Key Authentication (ApiKeyAuth):
+* Api Key Authentication (BearerAuth):
+
+```python
+import moonsdk
+from moonsdk.models.transaction_api_response import TransactionAPIResponse
+from moonsdk.models.uniswap_input import UniswapInput
+from moonsdk.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://beta.usemoon.ai
+# See configuration.py for a list of all supported configuration parameters.
+configuration = moonsdk.Configuration(
+    host = "https://beta.usemoon.ai"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: ApiKeyAuth
+configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
+
+# Configure API key authorization: BearerAuth
+configuration.api_key['BearerAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['BearerAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with moonsdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = moonsdk.UniSwapApi(api_client)
+    authorization = 'authorization_example' # str | 
+    name = 'name_example' # str | 
+    uniswap_input = moonsdk.UniswapInput() # UniswapInput | 
+
+    try:
+        api_response = await api_instance.add_liquidity(authorization, name, uniswap_input)
+        print("The response of UniSwapApi->add_liquidity:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UniSwapApi->add_liquidity: %s\n" % e)
+```
+
+#### Parameters
+
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](uniswapinput.md) |             |       |
+
+#### Return type
+
+[**TransactionAPIResponse**](transactionapiresponse.md)
+
+#### Authorization
+
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
+
+#### HTTP request headers
+
+* **Content-Type**: application/json
+* **Accept**: application/json
+
+#### HTTP response details
+
+| Status code | Description | Response headers |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
+
+[\[Back to top\]](uniswapapi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
+
+## **remove\_liquidity**
+
+> TransactionAPIResponse remove\_liquidity(authorization, name, uniswap\_input)
+
+#### Example
+
+* Api Key Authentication (ApiKeyAuth):
+* Api Key Authentication (BearerAuth):
+
+```python
+import moonsdk
+from moonsdk.models.transaction_api_response import TransactionAPIResponse
+from moonsdk.models.uniswap_input import UniswapInput
+from moonsdk.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://beta.usemoon.ai
+# See configuration.py for a list of all supported configuration parameters.
+configuration = moonsdk.Configuration(
+    host = "https://beta.usemoon.ai"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: ApiKeyAuth
+configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
+
+# Configure API key authorization: BearerAuth
+configuration.api_key['BearerAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['BearerAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with moonsdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = moonsdk.UniSwapApi(api_client)
+    authorization = 'authorization_example' # str | 
+    name = 'name_example' # str | 
+    uniswap_input = moonsdk.UniswapInput() # UniswapInput | 
+
+    try:
+        api_response = await api_instance.remove_liquidity(authorization, name, uniswap_input)
+        print("The response of UniSwapApi->remove_liquidity:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UniSwapApi->remove_liquidity: %s\n" % e)
+```
+
+#### Parameters
+
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](uniswapinput.md) |             |       |
+
+#### Return type
+
+[**TransactionAPIResponse**](transactionapiresponse.md)
+
+#### Authorization
+
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
+
+#### HTTP request headers
+
+* **Content-Type**: application/json
+* **Accept**: application/json
+
+#### HTTP response details
+
+| Status code | Description | Response headers |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
+
+[\[Back to top\]](uniswapapi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
+
+## **swap\_exact\_eth\_for\_tokens**
+
+> TransactionAPIResponse swap\_exact\_eth\_for\_tokens(authorization, name, uniswap\_input)
+
+#### Example
+
+* Api Key Authentication (ApiKeyAuth):
+* Api Key Authentication (BearerAuth):
+
+```python
+import moonsdk
+from moonsdk.models.transaction_api_response import TransactionAPIResponse
+from moonsdk.models.uniswap_input import UniswapInput
+from moonsdk.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://beta.usemoon.ai
+# See configuration.py for a list of all supported configuration parameters.
+configuration = moonsdk.Configuration(
+    host = "https://beta.usemoon.ai"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: ApiKeyAuth
+configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
+
+# Configure API key authorization: BearerAuth
+configuration.api_key['BearerAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['BearerAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with moonsdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = moonsdk.UniSwapApi(api_client)
+    authorization = 'authorization_example' # str | 
+    name = 'name_example' # str | 
+    uniswap_input = moonsdk.UniswapInput() # UniswapInput | 
+
+    try:
+        api_response = await api_instance.swap_exact_eth_for_tokens(authorization, name, uniswap_input)
+        print("The response of UniSwapApi->swap_exact_eth_for_tokens:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UniSwapApi->swap_exact_eth_for_tokens: %s\n" % e)
+```
+
+#### Parameters
+
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](uniswapinput.md) |             |       |
+
+#### Return type
+
+[**TransactionAPIResponse**](transactionapiresponse.md)
+
+#### Authorization
+
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
+
+#### HTTP request headers
+
+* **Content-Type**: application/json
+* **Accept**: application/json
+
+#### HTTP response details
+
+| Status code | Description | Response headers |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
+
+[\[Back to top\]](uniswapapi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
+
+## **swap\_exact\_tokens\_for\_tokens**
+
+> TransactionAPIResponse swap\_exact\_tokens\_for\_tokens(authorization, name, uniswap\_input)
+
+#### Example
+
+* Api Key Authentication (ApiKeyAuth):
+* Api Key Authentication (BearerAuth):
+
+```python
+import moonsdk
+from moonsdk.models.transaction_api_response import TransactionAPIResponse
+from moonsdk.models.uniswap_input import UniswapInput
+from moonsdk.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://beta.usemoon.ai
+# See configuration.py for a list of all supported configuration parameters.
+configuration = moonsdk.Configuration(
+    host = "https://beta.usemoon.ai"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: ApiKeyAuth
+configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
+
+# Configure API key authorization: BearerAuth
+configuration.api_key['BearerAuth'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['BearerAuth'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with moonsdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = moonsdk.UniSwapApi(api_client)
+    authorization = 'authorization_example' # str | 
+    name = 'name_example' # str | 
+    uniswap_input = moonsdk.UniswapInput() # UniswapInput | 
+
+    try:
+        api_response = await api_instance.swap_exact_tokens_for_tokens(authorization, name, uniswap_input)
+        print("The response of UniSwapApi->swap_exact_tokens_for_tokens:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UniSwapApi->swap_exact_tokens_for_tokens: %s\n" % e)
+```
+
+#### Parameters
+
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](uniswapinput.md) |             |       |
+
+#### Return type
+
+[**TransactionAPIResponse**](transactionapiresponse.md)
+
+#### Authorization
+
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
+
+#### HTTP request headers
+
+* **Content-Type**: application/json
+* **Accept**: application/json
+
+#### HTTP response details
+
+| Status code | Description | Response headers |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
+
+[\[Back to top\]](uniswapapi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

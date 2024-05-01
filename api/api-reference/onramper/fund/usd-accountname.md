@@ -1,0 +1,5 @@
+# ${accountName}
+
+{% swagger src="https://beta.usemoon.ai/.well-known/swagger.json" path="/onramper/fund/${accountName}" method="post" %}
+[https://beta.usemoon.ai/.well-known/swagger.json](https://beta.usemoon.ai/.well-known/swagger.json)
+{% endswagger %}
