@@ -4,14 +4,13 @@
 
 Below is a tutorial on how to send a transaction using **MoonSDK**.
 
-<aside>
-1️⃣ **Step 1: Prepare the transaction data:**
+1️⃣ \*\*Step 1: Prepare the transaction data:\*\*
 
-- Store data pertaining to the transaction in an **`InputBody`** object:
-    
+*   Store data pertaining to the transaction in an **`InputBody`** object:
+
     ```tsx
     import {InputBody} from '@moonup/moon-api';
-    
+
     // Prepare transaction data
     const amountInWei = ethers.utils.parseUnits(amountEth, 'ether');
     const transactionData: InputBody = {
@@ -21,51 +20,42 @@ Below is a tutorial on how to send a transaction using **MoonSDK**.
       encoding: 'utf-8',
     };
     ```
-    
-</aside>
 
-<aside>
-2️⃣ **Step 2: Sign the transaction:**
+2️⃣ \*\*Step 2: Sign the transaction:\*\*
 
-- Next, use the `signTransaction` function to sign the transaction and get the **raw transaction string** to broadcast the transaction.
-    
+*   Next, use the `signTransaction` function to sign the transaction and get the **raw transaction string** to broadcast the transaction.
+
     ```tsx
     import { MoonSDK, CreateAccountInput } from '@moonup/moon-sdk';
-    
+
     // Sign and send the transaction
     // moonInstance should be your working instance of MoonSDK
     const signedTransactionData = await moonInstance.getAccountsSDK().signTransaction(account, transactionData);
     const rawTransaction = signedTransactionData.data.data.transactions[0].raw_transaction;
-    
+
     ```
-    
-</aside>
 
-<aside>
-3️⃣ **Step 3: Broadcast the signed message to the blockchain:**
+3️⃣ \*\*Step 3: Broadcast the signed message to the blockchain:\*\*
 
-- Finally, broadcast the signed message to the blockchain. To do this, **first**, store the raw signed transaction string into a `BroadcastInput` object.
-    
+*   Finally, broadcast the signed message to the blockchain. To do this, **first**, store the raw signed transaction string into a `BroadcastInput` object.
+
     Then, use the input object to broadcast the transaction using `broadcastTx` .
-    
+
     ```tsx
     import {BroadcastInput} from '@moonup/moon-api';
-    
+
     //store signed transaction into 
     const broadcastInput: BroadcastInput = {
       chainId: chainId,
       rawTransaction: rawTransaction
     }
     ```
-    
-- Then, use the input object to broadcast the transaction using `broadcastTx` .
-    
+*   Then, use the input object to broadcast the transaction using `broadcastTx` .
+
     ```tsx
     //broadcast the signed transaction
     const broadcastResponse = await moonInstance.getAccountsSDK().broadcastTx(account, broadcastInput);
     ```
-    
-</aside>
 
 ### Full example of a function that sends transactions:
 

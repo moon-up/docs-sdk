@@ -4,27 +4,22 @@ Setting up Moon is as simple as running a few commands!
 
 Create a new project with **Moon Create** or add Moon to an existing project.
 
-## ✨ Create a New Project with Moon Create
+## ✨ Create a New Project with Moon Create
 
-Moon Create guides users through the process of establishing a tailored React & Next.JS boilerplate. 
+Moon Create guides users through the process of establishing a tailored React & Next.JS boilerplate.
 
-1. Create the Next.JS and React boilerplate using create moonup in the desired directory:
-    
-    <aside>
-    🪄 **To create the boilerplate:**
-    
+1.  Create the Next.JS and React boilerplate using create moonup in the desired directory:
+
+    🪄 \*\*To create the boilerplate:\*\*
+
     Using npm:
-    
-    `npx @moonup/create`
-    
-    Using yarn:
-    
-    `yarn create @moonup`
-    
-    </aside>
-    
 
-1. Answer the questions in the terminal to tailor the boilerplate to the project’s needs. Once finished, Moon Create will generate the boilerplate in the desired directory:
+    `npx @moonup/create`
+
+    Using yarn:
+
+    `yarn create @moonup`
+2. Answer the questions in the terminal to tailor the boilerplate to the project’s needs. Once finished, Moon Create will generate the boilerplate in the desired directory:
 
 ```bash
 ? What is your project named? » ‘define project name here’
@@ -44,12 +39,11 @@ Moon Create guides users through the process of establishing a tailored React & 
 ? Would you like to customize the default import alias (@/*)? » Yes/No
 ```
 
-## 🔌 **Add Moon to an Existing Project**
+## 🔌 **Add Moon to an Existing Project**
 
 Adding Moon to an existing website, app, or dApp is as simple as **installing the MoonSDK**:
 
-<aside>
-🛠 **To install the SDK:**
+🛠 \*\*To install the SDK:\*\*
 
 Using npm:
 
@@ -58,5 +52,3 @@ Using npm:
 Using yarn:
 
 `yarn add @moonup/moon-sdk`
-
-</aside>

@@ -1,7 +1,6 @@
 # Creation and Retrieval of Wallets
 
 > Moon facilitates wallet initialization using the **`createAccount`** API. Moon APIs are again integrated into the SDKs of multiple chains such as Ethereum, Bitcoin, Solana, Ripple, Litecoin, and more. Various code examples are demonstrated below:
-> 
 
 ```
 //Ethereum
@@ -21,7 +20,6 @@ const newLitecoinWallet = await moon.getLitecoinSDK().createAccount({});
 ```
 
 > In addition to wallet creation, Moon offers APIs for retrieving a wallet address (**`getAccount`**) and listing existing accounts (**`listAccounts`**). Various code examples are demonstrated below:
-> 
 
 ```
 // Ethereum
