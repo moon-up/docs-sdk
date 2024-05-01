@@ -16,6 +16,7 @@
   * [Moon’s Wallet Initialization Flow](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/moontashs-wallet-initialization-flow-d27cf8ca5f3944b2a2b05afe89a53354.md)
   * [Creation and Retrieval of Wallets](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/creation-and-retrieval-of-wallets-dc2f0558373e4142b25d9bbff63adb71.md)
   * [Utilizing Moon Wallets with Ethers & Wagmi](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/utilizing-moon-wallets-with-ethers-and-wagmi-2fb08fda18d34891a66482a596c7faa4.md)
+* [Supported Networks](supported-networks.md)
 * [Sending Transactions](sending-transactions-21d933fecafc4cb998bf0e90a3bfcb03.md)
 * [Additional Moon packages](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/README.md)
   * [Moon Ethers](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moon-ethers-f381fbf881c647e1aab3d43fb4ad0600/README.md)
