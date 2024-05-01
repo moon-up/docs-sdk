@@ -32,7 +32,7 @@ The Moon SDK also offers an authentication method that provides an **infinite ex
 import { Accounts, ContentType } from '@moonup/moon-api'
 const baseApiParams: ApiConfig = {
     baseUrl:
-    'https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app',
+    'https://beta.usemoon.ai',
     baseApiParams: {
         secure: true,
         type: ContentType.Json,
@@ -49,7 +49,7 @@ securityWorker: async (securityData: any) => {
     },
 };
 const accounts = new Accounts(baseApiParams);
-accounts..setSecurityData({
+accounts.setSecurityData({
     token: token,
 });
 const newAccount = await accounts.createAccount({})

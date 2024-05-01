@@ -25,7 +25,7 @@ yarn add @moonup/moon-rainbowkit
 
 {% tab title="pnpm" %}
 ```bash
-pnpm install @moonup/moon-rainbowkit
+pnpm add @moonup/moon-rainbowkit
 ```
 {% endtab %}
 {% endtabs %}

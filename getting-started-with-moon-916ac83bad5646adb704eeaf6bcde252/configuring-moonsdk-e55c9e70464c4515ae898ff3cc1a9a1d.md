@@ -79,7 +79,6 @@ export const useMoonHook = () => {
     const disconnect = async () => {
       if (moon) {
         await moon.disconnect();
-        sessionStorage.removeItem(MOON_SESSION_KEY);
         setMoon(null);
       }
     };

@@ -66,7 +66,13 @@ npm install @moonup/moon-sdk
 
 {% tab title="yarn" %}
 ```bash
-yarn add @moonup/moon-sdkbas
+yarn add @moonup/moon-sdk
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm add @moonup/moon-sdk
 ```
 {% endtab %}
 {% endtabs %}

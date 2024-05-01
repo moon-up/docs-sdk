@@ -6,7 +6,7 @@
 
 **Moon Ethers** bridges the powerful capabilities of the **Ethers.js** library with the **MoonSDK**, streamlining the development of Moon integrated projects.
 
-#### 💡 What is Ethers.js?
+#### What is Ethers.js?
 
 [Ethers.js](https://docs.ethers.org/v5/) is the most popular and powerful library for interacting with the Ethereum blockchain. It enables developers to build decentralized applications without the hassle of directly managing blockchain connections or the intricacies of smart contract interactions, streamlining the development process with its comprehensive suite of tools and utilities
 
@@ -29,9 +29,9 @@ yarn add @moonup/ethers
 ```
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="pnpm" %}
 ```bash
-pnpm install @moonup/ethers
+pnpm add @moonup/ethers
 ```
 {% endtab %}
 {% endtabs %}

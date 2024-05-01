@@ -19,7 +19,7 @@ yarn add @moonup/moon-api
 
 {% tab title="pnpm" %}
 ```bash
-npm install @moonup/moon-api
+npm add @moonup/moon-api
 ```
 {% endtab %}
 {% endtabs %}

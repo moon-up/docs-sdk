@@ -29,7 +29,7 @@ yarn install @moonup/viem
 
 {% tab title="pnpm" %}
 ```bash
-pnpm install @moonup/viem
+pnpm add @moonup/viem
 ```
 {% endtab %}
 {% endtabs %}

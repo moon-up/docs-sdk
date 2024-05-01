@@ -3,19 +3,19 @@
 Installation
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="npm" %}
 ```bash
 npm install @moonup/react
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="yarn" %}
 ```bash
 yarn add @moonup/react
 ```
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="pnpm" %}
 ```bash
 pnpm install @moonup/react
 ```
