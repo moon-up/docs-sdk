@@ -1,4 +1,4 @@
-# Moon Viem
+# @moonup/viem
 
 ### @moonup/viem
 

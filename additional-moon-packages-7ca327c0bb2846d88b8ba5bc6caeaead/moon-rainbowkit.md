@@ -1,4 +1,4 @@
-# Moon Rainbowkit
+# @moonup/moon-rainbowkit
 
 Rainbow kit library
 

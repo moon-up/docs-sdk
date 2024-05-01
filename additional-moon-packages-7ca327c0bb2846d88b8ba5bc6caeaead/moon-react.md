@@ -1,4 +1,4 @@
-# Moon React
+# @moonup/react
 
 Installation
 

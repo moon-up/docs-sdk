@@ -8,7 +8,7 @@ Ethers.js facilitates secure communication between the Moon backend and blockcha
 
 **More info on Moon Ethers:**
 
-[Moon Ethers](../additional-moon-packages/moon-ethers/)
+[Moon Ethers](../additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moon-ethers-f381fbf881c647e1aab3d43fb4ad0600/)
 
 ## 🌙Utilizing Moon Wallets with Wagmi
 
@@ -18,4 +18,4 @@ Wagmi simplifies the process of displaying wallet options to users by providing 
 
 **More info on Moon Wagmi:**
 
-[Moon Wagmi](../additional-moon-packages/moon-wagmi.md)
+[Moon Wagmi](../additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moon-wagmi-3d44fd4699594c2397129482dc52589f.md)

@@ -49,11 +49,11 @@ Like [**Ethers.js**](https://docs.ethers.org/v5/), **Moon Ethers** organizes its
 * offers functions that are **read-only**
 *   Documentation here:
 
-    [`MoonProvider`](moonprovider.md)
+    [`MoonProvider`](moonprovider-98424fc361554e529b42c6618739e9be.md)
 
 **The Signer:** \`MoonSigner\`
 
 * offers functions that handle **signing**, **creating**, and **sending transactions**
 *   Documentation here:
 
-    [MoonSigner](moonsigner.md)
+    [MoonSigner](moonsigner-48c2980a33ab459b98198d189f18f641.md)

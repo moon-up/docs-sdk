@@ -12,7 +12,7 @@ A user can login with their email and password using OAuth 2.0.
 
 More details here:
 
-[OAuth 2.0](oauth-2-0.md)
+[OAuth 2.0](oauth-2-0-bb827a25ff8f4952abd36548961d97be.md)
 
 #### Ethereum Address login using SIWE (Sign In With Ethereum):
 
@@ -20,7 +20,7 @@ You can log a user in with their Ethereum address using SIWE.
 
 More details here:
 
-[SIWE](siwe.md)
+[SIWE](siwe-d911f742cd684feca1f334c41c785602.md)
 
 ## **Authentication for Development and Automation**
 
