@@ -8,11 +8,13 @@ For tools to help build and customize a MoonWallet UI, we recommend using these 
 
 **@moonup/moon-api:** Low level api package
 
+[moonup-moon-api.md](moonup-moon-api.md "mention")
+
 **@moonup/ethers:** for smooth interaction with the Ethereum Blockchain
 
 [moon-ethers-f381fbf881c647e1aab3d43fb4ad0600](moon-ethers-f381fbf881c647e1aab3d43fb4ad0600/ "mention")
 
-**@moonup/wagmi:** for making common interactions with the Ethereum Blockchain in React-based dApps even simpler
+**@moonup/wagmi-connector:** for making common interactions with the Ethereum Blockchain in React-based dApps even simpler
 
 [moon-wagmi-3d44fd4699594c2397129482dc52589f.md](moon-wagmi-3d44fd4699594c2397129482dc52589f.md "mention")
 

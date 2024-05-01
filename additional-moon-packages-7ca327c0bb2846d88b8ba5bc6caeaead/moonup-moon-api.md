@@ -1,4 +1,4 @@
-# Moon Api
+# @moonup/moon-api
 
 \
 \

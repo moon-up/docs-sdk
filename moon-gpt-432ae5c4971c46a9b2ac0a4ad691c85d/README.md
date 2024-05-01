@@ -1,2 +1,0 @@
-# Moon GPT
-
