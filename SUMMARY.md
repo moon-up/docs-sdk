@@ -28,6 +28,7 @@
   * [@moonup/react](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moon-react.md)
   * [@moonup/moon-api](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moonup-moon-api.md)
 * [Langchain](langchain.md)
+* [Supported Networks](supported-networks.md)
 * [Debugging](debugging-5b8a0a25b4164f1f95d8c9463f1bd6d7.md)
 * [SDKs](sdks/README.md)
   * [Flutter](sdks/readme/README.md)
