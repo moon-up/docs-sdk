@@ -1136,4 +1136,3 @@
     * [UniSwapApi](sdks/unity/uniswapapi.md)
     * [com.usemoon.MoonSDK.Model.UniswapInput](sdks/unity/uniswapinput.md)
     * [YearnApi](sdks/unity/yearnapi.md)
-* [Swift](swift/README.md)
