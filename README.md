@@ -12,7 +12,7 @@
 
 [Additional Moon packages](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/)
 
-[Moon GPT](moon-gpt-432ae5c4971c46a9b2ac0a4ad691c85d.md)
+[Moon GPT](moon-gpt-432ae5c4971c46a9b2ac0a4ad691c85d/)
 
 [Moon Data](moon-data-96d17ff6b1b34036b58e0bbd72a33463.md)
 

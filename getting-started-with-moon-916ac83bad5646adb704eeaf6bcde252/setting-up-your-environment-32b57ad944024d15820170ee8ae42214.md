@@ -14,7 +14,7 @@ Moon Create guides users through the process of establishing a tailored React & 
 
     Using npm:
 
-    `npx @moonup/create`
+    `` `npx @moonup/create ``
 
     Using yarn:
 
