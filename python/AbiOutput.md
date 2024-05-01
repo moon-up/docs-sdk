@@ -1,14 +1,13 @@
 # AbiOutput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** |  | 
-**type** | **str** |  | 
-**components** | [**List[AbiOutput]**](AbiOutput.md) |  | [optional] 
-**internal_type** | **str** |  | [optional] 
+| Name               | Type                                  | Description | Notes       |
+| ------------------ | ------------------------------------- | ----------- | ----------- |
+| **name**           | **str**                               |             |             |
+| **type**           | **str**                               |             |             |
+| **components**     | [**List\[AbiOutput\]**](AbiOutput.md) |             | \[optional] |
+| **internal\_type** | **str**                               |             | \[optional] |
 
 ## Example
 
@@ -27,6 +26,5 @@ abi_output_dict = abi_output_instance.to_dict()
 # create an instance of AbiOutput from a dict
 abi_output_form_dict = abi_output.from_dict(abi_output_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

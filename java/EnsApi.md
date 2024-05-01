@@ -1,19 +1,19 @@
 # EnsApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## EnsApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**resolve**](EnsApi.md#resolve) | **POST** /ens/resolve |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                           | HTTP request          | Description |
+| -------------------------------- | --------------------- | ----------- |
+| [**resolve**](EnsApi.md#resolve) | **POST** /ens/resolve |             |
 
-<a id="resolve"></a>
-# **resolve**
+## **resolve**
+
 > EnsResolveAPIResponse resolve(authorization, ensResolveInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -57,28 +57,28 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **ensResolveInput** | [**EnsResolveInput**](EnsResolveInput.md)|  | |
+| Name                | Type                                      | Description | Notes |
+| ------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**   | **String**                                |             |       |
+| **ensResolveInput** | [**EnsResolveInput**](EnsResolveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**EnsResolveAPIResponse**](EnsResolveAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

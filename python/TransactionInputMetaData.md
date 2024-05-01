@@ -1,11 +1,10 @@
 # TransactionInputMetaData
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**quote_id** | **str** |  | 
+| Name          | Type    | Description | Notes |
+| ------------- | ------- | ----------- | ----- |
+| **quote\_id** | **str** |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ transaction_input_meta_data_dict = transaction_input_meta_data_instance.to_dict(
 # create an instance of TransactionInputMetaData from a dict
 transaction_input_meta_data_form_dict = transaction_input_meta_data.from_dict(transaction_input_meta_data_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

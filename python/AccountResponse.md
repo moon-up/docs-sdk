@@ -1,11 +1,10 @@
 # AccountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**AccountData**](AccountData.md) |  | 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **data** | [**AccountData**](AccountData.md) |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ account_response_dict = account_response_instance.to_dict()
 # create an instance of AccountResponse from a dict
 account_response_form_dict = account_response.from_dict(account_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

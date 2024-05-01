@@ -1,30 +1,30 @@
 # Erc721Api
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## Erc721Api
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**approve**](Erc721Api.md#approve) | **POST** /erc721/{name}/approve |  |
-| [**balanceOf**](Erc721Api.md#balanceOf) | **POST** /erc721/{name}/balance-of |  |
-| [**getApproved**](Erc721Api.md#getApproved) | **POST** /erc721/{name}/get-approved |  |
-| [**isApprovedForAll**](Erc721Api.md#isApprovedForAll) | **POST** /erc721/{name}/is-approved-for-all |  |
-| [**name**](Erc721Api.md#name) | **POST** /erc721/{name}/name |  |
-| [**ownerOf**](Erc721Api.md#ownerOf) | **POST** /erc721/{name}/owner-of |  |
-| [**safeTransferFrom**](Erc721Api.md#safeTransferFrom) | **POST** /erc721/{name}/safe-transfer-from |  |
-| [**setApprovalForAll**](Erc721Api.md#setApprovalForAll) | **POST** /erc721/{name}/set-approval-for-all |  |
-| [**symbol**](Erc721Api.md#symbol) | **POST** /erc721/{name}/symbol |  |
-| [**tokenUri**](Erc721Api.md#tokenUri) | **POST** /erc721/{name}/token-uri |  |
-| [**transfer**](Erc721Api.md#transfer) | **POST** /erc721/{name}/transfer |  |
-| [**transferFrom**](Erc721Api.md#transferFrom) | **POST** /erc721/{name}/transfer-from |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                  | HTTP request                                 | Description |
+| ------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**approve**](Erc721Api.md#approve)                     | **POST** /erc721/{name}/approve              |             |
+| [**balanceOf**](Erc721Api.md#balanceOf)                 | **POST** /erc721/{name}/balance-of           |             |
+| [**getApproved**](Erc721Api.md#getApproved)             | **POST** /erc721/{name}/get-approved         |             |
+| [**isApprovedForAll**](Erc721Api.md#isApprovedForAll)   | **POST** /erc721/{name}/is-approved-for-all  |             |
+| [**name**](Erc721Api.md#name)                           | **POST** /erc721/{name}/name                 |             |
+| [**ownerOf**](Erc721Api.md#ownerOf)                     | **POST** /erc721/{name}/owner-of             |             |
+| [**safeTransferFrom**](Erc721Api.md#safeTransferFrom)   | **POST** /erc721/{name}/safe-transfer-from   |             |
+| [**setApprovalForAll**](Erc721Api.md#setApprovalForAll) | **POST** /erc721/{name}/set-approval-for-all |             |
+| [**symbol**](Erc721Api.md#symbol)                       | **POST** /erc721/{name}/symbol               |             |
+| [**tokenUri**](Erc721Api.md#tokenUri)                   | **POST** /erc721/{name}/token-uri            |             |
+| [**transfer**](Erc721Api.md#transfer)                   | **POST** /erc721/{name}/transfer             |             |
+| [**transferFrom**](Erc721Api.md#transferFrom)           | **POST** /erc721/{name}/transfer-from        |             |
 
-<a id="approve"></a>
-# **approve**
+## **approve**
+
 > TransactionAPIResponse approve(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -69,39 +69,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="balanceOf"></a>
-# **balanceOf**
+## **balanceOf**
+
 > TransactionAPIResponse balanceOf(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -146,39 +146,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getApproved"></a>
-# **getApproved**
+## **getApproved**
+
 > TransactionAPIResponse getApproved(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -223,39 +223,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="isApprovedForAll"></a>
-# **isApprovedForAll**
+## **isApprovedForAll**
+
 > TransactionAPIResponse isApprovedForAll(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -300,39 +300,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="name"></a>
-# **name**
+## **name**
+
 > TransactionAPIResponse name(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -377,39 +377,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="ownerOf"></a>
-# **ownerOf**
+## **ownerOf**
+
 > TransactionAPIResponse ownerOf(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -454,39 +454,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="safeTransferFrom"></a>
-# **safeTransferFrom**
+## **safeTransferFrom**
+
 > TransactionAPIResponse safeTransferFrom(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -531,39 +531,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="setApprovalForAll"></a>
-# **setApprovalForAll**
+## **setApprovalForAll**
+
 > TransactionAPIResponse setApprovalForAll(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -608,39 +608,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="symbol"></a>
-# **symbol**
+## **symbol**
+
 > TransactionAPIResponse symbol(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -685,39 +685,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="tokenUri"></a>
-# **tokenUri**
+## **tokenUri**
+
 > TransactionAPIResponse tokenUri(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -762,39 +762,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="transfer"></a>
-# **transfer**
+## **transfer**
+
 > TransactionAPIResponse transfer(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -839,39 +839,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="transferFrom"></a>
-# **transferFrom**
+## **transferFrom**
+
 > TransactionAPIResponse transferFrom(authorization, name, erc721Request)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -916,29 +916,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **name**          | **String**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

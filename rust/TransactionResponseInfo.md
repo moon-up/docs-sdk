@@ -2,14 +2,12 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**conveyor_gas** | **String** |  | 
-**affiliate_gas** | **String** |  | 
-**affiliate_aggregator** | **String** |  | 
-**amount_out** | **String** |  | 
-**amount_out_min** | **String** |  | 
+| Name                      | Type       | Description | Notes |
+| ------------------------- | ---------- | ----------- | ----- |
+| **conveyor\_gas**         | **String** |             |       |
+| **affiliate\_gas**        | **String** |             |       |
+| **affiliate\_aggregator** | **String** |             |       |
+| **amount\_out**           | **String** |             |       |
+| **amount\_out\_min**      | **String** |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

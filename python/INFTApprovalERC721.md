@@ -1,19 +1,18 @@
 # INFTApprovalERC721
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transaction_hash** | **str** |  | 
-**contract** | **str** |  | 
-**log_index** | **str** |  | 
-**owner** | **str** |  | 
-**approved** | **str** |  | 
-**token_id** | **str** |  | 
-**token_contract_type** | **str** |  | 
-**token_name** | **str** |  | 
-**token_symbol** | **str** |  | 
+| Name                      | Type    | Description | Notes |
+| ------------------------- | ------- | ----------- | ----- |
+| **transaction\_hash**     | **str** |             |       |
+| **contract**              | **str** |             |       |
+| **log\_index**            | **str** |             |       |
+| **owner**                 | **str** |             |       |
+| **approved**              | **str** |             |       |
+| **token\_id**             | **str** |             |       |
+| **token\_contract\_type** | **str** |             |       |
+| **token\_name**           | **str** |             |       |
+| **token\_symbol**         | **str** |             |       |
 
 ## Example
 
@@ -32,6 +31,5 @@ inft_approval_erc721_dict = inft_approval_erc721_instance.to_dict()
 # create an instance of INFTApprovalERC721 from a dict
 inft_approval_erc721_form_dict = inft_approval_erc721.from_dict(inft_approval_erc721_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

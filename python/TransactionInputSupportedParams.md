@@ -1,12 +1,11 @@
 # TransactionInputSupportedParams
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**partner_data** | [**TransactionInputSupportedParamsPartnerData**](TransactionInputSupportedParamsPartnerData.md) |  | 
-**theme** | [**TransactionInputSupportedParamsTheme**](TransactionInputSupportedParamsTheme.md) |  | 
+| Name              | Type                                                                                            | Description | Notes |
+| ----------------- | ----------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **partner\_data** | [**TransactionInputSupportedParamsPartnerData**](TransactionInputSupportedParamsPartnerData.md) |             |       |
+| **theme**         | [**TransactionInputSupportedParamsTheme**](TransactionInputSupportedParamsTheme.md)             |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ transaction_input_supported_params_dict = transaction_input_supported_params_ins
 # create an instance of TransactionInputSupportedParams from a dict
 transaction_input_supported_params_form_dict = transaction_input_supported_params.from_dict(transaction_input_supported_params_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

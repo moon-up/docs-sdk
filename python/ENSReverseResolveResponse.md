@@ -1,11 +1,10 @@
 # ENSReverseResolveResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**domain** | **str** |  | 
+| Name       | Type    | Description | Notes |
+| ---------- | ------- | ----------- | ----- |
+| **domain** | **str** |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ ens_reverse_resolve_response_dict = ens_reverse_resolve_response_instance.to_dic
 # create an instance of ENSReverseResolveResponse from a dict
 ens_reverse_resolve_response_form_dict = ens_reverse_resolve_response.from_dict(ens_reverse_resolve_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -2,10 +2,10 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Network** | Pointer to **string** |  | [optional] 
-**PrivateKey** | Pointer to **string** |  | [optional] 
+| Name           | Type                  | Description | Notes       |
+| -------------- | --------------------- | ----------- | ----------- |
+| **Network**    | Pointer to **string** |             | \[optional] |
+| **PrivateKey** | Pointer to **string** |             | \[optional] |
 
 ## Methods
 
@@ -13,18 +13,13 @@ Name | Type | Description | Notes
 
 `func NewBitcoinInput() *BitcoinInput`
 
-NewBitcoinInput instantiates a new BitcoinInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewBitcoinInput instantiates a new BitcoinInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewBitcoinInputWithDefaults
 
 `func NewBitcoinInputWithDefaults() *BitcoinInput`
 
-NewBitcoinInputWithDefaults instantiates a new BitcoinInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewBitcoinInputWithDefaults instantiates a new BitcoinInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNetwork
 
@@ -36,8 +31,7 @@ GetNetwork returns the Network field if non-nil, zero value otherwise.
 
 `func (o *BitcoinInput) GetNetworkOk() (*string, bool)`
 
-GetNetworkOk returns a tuple with the Network field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNetworkOk returns a tuple with the Network field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNetwork
 
@@ -61,8 +55,7 @@ GetPrivateKey returns the PrivateKey field if non-nil, zero value otherwise.
 
 `func (o *BitcoinInput) GetPrivateKeyOk() (*string, bool)`
 
-GetPrivateKeyOk returns a tuple with the PrivateKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPrivateKeyOk returns a tuple with the PrivateKey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPrivateKey
 
@@ -76,7 +69,4 @@ SetPrivateKey sets PrivateKey field to given value.
 
 HasPrivateKey returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

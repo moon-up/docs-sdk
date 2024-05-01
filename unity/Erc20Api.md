@@ -1,26 +1,27 @@
-# com.usemoon.MoonSDK.Api.Erc20Api
+# Erc20Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.Erc20Api
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**AllowanceErc20**](Erc20Api.md#allowanceerc20) | **POST** /erc20/{name}/allowance |  |
-| [**ApproveErc20**](Erc20Api.md#approveerc20) | **POST** /erc20/{name}/approve |  |
-| [**BalanceOfErc20**](Erc20Api.md#balanceoferc20) | **POST** /erc20/{name}/balance-of |  |
-| [**DecimalsErc20**](Erc20Api.md#decimalserc20) | **POST** /erc20/{name}/decimals |  |
-| [**NameErc20**](Erc20Api.md#nameerc20) | **POST** /erc20/{name}/name |  |
-| [**SymbolErc20**](Erc20Api.md#symbolerc20) | **POST** /erc20/{name}/symbol |  |
-| [**TotalSupplyErc20**](Erc20Api.md#totalsupplyerc20) | **POST** /erc20/{name}/total-supply |  |
-| [**TransferErc20**](Erc20Api.md#transfererc20) | **POST** /erc20/{name}/transfer |  |
-| [**TransferFromErc20**](Erc20Api.md#transferfromerc20) | **POST** /erc20/{name}/transfer-from |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="allowanceerc20"></a>
-# **AllowanceErc20**
+| Method                                                 | HTTP request                         | Description |
+| ------------------------------------------------------ | ------------------------------------ | ----------- |
+| [**AllowanceErc20**](Erc20Api.md#allowanceerc20)       | **POST** /erc20/{name}/allowance     |             |
+| [**ApproveErc20**](Erc20Api.md#approveerc20)           | **POST** /erc20/{name}/approve       |             |
+| [**BalanceOfErc20**](Erc20Api.md#balanceoferc20)       | **POST** /erc20/{name}/balance-of    |             |
+| [**DecimalsErc20**](Erc20Api.md#decimalserc20)         | **POST** /erc20/{name}/decimals      |             |
+| [**NameErc20**](Erc20Api.md#nameerc20)                 | **POST** /erc20/{name}/name          |             |
+| [**SymbolErc20**](Erc20Api.md#symbolerc20)             | **POST** /erc20/{name}/symbol        |             |
+| [**TotalSupplyErc20**](Erc20Api.md#totalsupplyerc20)   | **POST** /erc20/{name}/total-supply  |             |
+| [**TransferErc20**](Erc20Api.md#transfererc20)         | **POST** /erc20/{name}/transfer      |             |
+| [**TransferFromErc20**](Erc20Api.md#transferfromerc20) | **POST** /erc20/{name}/transfer-from |             |
+
+## **AllowanceErc20**
+
 > TransactionAPIResponse AllowanceErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -66,7 +67,8 @@ namespace Example
 }
 ```
 
-#### Using the AllowanceErc20WithHttpInfo variant
+**Using the AllowanceErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -85,42 +87,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="approveerc20"></a>
-# **ApproveErc20**
+## **ApproveErc20**
+
 > TransactionAPIResponse ApproveErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -166,7 +167,8 @@ namespace Example
 }
 ```
 
-#### Using the ApproveErc20WithHttpInfo variant
+**Using the ApproveErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -185,42 +187,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="balanceoferc20"></a>
-# **BalanceOfErc20**
+## **BalanceOfErc20**
+
 > TransactionAPIResponse BalanceOfErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -266,7 +267,8 @@ namespace Example
 }
 ```
 
-#### Using the BalanceOfErc20WithHttpInfo variant
+**Using the BalanceOfErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -285,42 +287,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="decimalserc20"></a>
-# **DecimalsErc20**
+## **DecimalsErc20**
+
 > TransactionAPIResponse DecimalsErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -366,7 +367,8 @@ namespace Example
 }
 ```
 
-#### Using the DecimalsErc20WithHttpInfo variant
+**Using the DecimalsErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -385,42 +387,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="nameerc20"></a>
-# **NameErc20**
+## **NameErc20**
+
 > TransactionAPIResponse NameErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -466,7 +467,8 @@ namespace Example
 }
 ```
 
-#### Using the NameErc20WithHttpInfo variant
+**Using the NameErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -485,42 +487,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="symbolerc20"></a>
-# **SymbolErc20**
+## **SymbolErc20**
+
 > TransactionAPIResponse SymbolErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -566,7 +567,8 @@ namespace Example
 }
 ```
 
-#### Using the SymbolErc20WithHttpInfo variant
+**Using the SymbolErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -585,42 +587,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="totalsupplyerc20"></a>
-# **TotalSupplyErc20**
+## **TotalSupplyErc20**
+
 > TransactionAPIResponse TotalSupplyErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -666,7 +667,8 @@ namespace Example
 }
 ```
 
-#### Using the TotalSupplyErc20WithHttpInfo variant
+**Using the TotalSupplyErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -685,42 +687,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="transfererc20"></a>
-# **TransferErc20**
+## **TransferErc20**
+
 > TransactionAPIResponse TransferErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -766,7 +767,8 @@ namespace Example
 }
 ```
 
-#### Using the TransferErc20WithHttpInfo variant
+**Using the TransferErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -785,42 +787,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="transferfromerc20"></a>
-# **TransferFromErc20**
+## **TransferFromErc20**
+
 > TransactionAPIResponse TransferFromErc20 (string authorization, string name, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -866,7 +867,8 @@ namespace Example
 }
 ```
 
-#### Using the TransferFromErc20WithHttpInfo variant
+**Using the TransferFromErc20WithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -885,32 +887,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

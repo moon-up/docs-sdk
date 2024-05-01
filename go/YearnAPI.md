@@ -1,21 +1,17 @@
 # \YearnAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**AddLiquidity**](YearnAPI.md#AddLiquidity) | **Post** /yearn/{name}/add-liquidity | 
-[**AddLiquidityWeth**](YearnAPI.md#AddLiquidityWeth) | **Post** /yearn/{name}/add-liquidity-weth | 
-[**RemoveLiquidity**](YearnAPI.md#RemoveLiquidity) | **Post** /yearn/{name}/remove-liquidity | 
-[**RemoveLiquidityWeth**](YearnAPI.md#RemoveLiquidityWeth) | **Post** /yearn/{name}/remove-liquidity-weth | 
-
-
+| Method                                                     | HTTP request                                 | Description |
+| ---------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**AddLiquidity**](YearnAPI.md#AddLiquidity)               | **Post** /yearn/{name}/add-liquidity         |             |
+| [**AddLiquidityWeth**](YearnAPI.md#AddLiquidityWeth)       | **Post** /yearn/{name}/add-liquidity-weth    |             |
+| [**RemoveLiquidity**](YearnAPI.md#RemoveLiquidity)         | **Post** /yearn/{name}/remove-liquidity      |             |
+| [**RemoveLiquidityWeth**](YearnAPI.md#RemoveLiquidityWeth) | **Post** /yearn/{name}/remove-liquidity-weth |             |
 
 ## AddLiquidity
 
 > TransactionAPIResponse AddLiquidity(ctx, name).Authorization(authorization).InputBody(inputBody).Execute()
-
-
 
 ### Example
 
@@ -48,22 +44,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAddLiquidityRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **inputBody** | [**InputBody**](InputBody.md) |  | 
+**inputBody** | [**InputBody**](InputBody.md) | |
 
 ### Return type
 
@@ -71,23 +65,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](YearnAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## AddLiquidityWeth
 
 > TransactionAPIResponse AddLiquidityWeth(ctx, name).Authorization(authorization).InputBody(inputBody).Execute()
-
-
 
 ### Example
 
@@ -120,22 +109,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAddLiquidityWethRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **inputBody** | [**InputBody**](InputBody.md) |  | 
+**inputBody** | [**InputBody**](InputBody.md) | |
 
 ### Return type
 
@@ -143,23 +130,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](YearnAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## RemoveLiquidity
 
 > TransactionAPIResponse RemoveLiquidity(ctx, name).Authorization(authorization).InputBody(inputBody).Execute()
-
-
 
 ### Example
 
@@ -192,22 +174,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRemoveLiquidityRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **inputBody** | [**InputBody**](InputBody.md) |  | 
+**inputBody** | [**InputBody**](InputBody.md) | |
 
 ### Return type
 
@@ -215,23 +195,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](YearnAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## RemoveLiquidityWeth
 
 > TransactionAPIResponse RemoveLiquidityWeth(ctx, name).Authorization(authorization).InputBody(inputBody).Execute()
-
-
 
 ### Example
 
@@ -264,22 +239,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRemoveLiquidityWethRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **inputBody** | [**InputBody**](InputBody.md) |  | 
+**inputBody** | [**InputBody**](InputBody.md) | |
 
 ### Return type
 
@@ -287,14 +260,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](YearnAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

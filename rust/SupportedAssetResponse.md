@@ -2,11 +2,9 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**country** | **String** |  | 
-**assets** | [**Vec<crate::models::SupportedAssetResponseAssetsInner>**](SupportedAssetResponse_assets_inner.md) |  | 
+| Name        | Type                                                                                                                                                             | Description | Notes |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **country** | **String**                                                                                                                                                       |             |       |
+| **assets**  | [**Vec**](docs/SupportedAssetResponse\_assets\_inner.md)[**crate::models::SupportedAssetResponseAssetsInner**](crate::models::SupportedAssetResponseAssetsInner) |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

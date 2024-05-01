@@ -1,23 +1,23 @@
-# moonsdk.ERC1155Api
+# ERC1155Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.ERC1155Api
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**balance_of**](ERC1155Api.md#balance_of) | **POST** /erc1155/{name}/balance-of | 
-[**balance_of_batch**](ERC1155Api.md#balance_of_batch) | **POST** /erc1155/{name}/balance-of-batch | 
-[**is_approved_for_all**](ERC1155Api.md#is_approved_for_all) | **POST** /erc1155/{name}/is-approved-for-all | 
-[**safe_batch_transfer_from**](ERC1155Api.md#safe_batch_transfer_from) | **POST** /erc1155/{name}/safe-batch-transfer-from | 
-[**safe_transfer_from**](ERC1155Api.md#safe_transfer_from) | **POST** /erc1155/{name}/safe-transfer-from | 
-[**set_approval_for_all**](ERC1155Api.md#set_approval_for_all) | **POST** /erc1155/{name}/set-approval-for-all | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                       | HTTP request                                      | Description |
+| ---------------------------------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**balance\_of**](ERC1155Api.md#balance\_of)                                 | **POST** /erc1155/{name}/balance-of               |             |
+| [**balance\_of\_batch**](ERC1155Api.md#balance\_of\_batch)                   | **POST** /erc1155/{name}/balance-of-batch         |             |
+| [**is\_approved\_for\_all**](ERC1155Api.md#is\_approved\_for\_all)           | **POST** /erc1155/{name}/is-approved-for-all      |             |
+| [**safe\_batch\_transfer\_from**](ERC1155Api.md#safe\_batch\_transfer\_from) | **POST** /erc1155/{name}/safe-batch-transfer-from |             |
+| [**safe\_transfer\_from**](ERC1155Api.md#safe\_transfer\_from)               | **POST** /erc1155/{name}/safe-transfer-from       |             |
+| [**set\_approval\_for\_all**](ERC1155Api.md#set\_approval\_for\_all)         | **POST** /erc1155/{name}/set-approval-for-all     |             |
 
-# **balance_of**
-> TransactionAPIResponse balance_of(name, authorization, erc1155_request)
+## **balance\_of**
 
+> TransactionAPIResponse balance\_of(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -68,44 +68,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->balance_of: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **balance_of_batch**
-> TransactionAPIResponse balance_of_batch(name, authorization, erc1155_request)
+## **balance\_of\_batch**
 
+> TransactionAPIResponse balance\_of\_batch(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -156,44 +152,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->balance_of_batch: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **is_approved_for_all**
-> TransactionAPIResponse is_approved_for_all(name, authorization, erc1155_request)
+## **is\_approved\_for\_all**
 
+> TransactionAPIResponse is\_approved\_for\_all(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -244,44 +236,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->is_approved_for_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **safe_batch_transfer_from**
-> TransactionAPIResponse safe_batch_transfer_from(name, authorization, erc1155_request)
+## **safe\_batch\_transfer\_from**
 
+> TransactionAPIResponse safe\_batch\_transfer\_from(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -332,44 +320,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->safe_batch_transfer_from: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **safe_transfer_from**
-> TransactionAPIResponse safe_transfer_from(name, authorization, erc1155_request)
+## **safe\_transfer\_from**
 
+> TransactionAPIResponse safe\_transfer\_from(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -420,44 +404,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->safe_transfer_from: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **set_approval_for_all**
-> TransactionAPIResponse set_approval_for_all(name, authorization, erc1155_request)
+## **set\_approval\_for\_all**
 
+> TransactionAPIResponse set\_approval\_for\_all(name, authorization, erc1155\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -508,35 +488,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ERC1155Api->set_approval_for_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **name**             | **str**                                 |             |       |
+| **authorization**    | **str**                                 |             |       |
+| **erc1155\_request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **str**|  | 
- **authorization** | **str**|  | 
- **erc1155_request** | [**Erc1155Request**](Erc1155Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

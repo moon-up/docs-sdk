@@ -1,11 +1,8 @@
-
 # TriggerOutput
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**&#x60;value&#x60;** | [**kotlin.Any**](.md) |  | 
-**name** | **kotlin.String** |  | 
 
-
-
+| Name          | Type                        | Description | Notes |
+| ------------- | --------------------------- | ----------- | ----- |
+| **\`value\`** | [**kotlin.Any**](docs/.md/) |             |       |
+| **name**      | **kotlin.String**           |             |       |

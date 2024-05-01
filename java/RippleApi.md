@@ -1,22 +1,22 @@
 # RippleApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## RippleApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**createRippleAccount**](RippleApi.md#createRippleAccount) | **POST** /ripple |  |
-| [**getRippleAccount**](RippleApi.md#getRippleAccount) | **GET** /ripple/{accountName} |  |
-| [**listRippleAccounts**](RippleApi.md#listRippleAccounts) | **GET** /ripple |  |
-| [**signRippleTransaction**](RippleApi.md#signRippleTransaction) | **POST** /ripple/{accountName}/sign-tx |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                          | HTTP request                           | Description |
+| --------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**createRippleAccount**](RippleApi.md#createRippleAccount)     | **POST** /ripple                       |             |
+| [**getRippleAccount**](RippleApi.md#getRippleAccount)           | **GET** /ripple/{accountName}          |             |
+| [**listRippleAccounts**](RippleApi.md#listRippleAccounts)       | **GET** /ripple                        |             |
+| [**signRippleTransaction**](RippleApi.md#signRippleTransaction) | **POST** /ripple/{accountName}/sign-tx |             |
 
-<a id="createRippleAccount"></a>
-# **createRippleAccount**
+## **createRippleAccount**
+
 > AccountAPIResponse createRippleAccount(authorization, rippleInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -60,38 +60,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **rippleInput** | [**RippleInput**](RippleInput.md)|  | |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **String**                        |             |       |
+| **rippleInput**   | [**RippleInput**](RippleInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getRippleAccount"></a>
-# **getRippleAccount**
+## **getRippleAccount**
+
 > AccountAPIResponse getRippleAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -135,38 +135,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="listRippleAccounts"></a>
-# **listRippleAccounts**
+## **listRippleAccounts**
+
 > AccountAPIResponse listRippleAccounts(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -209,37 +209,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signRippleTransaction"></a>
-# **signRippleTransaction**
+## **signRippleTransaction**
+
 > RippleAPIResponse signRippleTransaction(authorization, accountName, rippleTransactionInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -284,29 +284,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **rippleTransactionInput** | [**RippleTransactionInput**](RippleTransactionInput.md)|  | |
+| Name                       | Type                                                    | Description | Notes |
+| -------------------------- | ------------------------------------------------------- | ----------- | ----- |
+| **authorization**          | **String**                                              |             |       |
+| **accountName**            | **String**                                              |             |       |
+| **rippleTransactionInput** | [**RippleTransactionInput**](RippleTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**RippleAPIResponse**](RippleAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

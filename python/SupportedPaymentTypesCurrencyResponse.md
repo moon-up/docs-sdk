@@ -1,11 +1,10 @@
 # SupportedPaymentTypesCurrencyResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**message** | [**SupportedPaymentTypesMessage**](SupportedPaymentTypesMessage.md) |  | 
+| Name        | Type                                                                | Description | Notes |
+| ----------- | ------------------------------------------------------------------- | ----------- | ----- |
+| **message** | [**SupportedPaymentTypesMessage**](SupportedPaymentTypesMessage.md) |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ supported_payment_types_currency_response_dict = supported_payment_types_currenc
 # create an instance of SupportedPaymentTypesCurrencyResponse from a dict
 supported_payment_types_currency_response_form_dict = supported_payment_types_currency_response.from_dict(supported_payment_types_currency_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

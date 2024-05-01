@@ -1,34 +1,33 @@
 # Erc20Response
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **float** |  | [optional] 
-**chain_id** | **float** |  | [optional] 
-**data** | **str** |  | [optional] 
-**gas** | **str** |  | [optional] 
-**gas_price** | **str** |  | [optional] 
-**gas_tip_cap** | **str** |  | [optional] 
-**gas_fee_cap** | **str** |  | [optional] 
-**value** | **str** |  | [optional] 
-**nonce** | **float** |  | [optional] 
-**var_from** | **str** |  | [optional] 
-**to** | **str** |  | [optional] 
-**blob_gas** | **str** |  | [optional] 
-**blob_gas_fee_cap** | **str** |  | [optional] 
-**blob_hashes** | **List[str]** |  | [optional] 
-**v** | **str** |  | [optional] 
-**r** | **str** |  | [optional] 
-**s** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**symbol** | **str** |  | [optional] 
-**decimals** | **str** |  | [optional] 
-**total_supply** | **str** |  | [optional] 
-**contract_address** | **str** |  | [optional] 
-**balance_of** | **str** |  | [optional] 
-**allowance** | **str** |  | [optional] 
+| Name                    | Type           | Description | Notes       |
+| ----------------------- | -------------- | ----------- | ----------- |
+| **type**                | **float**      |             | \[optional] |
+| **chain\_id**           | **float**      |             | \[optional] |
+| **data**                | **str**        |             | \[optional] |
+| **gas**                 | **str**        |             | \[optional] |
+| **gas\_price**          | **str**        |             | \[optional] |
+| **gas\_tip\_cap**       | **str**        |             | \[optional] |
+| **gas\_fee\_cap**       | **str**        |             | \[optional] |
+| **value**               | **str**        |             | \[optional] |
+| **nonce**               | **float**      |             | \[optional] |
+| **var\_from**           | **str**        |             | \[optional] |
+| **to**                  | **str**        |             | \[optional] |
+| **blob\_gas**           | **str**        |             | \[optional] |
+| **blob\_gas\_fee\_cap** | **str**        |             | \[optional] |
+| **blob\_hashes**        | **List\[str]** |             | \[optional] |
+| **v**                   | **str**        |             | \[optional] |
+| **r**                   | **str**        |             | \[optional] |
+| **s**                   | **str**        |             | \[optional] |
+| **name**                | **str**        |             | \[optional] |
+| **symbol**              | **str**        |             | \[optional] |
+| **decimals**            | **str**        |             | \[optional] |
+| **total\_supply**       | **str**        |             | \[optional] |
+| **contract\_address**   | **str**        |             | \[optional] |
+| **balance\_of**         | **str**        |             | \[optional] |
+| **allowance**           | **str**        |             | \[optional] |
 
 ## Example
 
@@ -47,6 +46,5 @@ erc20_response_dict = erc20_response_instance.to_dict()
 # create an instance of Erc20Response from a dict
 erc20_response_form_dict = erc20_response.from_dict(erc20_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

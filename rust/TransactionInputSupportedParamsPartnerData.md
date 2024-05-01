@@ -2,10 +2,8 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**redirect_url** | [**crate::models::TransactionInputSupportedParamsPartnerDataRedirectUrl**](TransactionInput_supportedParams_partnerData_redirectUrl.md) |  | 
+| Name              | Type                                                                                                                                            | Description | Notes |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **redirect\_url** | [**crate::models::TransactionInputSupportedParamsPartnerDataRedirectUrl**](docs/TransactionInput\_supportedParams\_partnerData\_redirectUrl.md) |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,27 +1,27 @@
 # OnramperApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## OnramperApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**onRamperCheckout**](OnramperApi.md#onRamperCheckout) | **POST** /onramper/fund/${accountName} |  |
-| [**onRamperGetQuotesBuy**](OnramperApi.md#onRamperGetQuotesBuy) | **GET** /onramper/quotes/buy |  |
-| [**onRamperGetQuotesSell**](OnramperApi.md#onRamperGetQuotesSell) | **GET** /onramper/quotes/sell |  |
-| [**onRamperGetSupportedAssets**](OnramperApi.md#onRamperGetSupportedAssets) | **GET** /onramper/assets |  |
-| [**onRamperGetSupportedCurrencies**](OnramperApi.md#onRamperGetSupportedCurrencies) | **GET** /onramper/currencies |  |
-| [**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onRamperGetSupportedDefaultsAll) | **GET** /onramper/defaults |  |
-| [**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onRamperGetSupportedOnRampsAll) | **GET** /onramper/onramps |  |
-| [**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onRamperGetSupportedPaymentTypes) | **GET** /onramper/payment-types |  |
-| [**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onRamperGetSupportedPaymentTypesFiat) | **GET** /onramper/payment-types/fiat |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                                          | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**onRamperCheckout**](OnramperApi.md#onRamperCheckout)                                         | **POST** /onramper/fund/${accountName} |             |
+| [**onRamperGetQuotesBuy**](OnramperApi.md#onRamperGetQuotesBuy)                                 | **GET** /onramper/quotes/buy           |             |
+| [**onRamperGetQuotesSell**](OnramperApi.md#onRamperGetQuotesSell)                               | **GET** /onramper/quotes/sell          |             |
+| [**onRamperGetSupportedAssets**](OnramperApi.md#onRamperGetSupportedAssets)                     | **GET** /onramper/assets               |             |
+| [**onRamperGetSupportedCurrencies**](OnramperApi.md#onRamperGetSupportedCurrencies)             | **GET** /onramper/currencies           |             |
+| [**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onRamperGetSupportedDefaultsAll)           | **GET** /onramper/defaults             |             |
+| [**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onRamperGetSupportedOnRampsAll)             | **GET** /onramper/onramps              |             |
+| [**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onRamperGetSupportedPaymentTypes)         | **GET** /onramper/payment-types        |             |
+| [**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onRamperGetSupportedPaymentTypesFiat) | **GET** /onramper/payment-types/fiat   |             |
 
-<a id="onRamperCheckout"></a>
-# **onRamperCheckout**
+## **onRamperCheckout**
+
 > Object onRamperCheckout(authorization, accountName, transactionInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -66,39 +66,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **transactionInput** | [**TransactionInput**](TransactionInput.md)|  | |
+| Name                 | Type                                        | Description | Notes |
+| -------------------- | ------------------------------------------- | ----------- | ----- |
+| **authorization**    | **String**                                  |             |       |
+| **accountName**      | **String**                                  |             |       |
+| **transactionInput** | [**TransactionInput**](TransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetQuotesBuy"></a>
-# **onRamperGetQuotesBuy**
-> List&lt;Quote&gt; onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+## **onRamperGetQuotesBuy**
 
+> List\<Quote> onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -148,44 +148,44 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **fiat** | **String**|  | |
-| **crypto** | **String**|  | |
-| **amount** | **Double**|  | |
-| **paymentMethod** | **String**|  | [optional] [default to creditcard] |
-| **uuid** | **String**|  | [optional] [default to ] |
-| **clientName** | **String**|  | [optional] [default to ] |
-| **country** | **String**|  | [optional] [default to ] |
+| Name              | Type       | Description | Notes                                |
+| ----------------- | ---------- | ----------- | ------------------------------------ |
+| **authorization** | **String** |             |                                      |
+| **fiat**          | **String** |             |                                      |
+| **crypto**        | **String** |             |                                      |
+| **amount**        | **Double** |             |                                      |
+| **paymentMethod** | **String** |             | \[optional] \[default to creditcard] |
+| **uuid**          | **String** |             | \[optional] \[default to ]           |
+| **clientName**    | **String** |             | \[optional] \[default to ]           |
+| **country**       | **String** |             | \[optional] \[default to ]           |
 
-### Return type
+#### Return type
 
-[**List&lt;Quote&gt;**](Quote.md)
+[**List\<Quote>**](Quote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetQuotesSell"></a>
-# **onRamperGetQuotesSell**
-> List&lt;SellQuote&gt; onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+## **onRamperGetQuotesSell**
 
+> List\<SellQuote> onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -235,44 +235,44 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **fiat** | **String**|  | |
-| **crypto** | **String**|  | |
-| **amount** | **Double**|  | |
-| **paymentMethod** | **String**|  | [optional] [default to creditcard] |
-| **uuid** | **String**|  | [optional] [default to ] |
-| **clientName** | **String**|  | [optional] [default to ] |
-| **country** | **String**|  | [optional] [default to ] |
+| Name              | Type       | Description | Notes                                |
+| ----------------- | ---------- | ----------- | ------------------------------------ |
+| **authorization** | **String** |             |                                      |
+| **fiat**          | **String** |             |                                      |
+| **crypto**        | **String** |             |                                      |
+| **amount**        | **Double** |             |                                      |
+| **paymentMethod** | **String** |             | \[optional] \[default to creditcard] |
+| **uuid**          | **String** |             | \[optional] \[default to ]           |
+| **clientName**    | **String** |             | \[optional] \[default to ]           |
+| **country**       | **String** |             | \[optional] \[default to ]           |
 
-### Return type
+#### Return type
 
-[**List&lt;SellQuote&gt;**](SellQuote.md)
+[**List\<SellQuote>**](SellQuote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedAssets"></a>
-# **onRamperGetSupportedAssets**
+## **onRamperGetSupportedAssets**
+
 > SupportedAssetResponse onRamperGetSupportedAssets(authorization, source, country)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -317,39 +317,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **source** | **String**|  | |
-| **country** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **source**        | **String** |             |       |
+| **country**       | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedAssetResponse**](SupportedAssetResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedCurrencies"></a>
-# **onRamperGetSupportedCurrencies**
+## **onRamperGetSupportedCurrencies**
+
 > SupportedCurrenciesResponse onRamperGetSupportedCurrencies(authorization, type)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -393,38 +393,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **type** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedCurrenciesResponse**](SupportedCurrenciesResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedDefaultsAll"></a>
-# **onRamperGetSupportedDefaultsAll**
+## **onRamperGetSupportedDefaultsAll**
+
 > SupportedDefaultResponse onRamperGetSupportedDefaultsAll(authorization, country, type)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -469,39 +469,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **country** | **String**|  | |
-| **type** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **country**       | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedDefaultResponse**](SupportedDefaultResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedOnRampsAll"></a>
-# **onRamperGetSupportedOnRampsAll**
+## **onRamperGetSupportedOnRampsAll**
+
 > GetSupportedOnRampsResponse onRamperGetSupportedOnRampsAll(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -544,37 +544,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**GetSupportedOnRampsResponse**](GetSupportedOnRampsResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedPaymentTypes"></a>
-# **onRamperGetSupportedPaymentTypes**
+## **onRamperGetSupportedPaymentTypes**
+
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypes(authorization, fiat, country, type)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -620,40 +620,40 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **fiat** | **String**|  | |
-| **country** | **String**|  | |
-| **type** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **fiat**          | **String** |             |       |
+| **country**       | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="onRamperGetSupportedPaymentTypesFiat"></a>
-# **onRamperGetSupportedPaymentTypesFiat**
+## **onRamperGetSupportedPaymentTypesFiat**
+
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypesFiat(authorization, fiat, country)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -698,29 +698,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **fiat** | **String**|  | |
-| **country** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **fiat**          | **String** |             |       |
+| **country**       | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

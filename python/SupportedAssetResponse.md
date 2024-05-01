@@ -1,12 +1,11 @@
 # SupportedAssetResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**country** | **str** |  | 
-**assets** | [**List[SupportedAssetResponseAssetsInner]**](SupportedAssetResponseAssetsInner.md) |  | 
+| Name        | Type                                                                                  | Description | Notes |
+| ----------- | ------------------------------------------------------------------------------------- | ----------- | ----- |
+| **country** | **str**                                                                               |             |       |
+| **assets**  | [**List\[SupportedAssetResponseAssetsInner\]**](SupportedAssetResponseAssetsInner.md) |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ supported_asset_response_dict = supported_asset_response_instance.to_dict()
 # create an instance of SupportedAssetResponse from a dict
 supported_asset_response_form_dict = supported_asset_response.from_dict(supported_asset_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

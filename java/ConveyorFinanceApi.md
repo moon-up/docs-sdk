@@ -1,19 +1,19 @@
 # ConveyorFinanceApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## ConveyorFinanceApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                 | HTTP request                          | Description |
+| -------------------------------------- | ------------------------------------- | ----------- |
+| [**swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap |             |
 
-<a id="swap"></a>
-# **swap**
+## **swap**
+
 > ConveyorFinanceControllerResponse swap(authorization, name, tokenSwapParams)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -58,29 +58,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md)|  | |
+| Name                | Type                                      | Description | Notes |
+| ------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**   | **String**                                |             |       |
+| **name**            | **String**                                |             |       |
+| **tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md) |             |       |
 
-### Return type
+#### Return type
 
 [**ConveyorFinanceControllerResponse**](ConveyorFinanceControllerResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

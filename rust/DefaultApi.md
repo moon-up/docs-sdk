@@ -1,17 +1,14 @@
 # \DefaultApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_message**](DefaultApi.md#get_message) | **GET** /ping | 
+| Method                                         | HTTP request  | Description |
+| ---------------------------------------------- | ------------- | ----------- |
+| [**get\_message**](DefaultApi.md#get\_message) | **GET** /ping |             |
 
+## get\_message
 
-
-## get_message
-
-> crate::models::PingResponse get_message()
-
+> crate::models::PingResponse get\_message()
 
 ### Parameters
 
@@ -27,8 +24,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](DefaultApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

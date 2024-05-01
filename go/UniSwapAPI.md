@@ -1,21 +1,17 @@
 # \UniSwapAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**AddLiquidity**](UniSwapAPI.md#AddLiquidity) | **Post** /uniswap/{name}/add-liquidity | 
-[**RemoveLiquidity**](UniSwapAPI.md#RemoveLiquidity) | **Post** /uniswap/{name}/remove-liquidity | 
-[**SwapExactETHForTokens**](UniSwapAPI.md#SwapExactETHForTokens) | **Post** /uniswap/{name}/swap-exact-eth-for-tokens | 
-[**SwapExactTokensForTokens**](UniSwapAPI.md#SwapExactTokensForTokens) | **Post** /uniswap/{name}/swap-exact-tokens-for-tokens | 
-
-
+| Method                                                                 | HTTP request                                          | Description |
+| ---------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**AddLiquidity**](UniSwapAPI.md#AddLiquidity)                         | **Post** /uniswap/{name}/add-liquidity                |             |
+| [**RemoveLiquidity**](UniSwapAPI.md#RemoveLiquidity)                   | **Post** /uniswap/{name}/remove-liquidity             |             |
+| [**SwapExactETHForTokens**](UniSwapAPI.md#SwapExactETHForTokens)       | **Post** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**SwapExactTokensForTokens**](UniSwapAPI.md#SwapExactTokensForTokens) | **Post** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
 
 ## AddLiquidity
 
 > TransactionAPIResponse AddLiquidity(ctx, name).Authorization(authorization).UniswapInput(uniswapInput).Execute()
-
-
 
 ### Example
 
@@ -48,22 +44,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAddLiquidityRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  | 
+**uniswapInput** | [**UniswapInput**](UniswapInput.md) | |
 
 ### Return type
 
@@ -71,23 +65,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## RemoveLiquidity
 
 > TransactionAPIResponse RemoveLiquidity(ctx, name).Authorization(authorization).UniswapInput(uniswapInput).Execute()
-
-
 
 ### Example
 
@@ -120,22 +109,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRemoveLiquidityRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  | 
+**uniswapInput** | [**UniswapInput**](UniswapInput.md) | |
 
 ### Return type
 
@@ -143,23 +130,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SwapExactETHForTokens
 
 > TransactionAPIResponse SwapExactETHForTokens(ctx, name).Authorization(authorization).UniswapInput(uniswapInput).Execute()
-
-
 
 ### Example
 
@@ -192,22 +174,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSwapExactETHForTokensRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  | 
+**uniswapInput** | [**UniswapInput**](UniswapInput.md) | |
 
 ### Return type
 
@@ -215,23 +195,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SwapExactTokensForTokens
 
 > TransactionAPIResponse SwapExactTokensForTokens(ctx, name).Authorization(authorization).UniswapInput(uniswapInput).Execute()
-
-
 
 ### Example
 
@@ -264,22 +239,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSwapExactTokensForTokensRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  | 
+**uniswapInput** | [**UniswapInput**](UniswapInput.md) | |
 
 ### Return type
 
@@ -287,14 +260,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

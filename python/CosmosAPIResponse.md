@@ -1,15 +1,14 @@
 # CosmosAPIResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**success** | **bool** |  | 
-**message** | **str** |  | 
-**body** | [**InputBody**](InputBody.md) |  | [optional] 
-**address** | **str** |  | [optional] 
-**data** | [**CosmosTransactionOutput**](CosmosTransactionOutput.md) |  | [optional] 
+| Name        | Type                                                      | Description | Notes       |
+| ----------- | --------------------------------------------------------- | ----------- | ----------- |
+| **success** | **bool**                                                  |             |             |
+| **message** | **str**                                                   |             |             |
+| **body**    | [**InputBody**](InputBody.md)                             |             | \[optional] |
+| **address** | **str**                                                   |             | \[optional] |
+| **data**    | [**CosmosTransactionOutput**](CosmosTransactionOutput.md) |             | \[optional] |
 
 ## Example
 
@@ -28,6 +27,5 @@ cosmos_api_response_dict = cosmos_api_response_instance.to_dict()
 # create an instance of CosmosAPIResponse from a dict
 cosmos_api_response_form_dict = cosmos_api_response.from_dict(cosmos_api_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

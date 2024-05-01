@@ -1,20 +1,19 @@
 # INFTApproval
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transaction_hash** | **str** |  | 
-**contract** | **str** |  | 
-**log_index** | **str** |  | 
-**token_contract_type** | **str** |  | 
-**token_name** | **str** |  | 
-**token_symbol** | **str** |  | 
-**account** | **str** |  | 
-**operator** | **str** |  | 
-**approved_all** | **bool** |  | 
-**token_id** | **str** |  | 
+| Name                      | Type     | Description | Notes |
+| ------------------------- | -------- | ----------- | ----- |
+| **transaction\_hash**     | **str**  |             |       |
+| **contract**              | **str**  |             |       |
+| **log\_index**            | **str**  |             |       |
+| **token\_contract\_type** | **str**  |             |       |
+| **token\_name**           | **str**  |             |       |
+| **token\_symbol**         | **str**  |             |       |
+| **account**               | **str**  |             |       |
+| **operator**              | **str**  |             |       |
+| **approved\_all**         | **bool** |             |       |
+| **token\_id**             | **str**  |             |       |
 
 ## Example
 
@@ -33,6 +32,5 @@ inft_approval_dict = inft_approval_instance.to_dict()
 # create an instance of INFTApproval from a dict
 inft_approval_form_dict = inft_approval.from_dict(inft_approval_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

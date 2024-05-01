@@ -1,21 +1,17 @@
 # \RippleAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateRippleAccount**](RippleAPI.md#CreateRippleAccount) | **Post** /ripple | 
-[**GetRippleAccount**](RippleAPI.md#GetRippleAccount) | **Get** /ripple/{accountName} | 
-[**ListRippleAccounts**](RippleAPI.md#ListRippleAccounts) | **Get** /ripple | 
-[**SignRippleTransaction**](RippleAPI.md#SignRippleTransaction) | **Post** /ripple/{accountName}/sign-tx | 
-
-
+| Method                                                          | HTTP request                           | Description |
+| --------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**CreateRippleAccount**](RippleAPI.md#CreateRippleAccount)     | **Post** /ripple                       |             |
+| [**GetRippleAccount**](RippleAPI.md#GetRippleAccount)           | **Get** /ripple/{accountName}          |             |
+| [**ListRippleAccounts**](RippleAPI.md#ListRippleAccounts)       | **Get** /ripple                        |             |
+| [**SignRippleTransaction**](RippleAPI.md#SignRippleTransaction) | **Post** /ripple/{accountName}/sign-tx |             |
 
 ## CreateRippleAccount
 
 > AccountAPIResponse CreateRippleAccount(ctx).Authorization(authorization).RippleInput(rippleInput).Execute()
-
-
 
 ### Example
 
@@ -47,17 +43,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateRippleAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **rippleInput** | [**RippleInput**](RippleInput.md) |  | 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **string**                        |             |       |
+| **rippleInput**   | [**RippleInput**](RippleInput.md) |             |       |
 
 ### Return type
 
@@ -65,23 +58,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](RippleAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## GetRippleAccount
 
 > AccountAPIResponse GetRippleAccount(ctx, accountName).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -113,21 +101,18 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetRippleAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -135,23 +120,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](RippleAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## ListRippleAccounts
 
 > AccountAPIResponse ListRippleAccounts(ctx).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -182,16 +162,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListRippleAccountsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -199,23 +176,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](RippleAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SignRippleTransaction
 
 > RippleAPIResponse SignRippleTransaction(ctx, accountName).Authorization(authorization).RippleTransactionInput(rippleTransactionInput).Execute()
-
-
 
 ### Example
 
@@ -248,22 +220,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSignRippleTransactionRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **rippleTransactionInput** | [**RippleTransactionInput**](RippleTransactionInput.md) |  | 
+**rippleTransactionInput** | [**RippleTransactionInput**](RippleTransactionInput.md) | |
 
 ### Return type
 
@@ -271,14 +241,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](RippleAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

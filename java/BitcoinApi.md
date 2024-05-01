@@ -1,22 +1,22 @@
 # BitcoinApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## BitcoinApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**createBitcoinAccount**](BitcoinApi.md#createBitcoinAccount) | **POST** /bitcoin |  |
-| [**getBitcoinAccount**](BitcoinApi.md#getBitcoinAccount) | **GET** /bitcoin/{accountName} |  |
-| [**listBitcoinAccounts**](BitcoinApi.md#listBitcoinAccounts) | **GET** /bitcoin |  |
-| [**signBitcoinTransaction**](BitcoinApi.md#signBitcoinTransaction) | **POST** /bitcoin/{accountName}/sign-tx |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                             | HTTP request                            | Description |
+| ------------------------------------------------------------------ | --------------------------------------- | ----------- |
+| [**createBitcoinAccount**](BitcoinApi.md#createBitcoinAccount)     | **POST** /bitcoin                       |             |
+| [**getBitcoinAccount**](BitcoinApi.md#getBitcoinAccount)           | **GET** /bitcoin/{accountName}          |             |
+| [**listBitcoinAccounts**](BitcoinApi.md#listBitcoinAccounts)       | **GET** /bitcoin                        |             |
+| [**signBitcoinTransaction**](BitcoinApi.md#signBitcoinTransaction) | **POST** /bitcoin/{accountName}/sign-tx |             |
 
-<a id="createBitcoinAccount"></a>
-# **createBitcoinAccount**
+## **createBitcoinAccount**
+
 > AccountAPIResponse createBitcoinAccount(authorization, bitcoinInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -60,38 +60,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **bitcoinInput** | [**BitcoinInput**](BitcoinInput.md)|  | |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **String**                          |             |       |
+| **bitcoinInput**  | [**BitcoinInput**](BitcoinInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getBitcoinAccount"></a>
-# **getBitcoinAccount**
+## **getBitcoinAccount**
+
 > AccountAPIResponse getBitcoinAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -135,38 +135,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="listBitcoinAccounts"></a>
-# **listBitcoinAccounts**
+## **listBitcoinAccounts**
+
 > AccountAPIResponse listBitcoinAccounts(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -209,37 +209,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signBitcoinTransaction"></a>
-# **signBitcoinTransaction**
+## **signBitcoinTransaction**
+
 > BitcoinAPIResponse signBitcoinTransaction(authorization, accountName, bitcoinTransactionInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -284,29 +284,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **bitcoinTransactionInput** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md)|  | |
+| Name                        | Type                                                      | Description | Notes |
+| --------------------------- | --------------------------------------------------------- | ----------- | ----- |
+| **authorization**           | **String**                                                |             |       |
+| **accountName**             | **String**                                                |             |       |
+| **bitcoinTransactionInput** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**BitcoinAPIResponse**](BitcoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

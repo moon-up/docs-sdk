@@ -1,11 +1,10 @@
 # GetSupportedOnRampsResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**message** | [**List[GetSupportedOnRampsResponseMessageInner]**](GetSupportedOnRampsResponseMessageInner.md) |  | 
+| Name        | Type                                                                                              | Description | Notes |
+| ----------- | ------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **message** | [**List\[GetSupportedOnRampsResponseMessageInner\]**](GetSupportedOnRampsResponseMessageInner.md) |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ get_supported_on_ramps_response_dict = get_supported_on_ramps_response_instance.
 # create an instance of GetSupportedOnRampsResponse from a dict
 get_supported_on_ramps_response_form_dict = get_supported_on_ramps_response.from_dict(get_supported_on_ramps_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

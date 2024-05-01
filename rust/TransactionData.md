@@ -2,18 +2,16 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**moon_scan_url** | Option<**String**> |  | [optional]
-**transaction_hash** | **String** |  | 
-**signed_transaction** | **String** |  | 
-**signed_message** | Option<**String**> |  | [optional]
-**raw_transaction** | Option<**String**> |  | [optional]
-**signature** | Option<**String**> |  | [optional]
-**transaction** | Option<[**crate::models::Tx**](Tx.md)> |  | [optional]
-**user_ops** | Option<[**Vec<crate::models::TransactionRequest>**](TransactionRequest.md)> |  | [optional]
-**userop_transaction** | Option<**String**> |  | [optional]
+| Name                    | Type                                                                                                               | Description | Notes       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------- | ----------- |
+| **moon\_scan\_url**     | Option<**String**>                                                                                                 |             | \[optional] |
+| **transaction\_hash**   | **String**                                                                                                         |             |             |
+| **signed\_transaction** | **String**                                                                                                         |             |             |
+| **signed\_message**     | Option<**String**>                                                                                                 |             | \[optional] |
+| **raw\_transaction**    | Option<**String**>                                                                                                 |             | \[optional] |
+| **signature**           | Option<**String**>                                                                                                 |             | \[optional] |
+| **transaction**         | Option<[**crate::models::Tx**](Tx.md)>                                                                             |             | \[optional] |
+| **user\_ops**           | Option<[**Vec**](TransactionRequest.md)[**crate::models::TransactionRequest**](crate::models::TransactionRequest)> |             | \[optional] |
+| **userop\_transaction** | Option<**String**>                                                                                                 |             | \[optional] |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -2,15 +2,15 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Nonce** | Pointer to **string** |  | [optional] 
-**Data** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **string** |  | [optional] 
-**To** | Pointer to **string** |  | [optional] 
-**From** | Pointer to **string** |  | [optional] 
-**MaxFeePerGas** | Pointer to **string** |  | [optional] 
-**MaxPriorityFeePerGas** | Pointer to **string** |  | [optional] 
+| Name                     | Type                  | Description | Notes       |
+| ------------------------ | --------------------- | ----------- | ----------- |
+| **Nonce**                | Pointer to **string** |             | \[optional] |
+| **Data**                 | Pointer to **string** |             | \[optional] |
+| **Value**                | Pointer to **string** |             | \[optional] |
+| **To**                   | Pointer to **string** |             | \[optional] |
+| **From**                 | Pointer to **string** |             | \[optional] |
+| **MaxFeePerGas**         | Pointer to **string** |             | \[optional] |
+| **MaxPriorityFeePerGas** | Pointer to **string** |             | \[optional] |
 
 ## Methods
 
@@ -18,18 +18,13 @@ Name | Type | Description | Notes
 
 `func NewTransactionRequest() *TransactionRequest`
 
-NewTransactionRequest instantiates a new TransactionRequest object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTransactionRequest instantiates a new TransactionRequest object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTransactionRequestWithDefaults
 
 `func NewTransactionRequestWithDefaults() *TransactionRequest`
 
-NewTransactionRequestWithDefaults instantiates a new TransactionRequest object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTransactionRequestWithDefaults instantiates a new TransactionRequest object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetNonce
 
@@ -41,8 +36,7 @@ GetNonce returns the Nonce field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetNonceOk() (*string, bool)`
 
-GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonce
 
@@ -66,8 +60,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetDataOk() (*string, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -91,8 +84,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -116,8 +108,7 @@ GetTo returns the To field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetToOk() (*string, bool)`
 
-GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTo
 
@@ -141,8 +132,7 @@ GetFrom returns the From field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetFromOk() (*string, bool)`
 
-GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFrom
 
@@ -166,8 +156,7 @@ GetMaxFeePerGas returns the MaxFeePerGas field if non-nil, zero value otherwise.
 
 `func (o *TransactionRequest) GetMaxFeePerGasOk() (*string, bool)`
 
-GetMaxFeePerGasOk returns a tuple with the MaxFeePerGas field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxFeePerGasOk returns a tuple with the MaxFeePerGas field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxFeePerGas
 
@@ -191,8 +180,7 @@ GetMaxPriorityFeePerGas returns the MaxPriorityFeePerGas field if non-nil, zero 
 
 `func (o *TransactionRequest) GetMaxPriorityFeePerGasOk() (*string, bool)`
 
-GetMaxPriorityFeePerGasOk returns a tuple with the MaxPriorityFeePerGas field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMaxPriorityFeePerGasOk returns a tuple with the MaxPriorityFeePerGas field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMaxPriorityFeePerGas
 
@@ -206,7 +194,4 @@ SetMaxPriorityFeePerGas sets MaxPriorityFeePerGas field to given value.
 
 HasMaxPriorityFeePerGas returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

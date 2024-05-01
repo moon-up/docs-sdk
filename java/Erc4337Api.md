@@ -1,20 +1,20 @@
 # Erc4337Api
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## Erc4337Api
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**getAddress**](Erc4337Api.md#getAddress) | **POST** /erc4337/{accountName}/address |  |
-| [**signBroadcastUserOpTx**](Erc4337Api.md#signBroadcastUserOpTx) | **POST** /erc4337/{accountName}/sign-broadcast-userop-tx |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                           | HTTP request                                             | Description |
+| ---------------------------------------------------------------- | -------------------------------------------------------- | ----------- |
+| [**getAddress**](Erc4337Api.md#getAddress)                       | **POST** /erc4337/{accountName}/address                  |             |
+| [**signBroadcastUserOpTx**](Erc4337Api.md#signBroadcastUserOpTx) | **POST** /erc4337/{accountName}/sign-broadcast-userop-tx |             |
 
-<a id="getAddress"></a>
-# **getAddress**
+## **getAddress**
+
 > AccountAPIResponse getAddress(authorization, accountName, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -59,39 +59,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **accountName**   | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signBroadcastUserOpTx"></a>
-# **signBroadcastUserOpTx**
+## **signBroadcastUserOpTx**
+
 > TransactionAPIResponse signBroadcastUserOpTx(authorization, accountName, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -136,29 +136,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **accountName**   | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

@@ -1,22 +1,21 @@
 # INFTTransfer
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transaction_hash** | **str** |  | 
-**contract** | **str** |  | 
-**log_index** | **str** |  | 
-**token_contract_type** | **str** |  | 
-**token_name** | **str** |  | 
-**token_symbol** | **str** |  | 
-**triggers** | [**List[TriggerOutput]**](TriggerOutput.md) |  | [optional] 
-**operator** | **str** |  | 
-**var_from** | **str** |  | 
-**to** | **str** |  | 
-**token_id** | **str** |  | 
-**amount** | **str** |  | 
+| Name                      | Type                                          | Description | Notes       |
+| ------------------------- | --------------------------------------------- | ----------- | ----------- |
+| **transaction\_hash**     | **str**                                       |             |             |
+| **contract**              | **str**                                       |             |             |
+| **log\_index**            | **str**                                       |             |             |
+| **token\_contract\_type** | **str**                                       |             |             |
+| **token\_name**           | **str**                                       |             |             |
+| **token\_symbol**         | **str**                                       |             |             |
+| **triggers**              | [**List\[TriggerOutput\]**](TriggerOutput.md) |             | \[optional] |
+| **operator**              | **str**                                       |             |             |
+| **var\_from**             | **str**                                       |             |             |
+| **to**                    | **str**                                       |             |             |
+| **token\_id**             | **str**                                       |             |             |
+| **amount**                | **str**                                       |             |             |
 
 ## Example
 
@@ -35,6 +34,5 @@ inft_transfer_dict = inft_transfer_instance.to_dict()
 # create an instance of INFTTransfer from a dict
 inft_transfer_form_dict = inft_transfer.from_dict(inft_transfer_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

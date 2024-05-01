@@ -1,13 +1,12 @@
 # SupportedAssetResponseAssetsInner
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**crypto** | **List[str]** |  | 
-**payment_methods** | **List[str]** |  | 
-**fiat** | **str** |  | 
+| Name                 | Type           | Description | Notes |
+| -------------------- | -------------- | ----------- | ----- |
+| **crypto**           | **List\[str]** |             |       |
+| **payment\_methods** | **List\[str]** |             |       |
+| **fiat**             | **str**        |             |       |
 
 ## Example
 
@@ -26,6 +25,5 @@ supported_asset_response_assets_inner_dict = supported_asset_response_assets_inn
 # create an instance of SupportedAssetResponseAssetsInner from a dict
 supported_asset_response_assets_inner_form_dict = supported_asset_response_assets_inner.from_dict(supported_asset_response_assets_inner_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

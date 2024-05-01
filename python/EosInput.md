@@ -1,12 +1,11 @@
 # EosInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**network** | **str** |  | [optional] 
-**private_key** | **str** |  | [optional] 
+| Name             | Type    | Description | Notes       |
+| ---------------- | ------- | ----------- | ----------- |
+| **network**      | **str** |             | \[optional] |
+| **private\_key** | **str** |             | \[optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ eos_input_dict = eos_input_instance.to_dict()
 # create an instance of EosInput from a dict
 eos_input_form_dict = eos_input.from_dict(eos_input_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

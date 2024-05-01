@@ -2,30 +2,30 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Src** | **string** |  | 
-**Dst** | **string** |  | 
-**Amount** | **string** |  | 
-**From** | **string** |  | 
-**Slippage** | **float64** |  | 
-**Protocols** | Pointer to **string** |  | [optional] 
-**Fee** | Pointer to **string** |  | [optional] 
-**DisableEstimate** | Pointer to **bool** |  | [optional] 
-**Permit** | Pointer to **string** |  | [optional] 
-**IncludeTokensInfo** | Pointer to **bool** |  | [optional] 
-**IncludeProtocols** | Pointer to **bool** |  | [optional] 
-**Compatibility** | Pointer to **bool** |  | [optional] 
-**AllowPartialFill** | Pointer to **bool** |  | [optional] 
-**Parts** | Pointer to **string** |  | [optional] 
-**MainRouteParts** | Pointer to **string** |  | [optional] 
-**ConnectorTokens** | Pointer to **string** |  | [optional] 
-**ComplexityLevel** | Pointer to **string** |  | [optional] 
-**GasLimit** | Pointer to **string** |  | [optional] 
-**GasPrice** | Pointer to **string** |  | [optional] 
-**Referrer** | Pointer to **string** |  | [optional] 
-**Receiver** | Pointer to **string** |  | [optional] 
-**ChainId** | Pointer to **float64** |  | [optional] 
+| Name                  | Type                   | Description | Notes       |
+| --------------------- | ---------------------- | ----------- | ----------- |
+| **Src**               | **string**             |             |             |
+| **Dst**               | **string**             |             |             |
+| **Amount**            | **string**             |             |             |
+| **From**              | **string**             |             |             |
+| **Slippage**          | **float64**            |             |             |
+| **Protocols**         | Pointer to **string**  |             | \[optional] |
+| **Fee**               | Pointer to **string**  |             | \[optional] |
+| **DisableEstimate**   | Pointer to **bool**    |             | \[optional] |
+| **Permit**            | Pointer to **string**  |             | \[optional] |
+| **IncludeTokensInfo** | Pointer to **bool**    |             | \[optional] |
+| **IncludeProtocols**  | Pointer to **bool**    |             | \[optional] |
+| **Compatibility**     | Pointer to **bool**    |             | \[optional] |
+| **AllowPartialFill**  | Pointer to **bool**    |             | \[optional] |
+| **Parts**             | Pointer to **string**  |             | \[optional] |
+| **MainRouteParts**    | Pointer to **string**  |             | \[optional] |
+| **ConnectorTokens**   | Pointer to **string**  |             | \[optional] |
+| **ComplexityLevel**   | Pointer to **string**  |             | \[optional] |
+| **GasLimit**          | Pointer to **string**  |             | \[optional] |
+| **GasPrice**          | Pointer to **string**  |             | \[optional] |
+| **Referrer**          | Pointer to **string**  |             | \[optional] |
+| **Receiver**          | Pointer to **string**  |             | \[optional] |
+| **ChainId**           | Pointer to **float64** |             | \[optional] |
 
 ## Methods
 
@@ -33,18 +33,13 @@ Name | Type | Description | Notes
 
 `func NewGetSwapDto(src string, dst string, amount string, from string, slippage float64, ) *GetSwapDto`
 
-NewGetSwapDto instantiates a new GetSwapDto object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewGetSwapDto instantiates a new GetSwapDto object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewGetSwapDtoWithDefaults
 
 `func NewGetSwapDtoWithDefaults() *GetSwapDto`
 
-NewGetSwapDtoWithDefaults instantiates a new GetSwapDto object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewGetSwapDtoWithDefaults instantiates a new GetSwapDto object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetSrc
 
@@ -56,15 +51,13 @@ GetSrc returns the Src field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetSrcOk() (*string, bool)`
 
-GetSrcOk returns a tuple with the Src field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSrcOk returns a tuple with the Src field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSrc
 
 `func (o *GetSwapDto) SetSrc(v string)`
 
 SetSrc sets Src field to given value.
-
 
 ### GetDst
 
@@ -76,15 +69,13 @@ GetDst returns the Dst field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetDstOk() (*string, bool)`
 
-GetDstOk returns a tuple with the Dst field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDstOk returns a tuple with the Dst field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDst
 
 `func (o *GetSwapDto) SetDst(v string)`
 
 SetDst sets Dst field to given value.
-
 
 ### GetAmount
 
@@ -96,15 +87,13 @@ GetAmount returns the Amount field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetAmountOk() (*string, bool)`
 
-GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmount
 
 `func (o *GetSwapDto) SetAmount(v string)`
 
 SetAmount sets Amount field to given value.
-
 
 ### GetFrom
 
@@ -116,15 +105,13 @@ GetFrom returns the From field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetFromOk() (*string, bool)`
 
-GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFromOk returns a tuple with the From field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFrom
 
 `func (o *GetSwapDto) SetFrom(v string)`
 
 SetFrom sets From field to given value.
-
 
 ### GetSlippage
 
@@ -136,15 +123,13 @@ GetSlippage returns the Slippage field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetSlippageOk() (*float64, bool)`
 
-GetSlippageOk returns a tuple with the Slippage field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSlippageOk returns a tuple with the Slippage field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSlippage
 
 `func (o *GetSwapDto) SetSlippage(v float64)`
 
 SetSlippage sets Slippage field to given value.
-
 
 ### GetProtocols
 
@@ -156,8 +141,7 @@ GetProtocols returns the Protocols field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetProtocolsOk() (*string, bool)`
 
-GetProtocolsOk returns a tuple with the Protocols field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProtocolsOk returns a tuple with the Protocols field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProtocols
 
@@ -181,8 +165,7 @@ GetFee returns the Fee field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetFeeOk() (*string, bool)`
 
-GetFeeOk returns a tuple with the Fee field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetFeeOk returns a tuple with the Fee field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetFee
 
@@ -206,8 +189,7 @@ GetDisableEstimate returns the DisableEstimate field if non-nil, zero value othe
 
 `func (o *GetSwapDto) GetDisableEstimateOk() (*bool, bool)`
 
-GetDisableEstimateOk returns a tuple with the DisableEstimate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDisableEstimateOk returns a tuple with the DisableEstimate field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetDisableEstimate
 
@@ -231,8 +213,7 @@ GetPermit returns the Permit field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetPermitOk() (*string, bool)`
 
-GetPermitOk returns a tuple with the Permit field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPermitOk returns a tuple with the Permit field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPermit
 
@@ -256,8 +237,7 @@ GetIncludeTokensInfo returns the IncludeTokensInfo field if non-nil, zero value 
 
 `func (o *GetSwapDto) GetIncludeTokensInfoOk() (*bool, bool)`
 
-GetIncludeTokensInfoOk returns a tuple with the IncludeTokensInfo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeTokensInfoOk returns a tuple with the IncludeTokensInfo field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeTokensInfo
 
@@ -281,8 +261,7 @@ GetIncludeProtocols returns the IncludeProtocols field if non-nil, zero value ot
 
 `func (o *GetSwapDto) GetIncludeProtocolsOk() (*bool, bool)`
 
-GetIncludeProtocolsOk returns a tuple with the IncludeProtocols field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIncludeProtocolsOk returns a tuple with the IncludeProtocols field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIncludeProtocols
 
@@ -306,8 +285,7 @@ GetCompatibility returns the Compatibility field if non-nil, zero value otherwis
 
 `func (o *GetSwapDto) GetCompatibilityOk() (*bool, bool)`
 
-GetCompatibilityOk returns a tuple with the Compatibility field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompatibilityOk returns a tuple with the Compatibility field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompatibility
 
@@ -331,8 +309,7 @@ GetAllowPartialFill returns the AllowPartialFill field if non-nil, zero value ot
 
 `func (o *GetSwapDto) GetAllowPartialFillOk() (*bool, bool)`
 
-GetAllowPartialFillOk returns a tuple with the AllowPartialFill field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAllowPartialFillOk returns a tuple with the AllowPartialFill field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAllowPartialFill
 
@@ -356,8 +333,7 @@ GetParts returns the Parts field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetPartsOk() (*string, bool)`
 
-GetPartsOk returns a tuple with the Parts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPartsOk returns a tuple with the Parts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetParts
 
@@ -381,8 +357,7 @@ GetMainRouteParts returns the MainRouteParts field if non-nil, zero value otherw
 
 `func (o *GetSwapDto) GetMainRoutePartsOk() (*string, bool)`
 
-GetMainRoutePartsOk returns a tuple with the MainRouteParts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMainRoutePartsOk returns a tuple with the MainRouteParts field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMainRouteParts
 
@@ -406,8 +381,7 @@ GetConnectorTokens returns the ConnectorTokens field if non-nil, zero value othe
 
 `func (o *GetSwapDto) GetConnectorTokensOk() (*string, bool)`
 
-GetConnectorTokensOk returns a tuple with the ConnectorTokens field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConnectorTokensOk returns a tuple with the ConnectorTokens field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConnectorTokens
 
@@ -431,8 +405,7 @@ GetComplexityLevel returns the ComplexityLevel field if non-nil, zero value othe
 
 `func (o *GetSwapDto) GetComplexityLevelOk() (*string, bool)`
 
-GetComplexityLevelOk returns a tuple with the ComplexityLevel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetComplexityLevelOk returns a tuple with the ComplexityLevel field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetComplexityLevel
 
@@ -456,8 +429,7 @@ GetGasLimit returns the GasLimit field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetGasLimitOk() (*string, bool)`
 
-GetGasLimitOk returns a tuple with the GasLimit field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasLimitOk returns a tuple with the GasLimit field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGasLimit
 
@@ -481,8 +453,7 @@ GetGasPrice returns the GasPrice field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetGasPriceOk() (*string, bool)`
 
-GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGasPrice
 
@@ -506,8 +477,7 @@ GetReferrer returns the Referrer field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetReferrerOk() (*string, bool)`
 
-GetReferrerOk returns a tuple with the Referrer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReferrerOk returns a tuple with the Referrer field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReferrer
 
@@ -531,8 +501,7 @@ GetReceiver returns the Receiver field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetReceiverOk() (*string, bool)`
 
-GetReceiverOk returns a tuple with the Receiver field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetReceiverOk returns a tuple with the Receiver field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetReceiver
 
@@ -556,8 +525,7 @@ GetChainId returns the ChainId field if non-nil, zero value otherwise.
 
 `func (o *GetSwapDto) GetChainIdOk() (*float64, bool)`
 
-GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChainId
 
@@ -571,7 +539,4 @@ SetChainId sets ChainId field to given value.
 
 HasChainId returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.DogeCoinApi
+# DogeCoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.DogeCoinApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateDogeCoinAccount**](DogeCoinApi.md#createdogecoinaccount) | **POST** /dogecoin |  |
-| [**GetDogeCoinAccount**](DogeCoinApi.md#getdogecoinaccount) | **GET** /dogecoin/{accountName} |  |
-| [**ListDogeCoinAccounts**](DogeCoinApi.md#listdogecoinaccounts) | **GET** /dogecoin |  |
-| [**SignDogeCoinTransaction**](DogeCoinApi.md#signdogecointransaction) | **POST** /dogecoin/{accountName}/sign-tx |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="createdogecoinaccount"></a>
-# **CreateDogeCoinAccount**
+| Method                                                                | HTTP request                             | Description |
+| --------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**CreateDogeCoinAccount**](DogeCoinApi.md#createdogecoinaccount)     | **POST** /dogecoin                       |             |
+| [**GetDogeCoinAccount**](DogeCoinApi.md#getdogecoinaccount)           | **GET** /dogecoin/{accountName}          |             |
+| [**ListDogeCoinAccounts**](DogeCoinApi.md#listdogecoinaccounts)       | **GET** /dogecoin                        |             |
+| [**SignDogeCoinTransaction**](DogeCoinApi.md#signdogecointransaction) | **POST** /dogecoin/{accountName}/sign-tx |             |
+
+## **CreateDogeCoinAccount**
+
 > AccountAPIResponse CreateDogeCoinAccount (string authorization, DogeCoinInput dogeCoinInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -60,7 +61,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateDogeCoinAccountWithHttpInfo variant
+**Using the CreateDogeCoinAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -79,41 +81,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **dogeCoinInput** | [**DogeCoinInput**](DogeCoinInput.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **dogeCoinInput** | [**DogeCoinInput**](DogeCoinInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getdogecoinaccount"></a>
-# **GetDogeCoinAccount**
+## **GetDogeCoinAccount**
+
 > AccountAPIResponse GetDogeCoinAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -158,7 +159,8 @@ namespace Example
 }
 ```
 
-#### Using the GetDogeCoinAccountWithHttpInfo variant
+**Using the GetDogeCoinAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -177,41 +179,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listdogecoinaccounts"></a>
-# **ListDogeCoinAccounts**
+## **ListDogeCoinAccounts**
+
 > AccountAPIResponse ListDogeCoinAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -255,7 +256,8 @@ namespace Example
 }
 ```
 
-#### Using the ListDogeCoinAccountsWithHttpInfo variant
+**Using the ListDogeCoinAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -274,40 +276,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signdogecointransaction"></a>
-# **SignDogeCoinTransaction**
+## **SignDogeCoinTransaction**
+
 > DogeCoinAPIResponse SignDogeCoinTransaction (string authorization, string accountName, DogeCoinTransactionInput dogeCoinTransactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -353,7 +354,8 @@ namespace Example
 }
 ```
 
-#### Using the SignDogeCoinTransactionWithHttpInfo variant
+**Using the SignDogeCoinTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -372,32 +374,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **dogeCoinTransactionInput** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md) |  |  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **string**                                                  |             |       |
+| **accountName**              | **string**                                                  |             |       |
+| **dogeCoinTransactionInput** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**DogeCoinAPIResponse**](DogeCoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

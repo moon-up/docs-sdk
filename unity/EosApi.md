@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.EosApi
+# EosApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.EosApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateEosAccount**](EosApi.md#createeosaccount) | **POST** /eos |  |
-| [**GetEosAccount**](EosApi.md#geteosaccount) | **GET** /eos/{accountName} |  |
-| [**ListEosAccounts**](EosApi.md#listeosaccounts) | **GET** /eos |  |
-| [**SignEosTransaction**](EosApi.md#signeostransaction) | **POST** /eos/{accountName}/sign-tx |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="createeosaccount"></a>
-# **CreateEosAccount**
+| Method                                                 | HTTP request                        | Description |
+| ------------------------------------------------------ | ----------------------------------- | ----------- |
+| [**CreateEosAccount**](EosApi.md#createeosaccount)     | **POST** /eos                       |             |
+| [**GetEosAccount**](EosApi.md#geteosaccount)           | **GET** /eos/{accountName}          |             |
+| [**ListEosAccounts**](EosApi.md#listeosaccounts)       | **GET** /eos                        |             |
+| [**SignEosTransaction**](EosApi.md#signeostransaction) | **POST** /eos/{accountName}/sign-tx |             |
+
+## **CreateEosAccount**
+
 > AccountAPIResponse CreateEosAccount (string authorization, EosInput eosInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -60,7 +61,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateEosAccountWithHttpInfo variant
+**Using the CreateEosAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -79,41 +81,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **eosInput** | [**EosInput**](EosInput.md) |  |  |
+| Name              | Type                        | Description | Notes |
+| ----------------- | --------------------------- | ----------- | ----- |
+| **authorization** | **string**                  |             |       |
+| **eosInput**      | [**EosInput**](EosInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="geteosaccount"></a>
-# **GetEosAccount**
+## **GetEosAccount**
+
 > AccountAPIResponse GetEosAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -158,7 +159,8 @@ namespace Example
 }
 ```
 
-#### Using the GetEosAccountWithHttpInfo variant
+**Using the GetEosAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -177,41 +179,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listeosaccounts"></a>
-# **ListEosAccounts**
+## **ListEosAccounts**
+
 > AccountAPIResponse ListEosAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -255,7 +256,8 @@ namespace Example
 }
 ```
 
-#### Using the ListEosAccountsWithHttpInfo variant
+**Using the ListEosAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -274,40 +276,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signeostransaction"></a>
-# **SignEosTransaction**
+## **SignEosTransaction**
+
 > EosAPIResponse SignEosTransaction (string authorization, string accountName, EosTransactionInput eosTransactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -353,7 +354,8 @@ namespace Example
 }
 ```
 
-#### Using the SignEosTransactionWithHttpInfo variant
+**Using the SignEosTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -372,32 +374,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **eosTransactionInput** | [**EosTransactionInput**](EosTransactionInput.md) |  |  |
+| Name                    | Type                                              | Description | Notes |
+| ----------------------- | ------------------------------------------------- | ----------- | ----- |
+| **authorization**       | **string**                                        |             |       |
+| **accountName**         | **string**                                        |             |       |
+| **eosTransactionInput** | [**EosTransactionInput**](EosTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**EosAPIResponse**](EosAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

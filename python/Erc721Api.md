@@ -1,29 +1,29 @@
-# moonsdk.Erc721Api
+# Erc721Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.Erc721Api
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve**](Erc721Api.md#approve) | **POST** /erc721/{name}/approve | 
-[**balance_of**](Erc721Api.md#balance_of) | **POST** /erc721/{name}/balance-of | 
-[**get_approved**](Erc721Api.md#get_approved) | **POST** /erc721/{name}/get-approved | 
-[**is_approved_for_all**](Erc721Api.md#is_approved_for_all) | **POST** /erc721/{name}/is-approved-for-all | 
-[**name**](Erc721Api.md#name) | **POST** /erc721/{name}/name | 
-[**owner_of**](Erc721Api.md#owner_of) | **POST** /erc721/{name}/owner-of | 
-[**safe_transfer_from**](Erc721Api.md#safe_transfer_from) | **POST** /erc721/{name}/safe-transfer-from | 
-[**set_approval_for_all**](Erc721Api.md#set_approval_for_all) | **POST** /erc721/{name}/set-approval-for-all | 
-[**symbol**](Erc721Api.md#symbol) | **POST** /erc721/{name}/symbol | 
-[**token_uri**](Erc721Api.md#token_uri) | **POST** /erc721/{name}/token-uri | 
-[**transfer**](Erc721Api.md#transfer) | **POST** /erc721/{name}/transfer | 
-[**transfer_from**](Erc721Api.md#transfer_from) | **POST** /erc721/{name}/transfer-from | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                              | HTTP request                                 | Description |
+| ------------------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**approve**](Erc721Api.md#approve)                                 | **POST** /erc721/{name}/approve              |             |
+| [**balance\_of**](Erc721Api.md#balance\_of)                         | **POST** /erc721/{name}/balance-of           |             |
+| [**get\_approved**](Erc721Api.md#get\_approved)                     | **POST** /erc721/{name}/get-approved         |             |
+| [**is\_approved\_for\_all**](Erc721Api.md#is\_approved\_for\_all)   | **POST** /erc721/{name}/is-approved-for-all  |             |
+| [**name**](Erc721Api.md#name)                                       | **POST** /erc721/{name}/name                 |             |
+| [**owner\_of**](Erc721Api.md#owner\_of)                             | **POST** /erc721/{name}/owner-of             |             |
+| [**safe\_transfer\_from**](Erc721Api.md#safe\_transfer\_from)       | **POST** /erc721/{name}/safe-transfer-from   |             |
+| [**set\_approval\_for\_all**](Erc721Api.md#set\_approval\_for\_all) | **POST** /erc721/{name}/set-approval-for-all |             |
+| [**symbol**](Erc721Api.md#symbol)                                   | **POST** /erc721/{name}/symbol               |             |
+| [**token\_uri**](Erc721Api.md#token\_uri)                           | **POST** /erc721/{name}/token-uri            |             |
+| [**transfer**](Erc721Api.md#transfer)                               | **POST** /erc721/{name}/transfer             |             |
+| [**transfer\_from**](Erc721Api.md#transfer\_from)                   | **POST** /erc721/{name}/transfer-from        |             |
 
-# **approve**
-> TransactionAPIResponse approve(authorization, name, erc721_request)
+## **approve**
 
+> TransactionAPIResponse approve(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -74,44 +74,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->approve: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **balance_of**
-> TransactionAPIResponse balance_of(authorization, name, erc721_request)
+## **balance\_of**
 
+> TransactionAPIResponse balance\_of(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -162,44 +158,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->balance_of: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_approved**
-> TransactionAPIResponse get_approved(authorization, name, erc721_request)
+## **get\_approved**
 
+> TransactionAPIResponse get\_approved(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -250,44 +242,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->get_approved: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **is_approved_for_all**
-> TransactionAPIResponse is_approved_for_all(authorization, name, erc721_request)
+## **is\_approved\_for\_all**
 
+> TransactionAPIResponse is\_approved\_for\_all(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -338,44 +326,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->is_approved_for_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **name**
-> TransactionAPIResponse name(authorization, name, erc721_request)
+## **name**
 
+> TransactionAPIResponse name(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -426,44 +410,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->name: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **owner_of**
-> TransactionAPIResponse owner_of(authorization, name, erc721_request)
+## **owner\_of**
 
+> TransactionAPIResponse owner\_of(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -514,44 +494,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->owner_of: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **safe_transfer_from**
-> TransactionAPIResponse safe_transfer_from(authorization, name, erc721_request)
+## **safe\_transfer\_from**
 
+> TransactionAPIResponse safe\_transfer\_from(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -602,44 +578,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->safe_transfer_from: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **set_approval_for_all**
-> TransactionAPIResponse set_approval_for_all(authorization, name, erc721_request)
+## **set\_approval\_for\_all**
 
+> TransactionAPIResponse set\_approval\_for\_all(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -690,44 +662,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->set_approval_for_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **symbol**
-> TransactionAPIResponse symbol(authorization, name, erc721_request)
+## **symbol**
 
+> TransactionAPIResponse symbol(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -778,44 +746,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->symbol: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **token_uri**
-> TransactionAPIResponse token_uri(authorization, name, erc721_request)
+## **token\_uri**
 
+> TransactionAPIResponse token\_uri(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -866,44 +830,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->token_uri: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **transfer**
-> TransactionAPIResponse transfer(authorization, name, erc721_request)
+## **transfer**
 
+> TransactionAPIResponse transfer(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -954,44 +914,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->transfer: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **transfer_from**
-> TransactionAPIResponse transfer_from(authorization, name, erc721_request)
+## **transfer\_from**
 
+> TransactionAPIResponse transfer\_from(authorization, name, erc721\_request)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -1042,35 +998,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc721Api->transfer_from: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **name**            | **str**                               |             |       |
+| **erc721\_request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **erc721_request** | [**Erc721Request**](Erc721Request.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

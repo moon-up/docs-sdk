@@ -1,21 +1,21 @@
-# moonsdk.DogeCoinApi
+# DogeCoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.DogeCoinApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_doge_coin_account**](DogeCoinApi.md#create_doge_coin_account) | **POST** /dogecoin | 
-[**get_doge_coin_account**](DogeCoinApi.md#get_doge_coin_account) | **GET** /dogecoin/{accountName} | 
-[**list_doge_coin_accounts**](DogeCoinApi.md#list_doge_coin_accounts) | **GET** /dogecoin | 
-[**sign_doge_coin_transaction**](DogeCoinApi.md#sign_doge_coin_transaction) | **POST** /dogecoin/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                            | HTTP request                             | Description |
+| --------------------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**create\_doge\_coin\_account**](DogeCoinApi.md#create\_doge\_coin\_account)     | **POST** /dogecoin                       |             |
+| [**get\_doge\_coin\_account**](DogeCoinApi.md#get\_doge\_coin\_account)           | **GET** /dogecoin/{accountName}          |             |
+| [**list\_doge\_coin\_accounts**](DogeCoinApi.md#list\_doge\_coin\_accounts)       | **GET** /dogecoin                        |             |
+| [**sign\_doge\_coin\_transaction**](DogeCoinApi.md#sign\_doge\_coin\_transaction) | **POST** /dogecoin/{accountName}/sign-tx |             |
 
-# **create_doge_coin_account**
-> AccountAPIResponse create_doge_coin_account(authorization, doge_coin_input)
+## **create\_doge\_coin\_account**
 
+> AccountAPIResponse create\_doge\_coin\_account(authorization, doge\_coin\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling DogeCoinApi->create_doge_coin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                  | Type                                  | Description | Notes |
+| --------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**     | **str**                               |             |       |
+| **doge\_coin\_input** | [**DogeCoinInput**](DogeCoinInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **doge_coin_input** | [**DogeCoinInput**](DogeCoinInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_doge_coin_account**
-> AccountAPIResponse get_doge_coin_account(authorization, account_name)
+## **get\_doge\_coin\_account**
 
+> AccountAPIResponse get\_doge\_coin\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling DogeCoinApi->get_doge_coin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_doge_coin_accounts**
-> AccountAPIResponse list_doge_coin_accounts(authorization)
+## **list\_doge\_coin\_accounts**
 
+> AccountAPIResponse list\_doge\_coin\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling DogeCoinApi->list_doge_coin_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_doge_coin_transaction**
-> DogeCoinAPIResponse sign_doge_coin_transaction(authorization, account_name, doge_coin_transaction_input)
+## **sign\_doge\_coin\_transaction**
 
+> DogeCoinAPIResponse sign\_doge\_coin\_transaction(authorization, account\_name, doge\_coin\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling DogeCoinApi->sign_doge_coin_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                               | Type                                                        | Description | Notes |
+| ---------------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**                  | **str**                                                     |             |       |
+| **account\_name**                  | **str**                                                     |             |       |
+| **doge\_coin\_transaction\_input** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **doge_coin_transaction_input** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**DogeCoinAPIResponse**](DogeCoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](DogeCoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

@@ -2,11 +2,9 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**signed_tx** | Option<**String**> |  | [optional]
-**transaction_hash** | Option<**String**> |  | [optional]
+| Name                  | Type               | Description | Notes       |
+| --------------------- | ------------------ | ----------- | ----------- |
+| **signed\_tx**        | Option<**String**> |             | \[optional] |
+| **transaction\_hash** | Option<**String**> |             | \[optional] |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

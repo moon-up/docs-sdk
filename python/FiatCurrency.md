@@ -1,15 +1,14 @@
 # FiatCurrency
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**icon** | **str** |  | 
-**symbol** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
-**id** | **str** |  | 
+| Name       | Type    | Description | Notes |
+| ---------- | ------- | ----------- | ----- |
+| **icon**   | **str** |             |       |
+| **symbol** | **str** |             |       |
+| **name**   | **str** |             |       |
+| **code**   | **str** |             |       |
+| **id**     | **str** |             |       |
 
 ## Example
 
@@ -28,6 +27,5 @@ fiat_currency_dict = fiat_currency_instance.to_dict()
 # create an instance of FiatCurrency from a dict
 fiat_currency_form_dict = fiat_currency.from_dict(fiat_currency_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

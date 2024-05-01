@@ -1,13 +1,12 @@
 # AvailablePaymentMethod
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**icon** | **str** |  | 
-**name** | **str** |  | 
-**payment_type_id** | **str** |  | 
+| Name                  | Type    | Description | Notes |
+| --------------------- | ------- | ----------- | ----- |
+| **icon**              | **str** |             |       |
+| **name**              | **str** |             |       |
+| **payment\_type\_id** | **str** |             |       |
 
 ## Example
 
@@ -26,6 +25,5 @@ available_payment_method_dict = available_payment_method_instance.to_dict()
 # create an instance of AvailablePaymentMethod from a dict
 available_payment_method_form_dict = available_payment_method.from_dict(available_payment_method_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

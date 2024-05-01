@@ -2,13 +2,11 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **String** |  | 
-**display_name** | **String** |  | 
-**icons** | [**crate::models::GetSupportedOnRampsResponseMessageInnerIcons**](GetSupportedOnRampsResponse_message_inner_icons.md) |  | 
-**icon** | **String** |  | 
+| Name              | Type                                                                                                                          | Description | Notes |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **id**            | **String**                                                                                                                    |             |       |
+| **display\_name** | **String**                                                                                                                    |             |       |
+| **icons**         | [**crate::models::GetSupportedOnRampsResponseMessageInnerIcons**](docs/GetSupportedOnRampsResponse\_message\_inner\_icons.md) |             |       |
+| **icon**          | **String**                                                                                                                    |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

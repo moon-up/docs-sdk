@@ -1,26 +1,26 @@
-# moonsdk.Erc20Api
+# Erc20Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.Erc20Api
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allowance_erc20**](Erc20Api.md#allowance_erc20) | **POST** /erc20/{name}/allowance | 
-[**approve_erc20**](Erc20Api.md#approve_erc20) | **POST** /erc20/{name}/approve | 
-[**balance_of_erc20**](Erc20Api.md#balance_of_erc20) | **POST** /erc20/{name}/balance-of | 
-[**decimals_erc20**](Erc20Api.md#decimals_erc20) | **POST** /erc20/{name}/decimals | 
-[**name_erc20**](Erc20Api.md#name_erc20) | **POST** /erc20/{name}/name | 
-[**symbol_erc20**](Erc20Api.md#symbol_erc20) | **POST** /erc20/{name}/symbol | 
-[**total_supply_erc20**](Erc20Api.md#total_supply_erc20) | **POST** /erc20/{name}/total-supply | 
-[**transfer_erc20**](Erc20Api.md#transfer_erc20) | **POST** /erc20/{name}/transfer | 
-[**transfer_from_erc20**](Erc20Api.md#transfer_from_erc20) | **POST** /erc20/{name}/transfer-from | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                         | HTTP request                         | Description |
+| -------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**allowance\_erc20**](Erc20Api.md#allowance\_erc20)           | **POST** /erc20/{name}/allowance     |             |
+| [**approve\_erc20**](Erc20Api.md#approve\_erc20)               | **POST** /erc20/{name}/approve       |             |
+| [**balance\_of\_erc20**](Erc20Api.md#balance\_of\_erc20)       | **POST** /erc20/{name}/balance-of    |             |
+| [**decimals\_erc20**](Erc20Api.md#decimals\_erc20)             | **POST** /erc20/{name}/decimals      |             |
+| [**name\_erc20**](Erc20Api.md#name\_erc20)                     | **POST** /erc20/{name}/name          |             |
+| [**symbol\_erc20**](Erc20Api.md#symbol\_erc20)                 | **POST** /erc20/{name}/symbol        |             |
+| [**total\_supply\_erc20**](Erc20Api.md#total\_supply\_erc20)   | **POST** /erc20/{name}/total-supply  |             |
+| [**transfer\_erc20**](Erc20Api.md#transfer\_erc20)             | **POST** /erc20/{name}/transfer      |             |
+| [**transfer\_from\_erc20**](Erc20Api.md#transfer\_from\_erc20) | **POST** /erc20/{name}/transfer-from |             |
 
-# **allowance_erc20**
-> TransactionAPIResponse allowance_erc20(authorization, name, input_body)
+## **allowance\_erc20**
 
+> TransactionAPIResponse allowance\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -71,44 +71,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->allowance_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **approve_erc20**
-> TransactionAPIResponse approve_erc20(authorization, name, input_body)
+## **approve\_erc20**
 
+> TransactionAPIResponse approve\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -159,44 +155,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->approve_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **balance_of_erc20**
-> TransactionAPIResponse balance_of_erc20(authorization, name, input_body)
+## **balance\_of\_erc20**
 
+> TransactionAPIResponse balance\_of\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -247,44 +239,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->balance_of_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **decimals_erc20**
-> TransactionAPIResponse decimals_erc20(authorization, name, input_body)
+## **decimals\_erc20**
 
+> TransactionAPIResponse decimals\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -335,44 +323,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->decimals_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **name_erc20**
-> TransactionAPIResponse name_erc20(authorization, name, input_body)
+## **name\_erc20**
 
+> TransactionAPIResponse name\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -423,44 +407,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->name_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **symbol_erc20**
-> TransactionAPIResponse symbol_erc20(authorization, name, input_body)
+## **symbol\_erc20**
 
+> TransactionAPIResponse symbol\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -511,44 +491,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->symbol_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **total_supply_erc20**
-> TransactionAPIResponse total_supply_erc20(authorization, name, input_body)
+## **total\_supply\_erc20**
 
+> TransactionAPIResponse total\_supply\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -599,44 +575,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->total_supply_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **transfer_erc20**
-> TransactionAPIResponse transfer_erc20(authorization, name, input_body)
+## **transfer\_erc20**
 
+> TransactionAPIResponse transfer\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -687,44 +659,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->transfer_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **transfer_from_erc20**
-> TransactionAPIResponse transfer_from_erc20(authorization, name, input_body)
+## **transfer\_from\_erc20**
 
+> TransactionAPIResponse transfer\_from\_erc20(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -775,35 +743,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc20Api->transfer_from_erc20: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

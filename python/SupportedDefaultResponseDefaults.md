@@ -1,11 +1,10 @@
 # SupportedDefaultResponseDefaults
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | [**SupportedDefaultResponseDefaultsId**](SupportedDefaultResponseDefaultsId.md) |  | 
+| Name   | Type                                                                            | Description | Notes |
+| ------ | ------------------------------------------------------------------------------- | ----------- | ----- |
+| **id** | [**SupportedDefaultResponseDefaultsId**](SupportedDefaultResponseDefaultsId.md) |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ supported_default_response_defaults_dict = supported_default_response_defaults_i
 # create an instance of SupportedDefaultResponseDefaults from a dict
 supported_default_response_defaults_form_dict = supported_default_response_defaults.from_dict(supported_default_response_defaults_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

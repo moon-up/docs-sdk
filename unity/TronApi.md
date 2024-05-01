@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.TronApi
+# TronApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.TronApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateTronAccount**](TronApi.md#createtronaccount) | **POST** /tron |  |
-| [**GetTronAccount**](TronApi.md#gettronaccount) | **GET** /tron/{accountName} |  |
-| [**ListTronAccounts**](TronApi.md#listtronaccounts) | **GET** /tron |  |
-| [**SignTronTransaction**](TronApi.md#signtrontransaction) | **POST** /tron/{accountName}/sign-tx |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="createtronaccount"></a>
-# **CreateTronAccount**
+| Method                                                    | HTTP request                         | Description |
+| --------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**CreateTronAccount**](TronApi.md#createtronaccount)     | **POST** /tron                       |             |
+| [**GetTronAccount**](TronApi.md#gettronaccount)           | **GET** /tron/{accountName}          |             |
+| [**ListTronAccounts**](TronApi.md#listtronaccounts)       | **GET** /tron                        |             |
+| [**SignTronTransaction**](TronApi.md#signtrontransaction) | **POST** /tron/{accountName}/sign-tx |             |
+
+## **CreateTronAccount**
+
 > AccountAPIResponse CreateTronAccount (string authorization, TronInput tronInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -60,7 +61,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateTronAccountWithHttpInfo variant
+**Using the CreateTronAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -79,41 +81,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **tronInput** | [**TronInput**](TronInput.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **tronInput**     | [**TronInput**](TronInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="gettronaccount"></a>
-# **GetTronAccount**
+## **GetTronAccount**
+
 > AccountAPIResponse GetTronAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -158,7 +159,8 @@ namespace Example
 }
 ```
 
-#### Using the GetTronAccountWithHttpInfo variant
+**Using the GetTronAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -177,41 +179,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listtronaccounts"></a>
-# **ListTronAccounts**
+## **ListTronAccounts**
+
 > AccountAPIResponse ListTronAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -255,7 +256,8 @@ namespace Example
 }
 ```
 
-#### Using the ListTronAccountsWithHttpInfo variant
+**Using the ListTronAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -274,40 +276,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signtrontransaction"></a>
-# **SignTronTransaction**
+## **SignTronTransaction**
+
 > TronAPIResponse SignTronTransaction (string authorization, string accountName, TronTransactionInput tronTransactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -353,7 +354,8 @@ namespace Example
 }
 ```
 
-#### Using the SignTronTransactionWithHttpInfo variant
+**Using the SignTronTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -372,32 +374,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **tronTransactionInput** | [**TronTransactionInput**](TronTransactionInput.md) |  |  |
+| Name                     | Type                                                | Description | Notes |
+| ------------------------ | --------------------------------------------------- | ----------- | ----- |
+| **authorization**        | **string**                                          |             |       |
+| **accountName**          | **string**                                          |             |       |
+| **tronTransactionInput** | [**TronTransactionInput**](TronTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TronAPIResponse**](TronAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

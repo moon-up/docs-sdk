@@ -2,18 +2,17 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**CurrentAtokenBalance** | **string** |  | 
-**CurrentBorrowBalance** | **string** |  | 
-**PrincipalBorrowBalance** | **string** |  | 
-**BorrowRateMode** | **string** |  | 
-**BorrowRate** | **string** |  | 
-**LiquidityRate** | **string** |  | 
-**OriginationFee** | **string** |  | 
-**VariableBorrowIndex** | **string** |  | 
-**LastUpdateTimestamp** | **string** |  | 
-**UsageAsCollateralEnabled** | **string** |  | 
+| Name                         | Type       | Description | Notes |
+| ---------------------------- | ---------- | ----------- | ----- |
+| **CurrentAtokenBalance**     | **string** |             |       |
+| **CurrentBorrowBalance**     | **string** |             |       |
+| **PrincipalBorrowBalance**   | **string** |             |       |
+| **BorrowRateMode**           | **string** |             |       |
+| **BorrowRate**               | **string** |             |       |
+| **LiquidityRate**            | **string** |             |       |
+| **OriginationFee**           | **string** |             |       |
+| **VariableBorrowIndex**      | **string** |             |       |
+| **LastUpdateTimestamp**      | **string** |             |       |
+| **UsageAsCollateralEnabled** | **string** |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,31 +1,31 @@
 # PaymentApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+## PaymentApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**createPaymentIntentConfig**](PaymentApi.md#createPaymentIntentConfig) | **POST** /payment/config |  |
-| [**deletePaymentIntentConfig**](PaymentApi.md#deletePaymentIntentConfig) | **DELETE** /payment/config/{id} |  |
-| [**getAllPaymentIntentConfigs**](PaymentApi.md#getAllPaymentIntentConfigs) | **GET** /payment/config |  |
-| [**getOnePaymentIntentConfigs**](PaymentApi.md#getOnePaymentIntentConfigs) | **GET** /payment/config/{id} |  |
-| [**moralisWebhook**](PaymentApi.md#moralisWebhook) | **POST** /payment/webhook/{id} |  |
-| [**paymentCreatePaymentIntent**](PaymentApi.md#paymentCreatePaymentIntent) | **POST** /payment |  |
-| [**paymentDeletePaymentIntent**](PaymentApi.md#paymentDeletePaymentIntent) | **DELETE** /payment/{id} |  |
-| [**paymentGetAllPaymentIntents**](PaymentApi.md#paymentGetAllPaymentIntents) | **GET** /payment |  |
-| [**paymentGetAvailableChains**](PaymentApi.md#paymentGetAvailableChains) | **GET** /payment/chains |  |
-| [**paymentGetPaymentIntent**](PaymentApi.md#paymentGetPaymentIntent) | **GET** /payment/{id} |  |
-| [**paymentUpdatePaymentIntent**](PaymentApi.md#paymentUpdatePaymentIntent) | **PUT** /payment/{id} |  |
-| [**tatumWebhook**](PaymentApi.md#tatumWebhook) | **POST** /payment/webhook/tatum/{id} |  |
-| [**updatePaymentIntentConfig**](PaymentApi.md#updatePaymentIntentConfig) | **PUT** /payment/config/{id} |  |
+All URIs are relative to _https://vault-api.usemoon.ai_
 
+| Method                                                                       | HTTP request                         | Description |
+| ---------------------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**createPaymentIntentConfig**](PaymentApi.md#createPaymentIntentConfig)     | **POST** /payment/config             |             |
+| [**deletePaymentIntentConfig**](PaymentApi.md#deletePaymentIntentConfig)     | **DELETE** /payment/config/{id}      |             |
+| [**getAllPaymentIntentConfigs**](PaymentApi.md#getAllPaymentIntentConfigs)   | **GET** /payment/config              |             |
+| [**getOnePaymentIntentConfigs**](PaymentApi.md#getOnePaymentIntentConfigs)   | **GET** /payment/config/{id}         |             |
+| [**moralisWebhook**](PaymentApi.md#moralisWebhook)                           | **POST** /payment/webhook/{id}       |             |
+| [**paymentCreatePaymentIntent**](PaymentApi.md#paymentCreatePaymentIntent)   | **POST** /payment                    |             |
+| [**paymentDeletePaymentIntent**](PaymentApi.md#paymentDeletePaymentIntent)   | **DELETE** /payment/{id}             |             |
+| [**paymentGetAllPaymentIntents**](PaymentApi.md#paymentGetAllPaymentIntents) | **GET** /payment                     |             |
+| [**paymentGetAvailableChains**](PaymentApi.md#paymentGetAvailableChains)     | **GET** /payment/chains              |             |
+| [**paymentGetPaymentIntent**](PaymentApi.md#paymentGetPaymentIntent)         | **GET** /payment/{id}                |             |
+| [**paymentUpdatePaymentIntent**](PaymentApi.md#paymentUpdatePaymentIntent)   | **PUT** /payment/{id}                |             |
+| [**tatumWebhook**](PaymentApi.md#tatumWebhook)                               | **POST** /payment/webhook/tatum/{id} |             |
+| [**updatePaymentIntentConfig**](PaymentApi.md#updatePaymentIntentConfig)     | **PUT** /payment/config/{id}         |             |
 
-<a id="createPaymentIntentConfig"></a>
-# **createPaymentIntentConfig**
+## **createPaymentIntentConfig**
+
 > Object createPaymentIntentConfig(authorization, body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -69,38 +69,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **body** | **Object**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **body**          | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="deletePaymentIntentConfig"></a>
-# **deletePaymentIntentConfig**
+## **deletePaymentIntentConfig**
+
 > PaymentIntentResponse deletePaymentIntentConfig(authorization, id)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -144,38 +144,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getAllPaymentIntentConfigs"></a>
-# **getAllPaymentIntentConfigs**
-> List&lt;PaymentIntentResponse&gt; getAllPaymentIntentConfigs(authorization)
+## **getAllPaymentIntentConfigs**
 
+> List\<PaymentIntentResponse> getAllPaymentIntentConfigs(authorization)
 
+#### Example
 
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -218,37 +218,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
-[**List&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**List\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getOnePaymentIntentConfigs"></a>
-# **getOnePaymentIntentConfigs**
+## **getOnePaymentIntentConfigs**
+
 > PaymentIntentResponse getOnePaymentIntentConfigs(authorization, id)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -292,38 +292,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="moralisWebhook"></a>
-# **moralisWebhook**
+## **moralisWebhook**
+
 > Object moralisWebhook(id, iwebhook)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -367,38 +367,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**|  | |
-| **iwebhook** | [**IWebhook**](IWebhook.md)|  | |
+| Name         | Type                        | Description | Notes |
+| ------------ | --------------------------- | ----------- | ----- |
+| **id**       | **String**                  |             |       |
+| **iwebhook** | [**IWebhook**](IWebhook.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentCreatePaymentIntent"></a>
-# **paymentCreatePaymentIntent**
+## **paymentCreatePaymentIntent**
+
 > PaymentIntentResponse paymentCreatePaymentIntent(authorization, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -442,38 +442,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentDeletePaymentIntent"></a>
-# **paymentDeletePaymentIntent**
+## **paymentDeletePaymentIntent**
+
 > PaymentIntentResponse paymentDeletePaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -517,38 +517,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentGetAllPaymentIntents"></a>
-# **paymentGetAllPaymentIntents**
-> List&lt;PaymentIntentResponse&gt; paymentGetAllPaymentIntents(authorization)
+## **paymentGetAllPaymentIntents**
 
+> List\<PaymentIntentResponse> paymentGetAllPaymentIntents(authorization)
 
+#### Example
 
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -591,37 +591,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
-[**List&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**List\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentGetAvailableChains"></a>
-# **paymentGetAvailableChains**
-> List&lt;String&gt; paymentGetAvailableChains()
+## **paymentGetAvailableChains**
 
+> List\<String> paymentGetAvailableChains()
 
+#### Example
 
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -663,34 +663,35 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
+
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
-**List&lt;String&gt;**
+**List\<String>**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentGetPaymentIntent"></a>
-# **paymentGetPaymentIntent**
+## **paymentGetPaymentIntent**
+
 > PaymentIntentResponse paymentGetPaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -734,38 +735,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="paymentUpdatePaymentIntent"></a>
-# **paymentUpdatePaymentIntent**
+## **paymentUpdatePaymentIntent**
+
 > PaymentIntentResponse paymentUpdatePaymentIntent(authorization, id, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -810,39 +811,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
-| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **id**                       | **String**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="tatumWebhook"></a>
-# **tatumWebhook**
+## **tatumWebhook**
+
 > Object tatumWebhook(id, tatumTransactionEvent)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -886,38 +887,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**|  | |
-| **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md)|  | |
+| Name                      | Type                                                  | Description | Notes |
+| ------------------------- | ----------------------------------------------------- | ----------- | ----- |
+| **id**                    | **String**                                            |             |       |
+| **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="updatePaymentIntentConfig"></a>
-# **updatePaymentIntentConfig**
+## **updatePaymentIntentConfig**
+
 > PaymentIntentResponse updatePaymentIntentConfig(authorization, id, body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -962,29 +963,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **id** | **String**|  | |
-| **body** | **Object**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
+| **body**          | **Object** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

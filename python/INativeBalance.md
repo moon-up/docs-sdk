@@ -1,12 +1,11 @@
 # INativeBalance
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**address** | **str** |  | 
-**balance** | **str** |  | 
+| Name        | Type    | Description | Notes |
+| ----------- | ------- | ----------- | ----- |
+| **address** | **str** |             |       |
+| **balance** | **str** |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ i_native_balance_dict = i_native_balance_instance.to_dict()
 # create an instance of INativeBalance from a dict
 i_native_balance_form_dict = i_native_balance.from_dict(i_native_balance_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

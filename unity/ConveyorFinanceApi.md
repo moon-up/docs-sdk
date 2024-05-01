@@ -1,18 +1,19 @@
-# com.usemoon.MoonSDK.Api.ConveyorFinanceApi
+# ConveyorFinanceApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.ConveyorFinanceApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**Swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="swap"></a>
-# **Swap**
+| Method                                 | HTTP request                          | Description |
+| -------------------------------------- | ------------------------------------- | ----------- |
+| [**Swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap |             |
+
+## **Swap**
+
 > ConveyorFinanceControllerResponse Swap (string authorization, string name, TokenSwapParams tokenSwapParams)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -58,7 +59,8 @@ namespace Example
 }
 ```
 
-#### Using the SwapWithHttpInfo variant
+**Using the SwapWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -77,32 +79,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md) |  |  |
+| Name                | Type                                      | Description | Notes |
+| ------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**   | **string**                                |             |       |
+| **name**            | **string**                                |             |       |
+| **tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md) |             |       |
 
-### Return type
+#### Return type
 
 [**ConveyorFinanceControllerResponse**](ConveyorFinanceControllerResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](ConveyorFinanceApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

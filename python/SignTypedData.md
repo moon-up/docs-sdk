@@ -1,11 +1,10 @@
 # SignTypedData
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **str** |  | 
+| Name     | Type    | Description | Notes |
+| -------- | ------- | ----------- | ----- |
+| **data** | **str** |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ sign_typed_data_dict = sign_typed_data_instance.to_dict()
 # create an instance of SignTypedData from a dict
 sign_typed_data_form_dict = sign_typed_data.from_dict(sign_typed_data_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

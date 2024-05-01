@@ -1,21 +1,17 @@
 # \CosmosAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateCosmosAccount**](CosmosAPI.md#CreateCosmosAccount) | **Post** /cosmos | 
-[**GetCosmosAccount**](CosmosAPI.md#GetCosmosAccount) | **Get** /cosmos/{accountName} | 
-[**ListCosmosAccounts**](CosmosAPI.md#ListCosmosAccounts) | **Get** /cosmos | 
-[**SignCosmosTransaction**](CosmosAPI.md#SignCosmosTransaction) | **Post** /cosmos/{accountName}/sign-tx | 
-
-
+| Method                                                          | HTTP request                           | Description |
+| --------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**CreateCosmosAccount**](CosmosAPI.md#CreateCosmosAccount)     | **Post** /cosmos                       |             |
+| [**GetCosmosAccount**](CosmosAPI.md#GetCosmosAccount)           | **Get** /cosmos/{accountName}          |             |
+| [**ListCosmosAccounts**](CosmosAPI.md#ListCosmosAccounts)       | **Get** /cosmos                        |             |
+| [**SignCosmosTransaction**](CosmosAPI.md#SignCosmosTransaction) | **Post** /cosmos/{accountName}/sign-tx |             |
 
 ## CreateCosmosAccount
 
 > AccountAPIResponse CreateCosmosAccount(ctx).Authorization(authorization).CosmosInput(cosmosInput).Execute()
-
-
 
 ### Example
 
@@ -47,17 +43,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateCosmosAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **cosmosInput** | [**CosmosInput**](CosmosInput.md) |  | 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **string**                        |             |       |
+| **cosmosInput**   | [**CosmosInput**](CosmosInput.md) |             |       |
 
 ### Return type
 
@@ -65,23 +58,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## GetCosmosAccount
 
 > AccountAPIResponse GetCosmosAccount(ctx, accountName).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -113,21 +101,18 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetCosmosAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -135,23 +120,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## ListCosmosAccounts
 
 > AccountAPIResponse ListCosmosAccounts(ctx).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -182,16 +162,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListCosmosAccountsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -199,23 +176,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SignCosmosTransaction
 
 > CosmosAPIResponse SignCosmosTransaction(ctx, accountName).Authorization(authorization).CosmosTransactionInput(cosmosTransactionInput).Execute()
-
-
 
 ### Example
 
@@ -248,22 +220,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSignCosmosTransactionRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **cosmosTransactionInput** | [**CosmosTransactionInput**](CosmosTransactionInput.md) |  | 
+**cosmosTransactionInput** | [**CosmosTransactionInput**](CosmosTransactionInput.md) | |
 
 ### Return type
 
@@ -271,14 +241,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

@@ -1,13 +1,12 @@
 # BroadCastRawTransactionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**success** | **bool** |  | 
-**message** | **str** |  | 
-**data** | **str** |  | 
+| Name        | Type     | Description | Notes |
+| ----------- | -------- | ----------- | ----- |
+| **success** | **bool** |             |       |
+| **message** | **str**  |             |       |
+| **data**    | **str**  |             |       |
 
 ## Example
 
@@ -26,6 +25,5 @@ broad_cast_raw_transaction_response_dict = broad_cast_raw_transaction_response_i
 # create an instance of BroadCastRawTransactionResponse from a dict
 broad_cast_raw_transaction_response_form_dict = broad_cast_raw_transaction_response.from_dict(broad_cast_raw_transaction_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

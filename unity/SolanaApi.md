@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.SolanaApi
+# SolanaApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.SolanaApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateSolanaAccount**](SolanaApi.md#createsolanaaccount) | **POST** /solana |  |
-| [**GetSolanaAccount**](SolanaApi.md#getsolanaaccount) | **GET** /solana/{accountName} |  |
-| [**ListSolanaAccounts**](SolanaApi.md#listsolanaaccounts) | **GET** /solana |  |
-| [**SignSolanaTransaction**](SolanaApi.md#signsolanatransaction) | **POST** /solana/{accountName}/sign-tx |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="createsolanaaccount"></a>
-# **CreateSolanaAccount**
+| Method                                                          | HTTP request                           | Description |
+| --------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**CreateSolanaAccount**](SolanaApi.md#createsolanaaccount)     | **POST** /solana                       |             |
+| [**GetSolanaAccount**](SolanaApi.md#getsolanaaccount)           | **GET** /solana/{accountName}          |             |
+| [**ListSolanaAccounts**](SolanaApi.md#listsolanaaccounts)       | **GET** /solana                        |             |
+| [**SignSolanaTransaction**](SolanaApi.md#signsolanatransaction) | **POST** /solana/{accountName}/sign-tx |             |
+
+## **CreateSolanaAccount**
+
 > AccountAPIResponse CreateSolanaAccount (string authorization, SolanaInput solanaInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -60,7 +61,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateSolanaAccountWithHttpInfo variant
+**Using the CreateSolanaAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -79,41 +81,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **solanaInput** | [**SolanaInput**](SolanaInput.md) |  |  |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **string**                        |             |       |
+| **solanaInput**   | [**SolanaInput**](SolanaInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getsolanaaccount"></a>
-# **GetSolanaAccount**
+## **GetSolanaAccount**
+
 > AccountAPIResponse GetSolanaAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -158,7 +159,8 @@ namespace Example
 }
 ```
 
-#### Using the GetSolanaAccountWithHttpInfo variant
+**Using the GetSolanaAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -177,41 +179,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listsolanaaccounts"></a>
-# **ListSolanaAccounts**
+## **ListSolanaAccounts**
+
 > AccountAPIResponse ListSolanaAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -255,7 +256,8 @@ namespace Example
 }
 ```
 
-#### Using the ListSolanaAccountsWithHttpInfo variant
+**Using the ListSolanaAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -274,40 +276,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signsolanatransaction"></a>
-# **SignSolanaTransaction**
+## **SignSolanaTransaction**
+
 > SolanaAPIResponse SignSolanaTransaction (string authorization, string accountName, SolanaTransactionInput solanaTransactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -353,7 +354,8 @@ namespace Example
 }
 ```
 
-#### Using the SignSolanaTransactionWithHttpInfo variant
+**Using the SignSolanaTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -372,32 +374,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **solanaTransactionInput** | [**SolanaTransactionInput**](SolanaTransactionInput.md) |  |  |
+| Name                       | Type                                                    | Description | Notes |
+| -------------------------- | ------------------------------------------------------- | ----------- | ----- |
+| **authorization**          | **string**                                              |             |       |
+| **accountName**            | **string**                                              |             |       |
+| **solanaTransactionInput** | [**SolanaTransactionInput**](SolanaTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**SolanaAPIResponse**](SolanaAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

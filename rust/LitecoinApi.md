@@ -1,128 +1,114 @@
 # \LitecoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_litecoin_account**](LitecoinApi.md#create_litecoin_account) | **POST** /litecoin | 
-[**get_litecoin_account**](LitecoinApi.md#get_litecoin_account) | **GET** /litecoin/{accountName} | 
-[**list_litecoin_accounts**](LitecoinApi.md#list_litecoin_accounts) | **GET** /litecoin | 
-[**sign_litecoin_transaction**](LitecoinApi.md#sign_litecoin_transaction) | **POST** /litecoin/{accountName}/sign-tx | 
+| Method                                                                        | HTTP request                             | Description |
+| ----------------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**create\_litecoin\_account**](LitecoinApi.md#create\_litecoin\_account)     | **POST** /litecoin                       |             |
+| [**get\_litecoin\_account**](LitecoinApi.md#get\_litecoin\_account)           | **GET** /litecoin/{accountName}          |             |
+| [**list\_litecoin\_accounts**](LitecoinApi.md#list\_litecoin\_accounts)       | **GET** /litecoin                        |             |
+| [**sign\_litecoin\_transaction**](LitecoinApi.md#sign\_litecoin\_transaction) | **POST** /litecoin/{accountName}/sign-tx |             |
 
+## create\_litecoin\_account
 
-
-## create_litecoin_account
-
-> crate::models::AccountApiResponse create_litecoin_account(authorization, litecoin_input)
-
+> crate::models::AccountApiResponse create\_litecoin\_account(authorization, litecoin\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**litecoin_input** | [**LitecoinInput**](LitecoinInput.md) |  | [required] |
+| Name                | Type                                  | Description | Required    | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**   | **String**                            |             | \[required] |       |
+| **litecoin\_input** | [**LitecoinInput**](LitecoinInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_litecoin\_account
 
-## get_litecoin_account
-
-> crate::models::AccountApiResponse get_litecoin_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_litecoin\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_litecoin\_accounts
 
-## list_litecoin_accounts
-
-> crate::models::AccountApiResponse list_litecoin_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_litecoin\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_litecoin\_transaction
 
-## sign_litecoin_transaction
-
-> crate::models::LitecoinApiResponse sign_litecoin_transaction(authorization, account_name, litecoin_transaction_input)
-
+> crate::models::LitecoinApiResponse sign\_litecoin\_transaction(authorization, account\_name, litecoin\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**litecoin_transaction_input** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |  | [required] |
+| Name                             | Type                                                        | Description | Required    | Notes |
+| -------------------------------- | ----------------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**                | **String**                                                  |             | \[required] |       |
+| **account\_name**                | **String**                                                  |             | \[required] |       |
+| **litecoin\_transaction\_input** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::LitecoinApiResponse**](LitecoinAPIResponse.md)
+[**crate::models::LitecoinApiResponse**](docs/LitecoinAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

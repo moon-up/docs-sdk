@@ -1,18 +1,18 @@
-# moonsdk.ENSApi
+# ENSApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.ENSApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**resolve**](ENSApi.md#resolve) | **POST** /ens/resolve | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                           | HTTP request          | Description |
+| -------------------------------- | --------------------- | ----------- |
+| [**resolve**](ENSApi.md#resolve) | **POST** /ens/resolve |             |
 
-# **resolve**
-> EnsResolveAPIResponse resolve(authorization, ens_resolve_input)
+## **resolve**
 
+> EnsResolveAPIResponse resolve(authorization, ens\_resolve\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -62,34 +62,30 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ENSApi->resolve: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                    | Type                                      | Description | Notes |
+| ----------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**       | **str**                                   |             |       |
+| **ens\_resolve\_input** | [**EnsResolveInput**](EnsResolveInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **ens_resolve_input** | [**EnsResolveInput**](EnsResolveInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**EnsResolveAPIResponse**](EnsResolveAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](ENSApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

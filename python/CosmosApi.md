@@ -1,21 +1,21 @@
-# moonsdk.CosmosApi
+# CosmosApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.CosmosApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_cosmos_account**](CosmosApi.md#create_cosmos_account) | **POST** /cosmos | 
-[**get_cosmos_account**](CosmosApi.md#get_cosmos_account) | **GET** /cosmos/{accountName} | 
-[**list_cosmos_accounts**](CosmosApi.md#list_cosmos_accounts) | **GET** /cosmos | 
-[**sign_cosmos_transaction**](CosmosApi.md#sign_cosmos_transaction) | **POST** /cosmos/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**create\_cosmos\_account**](CosmosApi.md#create\_cosmos\_account)     | **POST** /cosmos                       |             |
+| [**get\_cosmos\_account**](CosmosApi.md#get\_cosmos\_account)           | **GET** /cosmos/{accountName}          |             |
+| [**list\_cosmos\_accounts**](CosmosApi.md#list\_cosmos\_accounts)       | **GET** /cosmos                        |             |
+| [**sign\_cosmos\_transaction**](CosmosApi.md#sign\_cosmos\_transaction) | **POST** /cosmos/{accountName}/sign-tx |             |
 
-# **create_cosmos_account**
-> AccountAPIResponse create_cosmos_account(authorization, cosmos_input)
+## **create\_cosmos\_account**
 
+> AccountAPIResponse create\_cosmos\_account(authorization, cosmos\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling CosmosApi->create_cosmos_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **str**                           |             |       |
+| **cosmos\_input** | [**CosmosInput**](CosmosInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **cosmos_input** | [**CosmosInput**](CosmosInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_cosmos_account**
-> AccountAPIResponse get_cosmos_account(authorization, account_name)
+## **get\_cosmos\_account**
 
+> AccountAPIResponse get\_cosmos\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling CosmosApi->get_cosmos_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_cosmos_accounts**
-> AccountAPIResponse list_cosmos_accounts(authorization)
+## **list\_cosmos\_accounts**
 
+> AccountAPIResponse list\_cosmos\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling CosmosApi->list_cosmos_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_cosmos_transaction**
-> CosmosAPIResponse sign_cosmos_transaction(authorization, account_name, cosmos_transaction_input)
+## **sign\_cosmos\_transaction**
 
+> CosmosAPIResponse sign\_cosmos\_transaction(authorization, account\_name, cosmos\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling CosmosApi->sign_cosmos_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                           | Type                                                    | Description | Notes |
+| ------------------------------ | ------------------------------------------------------- | ----------- | ----- |
+| **authorization**              | **str**                                                 |             |       |
+| **account\_name**              | **str**                                                 |             |       |
+| **cosmos\_transaction\_input** | [**CosmosTransactionInput**](CosmosTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **cosmos_transaction_input** | [**CosmosTransactionInput**](CosmosTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**CosmosAPIResponse**](CosmosAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

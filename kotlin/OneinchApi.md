@@ -1,24 +1,24 @@
 # OneinchApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## OneinchApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approveCallData**](OneinchApi.md#approveCallData) | **POST** /oneinch/approve-call-data | 
-[**approveSpender**](OneinchApi.md#approveSpender) | **POST** /oneinch/approve-spender | 
-[**protocols**](OneinchApi.md#protocols) | **POST** /oneinch/protocols | 
-[**quote**](OneinchApi.md#quote) | **POST** /oneinch/quote | 
-[**swap**](OneinchApi.md#swap) | **POST** /oneinch/{accountName}/swap | 
-[**tokens**](OneinchApi.md#tokens) | **POST** /oneinch/tokens | 
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                               | HTTP request                         | Description |
+| ---------------------------------------------------- | ------------------------------------ | ----------- |
+| [**approveCallData**](OneinchApi.md#approveCallData) | **POST** /oneinch/approve-call-data  |             |
+| [**approveSpender**](OneinchApi.md#approveSpender)   | **POST** /oneinch/approve-spender    |             |
+| [**protocols**](OneinchApi.md#protocols)             | **POST** /oneinch/protocols          |             |
+| [**quote**](OneinchApi.md#quote)                     | **POST** /oneinch/quote              |             |
+| [**swap**](OneinchApi.md#swap)                       | **POST** /oneinch/{accountName}/swap |             |
+| [**tokens**](OneinchApi.md#tokens)                   | **POST** /oneinch/tokens             |             |
 
-<a id="approveCallData"></a>
-# **approveCallData**
+## **approveCallData**
+
 > kotlin.Any approveCallData(body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -38,38 +38,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.Any**|  |
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **kotlin.Any** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **approveSpender**
 
-<a id="approveSpender"></a>
-# **approveSpender**
 > kotlin.Any approveSpender(body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -89,38 +82,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.Any**|  |
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **kotlin.Any** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **protocols**
 
-<a id="protocols"></a>
-# **protocols**
 > kotlin.Any protocols(body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -140,38 +126,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.Any**|  |
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **kotlin.Any** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **quote**
 
-<a id="quote"></a>
-# **quote**
 > kotlin.Any quote(body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -191,38 +170,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.Any**|  |
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **kotlin.Any** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **swap**
 
-<a id="swap"></a>
-# **swap**
 > kotlin.Any swap(accountName, authorization, getSwapDto)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -244,40 +216,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accountName** | **kotlin.String**|  |
- **authorization** | **kotlin.String**|  |
- **getSwapDto** | [**GetSwapDto**](GetSwapDto.md)|  |
+| Name              | Type                            | Description | Notes |
+| ----------------- | ------------------------------- | ----------- | ----- |
+| **accountName**   | **kotlin.String**               |             |       |
+| **authorization** | **kotlin.String**               |             |       |
+| **getSwapDto**    | [**GetSwapDto**](GetSwapDto.md) |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **tokens**
 
-<a id="tokens"></a>
-# **tokens**
 > kotlin.Any tokens(body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -297,28 +262,21 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.Any**|  |
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **kotlin.Any** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+* **Content-Type**: application/json
+* **Accept**: application/json

@@ -1,17 +1,16 @@
 # TransactionAPIResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**success** | **bool** |  | 
-**message** | **str** |  | 
-**body** | [**InputBody**](InputBody.md) |  | [optional] 
-**address** | **str** |  | [optional] 
-**transaction_hash** | **object** |  | [optional] 
-**signed_tx** | **object** |  | [optional] 
-**data** | [**Transaction**](Transaction.md) |  | [optional] 
+| Name                  | Type                              | Description | Notes       |
+| --------------------- | --------------------------------- | ----------- | ----------- |
+| **success**           | **bool**                          |             |             |
+| **message**           | **str**                           |             |             |
+| **body**              | [**InputBody**](InputBody.md)     |             | \[optional] |
+| **address**           | **str**                           |             | \[optional] |
+| **transaction\_hash** | **object**                        |             | \[optional] |
+| **signed\_tx**        | **object**                        |             | \[optional] |
+| **data**              | [**Transaction**](Transaction.md) |             | \[optional] |
 
 ## Example
 
@@ -30,6 +29,5 @@ transaction_api_response_dict = transaction_api_response_instance.to_dict()
 # create an instance of TransactionAPIResponse from a dict
 transaction_api_response_form_dict = transaction_api_response.from_dict(transaction_api_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

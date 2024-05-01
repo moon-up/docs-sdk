@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.LitecoinApi
+# LitecoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.LitecoinApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateLitecoinAccount**](LitecoinApi.md#createlitecoinaccount) | **POST** /litecoin |  |
-| [**GetLitecoinAccount**](LitecoinApi.md#getlitecoinaccount) | **GET** /litecoin/{accountName} |  |
-| [**ListLitecoinAccounts**](LitecoinApi.md#listlitecoinaccounts) | **GET** /litecoin |  |
-| [**SignLitecoinTransaction**](LitecoinApi.md#signlitecointransaction) | **POST** /litecoin/{accountName}/sign-tx |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="createlitecoinaccount"></a>
-# **CreateLitecoinAccount**
+| Method                                                                | HTTP request                             | Description |
+| --------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**CreateLitecoinAccount**](LitecoinApi.md#createlitecoinaccount)     | **POST** /litecoin                       |             |
+| [**GetLitecoinAccount**](LitecoinApi.md#getlitecoinaccount)           | **GET** /litecoin/{accountName}          |             |
+| [**ListLitecoinAccounts**](LitecoinApi.md#listlitecoinaccounts)       | **GET** /litecoin                        |             |
+| [**SignLitecoinTransaction**](LitecoinApi.md#signlitecointransaction) | **POST** /litecoin/{accountName}/sign-tx |             |
+
+## **CreateLitecoinAccount**
+
 > AccountAPIResponse CreateLitecoinAccount (string authorization, LitecoinInput litecoinInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -60,7 +61,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateLitecoinAccountWithHttpInfo variant
+**Using the CreateLitecoinAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -79,41 +81,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **litecoinInput** | [**LitecoinInput**](LitecoinInput.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **litecoinInput** | [**LitecoinInput**](LitecoinInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getlitecoinaccount"></a>
-# **GetLitecoinAccount**
+## **GetLitecoinAccount**
+
 > AccountAPIResponse GetLitecoinAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -158,7 +159,8 @@ namespace Example
 }
 ```
 
-#### Using the GetLitecoinAccountWithHttpInfo variant
+**Using the GetLitecoinAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -177,41 +179,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listlitecoinaccounts"></a>
-# **ListLitecoinAccounts**
+## **ListLitecoinAccounts**
+
 > AccountAPIResponse ListLitecoinAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -255,7 +256,8 @@ namespace Example
 }
 ```
 
-#### Using the ListLitecoinAccountsWithHttpInfo variant
+**Using the ListLitecoinAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -274,40 +276,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signlitecointransaction"></a>
-# **SignLitecoinTransaction**
+## **SignLitecoinTransaction**
+
 > LitecoinAPIResponse SignLitecoinTransaction (string authorization, string accountName, LitecoinTransactionInput litecoinTransactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -353,7 +354,8 @@ namespace Example
 }
 ```
 
-#### Using the SignLitecoinTransactionWithHttpInfo variant
+**Using the SignLitecoinTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -372,32 +374,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **litecoinTransactionInput** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |  |  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **string**                                                  |             |       |
+| **accountName**              | **string**                                                  |             |       |
+| **litecoinTransactionInput** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**LitecoinAPIResponse**](LitecoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

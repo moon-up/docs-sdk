@@ -1,22 +1,22 @@
 # YearnApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## YearnApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**addLiquidity**](YearnApi.md#addLiquidity) | **POST** /yearn/{name}/add-liquidity |  |
-| [**addLiquidityWeth**](YearnApi.md#addLiquidityWeth) | **POST** /yearn/{name}/add-liquidity-weth |  |
-| [**removeLiquidity**](YearnApi.md#removeLiquidity) | **POST** /yearn/{name}/remove-liquidity |  |
-| [**removeLiquidityWeth**](YearnApi.md#removeLiquidityWeth) | **POST** /yearn/{name}/remove-liquidity-weth |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                     | HTTP request                                 | Description |
+| ---------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**addLiquidity**](YearnApi.md#addLiquidity)               | **POST** /yearn/{name}/add-liquidity         |             |
+| [**addLiquidityWeth**](YearnApi.md#addLiquidityWeth)       | **POST** /yearn/{name}/add-liquidity-weth    |             |
+| [**removeLiquidity**](YearnApi.md#removeLiquidity)         | **POST** /yearn/{name}/remove-liquidity      |             |
+| [**removeLiquidityWeth**](YearnApi.md#removeLiquidityWeth) | **POST** /yearn/{name}/remove-liquidity-weth |             |
 
-<a id="addLiquidity"></a>
-# **addLiquidity**
+## **addLiquidity**
+
 > TransactionAPIResponse addLiquidity(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -61,39 +61,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="addLiquidityWeth"></a>
-# **addLiquidityWeth**
+## **addLiquidityWeth**
+
 > TransactionAPIResponse addLiquidityWeth(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -138,39 +138,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="removeLiquidity"></a>
-# **removeLiquidity**
+## **removeLiquidity**
+
 > TransactionAPIResponse removeLiquidity(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -215,39 +215,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="removeLiquidityWeth"></a>
-# **removeLiquidityWeth**
+## **removeLiquidityWeth**
+
 > TransactionAPIResponse removeLiquidityWeth(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -292,29 +292,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

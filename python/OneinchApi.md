@@ -1,23 +1,23 @@
-# moonsdk.OneinchApi
+# OneinchApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.OneinchApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve_call_data**](OneinchApi.md#approve_call_data) | **POST** /oneinch/approve-call-data | 
-[**approve_spender**](OneinchApi.md#approve_spender) | **POST** /oneinch/approve-spender | 
-[**protocols**](OneinchApi.md#protocols) | **POST** /oneinch/protocols | 
-[**quote**](OneinchApi.md#quote) | **POST** /oneinch/quote | 
-[**swap**](OneinchApi.md#swap) | **POST** /oneinch/{accountName}/swap | 
-[**tokens**](OneinchApi.md#tokens) | **POST** /oneinch/tokens | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                       | HTTP request                         | Description |
+| ------------------------------------------------------------ | ------------------------------------ | ----------- |
+| [**approve\_call\_data**](OneinchApi.md#approve\_call\_data) | **POST** /oneinch/approve-call-data  |             |
+| [**approve\_spender**](OneinchApi.md#approve\_spender)       | **POST** /oneinch/approve-spender    |             |
+| [**protocols**](OneinchApi.md#protocols)                     | **POST** /oneinch/protocols          |             |
+| [**quote**](OneinchApi.md#quote)                             | **POST** /oneinch/quote              |             |
+| [**swap**](OneinchApi.md#swap)                               | **POST** /oneinch/{accountName}/swap |             |
+| [**tokens**](OneinchApi.md#tokens)                           | **POST** /oneinch/tokens             |             |
 
-# **approve_call_data**
-> object approve_call_data(body)
+## **approve\_call\_data**
 
+> object approve\_call\_data(body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -64,42 +64,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->approve_call_data: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **approve_spender**
-> object approve_spender(body)
+## **approve\_spender**
 
+> object approve\_spender(body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -146,42 +142,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->approve_spender: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **protocols**
+## **protocols**
+
 > object protocols(body)
 
-
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -228,42 +220,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->protocols: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **quote**
+## **quote**
+
 > object quote(body)
 
-
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -310,42 +298,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->quote: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **swap**
-> object swap(account_name, authorization, get_swap_dto)
+## **swap**
 
+> object swap(account\_name, authorization, get\_swap\_dto)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -395,44 +379,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->swap: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                            | Description | Notes |
+| ------------------ | ------------------------------- | ----------- | ----- |
+| **account\_name**  | **str**                         |             |       |
+| **authorization**  | **str**                         |             |       |
+| **get\_swap\_dto** | [**GetSwapDto**](GetSwapDto.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **get_swap_dto** | [**GetSwapDto**](GetSwapDto.md)|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **tokens**
+## **tokens**
+
 > object tokens(body)
 
-
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -479,33 +459,29 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OneinchApi->tokens: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

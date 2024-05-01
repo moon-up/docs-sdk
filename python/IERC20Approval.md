@@ -1,21 +1,20 @@
 # IERC20Approval
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transaction_hash** | **str** |  | 
-**contract** | **str** |  | 
-**log_index** | **str** |  | 
-**owner** | **str** |  | 
-**spender** | **str** |  | 
-**value** | **str** |  | 
-**token_decimals** | **str** |  | 
-**token_name** | **str** |  | 
-**token_symbol** | **str** |  | 
-**value_with_decimals** | **str** |  | [optional] 
-**triggers** | [**List[TriggerOutput]**](TriggerOutput.md) |  | [optional] 
+| Name                      | Type                                          | Description | Notes       |
+| ------------------------- | --------------------------------------------- | ----------- | ----------- |
+| **transaction\_hash**     | **str**                                       |             |             |
+| **contract**              | **str**                                       |             |             |
+| **log\_index**            | **str**                                       |             |             |
+| **owner**                 | **str**                                       |             |             |
+| **spender**               | **str**                                       |             |             |
+| **value**                 | **str**                                       |             |             |
+| **token\_decimals**       | **str**                                       |             |             |
+| **token\_name**           | **str**                                       |             |             |
+| **token\_symbol**         | **str**                                       |             |             |
+| **value\_with\_decimals** | **str**                                       |             | \[optional] |
+| **triggers**              | [**List\[TriggerOutput\]**](TriggerOutput.md) |             | \[optional] |
 
 ## Example
 
@@ -34,6 +33,5 @@ ierc20_approval_dict = ierc20_approval_instance.to_dict()
 # create an instance of IERC20Approval from a dict
 ierc20_approval_form_dict = ierc20_approval.from_dict(ierc20_approval_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

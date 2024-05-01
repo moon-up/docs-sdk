@@ -1,15 +1,14 @@
 # InternalTransaction
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**var_from** | **str** |  | 
-**to** | **str** |  | 
-**value** | **str** |  | 
-**transaction_hash** | **str** |  | 
-**gas** | **str** |  | 
+| Name                  | Type    | Description | Notes |
+| --------------------- | ------- | ----------- | ----- |
+| **var\_from**         | **str** |             |       |
+| **to**                | **str** |             |       |
+| **value**             | **str** |             |       |
+| **transaction\_hash** | **str** |             |       |
+| **gas**               | **str** |             |       |
 
 ## Example
 
@@ -28,6 +27,5 @@ internal_transaction_dict = internal_transaction_instance.to_dict()
 # create an instance of InternalTransaction from a dict
 internal_transaction_form_dict = internal_transaction.from_dict(internal_transaction_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

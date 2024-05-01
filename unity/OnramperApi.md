@@ -1,26 +1,27 @@
-# com.usemoon.MoonSDK.Api.OnramperApi
+# OnramperApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.OnramperApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**OnRamperCheckout**](OnramperApi.md#onrampercheckout) | **POST** /onramper/fund/${accountName} |  |
-| [**OnRamperGetQuotesBuy**](OnramperApi.md#onrampergetquotesbuy) | **GET** /onramper/quotes/buy |  |
-| [**OnRamperGetQuotesSell**](OnramperApi.md#onrampergetquotessell) | **GET** /onramper/quotes/sell |  |
-| [**OnRamperGetSupportedAssets**](OnramperApi.md#onrampergetsupportedassets) | **GET** /onramper/assets |  |
-| [**OnRamperGetSupportedCurrencies**](OnramperApi.md#onrampergetsupportedcurrencies) | **GET** /onramper/currencies |  |
-| [**OnRamperGetSupportedDefaultsAll**](OnramperApi.md#onrampergetsupporteddefaultsall) | **GET** /onramper/defaults |  |
-| [**OnRamperGetSupportedOnRampsAll**](OnramperApi.md#onrampergetsupportedonrampsall) | **GET** /onramper/onramps |  |
-| [**OnRamperGetSupportedPaymentTypes**](OnramperApi.md#onrampergetsupportedpaymenttypes) | **GET** /onramper/payment-types |  |
-| [**OnRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onrampergetsupportedpaymenttypesfiat) | **GET** /onramper/payment-types/fiat |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="onrampercheckout"></a>
-# **OnRamperCheckout**
+| Method                                                                                          | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**OnRamperCheckout**](OnramperApi.md#onrampercheckout)                                         | **POST** /onramper/fund/${accountName} |             |
+| [**OnRamperGetQuotesBuy**](OnramperApi.md#onrampergetquotesbuy)                                 | **GET** /onramper/quotes/buy           |             |
+| [**OnRamperGetQuotesSell**](OnramperApi.md#onrampergetquotessell)                               | **GET** /onramper/quotes/sell          |             |
+| [**OnRamperGetSupportedAssets**](OnramperApi.md#onrampergetsupportedassets)                     | **GET** /onramper/assets               |             |
+| [**OnRamperGetSupportedCurrencies**](OnramperApi.md#onrampergetsupportedcurrencies)             | **GET** /onramper/currencies           |             |
+| [**OnRamperGetSupportedDefaultsAll**](OnramperApi.md#onrampergetsupporteddefaultsall)           | **GET** /onramper/defaults             |             |
+| [**OnRamperGetSupportedOnRampsAll**](OnramperApi.md#onrampergetsupportedonrampsall)             | **GET** /onramper/onramps              |             |
+| [**OnRamperGetSupportedPaymentTypes**](OnramperApi.md#onrampergetsupportedpaymenttypes)         | **GET** /onramper/payment-types        |             |
+| [**OnRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onrampergetsupportedpaymenttypesfiat) | **GET** /onramper/payment-types/fiat   |             |
+
+## **OnRamperCheckout**
+
 > Object OnRamperCheckout (string authorization, string accountName, TransactionInput transactionInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -66,7 +67,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperCheckoutWithHttpInfo variant
+**Using the OnRamperCheckoutWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -85,42 +87,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **transactionInput** | [**TransactionInput**](TransactionInput.md) |  |  |
+| Name                 | Type                                        | Description | Notes |
+| -------------------- | ------------------------------------------- | ----------- | ----- |
+| **authorization**    | **string**                                  |             |       |
+| **accountName**      | **string**                                  |             |       |
+| **transactionInput** | [**TransactionInput**](TransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetquotesbuy"></a>
-# **OnRamperGetQuotesBuy**
-> List&lt;Quote&gt; OnRamperGetQuotesBuy (string authorization, string fiat, string crypto, double amount, string? paymentMethod = null, string? uuid = null, string? clientName = null, string? country = null)
+## **OnRamperGetQuotesBuy**
 
+> List\<Quote> OnRamperGetQuotesBuy (string authorization, string fiat, string crypto, double amount, string? paymentMethod = null, string? uuid = null, string? clientName = null, string? country = null)
 
+#### Example
 
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -171,7 +172,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetQuotesBuyWithHttpInfo variant
+**Using the OnRamperGetQuotesBuyWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -190,47 +192,46 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **fiat** | **string** |  |  |
-| **crypto** | **string** |  |  |
-| **amount** | **double** |  |  |
-| **paymentMethod** | **string?** |  | [optional] [default to &quot;creditcard&quot;] |
-| **uuid** | **string?** |  | [optional] [default to &quot;&quot;] |
-| **clientName** | **string?** |  | [optional] [default to &quot;&quot;] |
-| **country** | **string?** |  | [optional] [default to &quot;&quot;] |
+| Name              | Type        | Description | Notes                                  |
+| ----------------- | ----------- | ----------- | -------------------------------------- |
+| **authorization** | **string**  |             |                                        |
+| **fiat**          | **string**  |             |                                        |
+| **crypto**        | **string**  |             |                                        |
+| **amount**        | **double**  |             |                                        |
+| **paymentMethod** | **string?** |             | \[optional] \[default to "creditcard"] |
+| **uuid**          | **string?** |             | \[optional] \[default to ""]           |
+| **clientName**    | **string?** |             | \[optional] \[default to ""]           |
+| **country**       | **string?** |             | \[optional] \[default to ""]           |
 
-### Return type
+#### Return type
 
-[**List&lt;Quote&gt;**](Quote.md)
+[**List\<Quote>**](Quote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetquotessell"></a>
-# **OnRamperGetQuotesSell**
-> List&lt;SellQuote&gt; OnRamperGetQuotesSell (string authorization, string fiat, string crypto, double amount, string? paymentMethod = null, string? uuid = null, string? clientName = null, string? country = null)
+## **OnRamperGetQuotesSell**
 
+> List\<SellQuote> OnRamperGetQuotesSell (string authorization, string fiat, string crypto, double amount, string? paymentMethod = null, string? uuid = null, string? clientName = null, string? country = null)
 
+#### Example
 
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -281,7 +282,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetQuotesSellWithHttpInfo variant
+**Using the OnRamperGetQuotesSellWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -300,47 +302,46 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **fiat** | **string** |  |  |
-| **crypto** | **string** |  |  |
-| **amount** | **double** |  |  |
-| **paymentMethod** | **string?** |  | [optional] [default to &quot;creditcard&quot;] |
-| **uuid** | **string?** |  | [optional] [default to &quot;&quot;] |
-| **clientName** | **string?** |  | [optional] [default to &quot;&quot;] |
-| **country** | **string?** |  | [optional] [default to &quot;&quot;] |
+| Name              | Type        | Description | Notes                                  |
+| ----------------- | ----------- | ----------- | -------------------------------------- |
+| **authorization** | **string**  |             |                                        |
+| **fiat**          | **string**  |             |                                        |
+| **crypto**        | **string**  |             |                                        |
+| **amount**        | **double**  |             |                                        |
+| **paymentMethod** | **string?** |             | \[optional] \[default to "creditcard"] |
+| **uuid**          | **string?** |             | \[optional] \[default to ""]           |
+| **clientName**    | **string?** |             | \[optional] \[default to ""]           |
+| **country**       | **string?** |             | \[optional] \[default to ""]           |
 
-### Return type
+#### Return type
 
-[**List&lt;SellQuote&gt;**](SellQuote.md)
+[**List\<SellQuote>**](SellQuote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupportedassets"></a>
-# **OnRamperGetSupportedAssets**
+## **OnRamperGetSupportedAssets**
+
 > SupportedAssetResponse OnRamperGetSupportedAssets (string authorization, string source, string country)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -386,7 +387,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedAssetsWithHttpInfo variant
+**Using the OnRamperGetSupportedAssetsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -405,42 +407,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **source** | **string** |  |  |
-| **country** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **source**        | **string** |             |       |
+| **country**       | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedAssetResponse**](SupportedAssetResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupportedcurrencies"></a>
-# **OnRamperGetSupportedCurrencies**
+## **OnRamperGetSupportedCurrencies**
+
 > SupportedCurrenciesResponse OnRamperGetSupportedCurrencies (string authorization, string type)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -485,7 +486,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedCurrenciesWithHttpInfo variant
+**Using the OnRamperGetSupportedCurrenciesWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -504,41 +506,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **type** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **type**          | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedCurrenciesResponse**](SupportedCurrenciesResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupporteddefaultsall"></a>
-# **OnRamperGetSupportedDefaultsAll**
+## **OnRamperGetSupportedDefaultsAll**
+
 > SupportedDefaultResponse OnRamperGetSupportedDefaultsAll (string authorization, string country, string type)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -584,7 +585,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedDefaultsAllWithHttpInfo variant
+**Using the OnRamperGetSupportedDefaultsAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -603,42 +605,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **country** | **string** |  |  |
-| **type** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **country**       | **string** |             |       |
+| **type**          | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedDefaultResponse**](SupportedDefaultResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupportedonrampsall"></a>
-# **OnRamperGetSupportedOnRampsAll**
+## **OnRamperGetSupportedOnRampsAll**
+
 > GetSupportedOnRampsResponse OnRamperGetSupportedOnRampsAll (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -682,7 +683,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedOnRampsAllWithHttpInfo variant
+**Using the OnRamperGetSupportedOnRampsAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -701,40 +703,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**GetSupportedOnRampsResponse**](GetSupportedOnRampsResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupportedpaymenttypes"></a>
-# **OnRamperGetSupportedPaymentTypes**
+## **OnRamperGetSupportedPaymentTypes**
+
 > SupportedPaymentTypesCurrencyResponse OnRamperGetSupportedPaymentTypes (string authorization, string fiat, string country, string type)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -781,7 +782,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedPaymentTypesWithHttpInfo variant
+**Using the OnRamperGetSupportedPaymentTypesWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -800,43 +802,42 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **fiat** | **string** |  |  |
-| **country** | **string** |  |  |
-| **type** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **fiat**          | **string** |             |       |
+| **country**       | **string** |             |       |
+| **type**          | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="onrampergetsupportedpaymenttypesfiat"></a>
-# **OnRamperGetSupportedPaymentTypesFiat**
+## **OnRamperGetSupportedPaymentTypesFiat**
+
 > SupportedPaymentTypesCurrencyResponse OnRamperGetSupportedPaymentTypesFiat (string authorization, string fiat, string country)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -882,7 +883,8 @@ namespace Example
 }
 ```
 
-#### Using the OnRamperGetSupportedPaymentTypesFiatWithHttpInfo variant
+**Using the OnRamperGetSupportedPaymentTypesFiatWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -901,32 +903,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **fiat** | **string** |  |  |
-| **country** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **fiat**          | **string** |             |       |
+| **country**       | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

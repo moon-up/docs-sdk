@@ -1,26 +1,22 @@
 # \OnramperAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**OnRamperCheckout**](OnramperAPI.md#OnRamperCheckout) | **Post** /onramper/fund/${accountName} | 
-[**OnRamperGetQuotesBuy**](OnramperAPI.md#OnRamperGetQuotesBuy) | **Get** /onramper/quotes/buy | 
-[**OnRamperGetQuotesSell**](OnramperAPI.md#OnRamperGetQuotesSell) | **Get** /onramper/quotes/sell | 
-[**OnRamperGetSupportedAssets**](OnramperAPI.md#OnRamperGetSupportedAssets) | **Get** /onramper/assets | 
-[**OnRamperGetSupportedCurrencies**](OnramperAPI.md#OnRamperGetSupportedCurrencies) | **Get** /onramper/currencies | 
-[**OnRamperGetSupportedDefaultsAll**](OnramperAPI.md#OnRamperGetSupportedDefaultsAll) | **Get** /onramper/defaults | 
-[**OnRamperGetSupportedOnRampsAll**](OnramperAPI.md#OnRamperGetSupportedOnRampsAll) | **Get** /onramper/onramps | 
-[**OnRamperGetSupportedPaymentTypes**](OnramperAPI.md#OnRamperGetSupportedPaymentTypes) | **Get** /onramper/payment-types | 
-[**OnRamperGetSupportedPaymentTypesFiat**](OnramperAPI.md#OnRamperGetSupportedPaymentTypesFiat) | **Get** /onramper/payment-types/fiat | 
-
-
+| Method                                                                                          | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**OnRamperCheckout**](OnramperAPI.md#OnRamperCheckout)                                         | **Post** /onramper/fund/${accountName} |             |
+| [**OnRamperGetQuotesBuy**](OnramperAPI.md#OnRamperGetQuotesBuy)                                 | **Get** /onramper/quotes/buy           |             |
+| [**OnRamperGetQuotesSell**](OnramperAPI.md#OnRamperGetQuotesSell)                               | **Get** /onramper/quotes/sell          |             |
+| [**OnRamperGetSupportedAssets**](OnramperAPI.md#OnRamperGetSupportedAssets)                     | **Get** /onramper/assets               |             |
+| [**OnRamperGetSupportedCurrencies**](OnramperAPI.md#OnRamperGetSupportedCurrencies)             | **Get** /onramper/currencies           |             |
+| [**OnRamperGetSupportedDefaultsAll**](OnramperAPI.md#OnRamperGetSupportedDefaultsAll)           | **Get** /onramper/defaults             |             |
+| [**OnRamperGetSupportedOnRampsAll**](OnramperAPI.md#OnRamperGetSupportedOnRampsAll)             | **Get** /onramper/onramps              |             |
+| [**OnRamperGetSupportedPaymentTypes**](OnramperAPI.md#OnRamperGetSupportedPaymentTypes)         | **Get** /onramper/payment-types        |             |
+| [**OnRamperGetSupportedPaymentTypesFiat**](OnramperAPI.md#OnRamperGetSupportedPaymentTypesFiat) | **Get** /onramper/payment-types/fiat   |             |
 
 ## OnRamperCheckout
 
 > interface{} OnRamperCheckout(ctx, accountName).Authorization(authorization).TransactionInput(transactionInput).Execute()
-
-
 
 ### Example
 
@@ -53,22 +49,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperCheckoutRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **transactionInput** | [**TransactionInput**](TransactionInput.md) |  | 
+**transactionInput** | [**TransactionInput**](TransactionInput.md) | |
 
 ### Return type
 
@@ -76,23 +70,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetQuotesBuy
 
-> []Quote OnRamperGetQuotesBuy(ctx).Authorization(authorization).Fiat(fiat).Crypto(crypto).Amount(amount).PaymentMethod(paymentMethod).Uuid(uuid).ClientName(clientName).Country(country).Execute()
-
-
+> \[]Quote OnRamperGetQuotesBuy(ctx).Authorization(authorization).Fiat(fiat).Crypto(crypto).Amount(amount).PaymentMethod(paymentMethod).Uuid(uuid).ClientName(clientName).Country(country).Execute()
 
 ### Example
 
@@ -130,47 +119,39 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetQuotesBuyRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **fiat** | **string** |  | 
- **crypto** | **string** |  | 
- **amount** | **float64** |  | 
- **paymentMethod** | **string** |  | [default to &quot;creditcard&quot;]
- **uuid** | **string** |  | [default to &quot;&quot;]
- **clientName** | **string** |  | [default to &quot;&quot;]
- **country** | **string** |  | [default to &quot;&quot;]
+| Name              | Type        | Description | Notes                      |
+| ----------------- | ----------- | ----------- | -------------------------- |
+| **authorization** | **string**  |             |                            |
+| **fiat**          | **string**  |             |                            |
+| **crypto**        | **string**  |             |                            |
+| **amount**        | **float64** |             |                            |
+| **paymentMethod** | **string**  |             | \[default to "creditcard"] |
+| **uuid**          | **string**  |             | \[default to ""]           |
+| **clientName**    | **string**  |             | \[default to ""]           |
+| **country**       | **string**  |             | \[default to ""]           |
 
 ### Return type
 
-[**[]Quote**](Quote.md)
+[**\[\]Quote**](Quote.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetQuotesSell
 
-> []SellQuote OnRamperGetQuotesSell(ctx).Authorization(authorization).Fiat(fiat).Crypto(crypto).Amount(amount).PaymentMethod(paymentMethod).Uuid(uuid).ClientName(clientName).Country(country).Execute()
-
-
+> \[]SellQuote OnRamperGetQuotesSell(ctx).Authorization(authorization).Fiat(fiat).Crypto(crypto).Amount(amount).PaymentMethod(paymentMethod).Uuid(uuid).ClientName(clientName).Country(country).Execute()
 
 ### Example
 
@@ -208,47 +189,39 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetQuotesSellRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **fiat** | **string** |  | 
- **crypto** | **string** |  | 
- **amount** | **float64** |  | 
- **paymentMethod** | **string** |  | [default to &quot;creditcard&quot;]
- **uuid** | **string** |  | [default to &quot;&quot;]
- **clientName** | **string** |  | [default to &quot;&quot;]
- **country** | **string** |  | [default to &quot;&quot;]
+| Name              | Type        | Description | Notes                      |
+| ----------------- | ----------- | ----------- | -------------------------- |
+| **authorization** | **string**  |             |                            |
+| **fiat**          | **string**  |             |                            |
+| **crypto**        | **string**  |             |                            |
+| **amount**        | **float64** |             |                            |
+| **paymentMethod** | **string**  |             | \[default to "creditcard"] |
+| **uuid**          | **string**  |             | \[default to ""]           |
+| **clientName**    | **string**  |             | \[default to ""]           |
+| **country**       | **string**  |             | \[default to ""]           |
 
 ### Return type
 
-[**[]SellQuote**](SellQuote.md)
+[**\[\]SellQuote**](SellQuote.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedAssets
 
 > SupportedAssetResponse OnRamperGetSupportedAssets(ctx).Authorization(authorization).Source(source).Country(country).Execute()
-
-
 
 ### Example
 
@@ -281,18 +254,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedAssetsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **source** | **string** |  | 
- **country** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **source**        | **string** |             |       |
+| **country**       | **string** |             |       |
 
 ### Return type
 
@@ -300,23 +270,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedCurrencies
 
-> SupportedCurrenciesResponse OnRamperGetSupportedCurrencies(ctx).Authorization(authorization).Type_(type_).Execute()
-
-
+> SupportedCurrenciesResponse OnRamperGetSupportedCurrencies(ctx).Authorization(authorization).Type\_(type\_).Execute()
 
 ### Example
 
@@ -348,17 +313,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedCurrenciesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **type_** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **type\_**        | **string** |             |       |
 
 ### Return type
 
@@ -366,23 +328,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedDefaultsAll
 
-> SupportedDefaultResponse OnRamperGetSupportedDefaultsAll(ctx).Authorization(authorization).Country(country).Type_(type_).Execute()
-
-
+> SupportedDefaultResponse OnRamperGetSupportedDefaultsAll(ctx).Authorization(authorization).Country(country).Type\_(type\_).Execute()
 
 ### Example
 
@@ -415,18 +372,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedDefaultsAllRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **country** | **string** |  | 
- **type_** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **country**       | **string** |             |       |
+| **type\_**        | **string** |             |       |
 
 ### Return type
 
@@ -434,23 +388,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedOnRampsAll
 
 > GetSupportedOnRampsResponse OnRamperGetSupportedOnRampsAll(ctx).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -481,16 +430,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedOnRampsAllRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -498,23 +444,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedPaymentTypes
 
-> SupportedPaymentTypesCurrencyResponse OnRamperGetSupportedPaymentTypes(ctx).Authorization(authorization).Fiat(fiat).Country(country).Type_(type_).Execute()
-
-
+> SupportedPaymentTypesCurrencyResponse OnRamperGetSupportedPaymentTypes(ctx).Authorization(authorization).Fiat(fiat).Country(country).Type\_(type\_).Execute()
 
 ### Example
 
@@ -548,19 +489,16 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedPaymentTypesRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **fiat** | **string** |  | 
- **country** | **string** |  | 
- **type_** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **fiat**          | **string** |             |       |
+| **country**       | **string** |             |       |
+| **type\_**        | **string** |             |       |
 
 ### Return type
 
@@ -568,23 +506,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OnRamperGetSupportedPaymentTypesFiat
 
 > SupportedPaymentTypesCurrencyResponse OnRamperGetSupportedPaymentTypesFiat(ctx).Authorization(authorization).Fiat(fiat).Country(country).Execute()
-
-
 
 ### Example
 
@@ -617,18 +550,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOnRamperGetSupportedPaymentTypesFiatRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **fiat** | **string** |  | 
- **country** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **fiat**          | **string** |             |       |
+| **country**       | **string** |             |       |
 
 ### Return type
 
@@ -636,14 +566,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

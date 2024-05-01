@@ -1,13 +1,12 @@
 # PaymentType
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**icon** | **str** |  | 
-**name** | **str** |  | 
-**payment_type_id** | **str** |  | 
+| Name                  | Type    | Description | Notes |
+| --------------------- | ------- | ----------- | ----- |
+| **icon**              | **str** |             |       |
+| **name**              | **str** |             |       |
+| **payment\_type\_id** | **str** |             |       |
 
 ## Example
 
@@ -26,6 +25,5 @@ payment_type_dict = payment_type_instance.to_dict()
 # create an instance of PaymentType from a dict
 payment_type_form_dict = payment_type.from_dict(payment_type_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

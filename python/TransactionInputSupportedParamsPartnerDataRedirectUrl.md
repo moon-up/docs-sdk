@@ -1,11 +1,10 @@
 # TransactionInputSupportedParamsPartnerDataRedirectUrl
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**success** | **str** |  | 
+| Name        | Type    | Description | Notes |
+| ----------- | ------- | ----------- | ----- |
+| **success** | **str** |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ transaction_input_supported_params_partner_data_redirect_url_dict = transaction_
 # create an instance of TransactionInputSupportedParamsPartnerDataRedirectUrl from a dict
 transaction_input_supported_params_partner_data_redirect_url_form_dict = transaction_input_supported_params_partner_data_redirect_url.from_dict(transaction_input_supported_params_partner_data_redirect_url_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

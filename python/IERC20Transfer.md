@@ -1,21 +1,20 @@
 # IERC20Transfer
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transaction_hash** | **str** |  | 
-**contract** | **str** |  | 
-**log_index** | **str** |  | 
-**var_from** | **str** |  | 
-**to** | **str** |  | 
-**value** | **str** |  | 
-**token_decimals** | **str** |  | 
-**token_name** | **str** |  | 
-**token_symbol** | **str** |  | 
-**value_with_decimals** | **str** |  | [optional] 
-**triggers** | [**List[TriggerOutput]**](TriggerOutput.md) |  | [optional] 
+| Name                      | Type                                          | Description | Notes       |
+| ------------------------- | --------------------------------------------- | ----------- | ----------- |
+| **transaction\_hash**     | **str**                                       |             |             |
+| **contract**              | **str**                                       |             |             |
+| **log\_index**            | **str**                                       |             |             |
+| **var\_from**             | **str**                                       |             |             |
+| **to**                    | **str**                                       |             |             |
+| **value**                 | **str**                                       |             |             |
+| **token\_decimals**       | **str**                                       |             |             |
+| **token\_name**           | **str**                                       |             |             |
+| **token\_symbol**         | **str**                                       |             |             |
+| **value\_with\_decimals** | **str**                                       |             | \[optional] |
+| **triggers**              | [**List\[TriggerOutput\]**](TriggerOutput.md) |             | \[optional] |
 
 ## Example
 
@@ -34,6 +33,5 @@ ierc20_transfer_dict = ierc20_transfer_instance.to_dict()
 # create an instance of IERC20Transfer from a dict
 ierc20_transfer_form_dict = ierc20_transfer.from_dict(ierc20_transfer_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

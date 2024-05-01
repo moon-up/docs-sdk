@@ -1,22 +1,22 @@
 # LitecoinApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## LitecoinApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**createLitecoinAccount**](LitecoinApi.md#createLitecoinAccount) | **POST** /litecoin |  |
-| [**getLitecoinAccount**](LitecoinApi.md#getLitecoinAccount) | **GET** /litecoin/{accountName} |  |
-| [**listLitecoinAccounts**](LitecoinApi.md#listLitecoinAccounts) | **GET** /litecoin |  |
-| [**signLitecoinTransaction**](LitecoinApi.md#signLitecoinTransaction) | **POST** /litecoin/{accountName}/sign-tx |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                | HTTP request                             | Description |
+| --------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**createLitecoinAccount**](LitecoinApi.md#createLitecoinAccount)     | **POST** /litecoin                       |             |
+| [**getLitecoinAccount**](LitecoinApi.md#getLitecoinAccount)           | **GET** /litecoin/{accountName}          |             |
+| [**listLitecoinAccounts**](LitecoinApi.md#listLitecoinAccounts)       | **GET** /litecoin                        |             |
+| [**signLitecoinTransaction**](LitecoinApi.md#signLitecoinTransaction) | **POST** /litecoin/{accountName}/sign-tx |             |
 
-<a id="createLitecoinAccount"></a>
-# **createLitecoinAccount**
+## **createLitecoinAccount**
+
 > AccountAPIResponse createLitecoinAccount(authorization, litecoinInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -60,38 +60,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **litecoinInput** | [**LitecoinInput**](LitecoinInput.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **litecoinInput** | [**LitecoinInput**](LitecoinInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getLitecoinAccount"></a>
-# **getLitecoinAccount**
+## **getLitecoinAccount**
+
 > AccountAPIResponse getLitecoinAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -135,38 +135,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="listLitecoinAccounts"></a>
-# **listLitecoinAccounts**
+## **listLitecoinAccounts**
+
 > AccountAPIResponse listLitecoinAccounts(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -209,37 +209,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signLitecoinTransaction"></a>
-# **signLitecoinTransaction**
+## **signLitecoinTransaction**
+
 > LitecoinAPIResponse signLitecoinTransaction(authorization, accountName, litecoinTransactionInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -284,29 +284,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **litecoinTransactionInput** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md)|  | |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **accountName**              | **String**                                                  |             |       |
+| **litecoinTransactionInput** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**LitecoinAPIResponse**](LitecoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

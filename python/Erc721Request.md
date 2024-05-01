@@ -1,25 +1,24 @@
 # Erc721Request
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**to** | **str** |  | [optional] 
-**data** | **str** |  | [optional] 
-**input** | **str** |  | [optional] 
-**value** | **str** |  | [optional] 
-**nonce** | **str** |  | [optional] 
-**gas** | **str** |  | [optional] 
-**gas_price** | **str** |  | [optional] 
-**chain_id** | **str** |  | [optional] 
-**encoding** | **str** |  | [optional] 
-**eoa** | **bool** |  | [optional] 
-**contract_address** | **str** |  | [optional] 
-**token_id** | **str** |  | [optional] 
-**token_ids** | **str** |  | [optional] 
-**approved** | **bool** |  | [optional] 
-**broadcast** | **bool** |  | [optional] 
+| Name                  | Type     | Description | Notes       |
+| --------------------- | -------- | ----------- | ----------- |
+| **to**                | **str**  |             | \[optional] |
+| **data**              | **str**  |             | \[optional] |
+| **input**             | **str**  |             | \[optional] |
+| **value**             | **str**  |             | \[optional] |
+| **nonce**             | **str**  |             | \[optional] |
+| **gas**               | **str**  |             | \[optional] |
+| **gas\_price**        | **str**  |             | \[optional] |
+| **chain\_id**         | **str**  |             | \[optional] |
+| **encoding**          | **str**  |             | \[optional] |
+| **eoa**               | **bool** |             | \[optional] |
+| **contract\_address** | **str**  |             | \[optional] |
+| **token\_id**         | **str**  |             | \[optional] |
+| **token\_ids**        | **str**  |             | \[optional] |
+| **approved**          | **bool** |             | \[optional] |
+| **broadcast**         | **bool** |             | \[optional] |
 
 ## Example
 
@@ -38,6 +37,5 @@ erc721_request_dict = erc721_request_instance.to_dict()
 # create an instance of Erc721Request from a dict
 erc721_request_form_dict = erc721_request.from_dict(erc721_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

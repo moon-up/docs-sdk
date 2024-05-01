@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.UniSwapApi
+# UniSwapApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.UniSwapApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**AddLiquidity**](UniSwapApi.md#addliquidity) | **POST** /uniswap/{name}/add-liquidity |  |
-| [**RemoveLiquidity**](UniSwapApi.md#removeliquidity) | **POST** /uniswap/{name}/remove-liquidity |  |
-| [**SwapExactETHForTokens**](UniSwapApi.md#swapexactethfortokens) | **POST** /uniswap/{name}/swap-exact-eth-for-tokens |  |
-| [**SwapExactTokensForTokens**](UniSwapApi.md#swapexacttokensfortokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="addliquidity"></a>
-# **AddLiquidity**
+| Method                                                                 | HTTP request                                          | Description |
+| ---------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**AddLiquidity**](UniSwapApi.md#addliquidity)                         | **POST** /uniswap/{name}/add-liquidity                |             |
+| [**RemoveLiquidity**](UniSwapApi.md#removeliquidity)                   | **POST** /uniswap/{name}/remove-liquidity             |             |
+| [**SwapExactETHForTokens**](UniSwapApi.md#swapexactethfortokens)       | **POST** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**SwapExactTokensForTokens**](UniSwapApi.md#swapexacttokensfortokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
+
+## **AddLiquidity**
+
 > TransactionAPIResponse AddLiquidity (string authorization, string name, UniswapInput uniswapInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -61,7 +62,8 @@ namespace Example
 }
 ```
 
-#### Using the AddLiquidityWithHttpInfo variant
+**Using the AddLiquidityWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -80,42 +82,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  |  |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **string**                          |             |       |
+| **name**          | **string**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="removeliquidity"></a>
-# **RemoveLiquidity**
+## **RemoveLiquidity**
+
 > TransactionAPIResponse RemoveLiquidity (string authorization, string name, UniswapInput uniswapInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -161,7 +162,8 @@ namespace Example
 }
 ```
 
-#### Using the RemoveLiquidityWithHttpInfo variant
+**Using the RemoveLiquidityWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -180,42 +182,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  |  |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **string**                          |             |       |
+| **name**          | **string**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="swapexactethfortokens"></a>
-# **SwapExactETHForTokens**
+## **SwapExactETHForTokens**
+
 > TransactionAPIResponse SwapExactETHForTokens (string authorization, string name, UniswapInput uniswapInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -261,7 +262,8 @@ namespace Example
 }
 ```
 
-#### Using the SwapExactETHForTokensWithHttpInfo variant
+**Using the SwapExactETHForTokensWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -280,42 +282,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  |  |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **string**                          |             |       |
+| **name**          | **string**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="swapexacttokensfortokens"></a>
-# **SwapExactTokensForTokens**
+## **SwapExactTokensForTokens**
+
 > TransactionAPIResponse SwapExactTokensForTokens (string authorization, string name, UniswapInput uniswapInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -361,7 +362,8 @@ namespace Example
 }
 ```
 
-#### Using the SwapExactTokensForTokensWithHttpInfo variant
+**Using the SwapExactTokensForTokensWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -380,32 +382,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md) |  |  |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **string**                          |             |       |
+| **name**          | **string**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

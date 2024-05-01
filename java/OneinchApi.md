@@ -1,24 +1,24 @@
 # OneinchApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## OneinchApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**approveCallData**](OneinchApi.md#approveCallData) | **POST** /oneinch/approve-call-data |  |
-| [**approveSpender**](OneinchApi.md#approveSpender) | **POST** /oneinch/approve-spender |  |
-| [**protocols**](OneinchApi.md#protocols) | **POST** /oneinch/protocols |  |
-| [**quote**](OneinchApi.md#quote) | **POST** /oneinch/quote |  |
-| [**swap**](OneinchApi.md#swap) | **POST** /oneinch/{accountName}/swap |  |
-| [**tokens**](OneinchApi.md#tokens) | **POST** /oneinch/tokens |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                               | HTTP request                         | Description |
+| ---------------------------------------------------- | ------------------------------------ | ----------- |
+| [**approveCallData**](OneinchApi.md#approveCallData) | **POST** /oneinch/approve-call-data  |             |
+| [**approveSpender**](OneinchApi.md#approveSpender)   | **POST** /oneinch/approve-spender    |             |
+| [**protocols**](OneinchApi.md#protocols)             | **POST** /oneinch/protocols          |             |
+| [**quote**](OneinchApi.md#quote)                     | **POST** /oneinch/quote              |             |
+| [**swap**](OneinchApi.md#swap)                       | **POST** /oneinch/{accountName}/swap |             |
+| [**tokens**](OneinchApi.md#tokens)                   | **POST** /oneinch/tokens             |             |
 
-<a id="approveCallData"></a>
-# **approveCallData**
+## **approveCallData**
+
 > Object approveCallData(body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -61,37 +61,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **body** | **Object**|  | |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="approveSpender"></a>
-# **approveSpender**
+## **approveSpender**
+
 > Object approveSpender(body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -134,37 +134,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **body** | **Object**|  | |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="protocols"></a>
-# **protocols**
+## **protocols**
+
 > Object protocols(body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -207,37 +207,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **body** | **Object**|  | |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="quote"></a>
-# **quote**
+## **quote**
+
 > Object quote(body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -280,37 +280,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **body** | **Object**|  | |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="swap"></a>
-# **swap**
+## **swap**
+
 > Object swap(accountName, authorization, getSwapDto)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -355,39 +355,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **getSwapDto** | [**GetSwapDto**](GetSwapDto.md)|  | |
+| Name              | Type                            | Description | Notes |
+| ----------------- | ------------------------------- | ----------- | ----- |
+| **accountName**   | **String**                      |             |       |
+| **authorization** | **String**                      |             |       |
+| **getSwapDto**    | [**GetSwapDto**](GetSwapDto.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="tokens"></a>
-# **tokens**
+## **tokens**
+
 > Object tokens(body)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -430,27 +430,27 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **body** | **Object**|  | |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

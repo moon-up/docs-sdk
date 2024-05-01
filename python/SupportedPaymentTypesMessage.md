@@ -1,13 +1,12 @@
 # SupportedPaymentTypesMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**googlepay** | [**PaymentType**](PaymentType.md) |  | 
-**applepay** | [**PaymentType**](PaymentType.md) |  | 
-**creditcard** | [**PaymentType**](PaymentType.md) |  | 
+| Name           | Type                              | Description | Notes |
+| -------------- | --------------------------------- | ----------- | ----- |
+| **googlepay**  | [**PaymentType**](PaymentType.md) |             |       |
+| **applepay**   | [**PaymentType**](PaymentType.md) |             |       |
+| **creditcard** | [**PaymentType**](PaymentType.md) |             |       |
 
 ## Example
 
@@ -26,6 +25,5 @@ supported_payment_types_message_dict = supported_payment_types_message_instance.
 # create an instance of SupportedPaymentTypesMessage from a dict
 supported_payment_types_message_form_dict = supported_payment_types_message.from_dict(supported_payment_types_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -2,27 +2,27 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**To** | Pointer to **string** |  | [optional] 
-**Data** | Pointer to **string** |  | [optional] 
-**Input** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **string** |  | [optional] 
-**Nonce** | Pointer to **string** |  | [optional] 
-**Gas** | Pointer to **string** |  | [optional] 
-**GasPrice** | Pointer to **string** |  | [optional] 
-**ChainId** | Pointer to **string** |  | [optional] 
-**Encoding** | Pointer to **string** |  | [optional] 
-**EOA** | Pointer to **bool** |  | [optional] 
-**ContractAddress** | Pointer to **string** |  | [optional] 
-**TokenId** | Pointer to **string** |  | [optional] 
-**TokenIds** | Pointer to **string** |  | [optional] 
-**Approved** | Pointer to **bool** |  | [optional] 
-**Broadcast** | Pointer to **bool** |  | [optional] 
-**TokenA** | Pointer to **string** |  | [optional] 
-**TokenB** | Pointer to **string** |  | [optional] 
-**AmountA** | Pointer to **string** |  | [optional] 
-**AmountB** | Pointer to **string** |  | [optional] 
+| Name                | Type                  | Description | Notes       |
+| ------------------- | --------------------- | ----------- | ----------- |
+| **To**              | Pointer to **string** |             | \[optional] |
+| **Data**            | Pointer to **string** |             | \[optional] |
+| **Input**           | Pointer to **string** |             | \[optional] |
+| **Value**           | Pointer to **string** |             | \[optional] |
+| **Nonce**           | Pointer to **string** |             | \[optional] |
+| **Gas**             | Pointer to **string** |             | \[optional] |
+| **GasPrice**        | Pointer to **string** |             | \[optional] |
+| **ChainId**         | Pointer to **string** |             | \[optional] |
+| **Encoding**        | Pointer to **string** |             | \[optional] |
+| **EOA**             | Pointer to **bool**   |             | \[optional] |
+| **ContractAddress** | Pointer to **string** |             | \[optional] |
+| **TokenId**         | Pointer to **string** |             | \[optional] |
+| **TokenIds**        | Pointer to **string** |             | \[optional] |
+| **Approved**        | Pointer to **bool**   |             | \[optional] |
+| **Broadcast**       | Pointer to **bool**   |             | \[optional] |
+| **TokenA**          | Pointer to **string** |             | \[optional] |
+| **TokenB**          | Pointer to **string** |             | \[optional] |
+| **AmountA**         | Pointer to **string** |             | \[optional] |
+| **AmountB**         | Pointer to **string** |             | \[optional] |
 
 ## Methods
 
@@ -30,18 +30,13 @@ Name | Type | Description | Notes
 
 `func NewUniswapInput() *UniswapInput`
 
-NewUniswapInput instantiates a new UniswapInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewUniswapInput instantiates a new UniswapInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewUniswapInputWithDefaults
 
 `func NewUniswapInputWithDefaults() *UniswapInput`
 
-NewUniswapInputWithDefaults instantiates a new UniswapInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewUniswapInputWithDefaults instantiates a new UniswapInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTo
 
@@ -53,8 +48,7 @@ GetTo returns the To field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetToOk() (*string, bool)`
 
-GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTo
 
@@ -78,8 +72,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetDataOk() (*string, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -103,8 +96,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetInputOk() (*string, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -128,8 +120,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -153,8 +144,7 @@ GetNonce returns the Nonce field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetNonceOk() (*string, bool)`
 
-GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonce
 
@@ -178,8 +168,7 @@ GetGas returns the Gas field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetGasOk() (*string, bool)`
 
-GetGasOk returns a tuple with the Gas field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasOk returns a tuple with the Gas field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGas
 
@@ -203,8 +192,7 @@ GetGasPrice returns the GasPrice field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetGasPriceOk() (*string, bool)`
 
-GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGasPrice
 
@@ -228,8 +216,7 @@ GetChainId returns the ChainId field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetChainIdOk() (*string, bool)`
 
-GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChainId
 
@@ -253,8 +240,7 @@ GetEncoding returns the Encoding field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetEncodingOk() (*string, bool)`
 
-GetEncodingOk returns a tuple with the Encoding field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEncodingOk returns a tuple with the Encoding field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEncoding
 
@@ -278,8 +264,7 @@ GetEOA returns the EOA field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetEOAOk() (*bool, bool)`
 
-GetEOAOk returns a tuple with the EOA field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEOAOk returns a tuple with the EOA field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEOA
 
@@ -303,8 +288,7 @@ GetContractAddress returns the ContractAddress field if non-nil, zero value othe
 
 `func (o *UniswapInput) GetContractAddressOk() (*string, bool)`
 
-GetContractAddressOk returns a tuple with the ContractAddress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContractAddressOk returns a tuple with the ContractAddress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContractAddress
 
@@ -328,8 +312,7 @@ GetTokenId returns the TokenId field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetTokenIdOk() (*string, bool)`
 
-GetTokenIdOk returns a tuple with the TokenId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenIdOk returns a tuple with the TokenId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenId
 
@@ -353,8 +336,7 @@ GetTokenIds returns the TokenIds field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetTokenIdsOk() (*string, bool)`
 
-GetTokenIdsOk returns a tuple with the TokenIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenIdsOk returns a tuple with the TokenIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenIds
 
@@ -378,8 +360,7 @@ GetApproved returns the Approved field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetApprovedOk() (*bool, bool)`
 
-GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApproved
 
@@ -403,8 +384,7 @@ GetBroadcast returns the Broadcast field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetBroadcastOk() (*bool, bool)`
 
-GetBroadcastOk returns a tuple with the Broadcast field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBroadcastOk returns a tuple with the Broadcast field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBroadcast
 
@@ -428,8 +408,7 @@ GetTokenA returns the TokenA field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetTokenAOk() (*string, bool)`
 
-GetTokenAOk returns a tuple with the TokenA field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenAOk returns a tuple with the TokenA field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenA
 
@@ -453,8 +432,7 @@ GetTokenB returns the TokenB field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetTokenBOk() (*string, bool)`
 
-GetTokenBOk returns a tuple with the TokenB field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenBOk returns a tuple with the TokenB field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenB
 
@@ -478,8 +456,7 @@ GetAmountA returns the AmountA field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetAmountAOk() (*string, bool)`
 
-GetAmountAOk returns a tuple with the AmountA field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmountAOk returns a tuple with the AmountA field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmountA
 
@@ -503,8 +480,7 @@ GetAmountB returns the AmountB field if non-nil, zero value otherwise.
 
 `func (o *UniswapInput) GetAmountBOk() (*string, bool)`
 
-GetAmountBOk returns a tuple with the AmountB field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmountBOk returns a tuple with the AmountB field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmountB
 
@@ -518,7 +494,4 @@ SetAmountB sets AmountB field to given value.
 
 HasAmountB returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,23 +1,19 @@
 # \ERC1155API
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**BalanceOf**](ERC1155API.md#BalanceOf) | **Post** /erc1155/{name}/balance-of | 
-[**BalanceOfBatch**](ERC1155API.md#BalanceOfBatch) | **Post** /erc1155/{name}/balance-of-batch | 
-[**IsApprovedForAll**](ERC1155API.md#IsApprovedForAll) | **Post** /erc1155/{name}/is-approved-for-all | 
-[**SafeBatchTransferFrom**](ERC1155API.md#SafeBatchTransferFrom) | **Post** /erc1155/{name}/safe-batch-transfer-from | 
-[**SafeTransferFrom**](ERC1155API.md#SafeTransferFrom) | **Post** /erc1155/{name}/safe-transfer-from | 
-[**SetApprovalForAll**](ERC1155API.md#SetApprovalForAll) | **Post** /erc1155/{name}/set-approval-for-all | 
-
-
+| Method                                                           | HTTP request                                      | Description |
+| ---------------------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**BalanceOf**](ERC1155API.md#BalanceOf)                         | **Post** /erc1155/{name}/balance-of               |             |
+| [**BalanceOfBatch**](ERC1155API.md#BalanceOfBatch)               | **Post** /erc1155/{name}/balance-of-batch         |             |
+| [**IsApprovedForAll**](ERC1155API.md#IsApprovedForAll)           | **Post** /erc1155/{name}/is-approved-for-all      |             |
+| [**SafeBatchTransferFrom**](ERC1155API.md#SafeBatchTransferFrom) | **Post** /erc1155/{name}/safe-batch-transfer-from |             |
+| [**SafeTransferFrom**](ERC1155API.md#SafeTransferFrom)           | **Post** /erc1155/{name}/safe-transfer-from       |             |
+| [**SetApprovalForAll**](ERC1155API.md#SetApprovalForAll)         | **Post** /erc1155/{name}/set-approval-for-all     |             |
 
 ## BalanceOf
 
 > TransactionAPIResponse BalanceOf(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -50,22 +46,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiBalanceOfRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -73,23 +63,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## BalanceOfBatch
 
 > TransactionAPIResponse BalanceOfBatch(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -122,22 +107,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiBalanceOfBatchRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -145,23 +124,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## IsApprovedForAll
 
 > TransactionAPIResponse IsApprovedForAll(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -194,22 +168,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiIsApprovedForAllRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -217,23 +185,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SafeBatchTransferFrom
 
 > TransactionAPIResponse SafeBatchTransferFrom(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -266,22 +229,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSafeBatchTransferFromRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -289,23 +246,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SafeTransferFrom
 
 > TransactionAPIResponse SafeTransferFrom(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -338,22 +290,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSafeTransferFromRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -361,23 +307,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SetApprovalForAll
 
 > TransactionAPIResponse SetApprovalForAll(ctx, name).Authorization(authorization).Erc1155Request(erc1155Request).Execute()
-
-
 
 ### Example
 
@@ -410,22 +351,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetApprovalForAllRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  | 
+**authorization** | **string** | | **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) | |
 
 ### Return type
 
@@ -433,14 +368,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

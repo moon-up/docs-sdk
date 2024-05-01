@@ -1,17 +1,16 @@
 # ConveyorFinanceControllerResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**input** | [**InputBody**](InputBody.md) |  | [optional] 
-**convey** | [**TransactionResponse**](TransactionResponse.md) |  | [optional] 
-**data** | [**TransactionData**](TransactionData.md) |  | [optional] 
-**tx** | [**TransactionResponseTx**](TransactionResponseTx.md) |  | [optional] 
-**signed** | [**Transaction**](Transaction.md) |  | [optional] 
-**success** | **bool** |  | 
-**message** | **str** |  | 
+| Name        | Type                                                  | Description | Notes       |
+| ----------- | ----------------------------------------------------- | ----------- | ----------- |
+| **input**   | [**InputBody**](InputBody.md)                         |             | \[optional] |
+| **convey**  | [**TransactionResponse**](TransactionResponse.md)     |             | \[optional] |
+| **data**    | [**TransactionData**](TransactionData.md)             |             | \[optional] |
+| **tx**      | [**TransactionResponseTx**](TransactionResponseTx.md) |             | \[optional] |
+| **signed**  | [**Transaction**](Transaction.md)                     |             | \[optional] |
+| **success** | **bool**                                              |             |             |
+| **message** | **str**                                               |             |             |
 
 ## Example
 
@@ -30,6 +29,5 @@ conveyor_finance_controller_response_dict = conveyor_finance_controller_response
 # create an instance of ConveyorFinanceControllerResponse from a dict
 conveyor_finance_controller_response_form_dict = conveyor_finance_controller_response.from_dict(conveyor_finance_controller_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

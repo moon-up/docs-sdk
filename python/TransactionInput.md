@@ -1,23 +1,22 @@
 # TransactionInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**supported_params** | [**TransactionInputSupportedParams**](TransactionInputSupportedParams.md) |  | 
-**wallet** | [**TransactionInputWallet**](TransactionInputWallet.md) |  | 
-**meta_data** | [**TransactionInputMetaData**](TransactionInputMetaData.md) |  | 
-**originating_host** | **str** |  | 
-**partner_context** | **str** |  | 
-**uuid** | **str** |  | 
-**network** | **str** |  | 
-**payment_method** | **str** |  | 
-**type** | **str** |  | 
-**amount** | **float** |  | 
-**destination** | **str** |  | 
-**source** | **str** |  | 
-**onramp** | **str** |  | 
+| Name                  | Type                                                                      | Description | Notes |
+| --------------------- | ------------------------------------------------------------------------- | ----------- | ----- |
+| **supported\_params** | [**TransactionInputSupportedParams**](TransactionInputSupportedParams.md) |             |       |
+| **wallet**            | [**TransactionInputWallet**](TransactionInputWallet.md)                   |             |       |
+| **meta\_data**        | [**TransactionInputMetaData**](TransactionInputMetaData.md)               |             |       |
+| **originating\_host** | **str**                                                                   |             |       |
+| **partner\_context**  | **str**                                                                   |             |       |
+| **uuid**              | **str**                                                                   |             |       |
+| **network**           | **str**                                                                   |             |       |
+| **payment\_method**   | **str**                                                                   |             |       |
+| **type**              | **str**                                                                   |             |       |
+| **amount**            | **float**                                                                 |             |       |
+| **destination**       | **str**                                                                   |             |       |
+| **source**            | **str**                                                                   |             |       |
+| **onramp**            | **str**                                                                   |             |       |
 
 ## Example
 
@@ -36,6 +35,5 @@ transaction_input_dict = transaction_input_instance.to_dict()
 # create an instance of TransactionInput from a dict
 transaction_input_form_dict = transaction_input.from_dict(transaction_input_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

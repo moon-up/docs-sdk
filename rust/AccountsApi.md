@@ -1,374 +1,336 @@
 # \AccountsApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**broadcast_tx**](AccountsApi.md#broadcast_tx) | **POST** /accounts/{accountName}/broadcast-tx | 
-[**create_account**](AccountsApi.md#create_account) | **POST** /accounts | 
-[**delete_account**](AccountsApi.md#delete_account) | **DELETE** /accounts/{accountName} | 
-[**deploy_contract**](AccountsApi.md#deploy_contract) | **POST** /accounts/{accountName}/deploy | 
-[**get_account**](AccountsApi.md#get_account) | **GET** /accounts/{accountName} | 
-[**get_balance**](AccountsApi.md#get_balance) | **GET** /accounts/{accountName}/balance | 
-[**get_nonce**](AccountsApi.md#get_nonce) | **GET** /accounts/{accountName}/nonce | 
-[**list_accounts**](AccountsApi.md#list_accounts) | **GET** /accounts | 
-[**sign_message**](AccountsApi.md#sign_message) | **POST** /accounts/{accountName}/sign-message | 
-[**sign_transaction**](AccountsApi.md#sign_transaction) | **POST** /accounts/{accountName}/sign-transaction | 
-[**sign_typed_data**](AccountsApi.md#sign_typed_data) | **POST** /accounts/{accountName}/sign-typed-data | 
-[**transfer_eth**](AccountsApi.md#transfer_eth) | **POST** /accounts/{accountName}/transfer-eth | 
+| Method                                                    | HTTP request                                      | Description |
+| --------------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**broadcast\_tx**](AccountsApi.md#broadcast\_tx)         | **POST** /accounts/{accountName}/broadcast-tx     |             |
+| [**create\_account**](AccountsApi.md#create\_account)     | **POST** /accounts                                |             |
+| [**delete\_account**](AccountsApi.md#delete\_account)     | **DELETE** /accounts/{accountName}                |             |
+| [**deploy\_contract**](AccountsApi.md#deploy\_contract)   | **POST** /accounts/{accountName}/deploy           |             |
+| [**get\_account**](AccountsApi.md#get\_account)           | **GET** /accounts/{accountName}                   |             |
+| [**get\_balance**](AccountsApi.md#get\_balance)           | **GET** /accounts/{accountName}/balance           |             |
+| [**get\_nonce**](AccountsApi.md#get\_nonce)               | **GET** /accounts/{accountName}/nonce             |             |
+| [**list\_accounts**](AccountsApi.md#list\_accounts)       | **GET** /accounts                                 |             |
+| [**sign\_message**](AccountsApi.md#sign\_message)         | **POST** /accounts/{accountName}/sign-message     |             |
+| [**sign\_transaction**](AccountsApi.md#sign\_transaction) | **POST** /accounts/{accountName}/sign-transaction |             |
+| [**sign\_typed\_data**](AccountsApi.md#sign\_typed\_data) | **POST** /accounts/{accountName}/sign-typed-data  |             |
+| [**transfer\_eth**](AccountsApi.md#transfer\_eth)         | **POST** /accounts/{accountName}/transfer-eth     |             |
 
+## broadcast\_tx
 
-
-## broadcast_tx
-
-> crate::models::BroadCastRawTransactionApiResponse broadcast_tx(authorization, account_name, broadcast_input)
-
+> crate::models::BroadCastRawTransactionApiResponse broadcast\_tx(authorization, account\_name, broadcast\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**broadcast_input** | [**BroadcastInput**](BroadcastInput.md) |  | [required] |
+| Name                 | Type                                    | Description | Required    | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**    | **String**                              |             | \[required] |       |
+| **account\_name**    | **String**                              |             | \[required] |       |
+| **broadcast\_input** | [**BroadcastInput**](BroadcastInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::BroadCastRawTransactionApiResponse**](BroadCastRawTransactionAPIResponse.md)
+[**crate::models::BroadCastRawTransactionApiResponse**](docs/BroadCastRawTransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## create\_account
 
-## create_account
-
-> crate::models::AccountApiResponse create_account(authorization, create_account_input)
-
+> crate::models::AccountApiResponse create\_account(authorization, create\_account\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**create_account_input** | [**CreateAccountInput**](CreateAccountInput.md) |  | [required] |
+| Name                       | Type                                            | Description | Required    | Notes |
+| -------------------------- | ----------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**          | **String**                                      |             | \[required] |       |
+| **create\_account\_input** | [**CreateAccountInput**](CreateAccountInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## delete\_account
 
-## delete_account
-
-> crate::models::AccountApiResponse delete_account(authorization, account_name)
-
+> crate::models::AccountApiResponse delete\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## deploy\_contract
 
-## deploy_contract
-
-> crate::models::TransactionApiResponse deploy_contract(authorization, account_name, deploy_input)
-
+> crate::models::TransactionApiResponse deploy\_contract(authorization, account\_name, deploy\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**deploy_input** | [**DeployInput**](DeployInput.md) |  | [required] |
+| Name              | Type                              | Description | Required    | Notes |
+| ----------------- | --------------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                        |             | \[required] |       |
+| **account\_name** | **String**                        |             | \[required] |       |
+| **deploy\_input** | [**DeployInput**](DeployInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_account
 
-## get_account
-
-> crate::models::AccountApiResponse get_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_balance
 
-## get_balance
-
-> crate::models::BalanceApiResponse get_balance(account_name, authorization, chain_id)
-
+> crate::models::BalanceApiResponse get\_balance(account\_name, authorization, chain\_id)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
-**chain_id** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **account\_name** | **String** |             | \[required] |       |
+| **authorization** | **String** |             | \[required] |       |
+| **chain\_id**     | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::BalanceApiResponse**](BalanceAPIResponse.md)
+[**crate::models::BalanceApiResponse**](docs/BalanceAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_nonce
 
-## get_nonce
-
-> crate::models::NonceApiResponse get_nonce(account_name, authorization)
-
+> crate::models::NonceApiResponse get\_nonce(account\_name, authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **account\_name** | **String** |             | \[required] |       |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::NonceApiResponse**](NonceAPIResponse.md)
+[**crate::models::NonceApiResponse**](docs/NonceAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_accounts
 
-## list_accounts
-
-> crate::models::AccountApiResponse list_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_message
 
-## sign_message
-
-> crate::models::SignMessageApiResponse sign_message(account_name, authorization, sign_message)
-
+> crate::models::SignMessageApiResponse sign\_message(account\_name, authorization, sign\_message)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
-**sign_message** | [**SignMessage**](SignMessage.md) |  | [required] |
+| Name              | Type                              | Description | Required    | Notes |
+| ----------------- | --------------------------------- | ----------- | ----------- | ----- |
+| **account\_name** | **String**                        |             | \[required] |       |
+| **authorization** | **String**                        |             | \[required] |       |
+| **sign\_message** | [**SignMessage**](SignMessage.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::SignMessageApiResponse**](SignMessageAPIResponse.md)
+[**crate::models::SignMessageApiResponse**](docs/SignMessageAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_transaction
 
-## sign_transaction
-
-> crate::models::TransactionApiResponse sign_transaction(account_name, authorization, input_body)
-
+> crate::models::TransactionApiResponse sign\_transaction(account\_name, authorization, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **account\_name** | **String**                    |             | \[required] |       |
+| **authorization** | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_typed\_data
 
-## sign_typed_data
-
-> crate::models::SignMessageApiResponse sign_typed_data(account_name, authorization, sign_typed_data)
-
+> crate::models::SignMessageApiResponse sign\_typed\_data(account\_name, authorization, sign\_typed\_data)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
-**sign_typed_data** | [**SignTypedData**](SignTypedData.md) |  | [required] |
+| Name                  | Type                                  | Description | Required    | Notes |
+| --------------------- | ------------------------------------- | ----------- | ----------- | ----- |
+| **account\_name**     | **String**                            |             | \[required] |       |
+| **authorization**     | **String**                            |             | \[required] |       |
+| **sign\_typed\_data** | [**SignTypedData**](SignTypedData.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::SignMessageApiResponse**](SignMessageAPIResponse.md)
+[**crate::models::SignMessageApiResponse**](docs/SignMessageAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## transfer\_eth
 
-## transfer_eth
-
-> crate::models::TransactionApiResponse transfer_eth(account_name, authorization, input_body)
-
+> crate::models::TransactionApiResponse transfer\_eth(account\_name, authorization, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**account_name** | **String** |  | [required] |
-**authorization** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **account\_name** | **String**                    |             | \[required] |       |
+| **authorization** | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

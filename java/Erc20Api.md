@@ -1,27 +1,27 @@
 # Erc20Api
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## Erc20Api
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**allowanceErc20**](Erc20Api.md#allowanceErc20) | **POST** /erc20/{name}/allowance |  |
-| [**approveErc20**](Erc20Api.md#approveErc20) | **POST** /erc20/{name}/approve |  |
-| [**balanceOfErc20**](Erc20Api.md#balanceOfErc20) | **POST** /erc20/{name}/balance-of |  |
-| [**decimalsErc20**](Erc20Api.md#decimalsErc20) | **POST** /erc20/{name}/decimals |  |
-| [**nameErc20**](Erc20Api.md#nameErc20) | **POST** /erc20/{name}/name |  |
-| [**symbolErc20**](Erc20Api.md#symbolErc20) | **POST** /erc20/{name}/symbol |  |
-| [**totalSupplyErc20**](Erc20Api.md#totalSupplyErc20) | **POST** /erc20/{name}/total-supply |  |
-| [**transferErc20**](Erc20Api.md#transferErc20) | **POST** /erc20/{name}/transfer |  |
-| [**transferFromErc20**](Erc20Api.md#transferFromErc20) | **POST** /erc20/{name}/transfer-from |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                 | HTTP request                         | Description |
+| ------------------------------------------------------ | ------------------------------------ | ----------- |
+| [**allowanceErc20**](Erc20Api.md#allowanceErc20)       | **POST** /erc20/{name}/allowance     |             |
+| [**approveErc20**](Erc20Api.md#approveErc20)           | **POST** /erc20/{name}/approve       |             |
+| [**balanceOfErc20**](Erc20Api.md#balanceOfErc20)       | **POST** /erc20/{name}/balance-of    |             |
+| [**decimalsErc20**](Erc20Api.md#decimalsErc20)         | **POST** /erc20/{name}/decimals      |             |
+| [**nameErc20**](Erc20Api.md#nameErc20)                 | **POST** /erc20/{name}/name          |             |
+| [**symbolErc20**](Erc20Api.md#symbolErc20)             | **POST** /erc20/{name}/symbol        |             |
+| [**totalSupplyErc20**](Erc20Api.md#totalSupplyErc20)   | **POST** /erc20/{name}/total-supply  |             |
+| [**transferErc20**](Erc20Api.md#transferErc20)         | **POST** /erc20/{name}/transfer      |             |
+| [**transferFromErc20**](Erc20Api.md#transferFromErc20) | **POST** /erc20/{name}/transfer-from |             |
 
-<a id="allowanceErc20"></a>
-# **allowanceErc20**
+## **allowanceErc20**
+
 > TransactionAPIResponse allowanceErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -66,39 +66,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="approveErc20"></a>
-# **approveErc20**
+## **approveErc20**
+
 > TransactionAPIResponse approveErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -143,39 +143,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="balanceOfErc20"></a>
-# **balanceOfErc20**
+## **balanceOfErc20**
+
 > TransactionAPIResponse balanceOfErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -220,39 +220,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="decimalsErc20"></a>
-# **decimalsErc20**
+## **decimalsErc20**
+
 > TransactionAPIResponse decimalsErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -297,39 +297,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="nameErc20"></a>
-# **nameErc20**
+## **nameErc20**
+
 > TransactionAPIResponse nameErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -374,39 +374,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="symbolErc20"></a>
-# **symbolErc20**
+## **symbolErc20**
+
 > TransactionAPIResponse symbolErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -451,39 +451,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="totalSupplyErc20"></a>
-# **totalSupplyErc20**
+## **totalSupplyErc20**
+
 > TransactionAPIResponse totalSupplyErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -528,39 +528,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="transferErc20"></a>
-# **transferErc20**
+## **transferErc20**
+
 > TransactionAPIResponse transferErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -605,39 +605,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="transferFromErc20"></a>
-# **transferFromErc20**
+## **transferFromErc20**
+
 > TransactionAPIResponse transferFromErc20(authorization, name, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -682,29 +682,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

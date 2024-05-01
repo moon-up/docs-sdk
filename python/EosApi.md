@@ -1,21 +1,21 @@
-# moonsdk.EosApi
+# EosApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.EosApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_eos_account**](EosApi.md#create_eos_account) | **POST** /eos | 
-[**get_eos_account**](EosApi.md#get_eos_account) | **GET** /eos/{accountName} | 
-[**list_eos_accounts**](EosApi.md#list_eos_accounts) | **GET** /eos | 
-[**sign_eos_transaction**](EosApi.md#sign_eos_transaction) | **POST** /eos/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                         | HTTP request                        | Description |
+| -------------------------------------------------------------- | ----------------------------------- | ----------- |
+| [**create\_eos\_account**](EosApi.md#create\_eos\_account)     | **POST** /eos                       |             |
+| [**get\_eos\_account**](EosApi.md#get\_eos\_account)           | **GET** /eos/{accountName}          |             |
+| [**list\_eos\_accounts**](EosApi.md#list\_eos\_accounts)       | **GET** /eos                        |             |
+| [**sign\_eos\_transaction**](EosApi.md#sign\_eos\_transaction) | **POST** /eos/{accountName}/sign-tx |             |
 
-# **create_eos_account**
-> AccountAPIResponse create_eos_account(authorization, eos_input)
+## **create\_eos\_account**
 
+> AccountAPIResponse create\_eos\_account(authorization, eos\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling EosApi->create_eos_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                        | Description | Notes |
+| ----------------- | --------------------------- | ----------- | ----- |
+| **authorization** | **str**                     |             |       |
+| **eos\_input**    | [**EosInput**](EosInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **eos_input** | [**EosInput**](EosInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_eos_account**
-> AccountAPIResponse get_eos_account(authorization, account_name)
+## **get\_eos\_account**
 
+> AccountAPIResponse get\_eos\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling EosApi->get_eos_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_eos_accounts**
-> AccountAPIResponse list_eos_accounts(authorization)
+## **list\_eos\_accounts**
 
+> AccountAPIResponse list\_eos\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling EosApi->list_eos_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_eos_transaction**
-> EosAPIResponse sign_eos_transaction(authorization, account_name, eos_transaction_input)
+## **sign\_eos\_transaction**
 
+> EosAPIResponse sign\_eos\_transaction(authorization, account\_name, eos\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling EosApi->sign_eos_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                        | Type                                              | Description | Notes |
+| --------------------------- | ------------------------------------------------- | ----------- | ----- |
+| **authorization**           | **str**                                           |             |       |
+| **account\_name**           | **str**                                           |             |       |
+| **eos\_transaction\_input** | [**EosTransactionInput**](EosTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **eos_transaction_input** | [**EosTransactionInput**](EosTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**EosAPIResponse**](EosAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

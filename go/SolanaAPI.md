@@ -1,21 +1,17 @@
 # \SolanaAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateSolanaAccount**](SolanaAPI.md#CreateSolanaAccount) | **Post** /solana | 
-[**GetSolanaAccount**](SolanaAPI.md#GetSolanaAccount) | **Get** /solana/{accountName} | 
-[**ListSolanaAccounts**](SolanaAPI.md#ListSolanaAccounts) | **Get** /solana | 
-[**SignSolanaTransaction**](SolanaAPI.md#SignSolanaTransaction) | **Post** /solana/{accountName}/sign-tx | 
-
-
+| Method                                                          | HTTP request                           | Description |
+| --------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**CreateSolanaAccount**](SolanaAPI.md#CreateSolanaAccount)     | **Post** /solana                       |             |
+| [**GetSolanaAccount**](SolanaAPI.md#GetSolanaAccount)           | **Get** /solana/{accountName}          |             |
+| [**ListSolanaAccounts**](SolanaAPI.md#ListSolanaAccounts)       | **Get** /solana                        |             |
+| [**SignSolanaTransaction**](SolanaAPI.md#SignSolanaTransaction) | **Post** /solana/{accountName}/sign-tx |             |
 
 ## CreateSolanaAccount
 
 > AccountAPIResponse CreateSolanaAccount(ctx).Authorization(authorization).SolanaInput(solanaInput).Execute()
-
-
 
 ### Example
 
@@ -47,17 +43,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateSolanaAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **solanaInput** | [**SolanaInput**](SolanaInput.md) |  | 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **string**                        |             |       |
+| **solanaInput**   | [**SolanaInput**](SolanaInput.md) |             |       |
 
 ### Return type
 
@@ -65,23 +58,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## GetSolanaAccount
 
 > AccountAPIResponse GetSolanaAccount(ctx, accountName).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -113,21 +101,18 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetSolanaAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -135,23 +120,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## ListSolanaAccounts
 
 > AccountAPIResponse ListSolanaAccounts(ctx).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -182,16 +162,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListSolanaAccountsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -199,23 +176,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SignSolanaTransaction
 
 > SolanaAPIResponse SignSolanaTransaction(ctx, accountName).Authorization(authorization).SolanaTransactionInput(solanaTransactionInput).Execute()
-
-
 
 ### Example
 
@@ -248,22 +220,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSignSolanaTransactionRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **solanaTransactionInput** | [**SolanaTransactionInput**](SolanaTransactionInput.md) |  | 
+**solanaTransactionInput** | [**SolanaTransactionInput**](SolanaTransactionInput.md) | |
 
 ### Return type
 
@@ -271,14 +241,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

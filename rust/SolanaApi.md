@@ -1,128 +1,114 @@
 # \SolanaApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_solana_account**](SolanaApi.md#create_solana_account) | **POST** /solana | 
-[**get_solana_account**](SolanaApi.md#get_solana_account) | **GET** /solana/{accountName} | 
-[**list_solana_accounts**](SolanaApi.md#list_solana_accounts) | **GET** /solana | 
-[**sign_solana_transaction**](SolanaApi.md#sign_solana_transaction) | **POST** /solana/{accountName}/sign-tx | 
+| Method                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**create\_solana\_account**](SolanaApi.md#create\_solana\_account)     | **POST** /solana                       |             |
+| [**get\_solana\_account**](SolanaApi.md#get\_solana\_account)           | **GET** /solana/{accountName}          |             |
+| [**list\_solana\_accounts**](SolanaApi.md#list\_solana\_accounts)       | **GET** /solana                        |             |
+| [**sign\_solana\_transaction**](SolanaApi.md#sign\_solana\_transaction) | **POST** /solana/{accountName}/sign-tx |             |
 
+## create\_solana\_account
 
-
-## create_solana_account
-
-> crate::models::AccountApiResponse create_solana_account(authorization, solana_input)
-
+> crate::models::AccountApiResponse create\_solana\_account(authorization, solana\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**solana_input** | [**SolanaInput**](SolanaInput.md) |  | [required] |
+| Name              | Type                              | Description | Required    | Notes |
+| ----------------- | --------------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                        |             | \[required] |       |
+| **solana\_input** | [**SolanaInput**](SolanaInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_solana\_account
 
-## get_solana_account
-
-> crate::models::AccountApiResponse get_solana_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_solana\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_solana\_accounts
 
-## list_solana_accounts
-
-> crate::models::AccountApiResponse list_solana_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_solana\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_solana\_transaction
 
-## sign_solana_transaction
-
-> crate::models::SolanaApiResponse sign_solana_transaction(authorization, account_name, solana_transaction_input)
-
+> crate::models::SolanaApiResponse sign\_solana\_transaction(authorization, account\_name, solana\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**solana_transaction_input** | [**SolanaTransactionInput**](SolanaTransactionInput.md) |  | [required] |
+| Name                           | Type                                                    | Description | Required    | Notes |
+| ------------------------------ | ------------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**              | **String**                                              |             | \[required] |       |
+| **account\_name**              | **String**                                              |             | \[required] |       |
+| **solana\_transaction\_input** | [**SolanaTransactionInput**](SolanaTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::SolanaApiResponse**](SolanaAPIResponse.md)
+[**crate::models::SolanaApiResponse**](docs/SolanaAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](SolanaApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

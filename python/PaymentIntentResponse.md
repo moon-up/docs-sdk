@@ -1,21 +1,20 @@
 # PaymentIntentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**metadata** | **Dict[str, str]** |  | [optional] 
-**uri** | **str** |  | [optional] 
-**qr_code** | **str** |  | [optional] 
-**status** | **str** |  | [optional] 
-**destination** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**network** | **str** |  | [optional] 
-**currency** | **str** |  | [optional] 
-**id** | **str** |  | [optional] 
-**message** | **str** |  | [optional] 
-**success** | **bool** |  | 
+| Name            | Type                | Description | Notes       |
+| --------------- | ------------------- | ----------- | ----------- |
+| **metadata**    | **Dict\[str, str]** |             | \[optional] |
+| **uri**         | **str**             |             | \[optional] |
+| **qr\_code**    | **str**             |             | \[optional] |
+| **status**      | **str**             |             | \[optional] |
+| **destination** | **str**             |             | \[optional] |
+| **amount**      | **float**           |             | \[optional] |
+| **network**     | **str**             |             | \[optional] |
+| **currency**    | **str**             |             | \[optional] |
+| **id**          | **str**             |             | \[optional] |
+| **message**     | **str**             |             | \[optional] |
+| **success**     | **bool**            |             |             |
 
 ## Example
 
@@ -34,6 +33,5 @@ payment_intent_response_dict = payment_intent_response_instance.to_dict()
 # create an instance of PaymentIntentResponse from a dict
 payment_intent_response_form_dict = payment_intent_response.from_dict(payment_intent_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,18 +1,17 @@
 # TransactionInputSupportedParamsTheme
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**border_radius** | **float** |  | 
-**card_color** | **str** |  | 
-**secondary_text_color** | **str** |  | 
-**primary_text_color** | **str** |  | 
-**secondary_color** | **str** |  | 
-**primary_color** | **str** |  | 
-**theme_name** | **str** |  | 
-**is_dark** | **bool** |  | 
+| Name                       | Type      | Description | Notes |
+| -------------------------- | --------- | ----------- | ----- |
+| **border\_radius**         | **float** |             |       |
+| **card\_color**            | **str**   |             |       |
+| **secondary\_text\_color** | **str**   |             |       |
+| **primary\_text\_color**   | **str**   |             |       |
+| **secondary\_color**       | **str**   |             |       |
+| **primary\_color**         | **str**   |             |       |
+| **theme\_name**            | **str**   |             |       |
+| **is\_dark**               | **bool**  |             |       |
 
 ## Example
 
@@ -31,6 +30,5 @@ transaction_input_supported_params_theme_dict = transaction_input_supported_para
 # create an instance of TransactionInputSupportedParamsTheme from a dict
 transaction_input_supported_params_theme_form_dict = transaction_input_supported_params_theme.from_dict(transaction_input_supported_params_theme_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

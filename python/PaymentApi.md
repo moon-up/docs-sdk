@@ -1,30 +1,30 @@
-# moonsdk.PaymentApi
+# PaymentApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+## moonsdk.PaymentApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_payment_intent_config**](PaymentApi.md#create_payment_intent_config) | **POST** /payment/config | 
-[**delete_payment_intent_config**](PaymentApi.md#delete_payment_intent_config) | **DELETE** /payment/config/{id} | 
-[**get_all_payment_intent_configs**](PaymentApi.md#get_all_payment_intent_configs) | **GET** /payment/config | 
-[**get_one_payment_intent_configs**](PaymentApi.md#get_one_payment_intent_configs) | **GET** /payment/config/{id} | 
-[**moralis_webhook**](PaymentApi.md#moralis_webhook) | **POST** /payment/webhook/{id} | 
-[**payment_create_payment_intent**](PaymentApi.md#payment_create_payment_intent) | **POST** /payment | 
-[**payment_delete_payment_intent**](PaymentApi.md#payment_delete_payment_intent) | **DELETE** /payment/{id} | 
-[**payment_get_all_payment_intents**](PaymentApi.md#payment_get_all_payment_intents) | **GET** /payment | 
-[**payment_get_available_chains**](PaymentApi.md#payment_get_available_chains) | **GET** /payment/chains | 
-[**payment_get_payment_intent**](PaymentApi.md#payment_get_payment_intent) | **GET** /payment/{id} | 
-[**payment_update_payment_intent**](PaymentApi.md#payment_update_payment_intent) | **PUT** /payment/{id} | 
-[**tatum_webhook**](PaymentApi.md#tatum_webhook) | **POST** /payment/webhook/tatum/{id} | 
-[**update_payment_intent_config**](PaymentApi.md#update_payment_intent_config) | **PUT** /payment/config/{id} | 
+All URIs are relative to _https://vault-api.usemoon.ai_
 
+| Method                                                                                       | HTTP request                         | Description |
+| -------------------------------------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**create\_payment\_intent\_config**](PaymentApi.md#create\_payment\_intent\_config)         | **POST** /payment/config             |             |
+| [**delete\_payment\_intent\_config**](PaymentApi.md#delete\_payment\_intent\_config)         | **DELETE** /payment/config/{id}      |             |
+| [**get\_all\_payment\_intent\_configs**](PaymentApi.md#get\_all\_payment\_intent\_configs)   | **GET** /payment/config              |             |
+| [**get\_one\_payment\_intent\_configs**](PaymentApi.md#get\_one\_payment\_intent\_configs)   | **GET** /payment/config/{id}         |             |
+| [**moralis\_webhook**](PaymentApi.md#moralis\_webhook)                                       | **POST** /payment/webhook/{id}       |             |
+| [**payment\_create\_payment\_intent**](PaymentApi.md#payment\_create\_payment\_intent)       | **POST** /payment                    |             |
+| [**payment\_delete\_payment\_intent**](PaymentApi.md#payment\_delete\_payment\_intent)       | **DELETE** /payment/{id}             |             |
+| [**payment\_get\_all\_payment\_intents**](PaymentApi.md#payment\_get\_all\_payment\_intents) | **GET** /payment                     |             |
+| [**payment\_get\_available\_chains**](PaymentApi.md#payment\_get\_available\_chains)         | **GET** /payment/chains              |             |
+| [**payment\_get\_payment\_intent**](PaymentApi.md#payment\_get\_payment\_intent)             | **GET** /payment/{id}                |             |
+| [**payment\_update\_payment\_intent**](PaymentApi.md#payment\_update\_payment\_intent)       | **PUT** /payment/{id}                |             |
+| [**tatum\_webhook**](PaymentApi.md#tatum\_webhook)                                           | **POST** /payment/webhook/tatum/{id} |             |
+| [**update\_payment\_intent\_config**](PaymentApi.md#update\_payment\_intent\_config)         | **PUT** /payment/config/{id}         |             |
 
-# **create_payment_intent_config**
-> object create_payment_intent_config(authorization, body)
+## **create\_payment\_intent\_config**
 
+> object create\_payment\_intent\_config(authorization, body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -74,43 +74,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->create_payment_intent_config: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **str**    |             |       |
+| **body**          | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **delete_payment_intent_config**
-> PaymentIntentResponse delete_payment_intent_config(authorization, id)
+## **delete\_payment\_intent\_config**
 
+> PaymentIntentResponse delete\_payment\_intent\_config(authorization, id)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -161,43 +157,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->delete_payment_intent_config: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **id**            | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_all_payment_intent_configs**
-> List[PaymentIntentResponse] get_all_payment_intent_configs(authorization)
+## **get\_all\_payment\_intent\_configs**
 
+> List\[PaymentIntentResponse] get\_all\_payment\_intent\_configs(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -247,42 +239,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->get_all_payment_intent_configs: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
+#### Return type
 
+[**List\[PaymentIntentResponse\]**](PaymentIntentResponse.md)
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
+#### Authorization
 
-### Return type
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-[**List[PaymentIntentResponse]**](PaymentIntentResponse.md)
+#### HTTP request headers
 
-### Authorization
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_one_payment_intent_configs**
-> PaymentIntentResponse get_one_payment_intent_configs(authorization, id)
+## **get\_one\_payment\_intent\_configs**
 
+> PaymentIntentResponse get\_one\_payment\_intent\_configs(authorization, id)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -333,43 +321,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->get_one_payment_intent_configs: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **id**            | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **moralis_webhook**
-> object moralis_webhook(id, i_webhook)
+## **moralis\_webhook**
 
+> object moralis\_webhook(id, i\_webhook)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -420,43 +404,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->moralis_webhook: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name           | Type                        | Description | Notes |
+| -------------- | --------------------------- | ----------- | ----- |
+| **id**         | **str**                     |             |       |
+| **i\_webhook** | [**IWebhook**](IWebhook.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **i_webhook** | [**IWebhook**](IWebhook.md)|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_create_payment_intent**
-> PaymentIntentResponse payment_create_payment_intent(authorization, create_payment_intent_input)
+## **payment\_create\_payment\_intent**
 
+> PaymentIntentResponse payment\_create\_payment\_intent(authorization, create\_payment\_intent\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -508,43 +488,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_create_payment_intent: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                               | Type                                                        | Description | Notes |
+| ---------------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**                  | **str**                                                     |             |       |
+| **create\_payment\_intent\_input** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **create_payment_intent_input** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_delete_payment_intent**
-> PaymentIntentResponse payment_delete_payment_intent(authorization, id)
+## **payment\_delete\_payment\_intent**
 
+> PaymentIntentResponse payment\_delete\_payment\_intent(authorization, id)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -595,43 +571,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_delete_payment_intent: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **id**            | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_get_all_payment_intents**
-> List[PaymentIntentResponse] payment_get_all_payment_intents(authorization)
+## **payment\_get\_all\_payment\_intents**
 
+> List\[PaymentIntentResponse] payment\_get\_all\_payment\_intents(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -681,42 +653,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_get_all_payment_intents: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
+#### Return type
 
+[**List\[PaymentIntentResponse\]**](PaymentIntentResponse.md)
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
+#### Authorization
 
-### Return type
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-[**List[PaymentIntentResponse]**](PaymentIntentResponse.md)
+#### HTTP request headers
 
-### Authorization
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_get_available_chains**
-> List[str] payment_get_available_chains()
+## **payment\_get\_available\_chains**
 
+> List\[str] payment\_get\_available\_chains()
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -764,39 +732,36 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_get_available_chains: %s\n" % e)
 ```
 
-
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
-**List[str]**
+**List\[str]**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_get_payment_intent**
-> PaymentIntentResponse payment_get_payment_intent(authorization, id)
+## **payment\_get\_payment\_intent**
 
+> PaymentIntentResponse payment\_get\_payment\_intent(authorization, id)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -847,43 +812,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_get_payment_intent: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **id**            | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **payment_update_payment_intent**
-> PaymentIntentResponse payment_update_payment_intent(authorization, id, create_payment_intent_input)
+## **payment\_update\_payment\_intent**
 
+> PaymentIntentResponse payment\_update\_payment\_intent(authorization, id, create\_payment\_intent\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -936,44 +897,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->payment_update_payment_intent: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                               | Type                                                        | Description | Notes |
+| ---------------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**                  | **str**                                                     |             |       |
+| **id**                             | **str**                                                     |             |       |
+| **create\_payment\_intent\_input** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
- **create_payment_intent_input** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **tatum_webhook**
-> object tatum_webhook(id, tatum_transaction_event)
+## **tatum\_webhook**
 
+> object tatum\_webhook(id, tatum\_transaction\_event)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -1024,43 +981,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->tatum_webhook: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                          | Type                                                  | Description | Notes |
+| ----------------------------- | ----------------------------------------------------- | ----------- | ----- |
+| **id**                        | **str**                                               |             |       |
+| **tatum\_transaction\_event** | [**TatumTransactionEvent**](TatumTransactionEvent.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **tatum_transaction_event** | [**TatumTransactionEvent**](TatumTransactionEvent.md)|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **update_payment_intent_config**
-> PaymentIntentResponse update_payment_intent_config(authorization, id, body)
+## **update\_payment\_intent\_config**
 
+> PaymentIntentResponse update\_payment\_intent\_config(authorization, id, body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -1112,35 +1065,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling PaymentApi->update_payment_intent_config: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **str**    |             |       |
+| **id**            | **str**    |             |       |
+| **body**          | **object** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **id** | **str**|  | 
- **body** | **object**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

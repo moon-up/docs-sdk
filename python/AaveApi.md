@@ -1,21 +1,21 @@
-# moonsdk.AaveApi
+# AaveApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.AaveApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**borrow**](AaveApi.md#borrow) | **POST** /aave/{name}/borrow | 
-[**lend**](AaveApi.md#lend) | **POST** /aave/{name}/lend | 
-[**repay**](AaveApi.md#repay) | **POST** /aave/{name}/repay | 
-[**user_reserve_data**](AaveApi.md#user_reserve_data) | **POST** /aave/{name}/user-reserve-data | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                    | HTTP request                            | Description |
+| --------------------------------------------------------- | --------------------------------------- | ----------- |
+| [**borrow**](AaveApi.md#borrow)                           | **POST** /aave/{name}/borrow            |             |
+| [**lend**](AaveApi.md#lend)                               | **POST** /aave/{name}/lend              |             |
+| [**repay**](AaveApi.md#repay)                             | **POST** /aave/{name}/repay             |             |
+| [**user\_reserve\_data**](AaveApi.md#user\_reserve\_data) | **POST** /aave/{name}/user-reserve-data |             |
 
-# **borrow**
-> TransactionAPIResponse borrow(authorization, name, aave_input)
+## **borrow**
 
+> TransactionAPIResponse borrow(authorization, name, aave\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -66,44 +66,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AaveApi->borrow: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **aave\_input**   | [**AaveInput**](AaveInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **aave_input** | [**AaveInput**](AaveInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **lend**
-> TransactionAPIResponse lend(authorization, name, aave_input)
+## **lend**
 
+> TransactionAPIResponse lend(authorization, name, aave\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -154,44 +150,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AaveApi->lend: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **aave\_input**   | [**AaveInput**](AaveInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **aave_input** | [**AaveInput**](AaveInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **repay**
-> TransactionAPIResponse repay(authorization, name, aave_input)
+## **repay**
 
+> TransactionAPIResponse repay(authorization, name, aave\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -242,44 +234,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AaveApi->repay: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **aave\_input**   | [**AaveInput**](AaveInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **aave_input** | [**AaveInput**](AaveInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **user_reserve_data**
-> AaveReservesAPIResponse user_reserve_data(authorization, name, aave_input)
+## **user\_reserve\_data**
 
+> AaveReservesAPIResponse user\_reserve\_data(authorization, name, aave\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -330,35 +318,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AaveApi->user_reserve_data: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **aave\_input**   | [**AaveInput**](AaveInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **aave_input** | [**AaveInput**](AaveInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AaveReservesAPIResponse**](AaveReservesAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

@@ -1,18 +1,14 @@
 # \DefaultAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**GetMessage**](DefaultAPI.md#GetMessage) | **Get** /ping | 
-
-
+| Method                                     | HTTP request  | Description |
+| ------------------------------------------ | ------------- | ----------- |
+| [**GetMessage**](DefaultAPI.md#GetMessage) | **Get** /ping |             |
 
 ## GetMessage
 
 > PingResponse GetMessage(ctx).Execute()
-
-
 
 ### Example
 
@@ -48,7 +44,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiGetMessageRequest struct via the builder pattern
 
-
 ### Return type
 
 [**PingResponse**](PingResponse.md)
@@ -59,10 +54,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](DefaultAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

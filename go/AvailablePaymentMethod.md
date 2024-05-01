@@ -2,11 +2,11 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Icon** | **string** |  | 
-**Name** | **string** |  | 
-**PaymentTypeId** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **Icon**          | **string** |             |       |
+| **Name**          | **string** |             |       |
+| **PaymentTypeId** | **string** |             |       |
 
 ## Methods
 
@@ -14,18 +14,13 @@ Name | Type | Description | Notes
 
 `func NewAvailablePaymentMethod(icon string, name string, paymentTypeId string, ) *AvailablePaymentMethod`
 
-NewAvailablePaymentMethod instantiates a new AvailablePaymentMethod object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAvailablePaymentMethod instantiates a new AvailablePaymentMethod object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAvailablePaymentMethodWithDefaults
 
 `func NewAvailablePaymentMethodWithDefaults() *AvailablePaymentMethod`
 
-NewAvailablePaymentMethodWithDefaults instantiates a new AvailablePaymentMethod object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAvailablePaymentMethodWithDefaults instantiates a new AvailablePaymentMethod object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIcon
 
@@ -37,15 +32,13 @@ GetIcon returns the Icon field if non-nil, zero value otherwise.
 
 `func (o *AvailablePaymentMethod) GetIconOk() (*string, bool)`
 
-GetIconOk returns a tuple with the Icon field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIconOk returns a tuple with the Icon field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIcon
 
 `func (o *AvailablePaymentMethod) SetIcon(v string)`
 
 SetIcon sets Icon field to given value.
-
 
 ### GetName
 
@@ -57,15 +50,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *AvailablePaymentMethod) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *AvailablePaymentMethod) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetPaymentTypeId
 
@@ -77,8 +68,7 @@ GetPaymentTypeId returns the PaymentTypeId field if non-nil, zero value otherwis
 
 `func (o *AvailablePaymentMethod) GetPaymentTypeIdOk() (*string, bool)`
 
-GetPaymentTypeIdOk returns a tuple with the PaymentTypeId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPaymentTypeIdOk returns a tuple with the PaymentTypeId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPaymentTypeId
 
@@ -86,8 +76,4 @@ and a boolean to check if the value has been set.
 
 SetPaymentTypeId sets PaymentTypeId field to given value.
 
-
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

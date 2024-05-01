@@ -1,29 +1,25 @@
 # \Erc721API
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**Approve**](Erc721API.md#Approve) | **Post** /erc721/{name}/approve | 
-[**BalanceOf**](Erc721API.md#BalanceOf) | **Post** /erc721/{name}/balance-of | 
-[**GetApproved**](Erc721API.md#GetApproved) | **Post** /erc721/{name}/get-approved | 
-[**IsApprovedForAll**](Erc721API.md#IsApprovedForAll) | **Post** /erc721/{name}/is-approved-for-all | 
-[**Name**](Erc721API.md#Name) | **Post** /erc721/{name}/name | 
-[**OwnerOf**](Erc721API.md#OwnerOf) | **Post** /erc721/{name}/owner-of | 
-[**SafeTransferFrom**](Erc721API.md#SafeTransferFrom) | **Post** /erc721/{name}/safe-transfer-from | 
-[**SetApprovalForAll**](Erc721API.md#SetApprovalForAll) | **Post** /erc721/{name}/set-approval-for-all | 
-[**Symbol**](Erc721API.md#Symbol) | **Post** /erc721/{name}/symbol | 
-[**TokenUri**](Erc721API.md#TokenUri) | **Post** /erc721/{name}/token-uri | 
-[**Transfer**](Erc721API.md#Transfer) | **Post** /erc721/{name}/transfer | 
-[**TransferFrom**](Erc721API.md#TransferFrom) | **Post** /erc721/{name}/transfer-from | 
-
-
+| Method                                                  | HTTP request                                 | Description |
+| ------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**Approve**](Erc721API.md#Approve)                     | **Post** /erc721/{name}/approve              |             |
+| [**BalanceOf**](Erc721API.md#BalanceOf)                 | **Post** /erc721/{name}/balance-of           |             |
+| [**GetApproved**](Erc721API.md#GetApproved)             | **Post** /erc721/{name}/get-approved         |             |
+| [**IsApprovedForAll**](Erc721API.md#IsApprovedForAll)   | **Post** /erc721/{name}/is-approved-for-all  |             |
+| [**Name**](Erc721API.md#Name)                           | **Post** /erc721/{name}/name                 |             |
+| [**OwnerOf**](Erc721API.md#OwnerOf)                     | **Post** /erc721/{name}/owner-of             |             |
+| [**SafeTransferFrom**](Erc721API.md#SafeTransferFrom)   | **Post** /erc721/{name}/safe-transfer-from   |             |
+| [**SetApprovalForAll**](Erc721API.md#SetApprovalForAll) | **Post** /erc721/{name}/set-approval-for-all |             |
+| [**Symbol**](Erc721API.md#Symbol)                       | **Post** /erc721/{name}/symbol               |             |
+| [**TokenUri**](Erc721API.md#TokenUri)                   | **Post** /erc721/{name}/token-uri            |             |
+| [**Transfer**](Erc721API.md#Transfer)                   | **Post** /erc721/{name}/transfer             |             |
+| [**TransferFrom**](Erc721API.md#TransferFrom)           | **Post** /erc721/{name}/transfer-from        |             |
 
 ## Approve
 
 > TransactionAPIResponse Approve(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -56,22 +52,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -79,23 +73,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## BalanceOf
 
 > TransactionAPIResponse BalanceOf(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -128,22 +117,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiBalanceOfRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -151,23 +138,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## GetApproved
 
 > TransactionAPIResponse GetApproved(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -200,22 +182,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetApprovedRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -223,23 +203,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## IsApprovedForAll
 
 > TransactionAPIResponse IsApprovedForAll(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -272,22 +247,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiIsApprovedForAllRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -295,23 +268,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Name
 
 > TransactionAPIResponse Name(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -344,22 +312,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiNameRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -367,23 +333,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## OwnerOf
 
 > TransactionAPIResponse OwnerOf(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -416,22 +377,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiOwnerOfRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -439,23 +398,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SafeTransferFrom
 
 > TransactionAPIResponse SafeTransferFrom(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -488,22 +442,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSafeTransferFromRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -511,23 +463,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SetApprovalForAll
 
 > TransactionAPIResponse SetApprovalForAll(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -560,22 +507,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSetApprovalForAllRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -583,23 +528,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Symbol
 
 > TransactionAPIResponse Symbol(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -632,22 +572,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSymbolRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -655,23 +593,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## TokenUri
 
 > TransactionAPIResponse TokenUri(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -704,22 +637,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTokenUriRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -727,23 +658,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Transfer
 
 > TransactionAPIResponse Transfer(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -776,22 +702,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTransferRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -799,23 +723,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## TransferFrom
 
 > TransactionAPIResponse TransferFrom(ctx, name).Authorization(authorization).Erc721Request(erc721Request).Execute()
-
-
 
 ### Example
 
@@ -848,22 +767,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTransferFromRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **erc721Request** | [**Erc721Request**](Erc721Request.md) |  | 
+**erc721Request** | [**Erc721Request**](Erc721Request.md) | |
 
 ### Return type
 
@@ -871,14 +788,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721API.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

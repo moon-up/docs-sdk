@@ -2,12 +2,12 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**To** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **float64** |  | [optional] 
-**Network** | Pointer to **string** |  | [optional] 
-**Compress** | Pointer to **bool** |  | [optional] 
+| Name         | Type                   | Description | Notes       |
+| ------------ | ---------------------- | ----------- | ----------- |
+| **To**       | Pointer to **string**  |             | \[optional] |
+| **Value**    | Pointer to **float64** |             | \[optional] |
+| **Network**  | Pointer to **string**  |             | \[optional] |
+| **Compress** | Pointer to **bool**    |             | \[optional] |
 
 ## Methods
 
@@ -15,18 +15,13 @@ Name | Type | Description | Notes
 
 `func NewSolanaTransactionInput() *SolanaTransactionInput`
 
-NewSolanaTransactionInput instantiates a new SolanaTransactionInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSolanaTransactionInput instantiates a new SolanaTransactionInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSolanaTransactionInputWithDefaults
 
 `func NewSolanaTransactionInputWithDefaults() *SolanaTransactionInput`
 
-NewSolanaTransactionInputWithDefaults instantiates a new SolanaTransactionInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSolanaTransactionInputWithDefaults instantiates a new SolanaTransactionInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTo
 
@@ -38,8 +33,7 @@ GetTo returns the To field if non-nil, zero value otherwise.
 
 `func (o *SolanaTransactionInput) GetToOk() (*string, bool)`
 
-GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTo
 
@@ -63,8 +57,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *SolanaTransactionInput) GetValueOk() (*float64, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -88,8 +81,7 @@ GetNetwork returns the Network field if non-nil, zero value otherwise.
 
 `func (o *SolanaTransactionInput) GetNetworkOk() (*string, bool)`
 
-GetNetworkOk returns a tuple with the Network field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNetworkOk returns a tuple with the Network field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNetwork
 
@@ -113,8 +105,7 @@ GetCompress returns the Compress field if non-nil, zero value otherwise.
 
 `func (o *SolanaTransactionInput) GetCompressOk() (*bool, bool)`
 
-GetCompressOk returns a tuple with the Compress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCompressOk returns a tuple with the Compress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCompress
 
@@ -128,7 +119,4 @@ SetCompress sets Compress field to given value.
 
 HasCompress returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,19 +1,19 @@
-# moonsdk.Erc4337Api
+# Erc4337Api
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## moonsdk.Erc4337Api
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_address**](Erc4337Api.md#get_address) | **POST** /erc4337/{accountName}/address | 
-[**sign_broadcast_user_op_tx**](Erc4337Api.md#sign_broadcast_user_op_tx) | **POST** /erc4337/{accountName}/sign-broadcast-userop-tx | 
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                           | HTTP request                                             | Description |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------- |
+| [**get\_address**](Erc4337Api.md#get\_address)                                   | **POST** /erc4337/{accountName}/address                  |             |
+| [**sign\_broadcast\_user\_op\_tx**](Erc4337Api.md#sign\_broadcast\_user\_op\_tx) | **POST** /erc4337/{accountName}/sign-broadcast-userop-tx |             |
 
-# **get_address**
-> AccountAPIResponse get_address(authorization, account_name, input_body)
+## **get\_address**
 
+> AccountAPIResponse get\_address(authorization, account\_name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -66,44 +66,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc4337Api->get_address: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **account\_name** | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc4337Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_broadcast_user_op_tx**
-> TransactionAPIResponse sign_broadcast_user_op_tx(authorization, account_name, input_body)
+## **sign\_broadcast\_user\_op\_tx**
 
+> TransactionAPIResponse sign\_broadcast\_user\_op\_tx(authorization, account\_name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -156,35 +152,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling Erc4337Api->sign_broadcast_user_op_tx: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **account\_name** | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc4337Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

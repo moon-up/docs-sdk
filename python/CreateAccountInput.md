@@ -1,11 +1,10 @@
 # CreateAccountInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**private_key** | **str** |  | [optional] 
+| Name             | Type    | Description | Notes       |
+| ---------------- | ------- | ----------- | ----------- |
+| **private\_key** | **str** |             | \[optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ create_account_input_dict = create_account_input_instance.to_dict()
 # create an instance of CreateAccountInput from a dict
 create_account_input_form_dict = create_account_input.from_dict(create_account_input_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

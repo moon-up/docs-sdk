@@ -1,19 +1,18 @@
 # Log
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**triggers** | [**List[TriggerOutput]**](TriggerOutput.md) |  | [optional] 
-**log_index** | **str** |  | 
-**transaction_hash** | **str** |  | 
-**address** | **str** |  | 
-**data** | **str** |  | 
-**topic0** | **str** |  | 
-**topic1** | **str** |  | 
-**topic2** | **str** |  | 
-**topic3** | **str** |  | 
+| Name                  | Type                                          | Description | Notes       |
+| --------------------- | --------------------------------------------- | ----------- | ----------- |
+| **triggers**          | [**List\[TriggerOutput\]**](TriggerOutput.md) |             | \[optional] |
+| **log\_index**        | **str**                                       |             |             |
+| **transaction\_hash** | **str**                                       |             |             |
+| **address**           | **str**                                       |             |             |
+| **data**              | **str**                                       |             |             |
+| **topic0**            | **str**                                       |             |             |
+| **topic1**            | **str**                                       |             |             |
+| **topic2**            | **str**                                       |             |             |
+| **topic3**            | **str**                                       |             |             |
 
 ## Example
 
@@ -32,6 +31,5 @@ log_dict = log_instance.to_dict()
 # create an instance of Log from a dict
 log_form_dict = log.from_dict(log_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

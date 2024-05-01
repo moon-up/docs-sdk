@@ -1,31 +1,31 @@
 # PaymentApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+## PaymentApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createPaymentIntentConfig**](PaymentApi.md#createPaymentIntentConfig) | **POST** /payment/config | 
-[**deletePaymentIntentConfig**](PaymentApi.md#deletePaymentIntentConfig) | **DELETE** /payment/config/{id} | 
-[**getAllPaymentIntentConfigs**](PaymentApi.md#getAllPaymentIntentConfigs) | **GET** /payment/config | 
-[**getOnePaymentIntentConfigs**](PaymentApi.md#getOnePaymentIntentConfigs) | **GET** /payment/config/{id} | 
-[**moralisWebhook**](PaymentApi.md#moralisWebhook) | **POST** /payment/webhook/{id} | 
-[**paymentCreatePaymentIntent**](PaymentApi.md#paymentCreatePaymentIntent) | **POST** /payment | 
-[**paymentDeletePaymentIntent**](PaymentApi.md#paymentDeletePaymentIntent) | **DELETE** /payment/{id} | 
-[**paymentGetAllPaymentIntents**](PaymentApi.md#paymentGetAllPaymentIntents) | **GET** /payment | 
-[**paymentGetAvailableChains**](PaymentApi.md#paymentGetAvailableChains) | **GET** /payment/chains | 
-[**paymentGetPaymentIntent**](PaymentApi.md#paymentGetPaymentIntent) | **GET** /payment/{id} | 
-[**paymentUpdatePaymentIntent**](PaymentApi.md#paymentUpdatePaymentIntent) | **PUT** /payment/{id} | 
-[**tatumWebhook**](PaymentApi.md#tatumWebhook) | **POST** /payment/webhook/tatum/{id} | 
-[**updatePaymentIntentConfig**](PaymentApi.md#updatePaymentIntentConfig) | **PUT** /payment/config/{id} | 
+All URIs are relative to _https://vault-api.usemoon.ai_
 
+| Method                                                                       | HTTP request                         | Description |
+| ---------------------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**createPaymentIntentConfig**](PaymentApi.md#createPaymentIntentConfig)     | **POST** /payment/config             |             |
+| [**deletePaymentIntentConfig**](PaymentApi.md#deletePaymentIntentConfig)     | **DELETE** /payment/config/{id}      |             |
+| [**getAllPaymentIntentConfigs**](PaymentApi.md#getAllPaymentIntentConfigs)   | **GET** /payment/config              |             |
+| [**getOnePaymentIntentConfigs**](PaymentApi.md#getOnePaymentIntentConfigs)   | **GET** /payment/config/{id}         |             |
+| [**moralisWebhook**](PaymentApi.md#moralisWebhook)                           | **POST** /payment/webhook/{id}       |             |
+| [**paymentCreatePaymentIntent**](PaymentApi.md#paymentCreatePaymentIntent)   | **POST** /payment                    |             |
+| [**paymentDeletePaymentIntent**](PaymentApi.md#paymentDeletePaymentIntent)   | **DELETE** /payment/{id}             |             |
+| [**paymentGetAllPaymentIntents**](PaymentApi.md#paymentGetAllPaymentIntents) | **GET** /payment                     |             |
+| [**paymentGetAvailableChains**](PaymentApi.md#paymentGetAvailableChains)     | **GET** /payment/chains              |             |
+| [**paymentGetPaymentIntent**](PaymentApi.md#paymentGetPaymentIntent)         | **GET** /payment/{id}                |             |
+| [**paymentUpdatePaymentIntent**](PaymentApi.md#paymentUpdatePaymentIntent)   | **PUT** /payment/{id}                |             |
+| [**tatumWebhook**](PaymentApi.md#tatumWebhook)                               | **POST** /payment/webhook/tatum/{id} |             |
+| [**updatePaymentIntentConfig**](PaymentApi.md#updatePaymentIntentConfig)     | **PUT** /payment/config/{id}         |             |
 
-<a id="createPaymentIntentConfig"></a>
-# **createPaymentIntentConfig**
+## **createPaymentIntentConfig**
+
 > kotlin.Any createPaymentIntentConfig(authorization, body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -46,39 +46,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **body** | **kotlin.Any**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **body**          | **kotlin.Any**    |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **deletePaymentIntentConfig**
 
-<a id="deletePaymentIntentConfig"></a>
-# **deletePaymentIntentConfig**
 > PaymentIntentResponse deletePaymentIntentConfig(authorization, id)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -99,39 +92,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **id**            | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **getAllPaymentIntentConfigs**
 
-<a id="getAllPaymentIntentConfigs"></a>
-# **getAllPaymentIntentConfigs**
-> kotlin.collections.List&lt;PaymentIntentResponse&gt; getAllPaymentIntentConfigs(authorization)
+> kotlin.collections.List\<PaymentIntentResponse> getAllPaymentIntentConfigs(authorization)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -151,38 +137,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.collections.List&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**kotlin.collections.List\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **getOnePaymentIntentConfigs**
 
-<a id="getOnePaymentIntentConfigs"></a>
-# **getOnePaymentIntentConfigs**
 > PaymentIntentResponse getOnePaymentIntentConfigs(authorization, id)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -203,39 +182,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **id**            | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **moralisWebhook**
 
-<a id="moralisWebhook"></a>
-# **moralisWebhook**
 > kotlin.Any moralisWebhook(id, iwebhook)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -256,39 +228,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **kotlin.String**|  |
- **iwebhook** | [**IWebhook**](IWebhook.md)|  |
+| Name         | Type                        | Description | Notes |
+| ------------ | --------------------------- | ----------- | ----- |
+| **id**       | **kotlin.String**           |             |       |
+| **iwebhook** | [**IWebhook**](IWebhook.md) |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **paymentCreatePaymentIntent**
 
-<a id="paymentCreatePaymentIntent"></a>
-# **paymentCreatePaymentIntent**
 > PaymentIntentResponse paymentCreatePaymentIntent(authorization, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -309,39 +274,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **kotlin.String**                                           |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **paymentDeletePaymentIntent**
 
-<a id="paymentDeletePaymentIntent"></a>
-# **paymentDeletePaymentIntent**
 > PaymentIntentResponse paymentDeletePaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -362,39 +320,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **id**            | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **paymentGetAllPaymentIntents**
 
-<a id="paymentGetAllPaymentIntents"></a>
-# **paymentGetAllPaymentIntents**
-> kotlin.collections.List&lt;PaymentIntentResponse&gt; paymentGetAllPaymentIntents(authorization)
+> kotlin.collections.List\<PaymentIntentResponse> paymentGetAllPaymentIntents(authorization)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -414,38 +365,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.collections.List&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**kotlin.collections.List\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **paymentGetAvailableChains**
 
-<a id="paymentGetAvailableChains"></a>
-# **paymentGetAvailableChains**
-> kotlin.collections.List&lt;kotlin.String&gt; paymentGetAvailableChains()
+> kotlin.collections.List\<kotlin.String> paymentGetAvailableChains()
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -464,35 +408,29 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
+
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
-**kotlin.collections.List&lt;kotlin.String&gt;**
+**kotlin.collections.List\<kotlin.String>**
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **paymentGetPaymentIntent**
 
-<a id="paymentGetPaymentIntent"></a>
-# **paymentGetPaymentIntent**
 > PaymentIntentResponse paymentGetPaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -513,39 +451,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **id**            | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **paymentUpdatePaymentIntent**
 
-<a id="paymentUpdatePaymentIntent"></a>
-# **paymentUpdatePaymentIntent**
 > PaymentIntentResponse paymentUpdatePaymentIntent(authorization, id, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -567,40 +498,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
- **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **kotlin.String**                                           |             |       |
+| **id**                       | **kotlin.String**                                           |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **tatumWebhook**
 
-<a id="tatumWebhook"></a>
-# **tatumWebhook**
 > kotlin.Any tatumWebhook(id, tatumTransactionEvent)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -621,39 +545,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **kotlin.String**|  |
- **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md)|  |
+| Name                      | Type                                                  | Description | Notes |
+| ------------------------- | ----------------------------------------------------- | ----------- | ----- |
+| **id**                    | **kotlin.String**                                     |             |       |
+| **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md) |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **updatePaymentIntentConfig**
 
-<a id="updatePaymentIntentConfig"></a>
-# **updatePaymentIntentConfig**
 > PaymentIntentResponse updatePaymentIntentConfig(authorization, id, body)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -675,30 +592,23 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **id** | **kotlin.String**|  |
- **body** | **kotlin.Any**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **id**            | **kotlin.String** |             |       |
+| **body**          | **kotlin.Any**    |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+* **Content-Type**: application/json
+* **Accept**: application/json

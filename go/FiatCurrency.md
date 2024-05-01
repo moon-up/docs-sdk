@@ -2,13 +2,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Icon** | **string** |  | 
-**Symbol** | **string** |  | 
-**Name** | **string** |  | 
-**Code** | **string** |  | 
-**Id** | **string** |  | 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **Icon**   | **string** |             |       |
+| **Symbol** | **string** |             |       |
+| **Name**   | **string** |             |       |
+| **Code**   | **string** |             |       |
+| **Id**     | **string** |             |       |
 
 ## Methods
 
@@ -16,18 +16,13 @@ Name | Type | Description | Notes
 
 `func NewFiatCurrency(icon string, symbol string, name string, code string, id string, ) *FiatCurrency`
 
-NewFiatCurrency instantiates a new FiatCurrency object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewFiatCurrency instantiates a new FiatCurrency object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewFiatCurrencyWithDefaults
 
 `func NewFiatCurrencyWithDefaults() *FiatCurrency`
 
-NewFiatCurrencyWithDefaults instantiates a new FiatCurrency object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewFiatCurrencyWithDefaults instantiates a new FiatCurrency object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetIcon
 
@@ -39,15 +34,13 @@ GetIcon returns the Icon field if non-nil, zero value otherwise.
 
 `func (o *FiatCurrency) GetIconOk() (*string, bool)`
 
-GetIconOk returns a tuple with the Icon field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIconOk returns a tuple with the Icon field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetIcon
 
 `func (o *FiatCurrency) SetIcon(v string)`
 
 SetIcon sets Icon field to given value.
-
 
 ### GetSymbol
 
@@ -59,15 +52,13 @@ GetSymbol returns the Symbol field if non-nil, zero value otherwise.
 
 `func (o *FiatCurrency) GetSymbolOk() (*string, bool)`
 
-GetSymbolOk returns a tuple with the Symbol field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSymbolOk returns a tuple with the Symbol field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSymbol
 
 `func (o *FiatCurrency) SetSymbol(v string)`
 
 SetSymbol sets Symbol field to given value.
-
 
 ### GetName
 
@@ -79,15 +70,13 @@ GetName returns the Name field if non-nil, zero value otherwise.
 
 `func (o *FiatCurrency) GetNameOk() (*string, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetName
 
 `func (o *FiatCurrency) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetCode
 
@@ -99,15 +88,13 @@ GetCode returns the Code field if non-nil, zero value otherwise.
 
 `func (o *FiatCurrency) GetCodeOk() (*string, bool)`
 
-GetCodeOk returns a tuple with the Code field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCodeOk returns a tuple with the Code field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCode
 
 `func (o *FiatCurrency) SetCode(v string)`
 
 SetCode sets Code field to given value.
-
 
 ### GetId
 
@@ -119,8 +106,7 @@ GetId returns the Id field if non-nil, zero value otherwise.
 
 `func (o *FiatCurrency) GetIdOk() (*string, bool)`
 
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetId
 
@@ -128,8 +114,4 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
-
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

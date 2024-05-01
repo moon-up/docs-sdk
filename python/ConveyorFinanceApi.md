@@ -1,18 +1,18 @@
-# moonsdk.ConveyorFinanceApi
+# ConveyorFinanceApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.ConveyorFinanceApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                 | HTTP request                          | Description |
+| -------------------------------------- | ------------------------------------- | ----------- |
+| [**swap**](ConveyorFinanceApi.md#swap) | **POST** /conveyorfinance/{name}/swap |             |
 
-# **swap**
-> ConveyorFinanceControllerResponse swap(authorization, name, token_swap_params)
+## **swap**
 
+> ConveyorFinanceControllerResponse swap(authorization, name, token\_swap\_params)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -63,35 +63,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling ConveyorFinanceApi->swap: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                    | Type                                      | Description | Notes |
+| ----------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**       | **str**                                   |             |       |
+| **name**                | **str**                                   |             |       |
+| **token\_swap\_params** | [**TokenSwapParams**](TokenSwapParams.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **token_swap_params** | [**TokenSwapParams**](TokenSwapParams.md)|  | 
-
-### Return type
+#### Return type
 
 [**ConveyorFinanceControllerResponse**](ConveyorFinanceControllerResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](ConveyorFinanceApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

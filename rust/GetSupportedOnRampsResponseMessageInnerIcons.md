@@ -2,11 +2,9 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**png** | [**crate::models::GetSupportedOnRampsResponseMessageInnerIconsPng**](GetSupportedOnRampsResponse_message_inner_icons_png.md) |  | 
-**svg** | **String** |  | 
+| Name    | Type                                                                                                                                  | Description | Notes |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **png** | [**crate::models::GetSupportedOnRampsResponseMessageInnerIconsPng**](docs/GetSupportedOnRampsResponse\_message\_inner\_icons\_png.md) |             |       |
+| **svg** | **String**                                                                                                                            |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

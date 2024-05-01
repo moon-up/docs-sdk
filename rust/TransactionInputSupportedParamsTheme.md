@@ -2,17 +2,15 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**border_radius** | Option<**f64**> |  | 
-**card_color** | **String** |  | 
-**secondary_text_color** | **String** |  | 
-**primary_text_color** | **String** |  | 
-**secondary_color** | **String** |  | 
-**primary_color** | **String** |  | 
-**theme_name** | **String** |  | 
-**is_dark** | **bool** |  | 
+| Name                       | Type            | Description | Notes |
+| -------------------------- | --------------- | ----------- | ----- |
+| **border\_radius**         | Option<**f64**> |             |       |
+| **card\_color**            | **String**      |             |       |
+| **secondary\_text\_color** | **String**      |             |       |
+| **primary\_text\_color**   | **String**      |             |       |
+| **secondary\_color**       | **String**      |             |       |
+| **primary\_color**         | **String**      |             |       |
+| **theme\_name**            | **String**      |             |       |
+| **is\_dark**               | **bool**        |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

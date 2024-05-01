@@ -1,19 +1,18 @@
-# moonsdk.DefaultApi
+# DefaultApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.DefaultApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_message**](DefaultApi.md#get_message) | **GET** /ping | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                         | HTTP request  | Description |
+| ---------------------------------------------- | ------------- | ----------- |
+| [**get\_message**](DefaultApi.md#get\_message) | **GET** /ping |             |
 
-# **get_message**
-> PingResponse get_message()
+## **get\_message**
 
+> PingResponse get\_message()
 
-
-### Example
-
+#### Example
 
 ```python
 import moonsdk
@@ -41,30 +40,27 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling DefaultApi->get_message: %s\n" % e)
 ```
 
-
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**PingResponse**](PingResponse.md)
 
-### Authorization
+#### Authorization
 
 No authorization required
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](DefaultApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

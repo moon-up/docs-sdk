@@ -1,12 +1,11 @@
 # GetSupportedOnRampsResponseMessageInnerIcons
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**png** | [**GetSupportedOnRampsResponseMessageInnerIconsPng**](GetSupportedOnRampsResponseMessageInnerIconsPng.md) |  | 
-**svg** | **str** |  | 
+| Name    | Type                                                                                                      | Description | Notes |
+| ------- | --------------------------------------------------------------------------------------------------------- | ----------- | ----- |
+| **png** | [**GetSupportedOnRampsResponseMessageInnerIconsPng**](GetSupportedOnRampsResponseMessageInnerIconsPng.md) |             |       |
+| **svg** | **str**                                                                                                   |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ get_supported_on_ramps_response_message_inner_icons_dict = get_supported_on_ramp
 # create an instance of GetSupportedOnRampsResponseMessageInnerIcons from a dict
 get_supported_on_ramps_response_message_inner_icons_form_dict = get_supported_on_ramps_response_message_inner_icons.from_dict(get_supported_on_ramps_response_message_inner_icons_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

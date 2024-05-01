@@ -1,128 +1,114 @@
 # \RippleApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_ripple_account**](RippleApi.md#create_ripple_account) | **POST** /ripple | 
-[**get_ripple_account**](RippleApi.md#get_ripple_account) | **GET** /ripple/{accountName} | 
-[**list_ripple_accounts**](RippleApi.md#list_ripple_accounts) | **GET** /ripple | 
-[**sign_ripple_transaction**](RippleApi.md#sign_ripple_transaction) | **POST** /ripple/{accountName}/sign-tx | 
+| Method                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**create\_ripple\_account**](RippleApi.md#create\_ripple\_account)     | **POST** /ripple                       |             |
+| [**get\_ripple\_account**](RippleApi.md#get\_ripple\_account)           | **GET** /ripple/{accountName}          |             |
+| [**list\_ripple\_accounts**](RippleApi.md#list\_ripple\_accounts)       | **GET** /ripple                        |             |
+| [**sign\_ripple\_transaction**](RippleApi.md#sign\_ripple\_transaction) | **POST** /ripple/{accountName}/sign-tx |             |
 
+## create\_ripple\_account
 
-
-## create_ripple_account
-
-> crate::models::AccountApiResponse create_ripple_account(authorization, ripple_input)
-
+> crate::models::AccountApiResponse create\_ripple\_account(authorization, ripple\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**ripple_input** | [**RippleInput**](RippleInput.md) |  | [required] |
+| Name              | Type                              | Description | Required    | Notes |
+| ----------------- | --------------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                        |             | \[required] |       |
+| **ripple\_input** | [**RippleInput**](RippleInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RippleApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_ripple\_account
 
-## get_ripple_account
-
-> crate::models::AccountApiResponse get_ripple_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_ripple\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RippleApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_ripple\_accounts
 
-## list_ripple_accounts
-
-> crate::models::AccountApiResponse list_ripple_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_ripple\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RippleApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_ripple\_transaction
 
-## sign_ripple_transaction
-
-> crate::models::RippleApiResponse sign_ripple_transaction(authorization, account_name, ripple_transaction_input)
-
+> crate::models::RippleApiResponse sign\_ripple\_transaction(authorization, account\_name, ripple\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**ripple_transaction_input** | [**RippleTransactionInput**](RippleTransactionInput.md) |  | [required] |
+| Name                           | Type                                                    | Description | Required    | Notes |
+| ------------------------------ | ------------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**              | **String**                                              |             | \[required] |       |
+| **account\_name**              | **String**                                              |             | \[required] |       |
+| **ripple\_transaction\_input** | [**RippleTransactionInput**](RippleTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::RippleApiResponse**](RippleAPIResponse.md)
+[**crate::models::RippleApiResponse**](docs/RippleAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](RippleApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

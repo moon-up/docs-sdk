@@ -1,134 +1,121 @@
 # \OnramperApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**on_ramper_checkout**](OnramperApi.md#on_ramper_checkout) | **POST** /onramper/fund/${accountName} | 
-[**on_ramper_get_quotes_buy**](OnramperApi.md#on_ramper_get_quotes_buy) | **GET** /onramper/quotes/buy | 
-[**on_ramper_get_quotes_sell**](OnramperApi.md#on_ramper_get_quotes_sell) | **GET** /onramper/quotes/sell | 
-[**on_ramper_get_supported_assets**](OnramperApi.md#on_ramper_get_supported_assets) | **GET** /onramper/assets | 
-[**on_ramper_get_supported_currencies**](OnramperApi.md#on_ramper_get_supported_currencies) | **GET** /onramper/currencies | 
-[**on_ramper_get_supported_defaults_all**](OnramperApi.md#on_ramper_get_supported_defaults_all) | **GET** /onramper/defaults | 
-[**on_ramper_get_supported_on_ramps_all**](OnramperApi.md#on_ramper_get_supported_on_ramps_all) | **GET** /onramper/onramps | 
-[**on_ramper_get_supported_payment_types**](OnramperApi.md#on_ramper_get_supported_payment_types) | **GET** /onramper/payment-types | 
-[**on_ramper_get_supported_payment_types_fiat**](OnramperApi.md#on_ramper_get_supported_payment_types_fiat) | **GET** /onramper/payment-types/fiat | 
+| Method                                                                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**on\_ramper\_checkout**](OnramperApi.md#on\_ramper\_checkout)                                                         | **POST** /onramper/fund/${accountName} |             |
+| [**on\_ramper\_get\_quotes\_buy**](OnramperApi.md#on\_ramper\_get\_quotes\_buy)                                         | **GET** /onramper/quotes/buy           |             |
+| [**on\_ramper\_get\_quotes\_sell**](OnramperApi.md#on\_ramper\_get\_quotes\_sell)                                       | **GET** /onramper/quotes/sell          |             |
+| [**on\_ramper\_get\_supported\_assets**](OnramperApi.md#on\_ramper\_get\_supported\_assets)                             | **GET** /onramper/assets               |             |
+| [**on\_ramper\_get\_supported\_currencies**](OnramperApi.md#on\_ramper\_get\_supported\_currencies)                     | **GET** /onramper/currencies           |             |
+| [**on\_ramper\_get\_supported\_defaults\_all**](OnramperApi.md#on\_ramper\_get\_supported\_defaults\_all)               | **GET** /onramper/defaults             |             |
+| [**on\_ramper\_get\_supported\_on\_ramps\_all**](OnramperApi.md#on\_ramper\_get\_supported\_on\_ramps\_all)             | **GET** /onramper/onramps              |             |
+| [**on\_ramper\_get\_supported\_payment\_types**](OnramperApi.md#on\_ramper\_get\_supported\_payment\_types)             | **GET** /onramper/payment-types        |             |
+| [**on\_ramper\_get\_supported\_payment\_types\_fiat**](OnramperApi.md#on\_ramper\_get\_supported\_payment\_types\_fiat) | **GET** /onramper/payment-types/fiat   |             |
 
+## on\_ramper\_checkout
 
-
-## on_ramper_checkout
-
-> serde_json::Value on_ramper_checkout(authorization, account_name, transaction_input)
-
+> serde\_json::Value on\_ramper\_checkout(authorization, account\_name, transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**transaction_input** | [**TransactionInput**](TransactionInput.md) |  | [required] |
+| Name                   | Type                                        | Description | Required    | Notes |
+| ---------------------- | ------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**      | **String**                                  |             | \[required] |       |
+| **account\_name**      | **String**                                  |             | \[required] |       |
+| **transaction\_input** | [**TransactionInput**](TransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**serde_json::Value**](serde_json::Value.md)
+[**serde\_json::Value**](docs/serde\_json::Value.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_quotes\_buy
 
-## on_ramper_get_quotes_buy
-
-> Vec<crate::models::Quote> on_ramper_get_quotes_buy(authorization, fiat, crypto, amount, payment_method, uuid, client_name, country)
-
+> Vec[crate::models::Quote](crate::models::Quote) on\_ramper\_get\_quotes\_buy(authorization, fiat, crypto, amount, payment\_method, uuid, client\_name, country)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**fiat** | **String** |  | [required] |
-**crypto** | **String** |  | [required] |
-**amount** | **f64** |  | [required] |
-**payment_method** | Option<**String**> |  |  |[default to creditcard]
-**uuid** | Option<**String**> |  |  |[default to ]
-**client_name** | Option<**String**> |  |  |[default to ]
-**country** | Option<**String**> |  |  |[default to ]
+| Name                | Type               | Description | Required    | Notes                    |
+| ------------------- | ------------------ | ----------- | ----------- | ------------------------ |
+| **authorization**   | **String**         |             | \[required] |                          |
+| **fiat**            | **String**         |             | \[required] |                          |
+| **crypto**          | **String**         |             | \[required] |                          |
+| **amount**          | **f64**            |             | \[required] |                          |
+| **payment\_method** | Option<**String**> |             |             | \[default to creditcard] |
+| **uuid**            | Option<**String**> |             |             | \[default to ]           |
+| **client\_name**    | Option<**String**> |             |             | \[default to ]           |
+| **country**         | Option<**String**> |             |             | \[default to ]           |
 
 ### Return type
 
-[**Vec<crate::models::Quote>**](Quote.md)
+[**Vec**](Quote.md)[**crate::models::Quote**](crate::models::Quote)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_quotes\_sell
 
-## on_ramper_get_quotes_sell
-
-> Vec<crate::models::SellQuote> on_ramper_get_quotes_sell(authorization, fiat, crypto, amount, payment_method, uuid, client_name, country)
-
+> Vec[crate::models::SellQuote](crate::models::SellQuote) on\_ramper\_get\_quotes\_sell(authorization, fiat, crypto, amount, payment\_method, uuid, client\_name, country)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**fiat** | **String** |  | [required] |
-**crypto** | **String** |  | [required] |
-**amount** | **f64** |  | [required] |
-**payment_method** | Option<**String**> |  |  |[default to creditcard]
-**uuid** | Option<**String**> |  |  |[default to ]
-**client_name** | Option<**String**> |  |  |[default to ]
-**country** | Option<**String**> |  |  |[default to ]
+| Name                | Type               | Description | Required    | Notes                    |
+| ------------------- | ------------------ | ----------- | ----------- | ------------------------ |
+| **authorization**   | **String**         |             | \[required] |                          |
+| **fiat**            | **String**         |             | \[required] |                          |
+| **crypto**          | **String**         |             | \[required] |                          |
+| **amount**          | **f64**            |             | \[required] |                          |
+| **payment\_method** | Option<**String**> |             |             | \[default to creditcard] |
+| **uuid**            | Option<**String**> |             |             | \[default to ]           |
+| **client\_name**    | Option<**String**> |             |             | \[default to ]           |
+| **country**         | Option<**String**> |             |             | \[default to ]           |
 
 ### Return type
 
-[**Vec<crate::models::SellQuote>**](SellQuote.md)
+[**Vec**](SellQuote.md)[**crate::models::SellQuote**](crate::models::SellQuote)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_assets
 
-## on_ramper_get_supported_assets
-
-> crate::models::SupportedAssetResponse on_ramper_get_supported_assets(authorization, source, country)
-
+> crate::models::SupportedAssetResponse on\_ramper\_get\_supported\_assets(authorization, source, country)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**source** | **String** |  | [required] |
-**country** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **source**        | **String** |             | \[required] |       |
+| **country**       | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -136,28 +123,25 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_currencies
 
-## on_ramper_get_supported_currencies
-
-> crate::models::SupportedCurrenciesResponse on_ramper_get_supported_currencies(authorization, r#type)
-
+> crate::models::SupportedCurrenciesResponse on\_ramper\_get\_supported\_currencies(authorization, r#type)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**r#type** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **r#type**        | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -165,29 +149,26 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_defaults\_all
 
-## on_ramper_get_supported_defaults_all
-
-> crate::models::SupportedDefaultResponse on_ramper_get_supported_defaults_all(authorization, country, r#type)
-
+> crate::models::SupportedDefaultResponse on\_ramper\_get\_supported\_defaults\_all(authorization, country, r#type)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**country** | **String** |  | [required] |
-**r#type** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **country**       | **String** |             | \[required] |       |
+| **r#type**        | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -195,27 +176,24 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_on\_ramps\_all
 
-## on_ramper_get_supported_on_ramps_all
-
-> crate::models::GetSupportedOnRampsResponse on_ramper_get_supported_on_ramps_all(authorization)
-
+> crate::models::GetSupportedOnRampsResponse on\_ramper\_get\_supported\_on\_ramps\_all(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -223,30 +201,27 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_payment\_types
 
-## on_ramper_get_supported_payment_types
-
-> crate::models::SupportedPaymentTypesCurrencyResponse on_ramper_get_supported_payment_types(authorization, fiat, country, r#type)
-
+> crate::models::SupportedPaymentTypesCurrencyResponse on\_ramper\_get\_supported\_payment\_types(authorization, fiat, country, r#type)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**fiat** | **String** |  | [required] |
-**country** | **String** |  | [required] |
-**r#type** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **fiat**          | **String** |             | \[required] |       |
+| **country**       | **String** |             | \[required] |       |
+| **r#type**        | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -254,29 +229,26 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## on\_ramper\_get\_supported\_payment\_types\_fiat
 
-## on_ramper_get_supported_payment_types_fiat
-
-> crate::models::SupportedPaymentTypesCurrencyResponse on_ramper_get_supported_payment_types_fiat(authorization, fiat, country)
-
+> crate::models::SupportedPaymentTypesCurrencyResponse on\_ramper\_get\_supported\_payment\_types\_fiat(authorization, fiat, country)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**fiat** | **String** |  | [required] |
-**country** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **fiat**          | **String** |             | \[required] |       |
+| **country**       | **String** |             | \[required] |       |
 
 ### Return type
 
@@ -284,12 +256,11 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

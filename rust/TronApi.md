@@ -1,128 +1,114 @@
 # \TronApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_tron_account**](TronApi.md#create_tron_account) | **POST** /tron | 
-[**get_tron_account**](TronApi.md#get_tron_account) | **GET** /tron/{accountName} | 
-[**list_tron_accounts**](TronApi.md#list_tron_accounts) | **GET** /tron | 
-[**sign_tron_transaction**](TronApi.md#sign_tron_transaction) | **POST** /tron/{accountName}/sign-tx | 
+| Method                                                            | HTTP request                         | Description |
+| ----------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**create\_tron\_account**](TronApi.md#create\_tron\_account)     | **POST** /tron                       |             |
+| [**get\_tron\_account**](TronApi.md#get\_tron\_account)           | **GET** /tron/{accountName}          |             |
+| [**list\_tron\_accounts**](TronApi.md#list\_tron\_accounts)       | **GET** /tron                        |             |
+| [**sign\_tron\_transaction**](TronApi.md#sign\_tron\_transaction) | **POST** /tron/{accountName}/sign-tx |             |
 
+## create\_tron\_account
 
-
-## create_tron_account
-
-> crate::models::AccountApiResponse create_tron_account(authorization, tron_input)
-
+> crate::models::AccountApiResponse create\_tron\_account(authorization, tron\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**tron_input** | [**TronInput**](TronInput.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **tron\_input**   | [**TronInput**](TronInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_tron\_account
 
-## get_tron_account
-
-> crate::models::AccountApiResponse get_tron_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_tron\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_tron\_accounts
 
-## list_tron_accounts
-
-> crate::models::AccountApiResponse list_tron_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_tron\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_tron\_transaction
 
-## sign_tron_transaction
-
-> crate::models::TronApiResponse sign_tron_transaction(authorization, account_name, tron_transaction_input)
-
+> crate::models::TronApiResponse sign\_tron\_transaction(authorization, account\_name, tron\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**tron_transaction_input** | [**TronTransactionInput**](TronTransactionInput.md) |  | [required] |
+| Name                         | Type                                                | Description | Required    | Notes |
+| ---------------------------- | --------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**            | **String**                                          |             | \[required] |       |
+| **account\_name**            | **String**                                          |             | \[required] |       |
+| **tron\_transaction\_input** | [**TronTransactionInput**](TronTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TronApiResponse**](TronAPIResponse.md)
+[**crate::models::TronApiResponse**](docs/TronAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

@@ -1,22 +1,22 @@
 # DogeCoinApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## DogeCoinApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**createDogeCoinAccount**](DogeCoinApi.md#createDogeCoinAccount) | **POST** /dogecoin |  |
-| [**getDogeCoinAccount**](DogeCoinApi.md#getDogeCoinAccount) | **GET** /dogecoin/{accountName} |  |
-| [**listDogeCoinAccounts**](DogeCoinApi.md#listDogeCoinAccounts) | **GET** /dogecoin |  |
-| [**signDogeCoinTransaction**](DogeCoinApi.md#signDogeCoinTransaction) | **POST** /dogecoin/{accountName}/sign-tx |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                | HTTP request                             | Description |
+| --------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**createDogeCoinAccount**](DogeCoinApi.md#createDogeCoinAccount)     | **POST** /dogecoin                       |             |
+| [**getDogeCoinAccount**](DogeCoinApi.md#getDogeCoinAccount)           | **GET** /dogecoin/{accountName}          |             |
+| [**listDogeCoinAccounts**](DogeCoinApi.md#listDogeCoinAccounts)       | **GET** /dogecoin                        |             |
+| [**signDogeCoinTransaction**](DogeCoinApi.md#signDogeCoinTransaction) | **POST** /dogecoin/{accountName}/sign-tx |             |
 
-<a id="createDogeCoinAccount"></a>
-# **createDogeCoinAccount**
+## **createDogeCoinAccount**
+
 > AccountAPIResponse createDogeCoinAccount(authorization, dogeCoinInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -60,38 +60,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **dogeCoinInput** | [**DogeCoinInput**](DogeCoinInput.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **String**                            |             |       |
+| **dogeCoinInput** | [**DogeCoinInput**](DogeCoinInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getDogeCoinAccount"></a>
-# **getDogeCoinAccount**
+## **getDogeCoinAccount**
+
 > AccountAPIResponse getDogeCoinAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -135,38 +135,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="listDogeCoinAccounts"></a>
-# **listDogeCoinAccounts**
+## **listDogeCoinAccounts**
+
 > AccountAPIResponse listDogeCoinAccounts(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -209,37 +209,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signDogeCoinTransaction"></a>
-# **signDogeCoinTransaction**
+## **signDogeCoinTransaction**
+
 > DogeCoinAPIResponse signDogeCoinTransaction(authorization, accountName, dogeCoinTransactionInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -284,29 +284,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **dogeCoinTransactionInput** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md)|  | |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **accountName**              | **String**                                                  |             |       |
+| **dogeCoinTransactionInput** | [**DogeCoinTransactionInput**](DogeCoinTransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**DogeCoinAPIResponse**](DogeCoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

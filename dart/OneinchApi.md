@@ -1,28 +1,30 @@
-# moonsdk.api.OneinchApi
+# OneinchApi
 
-## Load the API package
+## moonsdk.api.OneinchApi
+
+### Load the API package
+
 ```dart
 import 'package:moonsdk/api.dart';
 ```
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approveCallData**](OneinchApi.md#approvecalldata) | **POST** /oneinch/approve-call-data | 
-[**approveSpender**](OneinchApi.md#approvespender) | **POST** /oneinch/approve-spender | 
-[**protocols**](OneinchApi.md#protocols) | **POST** /oneinch/protocols | 
-[**quote**](OneinchApi.md#quote) | **POST** /oneinch/quote | 
-[**swap**](OneinchApi.md#swap) | **POST** /oneinch/{accountName}/swap | 
-[**tokens**](OneinchApi.md#tokens) | **POST** /oneinch/tokens | 
+| Method                                               | HTTP request                         | Description |
+| ---------------------------------------------------- | ------------------------------------ | ----------- |
+| [**approveCallData**](OneinchApi.md#approvecalldata) | **POST** /oneinch/approve-call-data  |             |
+| [**approveSpender**](OneinchApi.md#approvespender)   | **POST** /oneinch/approve-spender    |             |
+| [**protocols**](OneinchApi.md#protocols)             | **POST** /oneinch/protocols          |             |
+| [**quote**](OneinchApi.md#quote)                     | **POST** /oneinch/quote              |             |
+| [**swap**](OneinchApi.md#swap)                       | **POST** /oneinch/{accountName}/swap |             |
+| [**tokens**](OneinchApi.md#tokens)                   | **POST** /oneinch/tokens             |             |
 
+## **approveCallData**
 
-# **approveCallData**
 > JsonObject approveCallData(body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -45,33 +47,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **JsonObject**|  | 
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **approveSpender**
+## **approveSpender**
+
 > JsonObject approveSpender(body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -94,33 +96,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **JsonObject**|  | 
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **protocols**
+## **protocols**
+
 > JsonObject protocols(body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -143,33 +145,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **JsonObject**|  | 
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **quote**
+## **quote**
+
 > JsonObject quote(body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -192,33 +194,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **JsonObject**|  | 
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **swap**
+## **swap**
+
 > JsonObject swap(accountName, authorization, getSwapDto)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -243,35 +245,35 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accountName** | **String**|  | 
- **authorization** | **String**|  | 
- **getSwapDto** | [**GetSwapDto**](GetSwapDto.md)|  | 
+| Name              | Type                            | Description | Notes |
+| ----------------- | ------------------------------- | ----------- | ----- |
+| **accountName**   | **String**                      |             |       |
+| **authorization** | **String**                      |             |       |
+| **getSwapDto**    | [**GetSwapDto**](GetSwapDto.md) |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **tokens**
+## **tokens**
+
 > JsonObject tokens(body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -294,24 +296,23 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **JsonObject**|  | 
+| Name     | Type           | Description | Notes |
+| -------- | -------------- | ----------- | ----- |
+| **body** | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

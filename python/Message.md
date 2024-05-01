@@ -1,12 +1,11 @@
 # Message
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fiat** | [**List[FiatCurrency]**](FiatCurrency.md) |  | 
-**crypto** | [**List[CryptoCurrency]**](CryptoCurrency.md) |  | 
+| Name       | Type                                            | Description | Notes |
+| ---------- | ----------------------------------------------- | ----------- | ----- |
+| **fiat**   | [**List\[FiatCurrency\]**](FiatCurrency.md)     |             |       |
+| **crypto** | [**List\[CryptoCurrency\]**](CryptoCurrency.md) |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ message_dict = message_instance.to_dict()
 # create an instance of Message from a dict
 message_form_dict = message.from_dict(message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

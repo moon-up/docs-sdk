@@ -2,13 +2,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Message** | **string** |  | 
-**Tx** | [**TransactionResponseTx**](TransactionResponseTx.md) |  | 
-**Info** | [**TransactionResponseInfo**](TransactionResponseInfo.md) |  | 
-**ChainId** | **float64** |  | 
-**CurrentBlockNumber** | **float64** |  | 
+| Name                   | Type                                                      | Description | Notes |
+| ---------------------- | --------------------------------------------------------- | ----------- | ----- |
+| **Message**            | **string**                                                |             |       |
+| **Tx**                 | [**TransactionResponseTx**](TransactionResponseTx.md)     |             |       |
+| **Info**               | [**TransactionResponseInfo**](TransactionResponseInfo.md) |             |       |
+| **ChainId**            | **float64**                                               |             |       |
+| **CurrentBlockNumber** | **float64**                                               |             |       |
 
 ## Methods
 
@@ -16,18 +16,13 @@ Name | Type | Description | Notes
 
 `func NewTransactionResponse(message string, tx TransactionResponseTx, info TransactionResponseInfo, chainId float64, currentBlockNumber float64, ) *TransactionResponse`
 
-NewTransactionResponse instantiates a new TransactionResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewTransactionResponse instantiates a new TransactionResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewTransactionResponseWithDefaults
 
 `func NewTransactionResponseWithDefaults() *TransactionResponse`
 
-NewTransactionResponseWithDefaults instantiates a new TransactionResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewTransactionResponseWithDefaults instantiates a new TransactionResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetMessage
 
@@ -39,15 +34,13 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *TransactionResponse) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
 `func (o *TransactionResponse) SetMessage(v string)`
 
 SetMessage sets Message field to given value.
-
 
 ### GetTx
 
@@ -59,15 +52,13 @@ GetTx returns the Tx field if non-nil, zero value otherwise.
 
 `func (o *TransactionResponse) GetTxOk() (*TransactionResponseTx, bool)`
 
-GetTxOk returns a tuple with the Tx field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTxOk returns a tuple with the Tx field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTx
 
 `func (o *TransactionResponse) SetTx(v TransactionResponseTx)`
 
 SetTx sets Tx field to given value.
-
 
 ### GetInfo
 
@@ -79,15 +70,13 @@ GetInfo returns the Info field if non-nil, zero value otherwise.
 
 `func (o *TransactionResponse) GetInfoOk() (*TransactionResponseInfo, bool)`
 
-GetInfoOk returns a tuple with the Info field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInfoOk returns a tuple with the Info field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInfo
 
 `func (o *TransactionResponse) SetInfo(v TransactionResponseInfo)`
 
 SetInfo sets Info field to given value.
-
 
 ### GetChainId
 
@@ -99,15 +88,13 @@ GetChainId returns the ChainId field if non-nil, zero value otherwise.
 
 `func (o *TransactionResponse) GetChainIdOk() (*float64, bool)`
 
-GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChainId
 
 `func (o *TransactionResponse) SetChainId(v float64)`
 
 SetChainId sets ChainId field to given value.
-
 
 ### GetCurrentBlockNumber
 
@@ -119,8 +106,7 @@ GetCurrentBlockNumber returns the CurrentBlockNumber field if non-nil, zero valu
 
 `func (o *TransactionResponse) GetCurrentBlockNumberOk() (*float64, bool)`
 
-GetCurrentBlockNumberOk returns a tuple with the CurrentBlockNumber field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetCurrentBlockNumberOk returns a tuple with the CurrentBlockNumber field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetCurrentBlockNumber
 
@@ -128,8 +114,4 @@ and a boolean to check if the value has been set.
 
 SetCurrentBlockNumber sets CurrentBlockNumber field to given value.
 
-
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

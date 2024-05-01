@@ -1,30 +1,30 @@
 # AccountsApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## AccountsApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**broadcastTx**](AccountsApi.md#broadcastTx) | **POST** /accounts/{accountName}/broadcast-tx |  |
-| [**createAccount**](AccountsApi.md#createAccount) | **POST** /accounts |  |
-| [**deleteAccount**](AccountsApi.md#deleteAccount) | **DELETE** /accounts/{accountName} |  |
-| [**deployContract**](AccountsApi.md#deployContract) | **POST** /accounts/{accountName}/deploy |  |
-| [**getAccount**](AccountsApi.md#getAccount) | **GET** /accounts/{accountName} |  |
-| [**getBalance**](AccountsApi.md#getBalance) | **GET** /accounts/{accountName}/balance |  |
-| [**getNonce**](AccountsApi.md#getNonce) | **GET** /accounts/{accountName}/nonce |  |
-| [**listAccounts**](AccountsApi.md#listAccounts) | **GET** /accounts |  |
-| [**signMessage**](AccountsApi.md#signMessage) | **POST** /accounts/{accountName}/sign-message |  |
-| [**signTransaction**](AccountsApi.md#signTransaction) | **POST** /accounts/{accountName}/sign-transaction |  |
-| [**signTypedData**](AccountsApi.md#signTypedData) | **POST** /accounts/{accountName}/sign-typed-data |  |
-| [**transferEth**](AccountsApi.md#transferEth) | **POST** /accounts/{accountName}/transfer-eth |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                | HTTP request                                      | Description |
+| ----------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**broadcastTx**](AccountsApi.md#broadcastTx)         | **POST** /accounts/{accountName}/broadcast-tx     |             |
+| [**createAccount**](AccountsApi.md#createAccount)     | **POST** /accounts                                |             |
+| [**deleteAccount**](AccountsApi.md#deleteAccount)     | **DELETE** /accounts/{accountName}                |             |
+| [**deployContract**](AccountsApi.md#deployContract)   | **POST** /accounts/{accountName}/deploy           |             |
+| [**getAccount**](AccountsApi.md#getAccount)           | **GET** /accounts/{accountName}                   |             |
+| [**getBalance**](AccountsApi.md#getBalance)           | **GET** /accounts/{accountName}/balance           |             |
+| [**getNonce**](AccountsApi.md#getNonce)               | **GET** /accounts/{accountName}/nonce             |             |
+| [**listAccounts**](AccountsApi.md#listAccounts)       | **GET** /accounts                                 |             |
+| [**signMessage**](AccountsApi.md#signMessage)         | **POST** /accounts/{accountName}/sign-message     |             |
+| [**signTransaction**](AccountsApi.md#signTransaction) | **POST** /accounts/{accountName}/sign-transaction |             |
+| [**signTypedData**](AccountsApi.md#signTypedData)     | **POST** /accounts/{accountName}/sign-typed-data  |             |
+| [**transferEth**](AccountsApi.md#transferEth)         | **POST** /accounts/{accountName}/transfer-eth     |             |
 
-<a id="broadcastTx"></a>
-# **broadcastTx**
+## **broadcastTx**
+
 > BroadCastRawTransactionAPIResponse broadcastTx(authorization, accountName, broadcastInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -69,39 +69,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **broadcastInput** | [**BroadcastInput**](BroadcastInput.md)|  | |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **authorization**  | **String**                              |             |       |
+| **accountName**    | **String**                              |             |       |
+| **broadcastInput** | [**BroadcastInput**](BroadcastInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**BroadCastRawTransactionAPIResponse**](BroadCastRawTransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="createAccount"></a>
-# **createAccount**
+## **createAccount**
+
 > AccountAPIResponse createAccount(authorization, createAccountInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -145,38 +145,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **createAccountInput** | [**CreateAccountInput**](CreateAccountInput.md)|  | |
+| Name                   | Type                                            | Description | Notes |
+| ---------------------- | ----------------------------------------------- | ----------- | ----- |
+| **authorization**      | **String**                                      |             |       |
+| **createAccountInput** | [**CreateAccountInput**](CreateAccountInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="deleteAccount"></a>
-# **deleteAccount**
+## **deleteAccount**
+
 > AccountAPIResponse deleteAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -220,38 +220,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="deployContract"></a>
-# **deployContract**
+## **deployContract**
+
 > TransactionAPIResponse deployContract(authorization, accountName, deployInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -296,39 +296,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
-| **deployInput** | [**DeployInput**](DeployInput.md)|  | |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **String**                        |             |       |
+| **accountName**   | **String**                        |             |       |
+| **deployInput**   | [**DeployInput**](DeployInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getAccount"></a>
-# **getAccount**
+## **getAccount**
+
 > AccountAPIResponse getAccount(authorization, accountName)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -372,38 +372,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **accountName** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **accountName**   | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getBalance"></a>
-# **getBalance**
+## **getBalance**
+
 > BalanceAPIResponse getBalance(accountName, authorization, chainId)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -448,39 +448,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **chainId** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **accountName**   | **String** |             |       |
+| **authorization** | **String** |             |       |
+| **chainId**       | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**BalanceAPIResponse**](BalanceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="getNonce"></a>
-# **getNonce**
+## **getNonce**
+
 > NonceAPIResponse getNonce(accountName, authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -524,38 +524,38 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **accountName**   | **String** |             |       |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**NonceAPIResponse**](NonceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="listAccounts"></a>
-# **listAccounts**
+## **listAccounts**
+
 > AccountAPIResponse listAccounts(authorization)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -598,37 +598,37 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signMessage"></a>
-# **signMessage**
+## **signMessage**
+
 > SignMessageAPIResponse signMessage(accountName, authorization, signMessage)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -673,39 +673,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **signMessage** | [**SignMessage**](SignMessage.md)|  | |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **accountName**   | **String**                        |             |       |
+| **authorization** | **String**                        |             |       |
+| **signMessage**   | [**SignMessage**](SignMessage.md) |             |       |
 
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signTransaction"></a>
-# **signTransaction**
+## **signTransaction**
+
 > TransactionAPIResponse signTransaction(accountName, authorization, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -750,39 +750,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **accountName**   | **String**                    |             |       |
+| **authorization** | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="signTypedData"></a>
-# **signTypedData**
+## **signTypedData**
+
 > SignMessageAPIResponse signTypedData(accountName, authorization, signTypedData)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -827,39 +827,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **signTypedData** | [**SignTypedData**](SignTypedData.md)|  | |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **accountName**   | **String**                            |             |       |
+| **authorization** | **String**                            |             |       |
+| **signTypedData** | [**SignTypedData**](SignTypedData.md) |             |       |
 
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="transferEth"></a>
-# **transferEth**
+## **transferEth**
+
 > TransactionAPIResponse transferEth(accountName, authorization, inputBody)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -904,29 +904,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **accountName** | **String**|  | |
-| **authorization** | **String**|  | |
-| **inputBody** | [**InputBody**](InputBody.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **accountName**   | **String**                    |             |       |
+| **authorization** | **String**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

@@ -1,12 +1,11 @@
 # AccountData
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**keys** | **List[str]** |  | [optional] 
-**address** | **str** |  | [optional] 
+| Name        | Type           | Description | Notes       |
+| ----------- | -------------- | ----------- | ----------- |
+| **keys**    | **List\[str]** |             | \[optional] |
+| **address** | **str**        |             | \[optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ account_data_dict = account_data_instance.to_dict()
 # create an instance of AccountData from a dict
 account_data_form_dict = account_data.from_dict(account_data_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

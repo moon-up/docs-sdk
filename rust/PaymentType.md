@@ -2,12 +2,10 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**icon** | **String** |  | 
-**name** | **String** |  | 
-**payment_type_id** | **String** |  | 
+| Name                  | Type       | Description | Notes |
+| --------------------- | ---------- | ----------- | ----- |
+| **icon**              | **String** |             |       |
+| **name**              | **String** |             |       |
+| **payment\_type\_id** | **String** |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,21 +1,21 @@
-# moonsdk.TronApi
+# TronApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.TronApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_tron_account**](TronApi.md#create_tron_account) | **POST** /tron | 
-[**get_tron_account**](TronApi.md#get_tron_account) | **GET** /tron/{accountName} | 
-[**list_tron_accounts**](TronApi.md#list_tron_accounts) | **GET** /tron | 
-[**sign_tron_transaction**](TronApi.md#sign_tron_transaction) | **POST** /tron/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                            | HTTP request                         | Description |
+| ----------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**create\_tron\_account**](TronApi.md#create\_tron\_account)     | **POST** /tron                       |             |
+| [**get\_tron\_account**](TronApi.md#get\_tron\_account)           | **GET** /tron/{accountName}          |             |
+| [**list\_tron\_accounts**](TronApi.md#list\_tron\_accounts)       | **GET** /tron                        |             |
+| [**sign\_tron\_transaction**](TronApi.md#sign\_tron\_transaction) | **POST** /tron/{accountName}/sign-tx |             |
 
-# **create_tron_account**
-> AccountAPIResponse create_tron_account(authorization, tron_input)
+## **create\_tron\_account**
 
+> AccountAPIResponse create\_tron\_account(authorization, tron\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling TronApi->create_tron_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **tron\_input**   | [**TronInput**](TronInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **tron_input** | [**TronInput**](TronInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_tron_account**
-> AccountAPIResponse get_tron_account(authorization, account_name)
+## **get\_tron\_account**
 
+> AccountAPIResponse get\_tron\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling TronApi->get_tron_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_tron_accounts**
-> AccountAPIResponse list_tron_accounts(authorization)
+## **list\_tron\_accounts**
 
+> AccountAPIResponse list\_tron\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling TronApi->list_tron_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_tron_transaction**
-> TronAPIResponse sign_tron_transaction(authorization, account_name, tron_transaction_input)
+## **sign\_tron\_transaction**
 
+> TronAPIResponse sign\_tron\_transaction(authorization, account\_name, tron\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling TronApi->sign_tron_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                         | Type                                                | Description | Notes |
+| ---------------------------- | --------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **str**                                             |             |       |
+| **account\_name**            | **str**                                             |             |       |
+| **tron\_transaction\_input** | [**TronTransactionInput**](TronTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **tron_transaction_input** | [**TronTransactionInput**](TronTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TronAPIResponse**](TronAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TronApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

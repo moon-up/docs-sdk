@@ -1,20 +1,19 @@
 # TatumTransactionEvent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **str** |  | 
-**test** | **bool** |  | 
-**counter_address** | **str** |  | 
-**address** | **str** |  | 
-**mempool** | **bool** |  | 
-**subscription_type** | **str** |  | 
-**block_number** | **float** |  | 
-**tx_id** | **str** |  | 
-**chain** | **str** |  | 
-**currency** | **str** |  | 
+| Name                   | Type      | Description | Notes |
+| ---------------------- | --------- | ----------- | ----- |
+| **amount**             | **str**   |             |       |
+| **test**               | **bool**  |             |       |
+| **counter\_address**   | **str**   |             |       |
+| **address**            | **str**   |             |       |
+| **mempool**            | **bool**  |             |       |
+| **subscription\_type** | **str**   |             |       |
+| **block\_number**      | **float** |             |       |
+| **tx\_id**             | **str**   |             |       |
+| **chain**              | **str**   |             |       |
+| **currency**           | **str**   |             |       |
 
 ## Example
 
@@ -33,6 +32,5 @@ tatum_transaction_event_dict = tatum_transaction_event_instance.to_dict()
 # create an instance of TatumTransactionEvent from a dict
 tatum_transaction_event_form_dict = tatum_transaction_event.from_dict(tatum_transaction_event_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

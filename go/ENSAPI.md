@@ -1,18 +1,14 @@
 # \ENSAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**Resolve**](ENSAPI.md#Resolve) | **Post** /ens/resolve | 
-
-
+| Method                           | HTTP request          | Description |
+| -------------------------------- | --------------------- | ----------- |
+| [**Resolve**](ENSAPI.md#Resolve) | **Post** /ens/resolve |             |
 
 ## Resolve
 
 > EnsResolveAPIResponse Resolve(ctx).Authorization(authorization).EnsResolveInput(ensResolveInput).Execute()
-
-
 
 ### Example
 
@@ -44,17 +40,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiResolveRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **ensResolveInput** | [**EnsResolveInput**](EnsResolveInput.md) |  | 
+| Name                | Type                                      | Description | Notes |
+| ------------------- | ----------------------------------------- | ----------- | ----- |
+| **authorization**   | **string**                                |             |       |
+| **ensResolveInput** | [**EnsResolveInput**](EnsResolveInput.md) |             |       |
 
 ### Return type
 
@@ -62,14 +55,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ENSAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

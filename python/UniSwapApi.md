@@ -1,21 +1,21 @@
-# moonsdk.UniSwapApi
+# UniSwapApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.UniSwapApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**add_liquidity**](UniSwapApi.md#add_liquidity) | **POST** /uniswap/{name}/add-liquidity | 
-[**remove_liquidity**](UniSwapApi.md#remove_liquidity) | **POST** /uniswap/{name}/remove-liquidity | 
-[**swap_exact_eth_for_tokens**](UniSwapApi.md#swap_exact_eth_for_tokens) | **POST** /uniswap/{name}/swap-exact-eth-for-tokens | 
-[**swap_exact_tokens_for_tokens**](UniSwapApi.md#swap_exact_tokens_for_tokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                                 | HTTP request                                          | Description |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**add\_liquidity**](UniSwapApi.md#add\_liquidity)                                     | **POST** /uniswap/{name}/add-liquidity                |             |
+| [**remove\_liquidity**](UniSwapApi.md#remove\_liquidity)                               | **POST** /uniswap/{name}/remove-liquidity             |             |
+| [**swap\_exact\_eth\_for\_tokens**](UniSwapApi.md#swap\_exact\_eth\_for\_tokens)       | **POST** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**swap\_exact\_tokens\_for\_tokens**](UniSwapApi.md#swap\_exact\_tokens\_for\_tokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
 
-# **add_liquidity**
-> TransactionAPIResponse add_liquidity(authorization, name, uniswap_input)
+## **add\_liquidity**
 
+> TransactionAPIResponse add\_liquidity(authorization, name, uniswap\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -66,44 +66,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling UniSwapApi->add_liquidity: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **uniswap_input** | [**UniswapInput**](UniswapInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **remove_liquidity**
-> TransactionAPIResponse remove_liquidity(authorization, name, uniswap_input)
+## **remove\_liquidity**
 
+> TransactionAPIResponse remove\_liquidity(authorization, name, uniswap\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -154,44 +150,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling UniSwapApi->remove_liquidity: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **uniswap_input** | [**UniswapInput**](UniswapInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **swap_exact_eth_for_tokens**
-> TransactionAPIResponse swap_exact_eth_for_tokens(authorization, name, uniswap_input)
+## **swap\_exact\_eth\_for\_tokens**
 
+> TransactionAPIResponse swap\_exact\_eth\_for\_tokens(authorization, name, uniswap\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -242,44 +234,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling UniSwapApi->swap_exact_eth_for_tokens: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **uniswap_input** | [**UniswapInput**](UniswapInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **swap_exact_tokens_for_tokens**
-> TransactionAPIResponse swap_exact_tokens_for_tokens(authorization, name, uniswap_input)
+## **swap\_exact\_tokens\_for\_tokens**
 
+> TransactionAPIResponse swap\_exact\_tokens\_for\_tokens(authorization, name, uniswap\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -330,35 +318,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling UniSwapApi->swap_exact_tokens_for_tokens: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **name**           | **str**                             |             |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **uniswap_input** | [**UniswapInput**](UniswapInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

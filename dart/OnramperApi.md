@@ -1,31 +1,33 @@
-# moonsdk.api.OnramperApi
+# OnramperApi
 
-## Load the API package
+## moonsdk.api.OnramperApi
+
+### Load the API package
+
 ```dart
 import 'package:moonsdk/api.dart';
 ```
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**onRamperCheckout**](OnramperApi.md#onrampercheckout) | **POST** /onramper/fund/${accountName} | 
-[**onRamperGetQuotesBuy**](OnramperApi.md#onrampergetquotesbuy) | **GET** /onramper/quotes/buy | 
-[**onRamperGetQuotesSell**](OnramperApi.md#onrampergetquotessell) | **GET** /onramper/quotes/sell | 
-[**onRamperGetSupportedAssets**](OnramperApi.md#onrampergetsupportedassets) | **GET** /onramper/assets | 
-[**onRamperGetSupportedCurrencies**](OnramperApi.md#onrampergetsupportedcurrencies) | **GET** /onramper/currencies | 
-[**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onrampergetsupporteddefaultsall) | **GET** /onramper/defaults | 
-[**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onrampergetsupportedonrampsall) | **GET** /onramper/onramps | 
-[**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onrampergetsupportedpaymenttypes) | **GET** /onramper/payment-types | 
-[**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onrampergetsupportedpaymenttypesfiat) | **GET** /onramper/payment-types/fiat | 
+| Method                                                                                          | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**onRamperCheckout**](OnramperApi.md#onrampercheckout)                                         | **POST** /onramper/fund/${accountName} |             |
+| [**onRamperGetQuotesBuy**](OnramperApi.md#onrampergetquotesbuy)                                 | **GET** /onramper/quotes/buy           |             |
+| [**onRamperGetQuotesSell**](OnramperApi.md#onrampergetquotessell)                               | **GET** /onramper/quotes/sell          |             |
+| [**onRamperGetSupportedAssets**](OnramperApi.md#onrampergetsupportedassets)                     | **GET** /onramper/assets               |             |
+| [**onRamperGetSupportedCurrencies**](OnramperApi.md#onrampergetsupportedcurrencies)             | **GET** /onramper/currencies           |             |
+| [**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onrampergetsupporteddefaultsall)           | **GET** /onramper/defaults             |             |
+| [**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onrampergetsupportedonrampsall)             | **GET** /onramper/onramps              |             |
+| [**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onrampergetsupportedpaymenttypes)         | **GET** /onramper/payment-types        |             |
+| [**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onrampergetsupportedpaymenttypesfiat) | **GET** /onramper/payment-types/fiat   |             |
 
+## **onRamperCheckout**
 
-# **onRamperCheckout**
 > JsonObject onRamperCheckout(authorization, accountName, transactionInput)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -50,35 +52,35 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **accountName** | **String**|  | 
- **transactionInput** | [**TransactionInput**](TransactionInput.md)|  | 
+| Name                 | Type                                        | Description | Notes |
+| -------------------- | ------------------------------------------- | ----------- | ----- |
+| **authorization**    | **String**                                  |             |       |
+| **accountName**      | **String**                                  |             |       |
+| **transactionInput** | [**TransactionInput**](TransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetQuotesBuy**
-> BuiltList<Quote> onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+## **onRamperGetQuotesBuy**
 
+> BuiltList onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -108,40 +110,40 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **fiat** | **String**|  | 
- **crypto** | **String**|  | 
- **amount** | **double**|  | 
- **paymentMethod** | **String**|  | [optional] [default to 'creditcard']
- **uuid** | **String**|  | [optional] [default to '']
- **clientName** | **String**|  | [optional] [default to '']
- **country** | **String**|  | [optional] [default to '']
+| Name              | Type       | Description | Notes                                  |
+| ----------------- | ---------- | ----------- | -------------------------------------- |
+| **authorization** | **String** |             |                                        |
+| **fiat**          | **String** |             |                                        |
+| **crypto**        | **String** |             |                                        |
+| **amount**        | **double** |             |                                        |
+| **paymentMethod** | **String** |             | \[optional] \[default to 'creditcard'] |
+| **uuid**          | **String** |             | \[optional] \[default to '']           |
+| **clientName**    | **String** |             | \[optional] \[default to '']           |
+| **country**       | **String** |             | \[optional] \[default to '']           |
 
-### Return type
+#### Return type
 
-[**BuiltList&lt;Quote&gt;**](Quote.md)
+[**BuiltList\<Quote>**](Quote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetQuotesSell**
-> BuiltList<SellQuote> onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+## **onRamperGetQuotesSell**
 
+> BuiltList onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -171,40 +173,40 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **fiat** | **String**|  | 
- **crypto** | **String**|  | 
- **amount** | **double**|  | 
- **paymentMethod** | **String**|  | [optional] [default to 'creditcard']
- **uuid** | **String**|  | [optional] [default to '']
- **clientName** | **String**|  | [optional] [default to '']
- **country** | **String**|  | [optional] [default to '']
+| Name              | Type       | Description | Notes                                  |
+| ----------------- | ---------- | ----------- | -------------------------------------- |
+| **authorization** | **String** |             |                                        |
+| **fiat**          | **String** |             |                                        |
+| **crypto**        | **String** |             |                                        |
+| **amount**        | **double** |             |                                        |
+| **paymentMethod** | **String** |             | \[optional] \[default to 'creditcard'] |
+| **uuid**          | **String** |             | \[optional] \[default to '']           |
+| **clientName**    | **String** |             | \[optional] \[default to '']           |
+| **country**       | **String** |             | \[optional] \[default to '']           |
 
-### Return type
+#### Return type
 
-[**BuiltList&lt;SellQuote&gt;**](SellQuote.md)
+[**BuiltList\<SellQuote>**](SellQuote.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedAssets**
-> SupportedAssetResponse onRamperGetSupportedAssets(authorization, source_, country)
+## **onRamperGetSupportedAssets**
 
+> SupportedAssetResponse onRamperGetSupportedAssets(authorization, source\_, country)
 
+#### Example
 
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -229,35 +231,35 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **source_** | **String**|  | 
- **country** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **source\_**      | **String** |             |       |
+| **country**       | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedAssetResponse**](SupportedAssetResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedCurrencies**
+## **onRamperGetSupportedCurrencies**
+
 > SupportedCurrenciesResponse onRamperGetSupportedCurrencies(authorization, type)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -281,34 +283,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **type** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedCurrenciesResponse**](SupportedCurrenciesResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedDefaultsAll**
+## **onRamperGetSupportedDefaultsAll**
+
 > SupportedDefaultResponse onRamperGetSupportedDefaultsAll(authorization, country, type)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -333,35 +335,35 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **country** | **String**|  | 
- **type** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **country**       | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedDefaultResponse**](SupportedDefaultResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedOnRampsAll**
+## **onRamperGetSupportedOnRampsAll**
+
 > GetSupportedOnRampsResponse onRamperGetSupportedOnRampsAll(authorization)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -384,33 +386,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**GetSupportedOnRampsResponse**](GetSupportedOnRampsResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedPaymentTypes**
+## **onRamperGetSupportedPaymentTypes**
+
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypes(authorization, fiat, country, type)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -436,36 +438,36 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **fiat** | **String**|  | 
- **country** | **String**|  | 
- **type** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **fiat**          | **String** |             |       |
+| **country**       | **String** |             |       |
+| **type**          | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **onRamperGetSupportedPaymentTypesFiat**
+## **onRamperGetSupportedPaymentTypesFiat**
+
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypesFiat(authorization, fiat, country)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:moonsdk/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -490,26 +492,25 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **fiat** | **String**|  | 
- **country** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **fiat**          | **String** |             |       |
+| **country**       | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

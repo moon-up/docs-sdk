@@ -1,29 +1,30 @@
-# com.usemoon.MoonSDK.Api.Erc721Api
+# Erc721Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.Erc721Api
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**Approve**](Erc721Api.md#approve) | **POST** /erc721/{name}/approve |  |
-| [**BalanceOf**](Erc721Api.md#balanceof) | **POST** /erc721/{name}/balance-of |  |
-| [**GetApproved**](Erc721Api.md#getapproved) | **POST** /erc721/{name}/get-approved |  |
-| [**IsApprovedForAll**](Erc721Api.md#isapprovedforall) | **POST** /erc721/{name}/is-approved-for-all |  |
-| [**Name**](Erc721Api.md#name) | **POST** /erc721/{name}/name |  |
-| [**OwnerOf**](Erc721Api.md#ownerof) | **POST** /erc721/{name}/owner-of |  |
-| [**SafeTransferFrom**](Erc721Api.md#safetransferfrom) | **POST** /erc721/{name}/safe-transfer-from |  |
-| [**SetApprovalForAll**](Erc721Api.md#setapprovalforall) | **POST** /erc721/{name}/set-approval-for-all |  |
-| [**Symbol**](Erc721Api.md#symbol) | **POST** /erc721/{name}/symbol |  |
-| [**TokenUri**](Erc721Api.md#tokenuri) | **POST** /erc721/{name}/token-uri |  |
-| [**Transfer**](Erc721Api.md#transfer) | **POST** /erc721/{name}/transfer |  |
-| [**TransferFrom**](Erc721Api.md#transferfrom) | **POST** /erc721/{name}/transfer-from |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="approve"></a>
-# **Approve**
+| Method                                                  | HTTP request                                 | Description |
+| ------------------------------------------------------- | -------------------------------------------- | ----------- |
+| [**Approve**](Erc721Api.md#approve)                     | **POST** /erc721/{name}/approve              |             |
+| [**BalanceOf**](Erc721Api.md#balanceof)                 | **POST** /erc721/{name}/balance-of           |             |
+| [**GetApproved**](Erc721Api.md#getapproved)             | **POST** /erc721/{name}/get-approved         |             |
+| [**IsApprovedForAll**](Erc721Api.md#isapprovedforall)   | **POST** /erc721/{name}/is-approved-for-all  |             |
+| [**Name**](Erc721Api.md#name)                           | **POST** /erc721/{name}/name                 |             |
+| [**OwnerOf**](Erc721Api.md#ownerof)                     | **POST** /erc721/{name}/owner-of             |             |
+| [**SafeTransferFrom**](Erc721Api.md#safetransferfrom)   | **POST** /erc721/{name}/safe-transfer-from   |             |
+| [**SetApprovalForAll**](Erc721Api.md#setapprovalforall) | **POST** /erc721/{name}/set-approval-for-all |             |
+| [**Symbol**](Erc721Api.md#symbol)                       | **POST** /erc721/{name}/symbol               |             |
+| [**TokenUri**](Erc721Api.md#tokenuri)                   | **POST** /erc721/{name}/token-uri            |             |
+| [**Transfer**](Erc721Api.md#transfer)                   | **POST** /erc721/{name}/transfer             |             |
+| [**TransferFrom**](Erc721Api.md#transferfrom)           | **POST** /erc721/{name}/transfer-from        |             |
+
+## **Approve**
+
 > TransactionAPIResponse Approve (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -69,7 +70,8 @@ namespace Example
 }
 ```
 
-#### Using the ApproveWithHttpInfo variant
+**Using the ApproveWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -88,42 +90,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="balanceof"></a>
-# **BalanceOf**
+## **BalanceOf**
+
 > TransactionAPIResponse BalanceOf (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -169,7 +170,8 @@ namespace Example
 }
 ```
 
-#### Using the BalanceOfWithHttpInfo variant
+**Using the BalanceOfWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -188,42 +190,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getapproved"></a>
-# **GetApproved**
+## **GetApproved**
+
 > TransactionAPIResponse GetApproved (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -269,7 +270,8 @@ namespace Example
 }
 ```
 
-#### Using the GetApprovedWithHttpInfo variant
+**Using the GetApprovedWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -288,42 +290,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="isapprovedforall"></a>
-# **IsApprovedForAll**
+## **IsApprovedForAll**
+
 > TransactionAPIResponse IsApprovedForAll (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -369,7 +370,8 @@ namespace Example
 }
 ```
 
-#### Using the IsApprovedForAllWithHttpInfo variant
+**Using the IsApprovedForAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -388,42 +390,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="name"></a>
-# **Name**
+## **Name**
+
 > TransactionAPIResponse Name (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -469,7 +470,8 @@ namespace Example
 }
 ```
 
-#### Using the NameWithHttpInfo variant
+**Using the NameWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -488,42 +490,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="ownerof"></a>
-# **OwnerOf**
+## **OwnerOf**
+
 > TransactionAPIResponse OwnerOf (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -569,7 +570,8 @@ namespace Example
 }
 ```
 
-#### Using the OwnerOfWithHttpInfo variant
+**Using the OwnerOfWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -588,42 +590,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="safetransferfrom"></a>
-# **SafeTransferFrom**
+## **SafeTransferFrom**
+
 > TransactionAPIResponse SafeTransferFrom (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -669,7 +670,8 @@ namespace Example
 }
 ```
 
-#### Using the SafeTransferFromWithHttpInfo variant
+**Using the SafeTransferFromWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -688,42 +690,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="setapprovalforall"></a>
-# **SetApprovalForAll**
+## **SetApprovalForAll**
+
 > TransactionAPIResponse SetApprovalForAll (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -769,7 +770,8 @@ namespace Example
 }
 ```
 
-#### Using the SetApprovalForAllWithHttpInfo variant
+**Using the SetApprovalForAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -788,42 +790,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="symbol"></a>
-# **Symbol**
+## **Symbol**
+
 > TransactionAPIResponse Symbol (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -869,7 +870,8 @@ namespace Example
 }
 ```
 
-#### Using the SymbolWithHttpInfo variant
+**Using the SymbolWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -888,42 +890,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="tokenuri"></a>
-# **TokenUri**
+## **TokenUri**
+
 > TransactionAPIResponse TokenUri (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -969,7 +970,8 @@ namespace Example
 }
 ```
 
-#### Using the TokenUriWithHttpInfo variant
+**Using the TokenUriWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -988,42 +990,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="transfer"></a>
-# **Transfer**
+## **Transfer**
+
 > TransactionAPIResponse Transfer (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -1069,7 +1070,8 @@ namespace Example
 }
 ```
 
-#### Using the TransferWithHttpInfo variant
+**Using the TransferWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -1088,42 +1090,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="transferfrom"></a>
-# **TransferFrom**
+## **TransferFrom**
+
 > TransactionAPIResponse TransferFrom (string authorization, string name, Erc721Request erc721Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -1169,7 +1170,8 @@ namespace Example
 }
 ```
 
-#### Using the TransferFromWithHttpInfo variant
+**Using the TransferFromWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -1188,32 +1190,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **erc721Request** | [**Erc721Request**](Erc721Request.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **authorization** | **string**                            |             |       |
+| **name**          | **string**                            |             |       |
+| **erc721Request** | [**Erc721Request**](Erc721Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc721Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

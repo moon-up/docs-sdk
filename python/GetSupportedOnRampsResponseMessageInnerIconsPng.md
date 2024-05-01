@@ -1,12 +1,11 @@
 # GetSupportedOnRampsResponseMessageInnerIconsPng
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**var_160x160** | **str** |  | 
-**var_32x32** | **str** |  | 
+| Name             | Type    | Description | Notes |
+| ---------------- | ------- | ----------- | ----- |
+| **var\_160x160** | **str** |             |       |
+| **var\_32x32**   | **str** |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ get_supported_on_ramps_response_message_inner_icons_png_dict = get_supported_on_
 # create an instance of GetSupportedOnRampsResponseMessageInnerIconsPng from a dict
 get_supported_on_ramps_response_message_inner_icons_png_form_dict = get_supported_on_ramps_response_message_inner_icons_png.from_dict(get_supported_on_ramps_response_message_inner_icons_png_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

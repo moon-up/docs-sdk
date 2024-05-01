@@ -1,25 +1,26 @@
-# com.usemoon.MoonSDK.Api.PaymentApi
+# PaymentApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+## com.usemoon.MoonSDK.Api.PaymentApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**MoralisWebhook**](PaymentApi.md#moraliswebhook) | **POST** /payment/webhook/{id} |  |
-| [**PaymentCreatePaymentIntent**](PaymentApi.md#paymentcreatepaymentintent) | **POST** /payment |  |
-| [**PaymentDeletePaymentIntent**](PaymentApi.md#paymentdeletepaymentintent) | **DELETE** /payment/{id} |  |
-| [**PaymentGetAllPaymentIntents**](PaymentApi.md#paymentgetallpaymentintents) | **GET** /payment |  |
-| [**PaymentGetAvailableChains**](PaymentApi.md#paymentgetavailablechains) | **GET** /payment/chains |  |
-| [**PaymentGetPaymentIntent**](PaymentApi.md#paymentgetpaymentintent) | **GET** /payment/{id} |  |
-| [**PaymentUpdatePaymentIntent**](PaymentApi.md#paymentupdatepaymentintent) | **PUT** /payment/{id} |  |
-| [**TatumWebhook**](PaymentApi.md#tatumwebhook) | **POST** /payment/tatum/webhook/{id} |  |
+All URIs are relative to _https://vault-api.usemoon.ai_
 
-<a id="moraliswebhook"></a>
-# **MoralisWebhook**
+| Method                                                                       | HTTP request                         | Description |
+| ---------------------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**MoralisWebhook**](PaymentApi.md#moraliswebhook)                           | **POST** /payment/webhook/{id}       |             |
+| [**PaymentCreatePaymentIntent**](PaymentApi.md#paymentcreatepaymentintent)   | **POST** /payment                    |             |
+| [**PaymentDeletePaymentIntent**](PaymentApi.md#paymentdeletepaymentintent)   | **DELETE** /payment/{id}             |             |
+| [**PaymentGetAllPaymentIntents**](PaymentApi.md#paymentgetallpaymentintents) | **GET** /payment                     |             |
+| [**PaymentGetAvailableChains**](PaymentApi.md#paymentgetavailablechains)     | **GET** /payment/chains              |             |
+| [**PaymentGetPaymentIntent**](PaymentApi.md#paymentgetpaymentintent)         | **GET** /payment/{id}                |             |
+| [**PaymentUpdatePaymentIntent**](PaymentApi.md#paymentupdatepaymentintent)   | **PUT** /payment/{id}                |             |
+| [**TatumWebhook**](PaymentApi.md#tatumwebhook)                               | **POST** /payment/tatum/webhook/{id} |             |
+
+## **MoralisWebhook**
+
 > Object MoralisWebhook (string id, IWebhook iWebhook)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -64,7 +65,8 @@ namespace Example
 }
 ```
 
-#### Using the MoralisWebhookWithHttpInfo variant
+**Using the MoralisWebhookWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -83,41 +85,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **id** | **string** |  |  |
-| **iWebhook** | [**IWebhook**](IWebhook.md) |  |  |
+| Name         | Type                        | Description | Notes |
+| ------------ | --------------------------- | ----------- | ----- |
+| **id**       | **string**                  |             |       |
+| **iWebhook** | [**IWebhook**](IWebhook.md) |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentcreatepaymentintent"></a>
-# **PaymentCreatePaymentIntent**
+## **PaymentCreatePaymentIntent**
+
 > PaymentIntentResponse PaymentCreatePaymentIntent (string authorization, CreatePaymentIntentInput createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -162,7 +163,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentCreatePaymentIntentWithHttpInfo variant
+**Using the PaymentCreatePaymentIntentWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -181,41 +183,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |  |  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **string**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentdeletepaymentintent"></a>
-# **PaymentDeletePaymentIntent**
+## **PaymentDeletePaymentIntent**
+
 > PaymentIntentResponse PaymentDeletePaymentIntent (string authorization, string id)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -260,7 +261,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentDeletePaymentIntentWithHttpInfo variant
+**Using the PaymentDeletePaymentIntentWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -279,41 +281,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **id** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **id**            | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentgetallpaymentintents"></a>
-# **PaymentGetAllPaymentIntents**
-> List&lt;PaymentIntentResponse&gt; PaymentGetAllPaymentIntents (string authorization)
+## **PaymentGetAllPaymentIntents**
 
+> List\<PaymentIntentResponse> PaymentGetAllPaymentIntents (string authorization)
 
+#### Example
 
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -357,7 +358,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentGetAllPaymentIntentsWithHttpInfo variant
+**Using the PaymentGetAllPaymentIntentsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -376,40 +378,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
-[**List&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**List\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentgetavailablechains"></a>
-# **PaymentGetAvailableChains**
-> List&lt;string&gt; PaymentGetAvailableChains ()
+## **PaymentGetAvailableChains**
 
+> List\<string> PaymentGetAvailableChains ()
 
+#### Example
 
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -452,7 +453,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentGetAvailableChainsWithHttpInfo variant
+**Using the PaymentGetAvailableChainsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -471,36 +473,37 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
+
 This endpoint does not need any parameter.
-### Return type
 
-**List<string>**
+#### Return type
 
-### Authorization
+**List**
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+#### Authorization
 
-### HTTP request headers
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+#### HTTP request headers
 
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentgetpaymentintent"></a>
-# **PaymentGetPaymentIntent**
+## **PaymentGetPaymentIntent**
+
 > PaymentIntentResponse PaymentGetPaymentIntent (string authorization, string id)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -545,7 +548,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentGetPaymentIntentWithHttpInfo variant
+**Using the PaymentGetPaymentIntentWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -564,41 +568,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **id** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **id**            | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="paymentupdatepaymentintent"></a>
-# **PaymentUpdatePaymentIntent**
+## **PaymentUpdatePaymentIntent**
+
 > PaymentIntentResponse PaymentUpdatePaymentIntent (string authorization, string id, CreatePaymentIntentInput createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -644,7 +647,8 @@ namespace Example
 }
 ```
 
-#### Using the PaymentUpdatePaymentIntentWithHttpInfo variant
+**Using the PaymentUpdatePaymentIntentWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -663,42 +667,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **id** | **string** |  |  |
-| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |  |  |
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **string**                                                  |             |       |
+| **id**                       | **string**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="tatumwebhook"></a>
-# **TatumWebhook**
+## **TatumWebhook**
+
 > Object TatumWebhook (string id, Object body)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -743,7 +746,8 @@ namespace Example
 }
 ```
 
-#### Using the TatumWebhookWithHttpInfo variant
+**Using the TatumWebhookWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -762,31 +766,30 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **id** | **string** |  |  |
-| **body** | **Object** |  |  |
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **id**   | **string** |             |       |
+| **body** | **Object** |             |       |
 
-### Return type
+#### Return type
 
 **Object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

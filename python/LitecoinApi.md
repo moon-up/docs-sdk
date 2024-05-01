@@ -1,21 +1,21 @@
-# moonsdk.LitecoinApi
+# LitecoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.LitecoinApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_litecoin_account**](LitecoinApi.md#create_litecoin_account) | **POST** /litecoin | 
-[**get_litecoin_account**](LitecoinApi.md#get_litecoin_account) | **GET** /litecoin/{accountName} | 
-[**list_litecoin_accounts**](LitecoinApi.md#list_litecoin_accounts) | **GET** /litecoin | 
-[**sign_litecoin_transaction**](LitecoinApi.md#sign_litecoin_transaction) | **POST** /litecoin/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                        | HTTP request                             | Description |
+| ----------------------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| [**create\_litecoin\_account**](LitecoinApi.md#create\_litecoin\_account)     | **POST** /litecoin                       |             |
+| [**get\_litecoin\_account**](LitecoinApi.md#get\_litecoin\_account)           | **GET** /litecoin/{accountName}          |             |
+| [**list\_litecoin\_accounts**](LitecoinApi.md#list\_litecoin\_accounts)       | **GET** /litecoin                        |             |
+| [**sign\_litecoin\_transaction**](LitecoinApi.md#sign\_litecoin\_transaction) | **POST** /litecoin/{accountName}/sign-tx |             |
 
-# **create_litecoin_account**
-> AccountAPIResponse create_litecoin_account(authorization, litecoin_input)
+## **create\_litecoin\_account**
 
+> AccountAPIResponse create\_litecoin\_account(authorization, litecoin\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling LitecoinApi->create_litecoin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type                                  | Description | Notes |
+| ------------------- | ------------------------------------- | ----------- | ----- |
+| **authorization**   | **str**                               |             |       |
+| **litecoin\_input** | [**LitecoinInput**](LitecoinInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **litecoin_input** | [**LitecoinInput**](LitecoinInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_litecoin_account**
-> AccountAPIResponse get_litecoin_account(authorization, account_name)
+## **get\_litecoin\_account**
 
+> AccountAPIResponse get\_litecoin\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling LitecoinApi->get_litecoin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_litecoin_accounts**
-> AccountAPIResponse list_litecoin_accounts(authorization)
+## **list\_litecoin\_accounts**
 
+> AccountAPIResponse list\_litecoin\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling LitecoinApi->list_litecoin_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_litecoin_transaction**
-> LitecoinAPIResponse sign_litecoin_transaction(authorization, account_name, litecoin_transaction_input)
+## **sign\_litecoin\_transaction**
 
+> LitecoinAPIResponse sign\_litecoin\_transaction(authorization, account\_name, litecoin\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling LitecoinApi->sign_litecoin_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                             | Type                                                        | Description | Notes |
+| -------------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**                | **str**                                                     |             |       |
+| **account\_name**                | **str**                                                     |             |       |
+| **litecoin\_transaction\_input** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **litecoin_transaction_input** | [**LitecoinTransactionInput**](LitecoinTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**LitecoinAPIResponse**](LitecoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](LitecoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

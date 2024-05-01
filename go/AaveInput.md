@@ -2,28 +2,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**To** | Pointer to **string** |  | [optional] 
-**Data** | Pointer to **string** |  | [optional] 
-**Input** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **string** |  | [optional] 
-**Nonce** | Pointer to **string** |  | [optional] 
-**Gas** | Pointer to **string** |  | [optional] 
-**GasPrice** | Pointer to **string** |  | [optional] 
-**ChainId** | Pointer to **string** |  | [optional] 
-**Encoding** | Pointer to **string** |  | [optional] 
-**EOA** | Pointer to **bool** |  | [optional] 
-**ContractAddress** | Pointer to **string** |  | [optional] 
-**TokenId** | Pointer to **string** |  | [optional] 
-**TokenIds** | Pointer to **string** |  | [optional] 
-**Approved** | Pointer to **bool** |  | [optional] 
-**Broadcast** | Pointer to **bool** |  | [optional] 
-**LendingPool** | Pointer to **string** |  | [optional] 
-**Amount** | Pointer to **string** |  | [optional] 
-**AtokenToRedeeem** | Pointer to **string** |  | [optional] 
-**RefCode** | Pointer to **string** |  | [optional] 
-**InterestRateMode** | Pointer to **string** |  | [optional] 
+| Name                 | Type                  | Description | Notes       |
+| -------------------- | --------------------- | ----------- | ----------- |
+| **To**               | Pointer to **string** |             | \[optional] |
+| **Data**             | Pointer to **string** |             | \[optional] |
+| **Input**            | Pointer to **string** |             | \[optional] |
+| **Value**            | Pointer to **string** |             | \[optional] |
+| **Nonce**            | Pointer to **string** |             | \[optional] |
+| **Gas**              | Pointer to **string** |             | \[optional] |
+| **GasPrice**         | Pointer to **string** |             | \[optional] |
+| **ChainId**          | Pointer to **string** |             | \[optional] |
+| **Encoding**         | Pointer to **string** |             | \[optional] |
+| **EOA**              | Pointer to **bool**   |             | \[optional] |
+| **ContractAddress**  | Pointer to **string** |             | \[optional] |
+| **TokenId**          | Pointer to **string** |             | \[optional] |
+| **TokenIds**         | Pointer to **string** |             | \[optional] |
+| **Approved**         | Pointer to **bool**   |             | \[optional] |
+| **Broadcast**        | Pointer to **bool**   |             | \[optional] |
+| **LendingPool**      | Pointer to **string** |             | \[optional] |
+| **Amount**           | Pointer to **string** |             | \[optional] |
+| **AtokenToRedeeem**  | Pointer to **string** |             | \[optional] |
+| **RefCode**          | Pointer to **string** |             | \[optional] |
+| **InterestRateMode** | Pointer to **string** |             | \[optional] |
 
 ## Methods
 
@@ -31,18 +31,13 @@ Name | Type | Description | Notes
 
 `func NewAaveInput() *AaveInput`
 
-NewAaveInput instantiates a new AaveInput object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAaveInput instantiates a new AaveInput object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAaveInputWithDefaults
 
 `func NewAaveInputWithDefaults() *AaveInput`
 
-NewAaveInputWithDefaults instantiates a new AaveInput object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAaveInputWithDefaults instantiates a new AaveInput object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetTo
 
@@ -54,8 +49,7 @@ GetTo returns the To field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetToOk() (*string, bool)`
 
-GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetToOk returns a tuple with the To field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTo
 
@@ -79,8 +73,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetDataOk() (*string, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -104,8 +97,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetInputOk() (*string, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -129,8 +121,7 @@ GetValue returns the Value field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetValueOk() (*string, bool)`
 
-GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetValue
 
@@ -154,8 +145,7 @@ GetNonce returns the Nonce field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetNonceOk() (*string, bool)`
 
-GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetNonceOk returns a tuple with the Nonce field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetNonce
 
@@ -179,8 +169,7 @@ GetGas returns the Gas field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetGasOk() (*string, bool)`
 
-GetGasOk returns a tuple with the Gas field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasOk returns a tuple with the Gas field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGas
 
@@ -204,8 +193,7 @@ GetGasPrice returns the GasPrice field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetGasPriceOk() (*string, bool)`
 
-GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetGasPriceOk returns a tuple with the GasPrice field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetGasPrice
 
@@ -229,8 +217,7 @@ GetChainId returns the ChainId field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetChainIdOk() (*string, bool)`
 
-GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetChainIdOk returns a tuple with the ChainId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetChainId
 
@@ -254,8 +241,7 @@ GetEncoding returns the Encoding field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetEncodingOk() (*string, bool)`
 
-GetEncodingOk returns a tuple with the Encoding field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEncodingOk returns a tuple with the Encoding field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEncoding
 
@@ -279,8 +265,7 @@ GetEOA returns the EOA field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetEOAOk() (*bool, bool)`
 
-GetEOAOk returns a tuple with the EOA field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetEOAOk returns a tuple with the EOA field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetEOA
 
@@ -304,8 +289,7 @@ GetContractAddress returns the ContractAddress field if non-nil, zero value othe
 
 `func (o *AaveInput) GetContractAddressOk() (*string, bool)`
 
-GetContractAddressOk returns a tuple with the ContractAddress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetContractAddressOk returns a tuple with the ContractAddress field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetContractAddress
 
@@ -329,8 +313,7 @@ GetTokenId returns the TokenId field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetTokenIdOk() (*string, bool)`
 
-GetTokenIdOk returns a tuple with the TokenId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenIdOk returns a tuple with the TokenId field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenId
 
@@ -354,8 +337,7 @@ GetTokenIds returns the TokenIds field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetTokenIdsOk() (*string, bool)`
 
-GetTokenIdsOk returns a tuple with the TokenIds field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTokenIdsOk returns a tuple with the TokenIds field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTokenIds
 
@@ -379,8 +361,7 @@ GetApproved returns the Approved field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetApprovedOk() (*bool, bool)`
 
-GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetApprovedOk returns a tuple with the Approved field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetApproved
 
@@ -404,8 +385,7 @@ GetBroadcast returns the Broadcast field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetBroadcastOk() (*bool, bool)`
 
-GetBroadcastOk returns a tuple with the Broadcast field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetBroadcastOk returns a tuple with the Broadcast field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetBroadcast
 
@@ -429,8 +409,7 @@ GetLendingPool returns the LendingPool field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetLendingPoolOk() (*string, bool)`
 
-GetLendingPoolOk returns a tuple with the LendingPool field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetLendingPoolOk returns a tuple with the LendingPool field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetLendingPool
 
@@ -454,8 +433,7 @@ GetAmount returns the Amount field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetAmountOk() (*string, bool)`
 
-GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmount
 
@@ -479,8 +457,7 @@ GetAtokenToRedeeem returns the AtokenToRedeeem field if non-nil, zero value othe
 
 `func (o *AaveInput) GetAtokenToRedeeemOk() (*string, bool)`
 
-GetAtokenToRedeeemOk returns a tuple with the AtokenToRedeeem field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAtokenToRedeeemOk returns a tuple with the AtokenToRedeeem field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAtokenToRedeeem
 
@@ -504,8 +481,7 @@ GetRefCode returns the RefCode field if non-nil, zero value otherwise.
 
 `func (o *AaveInput) GetRefCodeOk() (*string, bool)`
 
-GetRefCodeOk returns a tuple with the RefCode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetRefCodeOk returns a tuple with the RefCode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetRefCode
 
@@ -529,8 +505,7 @@ GetInterestRateMode returns the InterestRateMode field if non-nil, zero value ot
 
 `func (o *AaveInput) GetInterestRateModeOk() (*string, bool)`
 
-GetInterestRateModeOk returns a tuple with the InterestRateMode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInterestRateModeOk returns a tuple with the InterestRateMode field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInterestRateMode
 
@@ -544,7 +519,4 @@ SetInterestRateMode sets InterestRateMode field to given value.
 
 HasInterestRateMode returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,22 +1,22 @@
 # UniSwapApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## UniSwapApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**addLiquidity**](UniSwapApi.md#addLiquidity) | **POST** /uniswap/{name}/add-liquidity |  |
-| [**removeLiquidity**](UniSwapApi.md#removeLiquidity) | **POST** /uniswap/{name}/remove-liquidity |  |
-| [**swapExactETHForTokens**](UniSwapApi.md#swapExactETHForTokens) | **POST** /uniswap/{name}/swap-exact-eth-for-tokens |  |
-| [**swapExactTokensForTokens**](UniSwapApi.md#swapExactTokensForTokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                 | HTTP request                                          | Description |
+| ---------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**addLiquidity**](UniSwapApi.md#addLiquidity)                         | **POST** /uniswap/{name}/add-liquidity                |             |
+| [**removeLiquidity**](UniSwapApi.md#removeLiquidity)                   | **POST** /uniswap/{name}/remove-liquidity             |             |
+| [**swapExactETHForTokens**](UniSwapApi.md#swapExactETHForTokens)       | **POST** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**swapExactTokensForTokens**](UniSwapApi.md#swapExactTokensForTokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
 
-<a id="addLiquidity"></a>
-# **addLiquidity**
+## **addLiquidity**
+
 > TransactionAPIResponse addLiquidity(authorization, name, uniswapInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -61,39 +61,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md)|  | |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **String**                          |             |       |
+| **name**          | **String**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="removeLiquidity"></a>
-# **removeLiquidity**
+## **removeLiquidity**
+
 > TransactionAPIResponse removeLiquidity(authorization, name, uniswapInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -138,39 +138,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md)|  | |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **String**                          |             |       |
+| **name**          | **String**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="swapExactETHForTokens"></a>
-# **swapExactETHForTokens**
+## **swapExactETHForTokens**
+
 > TransactionAPIResponse swapExactETHForTokens(authorization, name, uniswapInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -215,39 +215,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md)|  | |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **String**                          |             |       |
+| **name**          | **String**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="swapExactTokensForTokens"></a>
-# **swapExactTokensForTokens**
+## **swapExactTokensForTokens**
+
 > TransactionAPIResponse swapExactTokensForTokens(authorization, name, uniswapInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -292,29 +292,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **uniswapInput** | [**UniswapInput**](UniswapInput.md)|  | |
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **String**                          |             |       |
+| **name**          | **String**                          |             |       |
+| **uniswapInput**  | [**UniswapInput**](UniswapInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

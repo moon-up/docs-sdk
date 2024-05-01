@@ -1,18 +1,14 @@
 # \ConveyorFinanceAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**Swap**](ConveyorFinanceAPI.md#Swap) | **Post** /conveyorfinance/{name}/swap | 
-
-
+| Method                                 | HTTP request                          | Description |
+| -------------------------------------- | ------------------------------------- | ----------- |
+| [**Swap**](ConveyorFinanceAPI.md#Swap) | **Post** /conveyorfinance/{name}/swap |             |
 
 ## Swap
 
 > ConveyorFinanceControllerResponse Swap(ctx, name).Authorization(authorization).TokenSwapParams(tokenSwapParams).Execute()
-
-
 
 ### Example
 
@@ -45,22 +41,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**name** | **string** |  | 
+| Name     | Type                | Description                                                                 | Notes |
+| -------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**  | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **name** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSwapRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md) |  | 
+**tokenSwapParams** | [**TokenSwapParams**](TokenSwapParams.md) | |
 
 ### Return type
 
@@ -68,14 +62,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](ConveyorFinanceAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

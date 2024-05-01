@@ -2,10 +2,10 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Keys** | Pointer to **[]string** |  | [optional] 
-**Address** | Pointer to **string** |  | [optional] 
+| Name        | Type                     | Description | Notes       |
+| ----------- | ------------------------ | ----------- | ----------- |
+| **Keys**    | Pointer to **\[]string** |             | \[optional] |
+| **Address** | Pointer to **string**    |             | \[optional] |
 
 ## Methods
 
@@ -13,18 +13,13 @@ Name | Type | Description | Notes
 
 `func NewAccountData() *AccountData`
 
-NewAccountData instantiates a new AccountData object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewAccountData instantiates a new AccountData object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewAccountDataWithDefaults
 
 `func NewAccountDataWithDefaults() *AccountData`
 
-NewAccountDataWithDefaults instantiates a new AccountData object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewAccountDataWithDefaults instantiates a new AccountData object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetKeys
 
@@ -36,8 +31,7 @@ GetKeys returns the Keys field if non-nil, zero value otherwise.
 
 `func (o *AccountData) GetKeysOk() (*[]string, bool)`
 
-GetKeysOk returns a tuple with the Keys field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetKeysOk returns a tuple with the Keys field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetKeys
 
@@ -61,8 +55,7 @@ GetAddress returns the Address field if non-nil, zero value otherwise.
 
 `func (o *AccountData) GetAddressOk() (*string, bool)`
 
-GetAddressOk returns a tuple with the Address field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAddressOk returns a tuple with the Address field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAddress
 
@@ -76,7 +69,4 @@ SetAddress sets Address field to given value.
 
 HasAddress returns a boolean if a field has been set.
 
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -2,13 +2,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Provider** | **string** |  | 
-**PaymentMethod** | **string** |  | 
-**Amount** | **float64** |  | 
-**Target** | **string** |  | 
-**Source** | **string** |  | 
+| Name              | Type        | Description | Notes |
+| ----------------- | ----------- | ----------- | ----- |
+| **Provider**      | **string**  |             |       |
+| **PaymentMethod** | **string**  |             |       |
+| **Amount**        | **float64** |             |       |
+| **Target**        | **string**  |             |       |
+| **Source**        | **string**  |             |       |
 
 ## Methods
 
@@ -16,18 +16,13 @@ Name | Type | Description | Notes
 
 `func NewSupportedDefaultResponseDefaultsId(provider string, paymentMethod string, amount float64, target string, source string, ) *SupportedDefaultResponseDefaultsId`
 
-NewSupportedDefaultResponseDefaultsId instantiates a new SupportedDefaultResponseDefaultsId object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewSupportedDefaultResponseDefaultsId instantiates a new SupportedDefaultResponseDefaultsId object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewSupportedDefaultResponseDefaultsIdWithDefaults
 
 `func NewSupportedDefaultResponseDefaultsIdWithDefaults() *SupportedDefaultResponseDefaultsId`
 
-NewSupportedDefaultResponseDefaultsIdWithDefaults instantiates a new SupportedDefaultResponseDefaultsId object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewSupportedDefaultResponseDefaultsIdWithDefaults instantiates a new SupportedDefaultResponseDefaultsId object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetProvider
 
@@ -39,15 +34,13 @@ GetProvider returns the Provider field if non-nil, zero value otherwise.
 
 `func (o *SupportedDefaultResponseDefaultsId) GetProviderOk() (*string, bool)`
 
-GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetProvider
 
 `func (o *SupportedDefaultResponseDefaultsId) SetProvider(v string)`
 
 SetProvider sets Provider field to given value.
-
 
 ### GetPaymentMethod
 
@@ -59,15 +52,13 @@ GetPaymentMethod returns the PaymentMethod field if non-nil, zero value otherwis
 
 `func (o *SupportedDefaultResponseDefaultsId) GetPaymentMethodOk() (*string, bool)`
 
-GetPaymentMethodOk returns a tuple with the PaymentMethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetPaymentMethodOk returns a tuple with the PaymentMethod field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetPaymentMethod
 
 `func (o *SupportedDefaultResponseDefaultsId) SetPaymentMethod(v string)`
 
 SetPaymentMethod sets PaymentMethod field to given value.
-
 
 ### GetAmount
 
@@ -79,15 +70,13 @@ GetAmount returns the Amount field if non-nil, zero value otherwise.
 
 `func (o *SupportedDefaultResponseDefaultsId) GetAmountOk() (*float64, bool)`
 
-GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetAmountOk returns a tuple with the Amount field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetAmount
 
 `func (o *SupportedDefaultResponseDefaultsId) SetAmount(v float64)`
 
 SetAmount sets Amount field to given value.
-
 
 ### GetTarget
 
@@ -99,15 +88,13 @@ GetTarget returns the Target field if non-nil, zero value otherwise.
 
 `func (o *SupportedDefaultResponseDefaultsId) GetTargetOk() (*string, bool)`
 
-GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTarget
 
 `func (o *SupportedDefaultResponseDefaultsId) SetTarget(v string)`
 
 SetTarget sets Target field to given value.
-
 
 ### GetSource
 
@@ -119,8 +106,7 @@ GetSource returns the Source field if non-nil, zero value otherwise.
 
 `func (o *SupportedDefaultResponseDefaultsId) GetSourceOk() (*string, bool)`
 
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSource
 
@@ -128,8 +114,4 @@ and a boolean to check if the value has been set.
 
 SetSource sets Source field to given value.
 
-
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

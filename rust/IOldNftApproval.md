@@ -2,11 +2,9 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**erc721** | [**Vec<crate::models::InftApprovalErc721>**](INFTApprovalERC721.md) |  | 
-**erc1155** | [**Vec<crate::models::InftApprovalErc1155>**](INFTApprovalERC1155.md) |  | 
+| Name        | Type                                                                                                               | Description | Notes |
+| ----------- | ------------------------------------------------------------------------------------------------------------------ | ----------- | ----- |
+| **erc721**  | [**Vec**](docs/INFTApprovalERC721.md)[**crate::models::InftApprovalErc721**](crate::models::InftApprovalErc721)    |             |       |
+| **erc1155** | [**Vec**](docs/INFTApprovalERC1155.md)[**crate::models::InftApprovalErc1155**](crate::models::InftApprovalErc1155) |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,12 +1,11 @@
 # TriggerOutput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **object** |  | 
-**name** | **str** |  | 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **value** | **object** |             |       |
+| **name**  | **str**    |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ trigger_output_dict = trigger_output_instance.to_dict()
 # create an instance of TriggerOutput from a dict
 trigger_output_form_dict = trigger_output.from_dict(trigger_output_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

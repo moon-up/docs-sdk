@@ -1,21 +1,22 @@
-# com.usemoon.MoonSDK.Api.AaveApi
+# AaveApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.AaveApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**Borrow**](AaveApi.md#borrow) | **POST** /aave/{name}/borrow |  |
-| [**Lend**](AaveApi.md#lend) | **POST** /aave/{name}/lend |  |
-| [**Repay**](AaveApi.md#repay) | **POST** /aave/{name}/repay |  |
-| [**UserReserveData**](AaveApi.md#userreservedata) | **POST** /aave/{name}/user-reserve-data |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="borrow"></a>
-# **Borrow**
+| Method                                            | HTTP request                            | Description |
+| ------------------------------------------------- | --------------------------------------- | ----------- |
+| [**Borrow**](AaveApi.md#borrow)                   | **POST** /aave/{name}/borrow            |             |
+| [**Lend**](AaveApi.md#lend)                       | **POST** /aave/{name}/lend              |             |
+| [**Repay**](AaveApi.md#repay)                     | **POST** /aave/{name}/repay             |             |
+| [**UserReserveData**](AaveApi.md#userreservedata) | **POST** /aave/{name}/user-reserve-data |             |
+
+## **Borrow**
+
 > TransactionAPIResponse Borrow (string authorization, string name, AaveInput aaveInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -61,7 +62,8 @@ namespace Example
 }
 ```
 
-#### Using the BorrowWithHttpInfo variant
+**Using the BorrowWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -80,42 +82,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **aaveInput** | [**AaveInput**](AaveInput.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="lend"></a>
-# **Lend**
+## **Lend**
+
 > TransactionAPIResponse Lend (string authorization, string name, AaveInput aaveInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -161,7 +162,8 @@ namespace Example
 }
 ```
 
-#### Using the LendWithHttpInfo variant
+**Using the LendWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -180,42 +182,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **aaveInput** | [**AaveInput**](AaveInput.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="repay"></a>
-# **Repay**
+## **Repay**
+
 > TransactionAPIResponse Repay (string authorization, string name, AaveInput aaveInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -261,7 +262,8 @@ namespace Example
 }
 ```
 
-#### Using the RepayWithHttpInfo variant
+**Using the RepayWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -280,42 +282,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **aaveInput** | [**AaveInput**](AaveInput.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="userreservedata"></a>
-# **UserReserveData**
+## **UserReserveData**
+
 > AaveReservesAPIResponse UserReserveData (string authorization, string name, AaveInput aaveInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -361,7 +362,8 @@ namespace Example
 }
 ```
 
-#### Using the UserReserveDataWithHttpInfo variant
+**Using the UserReserveDataWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -380,32 +382,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **name** | **string** |  |  |
-| **aaveInput** | [**AaveInput**](AaveInput.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **string**                    |             |       |
+| **name**          | **string**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AaveReservesAPIResponse**](AaveReservesAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](AaveApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

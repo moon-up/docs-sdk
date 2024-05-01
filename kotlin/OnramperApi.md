@@ -1,27 +1,27 @@
 # OnramperApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## OnramperApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**onRamperCheckout**](OnramperApi.md#onRamperCheckout) | **POST** /onramper/fund/${accountName} | 
-[**onRamperGetQuotesBuy**](OnramperApi.md#onRamperGetQuotesBuy) | **GET** /onramper/quotes/buy | 
-[**onRamperGetQuotesSell**](OnramperApi.md#onRamperGetQuotesSell) | **GET** /onramper/quotes/sell | 
-[**onRamperGetSupportedAssets**](OnramperApi.md#onRamperGetSupportedAssets) | **GET** /onramper/assets | 
-[**onRamperGetSupportedCurrencies**](OnramperApi.md#onRamperGetSupportedCurrencies) | **GET** /onramper/currencies | 
-[**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onRamperGetSupportedDefaultsAll) | **GET** /onramper/defaults | 
-[**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onRamperGetSupportedOnRampsAll) | **GET** /onramper/onramps | 
-[**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onRamperGetSupportedPaymentTypes) | **GET** /onramper/payment-types | 
-[**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onRamperGetSupportedPaymentTypesFiat) | **GET** /onramper/payment-types/fiat | 
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                                                                          | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**onRamperCheckout**](OnramperApi.md#onRamperCheckout)                                         | **POST** /onramper/fund/${accountName} |             |
+| [**onRamperGetQuotesBuy**](OnramperApi.md#onRamperGetQuotesBuy)                                 | **GET** /onramper/quotes/buy           |             |
+| [**onRamperGetQuotesSell**](OnramperApi.md#onRamperGetQuotesSell)                               | **GET** /onramper/quotes/sell          |             |
+| [**onRamperGetSupportedAssets**](OnramperApi.md#onRamperGetSupportedAssets)                     | **GET** /onramper/assets               |             |
+| [**onRamperGetSupportedCurrencies**](OnramperApi.md#onRamperGetSupportedCurrencies)             | **GET** /onramper/currencies           |             |
+| [**onRamperGetSupportedDefaultsAll**](OnramperApi.md#onRamperGetSupportedDefaultsAll)           | **GET** /onramper/defaults             |             |
+| [**onRamperGetSupportedOnRampsAll**](OnramperApi.md#onRamperGetSupportedOnRampsAll)             | **GET** /onramper/onramps              |             |
+| [**onRamperGetSupportedPaymentTypes**](OnramperApi.md#onRamperGetSupportedPaymentTypes)         | **GET** /onramper/payment-types        |             |
+| [**onRamperGetSupportedPaymentTypesFiat**](OnramperApi.md#onRamperGetSupportedPaymentTypesFiat) | **GET** /onramper/payment-types/fiat   |             |
 
-<a id="onRamperCheckout"></a>
-# **onRamperCheckout**
+## **onRamperCheckout**
+
 > kotlin.Any onRamperCheckout(authorization, accountName, transactionInput)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -43,40 +43,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **accountName** | **kotlin.String**|  |
- **transactionInput** | [**TransactionInput**](TransactionInput.md)|  |
+| Name                 | Type                                        | Description | Notes |
+| -------------------- | ------------------------------------------- | ----------- | ----- |
+| **authorization**    | **kotlin.String**                           |             |       |
+| **accountName**      | **kotlin.String**                           |             |       |
+| **transactionInput** | [**TransactionInput**](TransactionInput.md) |             |       |
 
-### Return type
+#### Return type
 
-[**kotlin.Any**](kotlin.Any.md)
+[**kotlin.Any**](docs/kotlin.Any.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: application/json
+* **Accept**: application/json
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+## **onRamperGetQuotesBuy**
 
-<a id="onRamperGetQuotesBuy"></a>
-# **onRamperGetQuotesBuy**
-> kotlin.collections.List&lt;Quote&gt; onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+> kotlin.collections.List\<Quote> onRamperGetQuotesBuy(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -103,45 +96,38 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **fiat** | **kotlin.String**|  |
- **crypto** | **kotlin.String**|  |
- **amount** | **kotlin.Double**|  |
- **paymentMethod** | **kotlin.String**|  | [optional] [default to &quot;creditcard&quot;]
- **uuid** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
- **clientName** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
- **country** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
+| Name              | Type              | Description | Notes                                  |
+| ----------------- | ----------------- | ----------- | -------------------------------------- |
+| **authorization** | **kotlin.String** |             |                                        |
+| **fiat**          | **kotlin.String** |             |                                        |
+| **crypto**        | **kotlin.String** |             |                                        |
+| **amount**        | **kotlin.Double** |             |                                        |
+| **paymentMethod** | **kotlin.String** |             | \[optional] \[default to "creditcard"] |
+| **uuid**          | **kotlin.String** |             | \[optional] \[default to ""]           |
+| **clientName**    | **kotlin.String** |             | \[optional] \[default to ""]           |
+| **country**       | **kotlin.String** |             | \[optional] \[default to ""]           |
 
-### Return type
+#### Return type
 
-[**kotlin.collections.List&lt;Quote&gt;**](Quote.md)
+[**kotlin.collections.List\<Quote>**](Quote.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetQuotesSell**
 
-<a id="onRamperGetQuotesSell"></a>
-# **onRamperGetQuotesSell**
-> kotlin.collections.List&lt;SellQuote&gt; onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
+> kotlin.collections.List\<SellQuote> onRamperGetQuotesSell(authorization, fiat, crypto, amount, paymentMethod, uuid, clientName, country)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -168,45 +154,38 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **fiat** | **kotlin.String**|  |
- **crypto** | **kotlin.String**|  |
- **amount** | **kotlin.Double**|  |
- **paymentMethod** | **kotlin.String**|  | [optional] [default to &quot;creditcard&quot;]
- **uuid** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
- **clientName** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
- **country** | **kotlin.String**|  | [optional] [default to &quot;&quot;]
+| Name              | Type              | Description | Notes                                  |
+| ----------------- | ----------------- | ----------- | -------------------------------------- |
+| **authorization** | **kotlin.String** |             |                                        |
+| **fiat**          | **kotlin.String** |             |                                        |
+| **crypto**        | **kotlin.String** |             |                                        |
+| **amount**        | **kotlin.Double** |             |                                        |
+| **paymentMethod** | **kotlin.String** |             | \[optional] \[default to "creditcard"] |
+| **uuid**          | **kotlin.String** |             | \[optional] \[default to ""]           |
+| **clientName**    | **kotlin.String** |             | \[optional] \[default to ""]           |
+| **country**       | **kotlin.String** |             | \[optional] \[default to ""]           |
 
-### Return type
+#### Return type
 
-[**kotlin.collections.List&lt;SellQuote&gt;**](SellQuote.md)
+[**kotlin.collections.List\<SellQuote>**](SellQuote.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedAssets**
 
-<a id="onRamperGetSupportedAssets"></a>
-# **onRamperGetSupportedAssets**
 > SupportedAssetResponse onRamperGetSupportedAssets(authorization, source, country)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -228,40 +207,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **source** | **kotlin.String**|  |
- **country** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **source**        | **kotlin.String** |             |       |
+| **country**       | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedAssetResponse**](SupportedAssetResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedCurrencies**
 
-<a id="onRamperGetSupportedCurrencies"></a>
-# **onRamperGetSupportedCurrencies**
 > SupportedCurrenciesResponse onRamperGetSupportedCurrencies(authorization, type)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -282,39 +254,32 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **type** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **type**          | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedCurrenciesResponse**](SupportedCurrenciesResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedDefaultsAll**
 
-<a id="onRamperGetSupportedDefaultsAll"></a>
-# **onRamperGetSupportedDefaultsAll**
 > SupportedDefaultResponse onRamperGetSupportedDefaultsAll(authorization, country, type)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -336,40 +301,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **country** | **kotlin.String**|  |
- **type** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **country**       | **kotlin.String** |             |       |
+| **type**          | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedDefaultResponse**](SupportedDefaultResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedOnRampsAll**
 
-<a id="onRamperGetSupportedOnRampsAll"></a>
-# **onRamperGetSupportedOnRampsAll**
 > GetSupportedOnRampsResponse onRamperGetSupportedOnRampsAll(authorization)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -389,38 +347,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**GetSupportedOnRampsResponse**](GetSupportedOnRampsResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedPaymentTypes**
 
-<a id="onRamperGetSupportedPaymentTypes"></a>
-# **onRamperGetSupportedPaymentTypes**
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypes(authorization, fiat, country, type)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -443,41 +394,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **fiat** | **kotlin.String**|  |
- **country** | **kotlin.String**|  |
- **type** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **fiat**          | **kotlin.String** |             |       |
+| **country**       | **kotlin.String** |             |       |
+| **type**          | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+## **onRamperGetSupportedPaymentTypesFiat**
 
-<a id="onRamperGetSupportedPaymentTypesFiat"></a>
-# **onRamperGetSupportedPaymentTypesFiat**
 > SupportedPaymentTypesCurrencyResponse onRamperGetSupportedPaymentTypesFiat(authorization, fiat, country)
 
+#### Example
 
-
-### Example
 ```kotlin
 // Import classes:
 //import org.usemoonai.moonsdk.infrastructure.*
@@ -499,30 +443,23 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **kotlin.String**|  |
- **fiat** | **kotlin.String**|  |
- **country** | **kotlin.String**|  |
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **authorization** | **kotlin.String** |             |       |
+| **fiat**          | **kotlin.String** |             |       |
+| **country**       | **kotlin.String** |             |       |
 
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
+Configure ApiKeyAuth: ApiClient.apiKey\["x-api-key"] = "" ApiClient.apiKeyPrefix\["x-api-key"] = "" Configure BearerAuth: ApiClient.apiKey\["Authorization"] = "" ApiClient.apiKeyPrefix\["Authorization"] = ""
 
-Configure ApiKeyAuth:
-    ApiClient.apiKey["x-api-key"] = ""
-    ApiClient.apiKeyPrefix["x-api-key"] = ""
-Configure BearerAuth:
-    ApiClient.apiKey["Authorization"] = ""
-    ApiClient.apiKeyPrefix["Authorization"] = ""
+#### HTTP request headers
 
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+* **Content-Type**: Not defined
+* **Accept**: application/json

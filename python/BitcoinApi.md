@@ -1,21 +1,21 @@
-# moonsdk.BitcoinApi
+# BitcoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.BitcoinApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_bitcoin_account**](BitcoinApi.md#create_bitcoin_account) | **POST** /bitcoin | 
-[**get_bitcoin_account**](BitcoinApi.md#get_bitcoin_account) | **GET** /bitcoin/{accountName} | 
-[**list_bitcoin_accounts**](BitcoinApi.md#list_bitcoin_accounts) | **GET** /bitcoin | 
-[**sign_bitcoin_transaction**](BitcoinApi.md#sign_bitcoin_transaction) | **POST** /bitcoin/{accountName}/sign-tx | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                     | HTTP request                            | Description |
+| -------------------------------------------------------------------------- | --------------------------------------- | ----------- |
+| [**create\_bitcoin\_account**](BitcoinApi.md#create\_bitcoin\_account)     | **POST** /bitcoin                       |             |
+| [**get\_bitcoin\_account**](BitcoinApi.md#get\_bitcoin\_account)           | **GET** /bitcoin/{accountName}          |             |
+| [**list\_bitcoin\_accounts**](BitcoinApi.md#list\_bitcoin\_accounts)       | **GET** /bitcoin                        |             |
+| [**sign\_bitcoin\_transaction**](BitcoinApi.md#sign\_bitcoin\_transaction) | **POST** /bitcoin/{accountName}/sign-tx |             |
 
-# **create_bitcoin_account**
-> AccountAPIResponse create_bitcoin_account(authorization, bitcoin_input)
+## **create\_bitcoin\_account**
 
+> AccountAPIResponse create\_bitcoin\_account(authorization, bitcoin\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -65,43 +65,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling BitcoinApi->create_bitcoin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name               | Type                                | Description | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----- |
+| **authorization**  | **str**                             |             |       |
+| **bitcoin\_input** | [**BitcoinInput**](BitcoinInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **bitcoin_input** | [**BitcoinInput**](BitcoinInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_bitcoin_account**
-> AccountAPIResponse get_bitcoin_account(authorization, account_name)
+## **get\_bitcoin\_account**
 
+> AccountAPIResponse get\_bitcoin\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -150,43 +146,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling BitcoinApi->get_bitcoin_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_bitcoin_accounts**
-> AccountAPIResponse list_bitcoin_accounts(authorization)
+## **list\_bitcoin\_accounts**
 
+> AccountAPIResponse list\_bitcoin\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -234,42 +226,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling BitcoinApi->list_bitcoin_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_bitcoin_transaction**
-> BitcoinAPIResponse sign_bitcoin_transaction(authorization, account_name, bitcoin_transaction_input)
+## **sign\_bitcoin\_transaction**
 
+> BitcoinAPIResponse sign\_bitcoin\_transaction(authorization, account\_name, bitcoin\_transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -320,35 +308,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling BitcoinApi->sign_bitcoin_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                            | Type                                                      | Description | Notes |
+| ------------------------------- | --------------------------------------------------------- | ----------- | ----- |
+| **authorization**               | **str**                                                   |             |       |
+| **account\_name**               | **str**                                                   |             |       |
+| **bitcoin\_transaction\_input** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **bitcoin_transaction_input** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**BitcoinAPIResponse**](BitcoinAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

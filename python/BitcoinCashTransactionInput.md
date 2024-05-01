@@ -1,14 +1,13 @@
 # BitcoinCashTransactionInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**to** | **str** |  | [optional] 
-**value** | **float** |  | [optional] 
-**network** | **str** |  | [optional] 
-**compress** | **bool** |  | [optional] 
+| Name         | Type      | Description | Notes       |
+| ------------ | --------- | ----------- | ----------- |
+| **to**       | **str**   |             | \[optional] |
+| **value**    | **float** |             | \[optional] |
+| **network**  | **str**   |             | \[optional] |
+| **compress** | **bool**  |             | \[optional] |
 
 ## Example
 
@@ -27,6 +26,5 @@ bitcoin_cash_transaction_input_dict = bitcoin_cash_transaction_input_instance.to
 # create an instance of BitcoinCashTransactionInput from a dict
 bitcoin_cash_transaction_input_form_dict = bitcoin_cash_transaction_input.from_dict(bitcoin_cash_transaction_input_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

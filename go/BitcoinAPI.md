@@ -1,21 +1,17 @@
 # \BitcoinAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateBitcoinAccount**](BitcoinAPI.md#CreateBitcoinAccount) | **Post** /bitcoin | 
-[**GetBitcoinAccount**](BitcoinAPI.md#GetBitcoinAccount) | **Get** /bitcoin/{accountName} | 
-[**ListBitcoinAccounts**](BitcoinAPI.md#ListBitcoinAccounts) | **Get** /bitcoin | 
-[**SignBitcoinTransaction**](BitcoinAPI.md#SignBitcoinTransaction) | **Post** /bitcoin/{accountName}/sign-tx | 
-
-
+| Method                                                             | HTTP request                            | Description |
+| ------------------------------------------------------------------ | --------------------------------------- | ----------- |
+| [**CreateBitcoinAccount**](BitcoinAPI.md#CreateBitcoinAccount)     | **Post** /bitcoin                       |             |
+| [**GetBitcoinAccount**](BitcoinAPI.md#GetBitcoinAccount)           | **Get** /bitcoin/{accountName}          |             |
+| [**ListBitcoinAccounts**](BitcoinAPI.md#ListBitcoinAccounts)       | **Get** /bitcoin                        |             |
+| [**SignBitcoinTransaction**](BitcoinAPI.md#SignBitcoinTransaction) | **Post** /bitcoin/{accountName}/sign-tx |             |
 
 ## CreateBitcoinAccount
 
 > AccountAPIResponse CreateBitcoinAccount(ctx).Authorization(authorization).BitcoinInput(bitcoinInput).Execute()
-
-
 
 ### Example
 
@@ -47,17 +43,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCreateBitcoinAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
- **bitcoinInput** | [**BitcoinInput**](BitcoinInput.md) |  | 
+| Name              | Type                                | Description | Notes |
+| ----------------- | ----------------------------------- | ----------- | ----- |
+| **authorization** | **string**                          |             |       |
+| **bitcoinInput**  | [**BitcoinInput**](BitcoinInput.md) |             |       |
 
 ### Return type
 
@@ -65,23 +58,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## GetBitcoinAccount
 
 > AccountAPIResponse GetBitcoinAccount(ctx, accountName).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -113,21 +101,18 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiGetBitcoinAccountRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -135,23 +120,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## ListBitcoinAccounts
 
 > AccountAPIResponse ListBitcoinAccounts(ctx).Authorization(authorization).Execute()
-
-
 
 ### Example
 
@@ -182,16 +162,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiListBitcoinAccountsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
 ### Return type
 
@@ -199,23 +176,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## SignBitcoinTransaction
 
 > BitcoinAPIResponse SignBitcoinTransaction(ctx, accountName).Authorization(authorization).BitcoinTransactionInput(bitcoinTransactionInput).Execute()
-
-
 
 ### Example
 
@@ -248,22 +220,20 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSignBitcoinTransactionRequest struct via the builder pattern
 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | 
-
- **bitcoinTransactionInput** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) |  | 
+**bitcoinTransactionInput** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) | |
 
 ### Return type
 
@@ -271,14 +241,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

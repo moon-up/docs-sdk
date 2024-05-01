@@ -1,17 +1,16 @@
 # TransactionRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**nonce** | **str** |  | [optional] 
-**data** | **str** |  | [optional] 
-**value** | **str** |  | [optional] 
-**to** | **str** |  | [optional] 
-**var_from** | **str** |  | [optional] 
-**max_fee_per_gas** | **str** |  | [optional] 
-**max_priority_fee_per_gas** | **str** |  | [optional] 
+| Name                             | Type    | Description | Notes       |
+| -------------------------------- | ------- | ----------- | ----------- |
+| **nonce**                        | **str** |             | \[optional] |
+| **data**                         | **str** |             | \[optional] |
+| **value**                        | **str** |             | \[optional] |
+| **to**                           | **str** |             | \[optional] |
+| **var\_from**                    | **str** |             | \[optional] |
+| **max\_fee\_per\_gas**           | **str** |             | \[optional] |
+| **max\_priority\_fee\_per\_gas** | **str** |             | \[optional] |
 
 ## Example
 
@@ -30,6 +29,5 @@ transaction_request_dict = transaction_request_instance.to_dict()
 # create an instance of TransactionRequest from a dict
 transaction_request_form_dict = transaction_request.from_dict(transaction_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

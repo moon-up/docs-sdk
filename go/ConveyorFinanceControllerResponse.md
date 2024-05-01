@@ -2,15 +2,15 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Input** | Pointer to [**InputBody**](InputBody.md) |  | [optional] 
-**Convey** | Pointer to [**TransactionResponse**](TransactionResponse.md) |  | [optional] 
-**Data** | Pointer to [**TransactionData**](TransactionData.md) |  | [optional] 
-**Tx** | Pointer to [**TransactionResponseTx**](TransactionResponseTx.md) |  | [optional] 
-**Signed** | Pointer to [**Transaction**](Transaction.md) |  | [optional] 
-**Success** | **bool** |  | 
-**Message** | **string** |  | 
+| Name        | Type                                                             | Description | Notes       |
+| ----------- | ---------------------------------------------------------------- | ----------- | ----------- |
+| **Input**   | Pointer to [**InputBody**](InputBody.md)                         |             | \[optional] |
+| **Convey**  | Pointer to [**TransactionResponse**](TransactionResponse.md)     |             | \[optional] |
+| **Data**    | Pointer to [**TransactionData**](TransactionData.md)             |             | \[optional] |
+| **Tx**      | Pointer to [**TransactionResponseTx**](TransactionResponseTx.md) |             | \[optional] |
+| **Signed**  | Pointer to [**Transaction**](Transaction.md)                     |             | \[optional] |
+| **Success** | **bool**                                                         |             |             |
+| **Message** | **string**                                                       |             |             |
 
 ## Methods
 
@@ -18,18 +18,13 @@ Name | Type | Description | Notes
 
 `func NewConveyorFinanceControllerResponse(success bool, message string, ) *ConveyorFinanceControllerResponse`
 
-NewConveyorFinanceControllerResponse instantiates a new ConveyorFinanceControllerResponse object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+NewConveyorFinanceControllerResponse instantiates a new ConveyorFinanceControllerResponse object This constructor will assign default values to properties that have it defined, and makes sure properties required by API are set, but the set of arguments will change when the set of required properties is changed
 
 ### NewConveyorFinanceControllerResponseWithDefaults
 
 `func NewConveyorFinanceControllerResponseWithDefaults() *ConveyorFinanceControllerResponse`
 
-NewConveyorFinanceControllerResponseWithDefaults instantiates a new ConveyorFinanceControllerResponse object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+NewConveyorFinanceControllerResponseWithDefaults instantiates a new ConveyorFinanceControllerResponse object This constructor will only assign default values to properties that have it defined, but it doesn't guarantee that properties required by API are set
 
 ### GetInput
 
@@ -41,8 +36,7 @@ GetInput returns the Input field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetInputOk() (*InputBody, bool)`
 
-GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetInputOk returns a tuple with the Input field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetInput
 
@@ -66,8 +60,7 @@ GetConvey returns the Convey field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetConveyOk() (*TransactionResponse, bool)`
 
-GetConveyOk returns a tuple with the Convey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetConveyOk returns a tuple with the Convey field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetConvey
 
@@ -91,8 +84,7 @@ GetData returns the Data field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetDataOk() (*TransactionData, bool)`
 
-GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetData
 
@@ -116,8 +108,7 @@ GetTx returns the Tx field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetTxOk() (*TransactionResponseTx, bool)`
 
-GetTxOk returns a tuple with the Tx field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetTxOk returns a tuple with the Tx field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetTx
 
@@ -141,8 +132,7 @@ GetSigned returns the Signed field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetSignedOk() (*Transaction, bool)`
 
-GetSignedOk returns a tuple with the Signed field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSignedOk returns a tuple with the Signed field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSigned
 
@@ -166,15 +156,13 @@ GetSuccess returns the Success field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetSuccessOk() (*bool, bool)`
 
-GetSuccessOk returns a tuple with the Success field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetSuccessOk returns a tuple with the Success field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetSuccess
 
 `func (o *ConveyorFinanceControllerResponse) SetSuccess(v bool)`
 
 SetSuccess sets Success field to given value.
-
 
 ### GetMessage
 
@@ -186,8 +174,7 @@ GetMessage returns the Message field if non-nil, zero value otherwise.
 
 `func (o *ConveyorFinanceControllerResponse) GetMessageOk() (*string, bool)`
 
-GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
+GetMessageOk returns a tuple with the Message field if it's non-nil, zero value otherwise and a boolean to check if the value has been set.
 
 ### SetMessage
 
@@ -195,8 +182,4 @@ and a boolean to check if the value has been set.
 
 SetMessage sets Message field to given value.
 
-
-
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,12 +1,11 @@
 # SolanaTransactionOutput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**signed_tx** | **str** |  | [optional] 
-**transaction_hash** | **str** |  | [optional] 
+| Name                  | Type    | Description | Notes       |
+| --------------------- | ------- | ----------- | ----------- |
+| **signed\_tx**        | **str** |             | \[optional] |
+| **transaction\_hash** | **str** |             | \[optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ solana_transaction_output_dict = solana_transaction_output_instance.to_dict()
 # create an instance of SolanaTransactionOutput from a dict
 solana_transaction_output_form_dict = solana_transaction_output.from_dict(solana_transaction_output_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

@@ -1,128 +1,114 @@
 # \CosmosApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_cosmos_account**](CosmosApi.md#create_cosmos_account) | **POST** /cosmos | 
-[**get_cosmos_account**](CosmosApi.md#get_cosmos_account) | **GET** /cosmos/{accountName} | 
-[**list_cosmos_accounts**](CosmosApi.md#list_cosmos_accounts) | **GET** /cosmos | 
-[**sign_cosmos_transaction**](CosmosApi.md#sign_cosmos_transaction) | **POST** /cosmos/{accountName}/sign-tx | 
+| Method                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**create\_cosmos\_account**](CosmosApi.md#create\_cosmos\_account)     | **POST** /cosmos                       |             |
+| [**get\_cosmos\_account**](CosmosApi.md#get\_cosmos\_account)           | **GET** /cosmos/{accountName}          |             |
+| [**list\_cosmos\_accounts**](CosmosApi.md#list\_cosmos\_accounts)       | **GET** /cosmos                        |             |
+| [**sign\_cosmos\_transaction**](CosmosApi.md#sign\_cosmos\_transaction) | **POST** /cosmos/{accountName}/sign-tx |             |
 
+## create\_cosmos\_account
 
-
-## create_cosmos_account
-
-> crate::models::AccountApiResponse create_cosmos_account(authorization, cosmos_input)
-
+> crate::models::AccountApiResponse create\_cosmos\_account(authorization, cosmos\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**cosmos_input** | [**CosmosInput**](CosmosInput.md) |  | [required] |
+| Name              | Type                              | Description | Required    | Notes |
+| ----------------- | --------------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                        |             | \[required] |       |
+| **cosmos\_input** | [**CosmosInput**](CosmosInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_cosmos\_account
 
-## get_cosmos_account
-
-> crate::models::AccountApiResponse get_cosmos_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_cosmos\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_cosmos\_accounts
 
-## list_cosmos_accounts
-
-> crate::models::AccountApiResponse list_cosmos_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_cosmos\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_cosmos\_transaction
 
-## sign_cosmos_transaction
-
-> crate::models::CosmosApiResponse sign_cosmos_transaction(authorization, account_name, cosmos_transaction_input)
-
+> crate::models::CosmosApiResponse sign\_cosmos\_transaction(authorization, account\_name, cosmos\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**cosmos_transaction_input** | [**CosmosTransactionInput**](CosmosTransactionInput.md) |  | [required] |
+| Name                           | Type                                                    | Description | Required    | Notes |
+| ------------------------------ | ------------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**              | **String**                                              |             | \[required] |       |
+| **account\_name**              | **String**                                              |             | \[required] |       |
+| **cosmos\_transaction\_input** | [**CosmosTransactionInput**](CosmosTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::CosmosApiResponse**](CosmosAPIResponse.md)
+[**crate::models::CosmosApiResponse**](docs/CosmosAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](CosmosApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

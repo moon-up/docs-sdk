@@ -1,23 +1,24 @@
-# com.usemoon.MoonSDK.Api.ERC1155Api
+# ERC1155Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.ERC1155Api
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**BalanceOf**](ERC1155Api.md#balanceof) | **POST** /erc1155/{name}/balance-of |  |
-| [**BalanceOfBatch**](ERC1155Api.md#balanceofbatch) | **POST** /erc1155/{name}/balance-of-batch |  |
-| [**IsApprovedForAll**](ERC1155Api.md#isapprovedforall) | **POST** /erc1155/{name}/is-approved-for-all |  |
-| [**SafeBatchTransferFrom**](ERC1155Api.md#safebatchtransferfrom) | **POST** /erc1155/{name}/safe-batch-transfer-from |  |
-| [**SafeTransferFrom**](ERC1155Api.md#safetransferfrom) | **POST** /erc1155/{name}/safe-transfer-from |  |
-| [**SetApprovalForAll**](ERC1155Api.md#setapprovalforall) | **POST** /erc1155/{name}/set-approval-for-all |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="balanceof"></a>
-# **BalanceOf**
+| Method                                                           | HTTP request                                      | Description |
+| ---------------------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**BalanceOf**](ERC1155Api.md#balanceof)                         | **POST** /erc1155/{name}/balance-of               |             |
+| [**BalanceOfBatch**](ERC1155Api.md#balanceofbatch)               | **POST** /erc1155/{name}/balance-of-batch         |             |
+| [**IsApprovedForAll**](ERC1155Api.md#isapprovedforall)           | **POST** /erc1155/{name}/is-approved-for-all      |             |
+| [**SafeBatchTransferFrom**](ERC1155Api.md#safebatchtransferfrom) | **POST** /erc1155/{name}/safe-batch-transfer-from |             |
+| [**SafeTransferFrom**](ERC1155Api.md#safetransferfrom)           | **POST** /erc1155/{name}/safe-transfer-from       |             |
+| [**SetApprovalForAll**](ERC1155Api.md#setapprovalforall)         | **POST** /erc1155/{name}/set-approval-for-all     |             |
+
+## **BalanceOf**
+
 > TransactionAPIResponse BalanceOf (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -63,7 +64,8 @@ namespace Example
 }
 ```
 
-#### Using the BalanceOfWithHttpInfo variant
+**Using the BalanceOfWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -82,42 +84,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="balanceofbatch"></a>
-# **BalanceOfBatch**
+## **BalanceOfBatch**
+
 > TransactionAPIResponse BalanceOfBatch (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -163,7 +164,8 @@ namespace Example
 }
 ```
 
-#### Using the BalanceOfBatchWithHttpInfo variant
+**Using the BalanceOfBatchWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -182,42 +184,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="isapprovedforall"></a>
-# **IsApprovedForAll**
+## **IsApprovedForAll**
+
 > TransactionAPIResponse IsApprovedForAll (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -263,7 +264,8 @@ namespace Example
 }
 ```
 
-#### Using the IsApprovedForAllWithHttpInfo variant
+**Using the IsApprovedForAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -282,42 +284,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="safebatchtransferfrom"></a>
-# **SafeBatchTransferFrom**
+## **SafeBatchTransferFrom**
+
 > TransactionAPIResponse SafeBatchTransferFrom (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -363,7 +364,8 @@ namespace Example
 }
 ```
 
-#### Using the SafeBatchTransferFromWithHttpInfo variant
+**Using the SafeBatchTransferFromWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -382,42 +384,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="safetransferfrom"></a>
-# **SafeTransferFrom**
+## **SafeTransferFrom**
+
 > TransactionAPIResponse SafeTransferFrom (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -463,7 +464,8 @@ namespace Example
 }
 ```
 
-#### Using the SafeTransferFromWithHttpInfo variant
+**Using the SafeTransferFromWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -482,42 +484,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="setapprovalforall"></a>
-# **SetApprovalForAll**
+## **SetApprovalForAll**
+
 > TransactionAPIResponse SetApprovalForAll (string name, string authorization, Erc1155Request erc1155Request)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -563,7 +564,8 @@ namespace Example
 }
 ```
 
-#### Using the SetApprovalForAllWithHttpInfo variant
+**Using the SetApprovalForAllWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -582,32 +584,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **name** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **name**           | **string**                              |             |       |
+| **authorization**  | **string**                              |             |       |
+| **erc1155Request** | [**Erc1155Request**](Erc1155Request.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](ERC1155Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

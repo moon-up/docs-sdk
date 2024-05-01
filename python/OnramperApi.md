@@ -1,26 +1,26 @@
-# moonsdk.OnramperApi
+# OnramperApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.OnramperApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**on_ramper_checkout**](OnramperApi.md#on_ramper_checkout) | **POST** /onramper/fund/${accountName} | 
-[**on_ramper_get_quotes_buy**](OnramperApi.md#on_ramper_get_quotes_buy) | **GET** /onramper/quotes/buy | 
-[**on_ramper_get_quotes_sell**](OnramperApi.md#on_ramper_get_quotes_sell) | **GET** /onramper/quotes/sell | 
-[**on_ramper_get_supported_assets**](OnramperApi.md#on_ramper_get_supported_assets) | **GET** /onramper/assets | 
-[**on_ramper_get_supported_currencies**](OnramperApi.md#on_ramper_get_supported_currencies) | **GET** /onramper/currencies | 
-[**on_ramper_get_supported_defaults_all**](OnramperApi.md#on_ramper_get_supported_defaults_all) | **GET** /onramper/defaults | 
-[**on_ramper_get_supported_on_ramps_all**](OnramperApi.md#on_ramper_get_supported_on_ramps_all) | **GET** /onramper/onramps | 
-[**on_ramper_get_supported_payment_types**](OnramperApi.md#on_ramper_get_supported_payment_types) | **GET** /onramper/payment-types | 
-[**on_ramper_get_supported_payment_types_fiat**](OnramperApi.md#on_ramper_get_supported_payment_types_fiat) | **GET** /onramper/payment-types/fiat | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                                                                                  | HTTP request                           | Description |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ----------- |
+| [**on\_ramper\_checkout**](OnramperApi.md#on\_ramper\_checkout)                                                         | **POST** /onramper/fund/${accountName} |             |
+| [**on\_ramper\_get\_quotes\_buy**](OnramperApi.md#on\_ramper\_get\_quotes\_buy)                                         | **GET** /onramper/quotes/buy           |             |
+| [**on\_ramper\_get\_quotes\_sell**](OnramperApi.md#on\_ramper\_get\_quotes\_sell)                                       | **GET** /onramper/quotes/sell          |             |
+| [**on\_ramper\_get\_supported\_assets**](OnramperApi.md#on\_ramper\_get\_supported\_assets)                             | **GET** /onramper/assets               |             |
+| [**on\_ramper\_get\_supported\_currencies**](OnramperApi.md#on\_ramper\_get\_supported\_currencies)                     | **GET** /onramper/currencies           |             |
+| [**on\_ramper\_get\_supported\_defaults\_all**](OnramperApi.md#on\_ramper\_get\_supported\_defaults\_all)               | **GET** /onramper/defaults             |             |
+| [**on\_ramper\_get\_supported\_on\_ramps\_all**](OnramperApi.md#on\_ramper\_get\_supported\_on\_ramps\_all)             | **GET** /onramper/onramps              |             |
+| [**on\_ramper\_get\_supported\_payment\_types**](OnramperApi.md#on\_ramper\_get\_supported\_payment\_types)             | **GET** /onramper/payment-types        |             |
+| [**on\_ramper\_get\_supported\_payment\_types\_fiat**](OnramperApi.md#on\_ramper\_get\_supported\_payment\_types\_fiat) | **GET** /onramper/payment-types/fiat   |             |
 
-# **on_ramper_checkout**
-> object on_ramper_checkout(authorization, account_name, transaction_input)
+## **on\_ramper\_checkout**
 
+> object on\_ramper\_checkout(authorization, account\_name, transaction\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -70,44 +70,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_checkout: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                   | Type                                        | Description | Notes |
+| ---------------------- | ------------------------------------------- | ----------- | ----- |
+| **authorization**      | **str**                                     |             |       |
+| **account\_name**      | **str**                                     |             |       |
+| **transaction\_input** | [**TransactionInput**](TransactionInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **transaction_input** | [**TransactionInput**](TransactionInput.md)|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_quotes_buy**
-> List[Quote] on_ramper_get_quotes_buy(authorization, fiat, crypto, amount, payment_method=payment_method, uuid=uuid, client_name=client_name, country=country)
+## **on\_ramper\_get\_quotes\_buy**
 
+> List\[Quote] on\_ramper\_get\_quotes\_buy(authorization, fiat, crypto, amount, payment\_method=payment\_method, uuid=uuid, client\_name=client\_name, country=country)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -162,49 +158,45 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_quotes_buy: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type      | Description | Notes                                  |
+| ------------------- | --------- | ----------- | -------------------------------------- |
+| **authorization**   | **str**   |             |                                        |
+| **fiat**            | **str**   |             |                                        |
+| **crypto**          | **str**   |             |                                        |
+| **amount**          | **float** |             |                                        |
+| **payment\_method** | **str**   |             | \[optional] \[default to 'creditcard'] |
+| **uuid**            | **str**   |             | \[optional] \[default to '']           |
+| **client\_name**    | **str**   |             | \[optional] \[default to '']           |
+| **country**         | **str**   |             | \[optional] \[default to '']           |
 
-### Parameters
+#### Return type
 
+[**List\[Quote\]**](Quote.md)
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **fiat** | **str**|  | 
- **crypto** | **str**|  | 
- **amount** | **float**|  | 
- **payment_method** | **str**|  | [optional] [default to &#39;creditcard&#39;]
- **uuid** | **str**|  | [optional] [default to &#39;&#39;]
- **client_name** | **str**|  | [optional] [default to &#39;&#39;]
- **country** | **str**|  | [optional] [default to &#39;&#39;]
+#### Authorization
 
-### Return type
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-[**List[Quote]**](Quote.md)
+#### HTTP request headers
 
-### Authorization
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_quotes_sell**
-> List[SellQuote] on_ramper_get_quotes_sell(authorization, fiat, crypto, amount, payment_method=payment_method, uuid=uuid, client_name=client_name, country=country)
+## **on\_ramper\_get\_quotes\_sell**
 
+> List\[SellQuote] on\_ramper\_get\_quotes\_sell(authorization, fiat, crypto, amount, payment\_method=payment\_method, uuid=uuid, client\_name=client\_name, country=country)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -259,49 +251,45 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_quotes_sell: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                | Type      | Description | Notes                                  |
+| ------------------- | --------- | ----------- | -------------------------------------- |
+| **authorization**   | **str**   |             |                                        |
+| **fiat**            | **str**   |             |                                        |
+| **crypto**          | **str**   |             |                                        |
+| **amount**          | **float** |             |                                        |
+| **payment\_method** | **str**   |             | \[optional] \[default to 'creditcard'] |
+| **uuid**            | **str**   |             | \[optional] \[default to '']           |
+| **client\_name**    | **str**   |             | \[optional] \[default to '']           |
+| **country**         | **str**   |             | \[optional] \[default to '']           |
 
-### Parameters
+#### Return type
 
+[**List\[SellQuote\]**](SellQuote.md)
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **fiat** | **str**|  | 
- **crypto** | **str**|  | 
- **amount** | **float**|  | 
- **payment_method** | **str**|  | [optional] [default to &#39;creditcard&#39;]
- **uuid** | **str**|  | [optional] [default to &#39;&#39;]
- **client_name** | **str**|  | [optional] [default to &#39;&#39;]
- **country** | **str**|  | [optional] [default to &#39;&#39;]
+#### Authorization
 
-### Return type
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-[**List[SellQuote]**](SellQuote.md)
+#### HTTP request headers
 
-### Authorization
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_assets**
-> SupportedAssetResponse on_ramper_get_supported_assets(authorization, source, country)
+## **on\_ramper\_get\_supported\_assets**
 
+> SupportedAssetResponse on\_ramper\_get\_supported\_assets(authorization, source, country)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -351,44 +339,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_assets: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **source**        | **str** |             |       |
+| **country**       | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **source** | **str**|  | 
- **country** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SupportedAssetResponse**](SupportedAssetResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_currencies**
-> SupportedCurrenciesResponse on_ramper_get_supported_currencies(authorization, type)
+## **on\_ramper\_get\_supported\_currencies**
 
+> SupportedCurrenciesResponse on\_ramper\_get\_supported\_currencies(authorization, type)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -437,43 +421,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_currencies: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **type**          | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **type** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SupportedCurrenciesResponse**](SupportedCurrenciesResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_defaults_all**
-> SupportedDefaultResponse on_ramper_get_supported_defaults_all(authorization, country, type)
+## **on\_ramper\_get\_supported\_defaults\_all**
 
+> SupportedDefaultResponse on\_ramper\_get\_supported\_defaults\_all(authorization, country, type)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -523,44 +503,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_defaults_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **country**       | **str** |             |       |
+| **type**          | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **country** | **str**|  | 
- **type** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SupportedDefaultResponse**](SupportedDefaultResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_on_ramps_all**
-> GetSupportedOnRampsResponse on_ramper_get_supported_on_ramps_all(authorization)
+## **on\_ramper\_get\_supported\_on\_ramps\_all**
 
+> GetSupportedOnRampsResponse on\_ramper\_get\_supported\_on\_ramps\_all(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -608,42 +584,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_on_ramps_all: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**GetSupportedOnRampsResponse**](GetSupportedOnRampsResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_payment_types**
-> SupportedPaymentTypesCurrencyResponse on_ramper_get_supported_payment_types(authorization, fiat, country, type)
+## **on\_ramper\_get\_supported\_payment\_types**
 
+> SupportedPaymentTypesCurrencyResponse on\_ramper\_get\_supported\_payment\_types(authorization, fiat, country, type)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -694,45 +666,41 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_payment_types: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **fiat**          | **str** |             |       |
+| **country**       | **str** |             |       |
+| **type**          | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **fiat** | **str**|  | 
- **country** | **str**|  | 
- **type** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **on_ramper_get_supported_payment_types_fiat**
-> SupportedPaymentTypesCurrencyResponse on_ramper_get_supported_payment_types_fiat(authorization, fiat, country)
+## **on\_ramper\_get\_supported\_payment\_types\_fiat**
 
+> SupportedPaymentTypesCurrencyResponse on\_ramper\_get\_supported\_payment\_types\_fiat(authorization, fiat, country)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -782,35 +750,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling OnramperApi->on_ramper_get_supported_payment_types_fiat: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **fiat**          | **str** |             |       |
+| **country**       | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **fiat** | **str**|  | 
- **country** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SupportedPaymentTypesCurrencyResponse**](SupportedPaymentTypesCurrencyResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OnramperApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

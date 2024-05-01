@@ -1,21 +1,21 @@
-# moonsdk.YearnApi
+# YearnApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.YearnApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**add_liquidity**](YearnApi.md#add_liquidity) | **POST** /yearn/{name}/add-liquidity | 
-[**add_liquidity_weth**](YearnApi.md#add_liquidity_weth) | **POST** /yearn/{name}/add-liquidity-weth | 
-[**remove_liquidity**](YearnApi.md#remove_liquidity) | **POST** /yearn/{name}/remove-liquidity | 
-[**remove_liquidity_weth**](YearnApi.md#remove_liquidity_weth) | **POST** /yearn/{name}/remove-liquidity-weth | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                             | HTTP request                                 | Description |
+| ------------------------------------------------------------------ | -------------------------------------------- | ----------- |
+| [**add\_liquidity**](YearnApi.md#add\_liquidity)                   | **POST** /yearn/{name}/add-liquidity         |             |
+| [**add\_liquidity\_weth**](YearnApi.md#add\_liquidity\_weth)       | **POST** /yearn/{name}/add-liquidity-weth    |             |
+| [**remove\_liquidity**](YearnApi.md#remove\_liquidity)             | **POST** /yearn/{name}/remove-liquidity      |             |
+| [**remove\_liquidity\_weth**](YearnApi.md#remove\_liquidity\_weth) | **POST** /yearn/{name}/remove-liquidity-weth |             |
 
-# **add_liquidity**
-> TransactionAPIResponse add_liquidity(authorization, name, input_body)
+## **add\_liquidity**
 
+> TransactionAPIResponse add\_liquidity(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -66,44 +66,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling YearnApi->add_liquidity: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](YearnApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **add_liquidity_weth**
-> TransactionAPIResponse add_liquidity_weth(authorization, name, input_body)
+## **add\_liquidity\_weth**
 
+> TransactionAPIResponse add\_liquidity\_weth(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -154,44 +150,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling YearnApi->add_liquidity_weth: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](YearnApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **remove_liquidity**
-> TransactionAPIResponse remove_liquidity(authorization, name, input_body)
+## **remove\_liquidity**
 
+> TransactionAPIResponse remove\_liquidity(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -242,44 +234,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling YearnApi->remove_liquidity: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](YearnApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **remove_liquidity_weth**
-> TransactionAPIResponse remove_liquidity_weth(authorization, name, input_body)
+## **remove\_liquidity\_weth**
 
+> TransactionAPIResponse remove\_liquidity\_weth(authorization, name, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -330,35 +318,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling YearnApi->remove_liquidity_weth: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **str**                       |             |       |
+| **name**          | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **name** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](YearnApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

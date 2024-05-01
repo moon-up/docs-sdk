@@ -1,35 +1,37 @@
-# openapi.api.PaymentApi
+# PaymentApi
 
-## Load the API package
+## openapi.api.PaymentApi
+
+### Load the API package
+
 ```dart
 import 'package:openapi/api.dart';
 ```
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to _https://vault-api.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createPaymentIntentConfig**](PaymentApi.md#createpaymentintentconfig) | **POST** /payment/config | 
-[**deletePaymentIntentConfig**](PaymentApi.md#deletepaymentintentconfig) | **DELETE** /payment/config/{id} | 
-[**getAllPaymentIntentConfigs**](PaymentApi.md#getallpaymentintentconfigs) | **GET** /payment/config | 
-[**getOnePaymentIntentConfigs**](PaymentApi.md#getonepaymentintentconfigs) | **GET** /payment/config/{id} | 
-[**moralisWebhook**](PaymentApi.md#moraliswebhook) | **POST** /payment/webhook/{id} | 
-[**paymentCreatePaymentIntent**](PaymentApi.md#paymentcreatepaymentintent) | **POST** /payment | 
-[**paymentDeletePaymentIntent**](PaymentApi.md#paymentdeletepaymentintent) | **DELETE** /payment/{id} | 
-[**paymentGetAllPaymentIntents**](PaymentApi.md#paymentgetallpaymentintents) | **GET** /payment | 
-[**paymentGetAvailableChains**](PaymentApi.md#paymentgetavailablechains) | **GET** /payment/chains | 
-[**paymentGetPaymentIntent**](PaymentApi.md#paymentgetpaymentintent) | **GET** /payment/{id} | 
-[**paymentUpdatePaymentIntent**](PaymentApi.md#paymentupdatepaymentintent) | **PUT** /payment/{id} | 
-[**tatumWebhook**](PaymentApi.md#tatumwebhook) | **POST** /payment/webhook/tatum/{id} | 
-[**updatePaymentIntentConfig**](PaymentApi.md#updatepaymentintentconfig) | **PUT** /payment/config/{id} | 
+| Method                                                                       | HTTP request                         | Description |
+| ---------------------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**createPaymentIntentConfig**](PaymentApi.md#createpaymentintentconfig)     | **POST** /payment/config             |             |
+| [**deletePaymentIntentConfig**](PaymentApi.md#deletepaymentintentconfig)     | **DELETE** /payment/config/{id}      |             |
+| [**getAllPaymentIntentConfigs**](PaymentApi.md#getallpaymentintentconfigs)   | **GET** /payment/config              |             |
+| [**getOnePaymentIntentConfigs**](PaymentApi.md#getonepaymentintentconfigs)   | **GET** /payment/config/{id}         |             |
+| [**moralisWebhook**](PaymentApi.md#moraliswebhook)                           | **POST** /payment/webhook/{id}       |             |
+| [**paymentCreatePaymentIntent**](PaymentApi.md#paymentcreatepaymentintent)   | **POST** /payment                    |             |
+| [**paymentDeletePaymentIntent**](PaymentApi.md#paymentdeletepaymentintent)   | **DELETE** /payment/{id}             |             |
+| [**paymentGetAllPaymentIntents**](PaymentApi.md#paymentgetallpaymentintents) | **GET** /payment                     |             |
+| [**paymentGetAvailableChains**](PaymentApi.md#paymentgetavailablechains)     | **GET** /payment/chains              |             |
+| [**paymentGetPaymentIntent**](PaymentApi.md#paymentgetpaymentintent)         | **GET** /payment/{id}                |             |
+| [**paymentUpdatePaymentIntent**](PaymentApi.md#paymentupdatepaymentintent)   | **PUT** /payment/{id}                |             |
+| [**tatumWebhook**](PaymentApi.md#tatumwebhook)                               | **POST** /payment/webhook/tatum/{id} |             |
+| [**updatePaymentIntentConfig**](PaymentApi.md#updatepaymentintentconfig)     | **PUT** /payment/config/{id}         |             |
 
+## **createPaymentIntentConfig**
 
-# **createPaymentIntentConfig**
 > JsonObject createPaymentIntentConfig(authorization, body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -53,34 +55,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **body** | **JsonObject**|  | 
+| Name              | Type           | Description | Notes |
+| ----------------- | -------------- | ----------- | ----- |
+| **authorization** | **String**     |             |       |
+| **body**          | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **deletePaymentIntentConfig**
+## **deletePaymentIntentConfig**
+
 > PaymentIntentResponse deletePaymentIntentConfig(authorization, id)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -104,34 +106,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **getAllPaymentIntentConfigs**
-> BuiltList<PaymentIntentResponse> getAllPaymentIntentConfigs(authorization)
+## **getAllPaymentIntentConfigs**
 
+> BuiltList getAllPaymentIntentConfigs(authorization)
 
+#### Example
 
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -154,33 +156,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
-[**BuiltList&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**BuiltList\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **getOnePaymentIntentConfigs**
+## **getOnePaymentIntentConfigs**
+
 > PaymentIntentResponse getOnePaymentIntentConfigs(authorization, id)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -204,34 +206,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **moralisWebhook**
+## **moralisWebhook**
+
 > JsonObject moralisWebhook(id, iWebhook)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -255,34 +257,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **iWebhook** | [**IWebhook**](IWebhook.md)|  | 
+| Name         | Type                        | Description | Notes |
+| ------------ | --------------------------- | ----------- | ----- |
+| **id**       | **String**                  |             |       |
+| **iWebhook** | [**IWebhook**](IWebhook.md) |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentCreatePaymentIntent**
+## **paymentCreatePaymentIntent**
+
 > PaymentIntentResponse paymentCreatePaymentIntent(authorization, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -306,34 +308,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | 
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentDeletePaymentIntent**
+## **paymentDeletePaymentIntent**
+
 > PaymentIntentResponse paymentDeletePaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -357,34 +359,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentGetAllPaymentIntents**
-> BuiltList<PaymentIntentResponse> paymentGetAllPaymentIntents(authorization)
+## **paymentGetAllPaymentIntents**
 
+> BuiltList paymentGetAllPaymentIntents(authorization)
 
+#### Example
 
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -407,33 +409,33 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
 
-### Return type
+#### Return type
 
-[**BuiltList&lt;PaymentIntentResponse&gt;**](PaymentIntentResponse.md)
+[**BuiltList\<PaymentIntentResponse>**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentGetAvailableChains**
-> BuiltList<String> paymentGetAvailableChains()
+## **paymentGetAvailableChains**
 
+> BuiltList paymentGetAvailableChains()
 
+#### Example
 
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -455,30 +457,31 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
+
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
-**BuiltList&lt;String&gt;**
+**BuiltList\<String>**
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentGetPaymentIntent**
+## **paymentGetPaymentIntent**
+
 > PaymentIntentResponse paymentGetPaymentIntent(authorization, id)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -502,34 +505,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **String** |             |       |
+| **id**            | **String** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **paymentUpdatePaymentIntent**
+## **paymentUpdatePaymentIntent**
+
 > PaymentIntentResponse paymentUpdatePaymentIntent(authorization, id, createPaymentIntentInput)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -554,35 +557,35 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
- **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md)|  | 
+| Name                         | Type                                                        | Description | Notes |
+| ---------------------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **authorization**            | **String**                                                  |             |       |
+| **id**                       | **String**                                                  |             |       |
+| **createPaymentIntentInput** | [**CreatePaymentIntentInput**](CreatePaymentIntentInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **tatumWebhook**
+## **tatumWebhook**
+
 > JsonObject tatumWebhook(id, tatumTransactionEvent)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -606,34 +609,34 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md)|  | 
+| Name                      | Type                                                  | Description | Notes |
+| ------------------------- | ----------------------------------------------------- | ----------- | ----- |
+| **id**                    | **String**                                            |             |       |
+| **tatumTransactionEvent** | [**TatumTransactionEvent**](TatumTransactionEvent.md) |             |       |
 
-### Return type
+#### Return type
 
-[**JsonObject**](JsonObject.md)
+[**JsonObject**](doc/JsonObject.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-# **updatePaymentIntentConfig**
+## **updatePaymentIntentConfig**
+
 > PaymentIntentResponse updatePaymentIntentConfig(authorization, id, body)
 
+#### Example
 
-
-### Example
 ```dart
 import 'package:openapi/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
@@ -658,26 +661,25 @@ try {
 }
 ```
 
-### Parameters
+#### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**|  | 
- **id** | **String**|  | 
- **body** | **JsonObject**|  | 
+| Name              | Type           | Description | Notes |
+| ----------------- | -------------- | ----------- | ----- |
+| **authorization** | **String**     |             |       |
+| **id**            | **String**     |             |       |
+| **body**          | **JsonObject** |             |       |
 
-### Return type
+#### Return type
 
 [**PaymentIntentResponse**](PaymentIntentResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../#ApiKeyAuth), [BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](PaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

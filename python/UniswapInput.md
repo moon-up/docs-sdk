@@ -1,29 +1,28 @@
 # UniswapInput
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**to** | **str** |  | [optional] 
-**data** | **str** |  | [optional] 
-**input** | **str** |  | [optional] 
-**value** | **str** |  | [optional] 
-**nonce** | **str** |  | [optional] 
-**gas** | **str** |  | [optional] 
-**gas_price** | **str** |  | [optional] 
-**chain_id** | **str** |  | [optional] 
-**encoding** | **str** |  | [optional] 
-**eoa** | **bool** |  | [optional] 
-**contract_address** | **str** |  | [optional] 
-**token_id** | **str** |  | [optional] 
-**token_ids** | **str** |  | [optional] 
-**approved** | **bool** |  | [optional] 
-**broadcast** | **bool** |  | [optional] 
-**token_a** | **str** |  | [optional] 
-**token_b** | **str** |  | [optional] 
-**amount_a** | **str** |  | [optional] 
-**amount_b** | **str** |  | [optional] 
+| Name                  | Type     | Description | Notes       |
+| --------------------- | -------- | ----------- | ----------- |
+| **to**                | **str**  |             | \[optional] |
+| **data**              | **str**  |             | \[optional] |
+| **input**             | **str**  |             | \[optional] |
+| **value**             | **str**  |             | \[optional] |
+| **nonce**             | **str**  |             | \[optional] |
+| **gas**               | **str**  |             | \[optional] |
+| **gas\_price**        | **str**  |             | \[optional] |
+| **chain\_id**         | **str**  |             | \[optional] |
+| **encoding**          | **str**  |             | \[optional] |
+| **eoa**               | **bool** |             | \[optional] |
+| **contract\_address** | **str**  |             | \[optional] |
+| **token\_id**         | **str**  |             | \[optional] |
+| **token\_ids**        | **str**  |             | \[optional] |
+| **approved**          | **bool** |             | \[optional] |
+| **broadcast**         | **bool** |             | \[optional] |
+| **token\_a**          | **str**  |             | \[optional] |
+| **token\_b**          | **str**  |             | \[optional] |
+| **amount\_a**         | **str**  |             | \[optional] |
+| **amount\_b**         | **str**  |             | \[optional] |
 
 ## Example
 
@@ -42,6 +41,5 @@ uniswap_input_dict = uniswap_input_instance.to_dict()
 # create an instance of UniswapInput from a dict
 uniswap_input_form_dict = uniswap_input.from_dict(uniswap_input_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

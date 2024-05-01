@@ -1,13 +1,12 @@
 # AccountControllerResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**AccountControllerResponseData**](AccountControllerResponseData.md) |  | [optional] 
-**success** | **bool** |  | [optional] 
-**message** | **str** |  | [optional] 
+| Name        | Type                                                                  | Description | Notes       |
+| ----------- | --------------------------------------------------------------------- | ----------- | ----------- |
+| **data**    | [**AccountControllerResponseData**](AccountControllerResponseData.md) |             | \[optional] |
+| **success** | **bool**                                                              |             | \[optional] |
+| **message** | **str**                                                               |             | \[optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ account_controller_response_dict = account_controller_response_instance.to_dict(
 # create an instance of AccountControllerResponse from a dict
 account_controller_response_form_dict = account_controller_response.from_dict(account_controller_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

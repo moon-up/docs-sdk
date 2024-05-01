@@ -1,11 +1,10 @@
 # TransactionInputWallet
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**address** | **str** |  | 
+| Name        | Type    | Description | Notes |
+| ----------- | ------- | ----------- | ----- |
+| **address** | **str** |             |       |
 
 ## Example
 
@@ -24,6 +23,5 @@ transaction_input_wallet_dict = transaction_input_wallet_instance.to_dict()
 # create an instance of TransactionInputWallet from a dict
 transaction_input_wallet_form_dict = transaction_input_wallet.from_dict(transaction_input_wallet_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

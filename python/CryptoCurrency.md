@@ -1,20 +1,19 @@
 # CryptoCurrency
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**network_display_name** | **str** |  | 
-**icon** | **str** |  | 
-**chain_id** | **float** |  | 
-**address** | **str** |  | 
-**decimals** | **float** |  | 
-**network** | **str** |  | 
-**symbol** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
-**id** | **str** |  | 
+| Name                       | Type      | Description | Notes |
+| -------------------------- | --------- | ----------- | ----- |
+| **network\_display\_name** | **str**   |             |       |
+| **icon**                   | **str**   |             |       |
+| **chain\_id**              | **float** |             |       |
+| **address**                | **str**   |             |       |
+| **decimals**               | **float** |             |       |
+| **network**                | **str**   |             |       |
+| **symbol**                 | **str**   |             |       |
+| **name**                   | **str**   |             |       |
+| **code**                   | **str**   |             |       |
+| **id**                     | **str**   |             |       |
 
 ## Example
 
@@ -33,6 +32,5 @@ crypto_currency_dict = crypto_currency_instance.to_dict()
 # create an instance of CryptoCurrency from a dict
 crypto_currency_form_dict = crypto_currency.from_dict(crypto_currency_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

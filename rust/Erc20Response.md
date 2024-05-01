@@ -2,33 +2,31 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**r#type** | Option<**f64**> |  | [optional]
-**chain_id** | Option<**f64**> |  | [optional]
-**data** | Option<**String**> |  | [optional]
-**gas** | Option<**String**> |  | [optional]
-**gas_price** | Option<**String**> |  | [optional]
-**gas_tip_cap** | Option<**String**> |  | [optional]
-**gas_fee_cap** | Option<**String**> |  | [optional]
-**value** | Option<**String**> |  | [optional]
-**nonce** | Option<**f64**> |  | [optional]
-**from** | Option<**String**> |  | [optional]
-**to** | Option<**String**> |  | [optional]
-**blob_gas** | Option<**String**> |  | [optional]
-**blob_gas_fee_cap** | Option<**String**> |  | [optional]
-**blob_hashes** | Option<**Vec<String>**> |  | [optional]
-**v** | Option<**String**> |  | [optional]
-**r** | Option<**String**> |  | [optional]
-**s** | Option<**String**> |  | [optional]
-**name** | Option<**String**> |  | [optional]
-**symbol** | Option<**String**> |  | [optional]
-**decimals** | Option<**String**> |  | [optional]
-**total_supply** | Option<**String**> |  | [optional]
-**contract_address** | Option<**String**> |  | [optional]
-**balance_of** | Option<**String**> |  | [optional]
-**allowance** | Option<**String**> |  | [optional]
+| Name                    | Type               | Description | Notes       |
+| ----------------------- | ------------------ | ----------- | ----------- |
+| **r#type**              | Option<**f64**>    |             | \[optional] |
+| **chain\_id**           | Option<**f64**>    |             | \[optional] |
+| **data**                | Option<**String**> |             | \[optional] |
+| **gas**                 | Option<**String**> |             | \[optional] |
+| **gas\_price**          | Option<**String**> |             | \[optional] |
+| **gas\_tip\_cap**       | Option<**String**> |             | \[optional] |
+| **gas\_fee\_cap**       | Option<**String**> |             | \[optional] |
+| **value**               | Option<**String**> |             | \[optional] |
+| **nonce**               | Option<**f64**>    |             | \[optional] |
+| **from**                | Option<**String**> |             | \[optional] |
+| **to**                  | Option<**String**> |             | \[optional] |
+| **blob\_gas**           | Option<**String**> |             | \[optional] |
+| **blob\_gas\_fee\_cap** | Option<**String**> |             | \[optional] |
+| **blob\_hashes**        | Option<**Vec**>    |             | \[optional] |
+| **v**                   | Option<**String**> |             | \[optional] |
+| **r**                   | Option<**String**> |             | \[optional] |
+| **s**                   | Option<**String**> |             | \[optional] |
+| **name**                | Option<**String**> |             | \[optional] |
+| **symbol**              | Option<**String**> |             | \[optional] |
+| **decimals**            | Option<**String**> |             | \[optional] |
+| **total\_supply**       | Option<**String**> |             | \[optional] |
+| **contract\_address**   | Option<**String**> |             | \[optional] |
+| **balance\_of**         | Option<**String**> |             | \[optional] |
+| **allowance**           | Option<**String**> |             | \[optional] |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

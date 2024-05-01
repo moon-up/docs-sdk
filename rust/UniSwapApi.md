@@ -1,132 +1,118 @@
 # \UniSwapApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**add_liquidity**](UniSwapApi.md#add_liquidity) | **POST** /uniswap/{name}/add-liquidity | 
-[**remove_liquidity**](UniSwapApi.md#remove_liquidity) | **POST** /uniswap/{name}/remove-liquidity | 
-[**swap_exact_eth_for_tokens**](UniSwapApi.md#swap_exact_eth_for_tokens) | **POST** /uniswap/{name}/swap-exact-eth-for-tokens | 
-[**swap_exact_tokens_for_tokens**](UniSwapApi.md#swap_exact_tokens_for_tokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens | 
+| Method                                                                                 | HTTP request                                          | Description |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| [**add\_liquidity**](UniSwapApi.md#add\_liquidity)                                     | **POST** /uniswap/{name}/add-liquidity                |             |
+| [**remove\_liquidity**](UniSwapApi.md#remove\_liquidity)                               | **POST** /uniswap/{name}/remove-liquidity             |             |
+| [**swap\_exact\_eth\_for\_tokens**](UniSwapApi.md#swap\_exact\_eth\_for\_tokens)       | **POST** /uniswap/{name}/swap-exact-eth-for-tokens    |             |
+| [**swap\_exact\_tokens\_for\_tokens**](UniSwapApi.md#swap\_exact\_tokens\_for\_tokens) | **POST** /uniswap/{name}/swap-exact-tokens-for-tokens |             |
 
+## add\_liquidity
 
-
-## add_liquidity
-
-> crate::models::TransactionApiResponse add_liquidity(authorization, name, uniswap_input)
-
+> crate::models::TransactionApiResponse add\_liquidity(authorization, name, uniswap\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**uniswap_input** | [**UniswapInput**](UniswapInput.md) |  | [required] |
+| Name               | Type                                | Description | Required    | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----------- | ----- |
+| **authorization**  | **String**                          |             | \[required] |       |
+| **name**           | **String**                          |             | \[required] |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## remove\_liquidity
 
-## remove_liquidity
-
-> crate::models::TransactionApiResponse remove_liquidity(authorization, name, uniswap_input)
-
+> crate::models::TransactionApiResponse remove\_liquidity(authorization, name, uniswap\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**uniswap_input** | [**UniswapInput**](UniswapInput.md) |  | [required] |
+| Name               | Type                                | Description | Required    | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----------- | ----- |
+| **authorization**  | **String**                          |             | \[required] |       |
+| **name**           | **String**                          |             | \[required] |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## swap\_exact\_eth\_for\_tokens
 
-## swap_exact_eth_for_tokens
-
-> crate::models::TransactionApiResponse swap_exact_eth_for_tokens(authorization, name, uniswap_input)
-
+> crate::models::TransactionApiResponse swap\_exact\_eth\_for\_tokens(authorization, name, uniswap\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**uniswap_input** | [**UniswapInput**](UniswapInput.md) |  | [required] |
+| Name               | Type                                | Description | Required    | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----------- | ----- |
+| **authorization**  | **String**                          |             | \[required] |       |
+| **name**           | **String**                          |             | \[required] |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## swap\_exact\_tokens\_for\_tokens
 
-## swap_exact_tokens_for_tokens
-
-> crate::models::TransactionApiResponse swap_exact_tokens_for_tokens(authorization, name, uniswap_input)
-
+> crate::models::TransactionApiResponse swap\_exact\_tokens\_for\_tokens(authorization, name, uniswap\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**uniswap_input** | [**UniswapInput**](UniswapInput.md) |  | [required] |
+| Name               | Type                                | Description | Required    | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----------- | ----- |
+| **authorization**  | **String**                          |             | \[required] |       |
+| **name**           | **String**                          |             | \[required] |       |
+| **uniswap\_input** | [**UniswapInput**](UniswapInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](UniSwapApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

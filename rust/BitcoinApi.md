@@ -1,128 +1,114 @@
 # \BitcoinApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_bitcoin_account**](BitcoinApi.md#create_bitcoin_account) | **POST** /bitcoin | 
-[**get_bitcoin_account**](BitcoinApi.md#get_bitcoin_account) | **GET** /bitcoin/{accountName} | 
-[**list_bitcoin_accounts**](BitcoinApi.md#list_bitcoin_accounts) | **GET** /bitcoin | 
-[**sign_bitcoin_transaction**](BitcoinApi.md#sign_bitcoin_transaction) | **POST** /bitcoin/{accountName}/sign-tx | 
+| Method                                                                     | HTTP request                            | Description |
+| -------------------------------------------------------------------------- | --------------------------------------- | ----------- |
+| [**create\_bitcoin\_account**](BitcoinApi.md#create\_bitcoin\_account)     | **POST** /bitcoin                       |             |
+| [**get\_bitcoin\_account**](BitcoinApi.md#get\_bitcoin\_account)           | **GET** /bitcoin/{accountName}          |             |
+| [**list\_bitcoin\_accounts**](BitcoinApi.md#list\_bitcoin\_accounts)       | **GET** /bitcoin                        |             |
+| [**sign\_bitcoin\_transaction**](BitcoinApi.md#sign\_bitcoin\_transaction) | **POST** /bitcoin/{accountName}/sign-tx |             |
 
+## create\_bitcoin\_account
 
-
-## create_bitcoin_account
-
-> crate::models::AccountApiResponse create_bitcoin_account(authorization, bitcoin_input)
-
+> crate::models::AccountApiResponse create\_bitcoin\_account(authorization, bitcoin\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**bitcoin_input** | [**BitcoinInput**](BitcoinInput.md) |  | [required] |
+| Name               | Type                                | Description | Required    | Notes |
+| ------------------ | ----------------------------------- | ----------- | ----------- | ----- |
+| **authorization**  | **String**                          |             | \[required] |       |
+| **bitcoin\_input** | [**BitcoinInput**](BitcoinInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## get\_bitcoin\_account
 
-## get_bitcoin_account
-
-> crate::models::AccountApiResponse get_bitcoin_account(authorization, account_name)
-
+> crate::models::AccountApiResponse get\_bitcoin\_account(authorization, account\_name)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
+| **account\_name** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## list\_bitcoin\_accounts
 
-## list_bitcoin_accounts
-
-> crate::models::AccountApiResponse list_bitcoin_accounts(authorization)
-
+> crate::models::AccountApiResponse list\_bitcoin\_accounts(authorization)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
+| Name              | Type       | Description | Required    | Notes |
+| ----------------- | ---------- | ----------- | ----------- | ----- |
+| **authorization** | **String** |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::AccountApiResponse**](AccountAPIResponse.md)
+[**crate::models::AccountApiResponse**](docs/AccountAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## sign\_bitcoin\_transaction
 
-## sign_bitcoin_transaction
-
-> crate::models::BitcoinApiResponse sign_bitcoin_transaction(authorization, account_name, bitcoin_transaction_input)
-
+> crate::models::BitcoinApiResponse sign\_bitcoin\_transaction(authorization, account\_name, bitcoin\_transaction\_input)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**account_name** | **String** |  | [required] |
-**bitcoin_transaction_input** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) |  | [required] |
+| Name                            | Type                                                      | Description | Required    | Notes |
+| ------------------------------- | --------------------------------------------------------- | ----------- | ----------- | ----- |
+| **authorization**               | **String**                                                |             | \[required] |       |
+| **account\_name**               | **String**                                                |             | \[required] |       |
+| **bitcoin\_transaction\_input** | [**BitcoinTransactionInput**](BitcoinTransactionInput.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::BitcoinApiResponse**](BitcoinAPIResponse.md)
+[**crate::models::BitcoinApiResponse**](docs/BitcoinAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](BitcoinApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

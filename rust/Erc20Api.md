@@ -1,287 +1,258 @@
 # \Erc20Api
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allowance_erc20**](Erc20Api.md#allowance_erc20) | **POST** /erc20/{name}/allowance | 
-[**approve_erc20**](Erc20Api.md#approve_erc20) | **POST** /erc20/{name}/approve | 
-[**balance_of_erc20**](Erc20Api.md#balance_of_erc20) | **POST** /erc20/{name}/balance-of | 
-[**decimals_erc20**](Erc20Api.md#decimals_erc20) | **POST** /erc20/{name}/decimals | 
-[**name_erc20**](Erc20Api.md#name_erc20) | **POST** /erc20/{name}/name | 
-[**symbol_erc20**](Erc20Api.md#symbol_erc20) | **POST** /erc20/{name}/symbol | 
-[**total_supply_erc20**](Erc20Api.md#total_supply_erc20) | **POST** /erc20/{name}/total-supply | 
-[**transfer_erc20**](Erc20Api.md#transfer_erc20) | **POST** /erc20/{name}/transfer | 
-[**transfer_from_erc20**](Erc20Api.md#transfer_from_erc20) | **POST** /erc20/{name}/transfer-from | 
+| Method                                                         | HTTP request                         | Description |
+| -------------------------------------------------------------- | ------------------------------------ | ----------- |
+| [**allowance\_erc20**](Erc20Api.md#allowance\_erc20)           | **POST** /erc20/{name}/allowance     |             |
+| [**approve\_erc20**](Erc20Api.md#approve\_erc20)               | **POST** /erc20/{name}/approve       |             |
+| [**balance\_of\_erc20**](Erc20Api.md#balance\_of\_erc20)       | **POST** /erc20/{name}/balance-of    |             |
+| [**decimals\_erc20**](Erc20Api.md#decimals\_erc20)             | **POST** /erc20/{name}/decimals      |             |
+| [**name\_erc20**](Erc20Api.md#name\_erc20)                     | **POST** /erc20/{name}/name          |             |
+| [**symbol\_erc20**](Erc20Api.md#symbol\_erc20)                 | **POST** /erc20/{name}/symbol        |             |
+| [**total\_supply\_erc20**](Erc20Api.md#total\_supply\_erc20)   | **POST** /erc20/{name}/total-supply  |             |
+| [**transfer\_erc20**](Erc20Api.md#transfer\_erc20)             | **POST** /erc20/{name}/transfer      |             |
+| [**transfer\_from\_erc20**](Erc20Api.md#transfer\_from\_erc20) | **POST** /erc20/{name}/transfer-from |             |
 
+## allowance\_erc20
 
-
-## allowance_erc20
-
-> crate::models::TransactionApiResponse allowance_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse allowance\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## approve\_erc20
 
-## approve_erc20
-
-> crate::models::TransactionApiResponse approve_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse approve\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## balance\_of\_erc20
 
-## balance_of_erc20
-
-> crate::models::TransactionApiResponse balance_of_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse balance\_of\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## decimals\_erc20
 
-## decimals_erc20
-
-> crate::models::TransactionApiResponse decimals_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse decimals\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## name\_erc20
 
-## name_erc20
-
-> crate::models::TransactionApiResponse name_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse name\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## symbol\_erc20
 
-## symbol_erc20
-
-> crate::models::TransactionApiResponse symbol_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse symbol\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## total\_supply\_erc20
 
-## total_supply_erc20
-
-> crate::models::TransactionApiResponse total_supply_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse total\_supply\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## transfer\_erc20
 
-## transfer_erc20
-
-> crate::models::TransactionApiResponse transfer_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse transfer\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
+## transfer\_from\_erc20
 
-## transfer_from_erc20
-
-> crate::models::TransactionApiResponse transfer_from_erc20(authorization, name, input_body)
-
+> crate::models::TransactionApiResponse transfer\_from\_erc20(authorization, name, input\_body)
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**authorization** | **String** |  | [required] |
-**name** | **String** |  | [required] |
-**input_body** | [**InputBody**](InputBody.md) |  | [required] |
+| Name              | Type                          | Description | Required    | Notes |
+| ----------------- | ----------------------------- | ----------- | ----------- | ----- |
+| **authorization** | **String**                    |             | \[required] |       |
+| **name**          | **String**                    |             | \[required] |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             | \[required] |       |
 
 ### Return type
 
-[**crate::models::TransactionApiResponse**](TransactionAPIResponse.md)
+[**crate::models::TransactionApiResponse**](docs/TransactionAPIResponse.md)
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](Erc20Api.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

@@ -1,29 +1,30 @@
-# com.usemoon.MoonSDK.Api.AccountsApi
+# AccountsApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## com.usemoon.MoonSDK.Api.AccountsApi
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**BroadcastTx**](AccountsApi.md#broadcasttx) | **POST** /accounts/{accountName}/broadcast-tx |  |
-| [**CreateAccount**](AccountsApi.md#createaccount) | **POST** /accounts |  |
-| [**DeleteAccount**](AccountsApi.md#deleteaccount) | **DELETE** /accounts/{accountName} |  |
-| [**DeployContract**](AccountsApi.md#deploycontract) | **POST** /accounts/{accountName}/deploy |  |
-| [**GetAccount**](AccountsApi.md#getaccount) | **GET** /accounts/{accountName} |  |
-| [**GetBalance**](AccountsApi.md#getbalance) | **GET** /accounts/{accountName}/balance |  |
-| [**GetNonce**](AccountsApi.md#getnonce) | **GET** /accounts/{accountName}/nonce |  |
-| [**ListAccounts**](AccountsApi.md#listaccounts) | **GET** /accounts |  |
-| [**SignMessage**](AccountsApi.md#signmessage) | **POST** /accounts/{accountName}/sign-message |  |
-| [**SignTransaction**](AccountsApi.md#signtransaction) | **POST** /accounts/{accountName}/sign-transaction |  |
-| [**SignTypedData**](AccountsApi.md#signtypeddata) | **POST** /accounts/{accountName}/sign-typed-data |  |
-| [**TransferEth**](AccountsApi.md#transfereth) | **POST** /accounts/{accountName}/transfer-eth |  |
+All URIs are relative to _https://beta.usemoon.ai_
 
-<a id="broadcasttx"></a>
-# **BroadcastTx**
+| Method                                                | HTTP request                                      | Description |
+| ----------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**BroadcastTx**](AccountsApi.md#broadcasttx)         | **POST** /accounts/{accountName}/broadcast-tx     |             |
+| [**CreateAccount**](AccountsApi.md#createaccount)     | **POST** /accounts                                |             |
+| [**DeleteAccount**](AccountsApi.md#deleteaccount)     | **DELETE** /accounts/{accountName}                |             |
+| [**DeployContract**](AccountsApi.md#deploycontract)   | **POST** /accounts/{accountName}/deploy           |             |
+| [**GetAccount**](AccountsApi.md#getaccount)           | **GET** /accounts/{accountName}                   |             |
+| [**GetBalance**](AccountsApi.md#getbalance)           | **GET** /accounts/{accountName}/balance           |             |
+| [**GetNonce**](AccountsApi.md#getnonce)               | **GET** /accounts/{accountName}/nonce             |             |
+| [**ListAccounts**](AccountsApi.md#listaccounts)       | **GET** /accounts                                 |             |
+| [**SignMessage**](AccountsApi.md#signmessage)         | **POST** /accounts/{accountName}/sign-message     |             |
+| [**SignTransaction**](AccountsApi.md#signtransaction) | **POST** /accounts/{accountName}/sign-transaction |             |
+| [**SignTypedData**](AccountsApi.md#signtypeddata)     | **POST** /accounts/{accountName}/sign-typed-data  |             |
+| [**TransferEth**](AccountsApi.md#transfereth)         | **POST** /accounts/{accountName}/transfer-eth     |             |
+
+## **BroadcastTx**
+
 > BroadCastRawTransactionAPIResponse BroadcastTx (string authorization, string accountName, BroadcastInput broadcastInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -69,7 +70,8 @@ namespace Example
 }
 ```
 
-#### Using the BroadcastTxWithHttpInfo variant
+**Using the BroadcastTxWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -88,42 +90,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **broadcastInput** | [**BroadcastInput**](BroadcastInput.md) |  |  |
+| Name               | Type                                    | Description | Notes |
+| ------------------ | --------------------------------------- | ----------- | ----- |
+| **authorization**  | **string**                              |             |       |
+| **accountName**    | **string**                              |             |       |
+| **broadcastInput** | [**BroadcastInput**](BroadcastInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**BroadCastRawTransactionAPIResponse**](BroadCastRawTransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="createaccount"></a>
-# **CreateAccount**
+## **CreateAccount**
+
 > AccountAPIResponse CreateAccount (string authorization, CreateAccountInput createAccountInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -168,7 +169,8 @@ namespace Example
 }
 ```
 
-#### Using the CreateAccountWithHttpInfo variant
+**Using the CreateAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -187,41 +189,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **createAccountInput** | [**CreateAccountInput**](CreateAccountInput.md) |  |  |
+| Name                   | Type                                            | Description | Notes |
+| ---------------------- | ----------------------------------------------- | ----------- | ----- |
+| **authorization**      | **string**                                      |             |       |
+| **createAccountInput** | [**CreateAccountInput**](CreateAccountInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="deleteaccount"></a>
-# **DeleteAccount**
+## **DeleteAccount**
+
 > AccountAPIResponse DeleteAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -266,7 +267,8 @@ namespace Example
 }
 ```
 
-#### Using the DeleteAccountWithHttpInfo variant
+**Using the DeleteAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -285,41 +287,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="deploycontract"></a>
-# **DeployContract**
+## **DeployContract**
+
 > TransactionAPIResponse DeployContract (string authorization, string accountName, DeployInput deployInput)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -365,7 +366,8 @@ namespace Example
 }
 ```
 
-#### Using the DeployContractWithHttpInfo variant
+**Using the DeployContractWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -384,42 +386,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
-| **deployInput** | [**DeployInput**](DeployInput.md) |  |  |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **string**                        |             |       |
+| **accountName**   | **string**                        |             |       |
+| **deployInput**   | [**DeployInput**](DeployInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getaccount"></a>
-# **GetAccount**
+## **GetAccount**
+
 > AccountAPIResponse GetAccount (string authorization, string accountName)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -464,7 +465,8 @@ namespace Example
 }
 ```
 
-#### Using the GetAccountWithHttpInfo variant
+**Using the GetAccountWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -483,41 +485,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
-| **accountName** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
+| **accountName**   | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getbalance"></a>
-# **GetBalance**
+## **GetBalance**
+
 > BalanceAPIResponse GetBalance (string accountName, string authorization, string chainId)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -563,7 +564,8 @@ namespace Example
 }
 ```
 
-#### Using the GetBalanceWithHttpInfo variant
+**Using the GetBalanceWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -582,42 +584,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **chainId** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **accountName**   | **string** |             |       |
+| **authorization** | **string** |             |       |
+| **chainId**       | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**BalanceAPIResponse**](BalanceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="getnonce"></a>
-# **GetNonce**
+## **GetNonce**
+
 > NonceAPIResponse GetNonce (string accountName, string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -662,7 +663,8 @@ namespace Example
 }
 ```
 
-#### Using the GetNonceWithHttpInfo variant
+**Using the GetNonceWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -681,41 +683,40 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **accountName**   | **string** |             |       |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**NonceAPIResponse**](NonceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="listaccounts"></a>
-# **ListAccounts**
+## **ListAccounts**
+
 > AccountAPIResponse ListAccounts (string authorization)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -759,7 +760,8 @@ namespace Example
 }
 ```
 
-#### Using the ListAccountsWithHttpInfo variant
+**Using the ListAccountsWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -778,40 +780,39 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **authorization** | **string** |  |  |
+| Name              | Type       | Description | Notes |
+| ----------------- | ---------- | ----------- | ----- |
+| **authorization** | **string** |             |       |
 
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signmessage"></a>
-# **SignMessage**
+## **SignMessage**
+
 > SignMessageAPIResponse SignMessage (string accountName, string authorization, SignMessage signMessage)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -857,7 +858,8 @@ namespace Example
 }
 ```
 
-#### Using the SignMessageWithHttpInfo variant
+**Using the SignMessageWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -876,42 +878,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **signMessage** | [**SignMessage**](SignMessage.md) |  |  |
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **accountName**   | **string**                        |             |       |
+| **authorization** | **string**                        |             |       |
+| **signMessage**   | [**SignMessage**](SignMessage.md) |             |       |
 
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signtransaction"></a>
-# **SignTransaction**
+## **SignTransaction**
+
 > TransactionAPIResponse SignTransaction (string accountName, string authorization, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -957,7 +958,8 @@ namespace Example
 }
 ```
 
-#### Using the SignTransactionWithHttpInfo variant
+**Using the SignTransactionWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -976,42 +978,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **accountName**   | **string**                    |             |       |
+| **authorization** | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="signtypeddata"></a>
-# **SignTypedData**
+## **SignTypedData**
+
 > SignMessageAPIResponse SignTypedData (string accountName, string authorization, SignTypedData signTypedData)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -1057,7 +1058,8 @@ namespace Example
 }
 ```
 
-#### Using the SignTypedDataWithHttpInfo variant
+**Using the SignTypedDataWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -1076,42 +1078,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **signTypedData** | [**SignTypedData**](SignTypedData.md) |  |  |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **accountName**   | **string**                            |             |       |
+| **authorization** | **string**                            |             |       |
+| **signTypedData** | [**SignTypedData**](SignTypedData.md) |             |       |
 
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-<a id="transfereth"></a>
-# **TransferEth**
+## **TransferEth**
+
 > TransactionAPIResponse TransferEth (string accountName, string authorization, InputBody inputBody)
 
+#### Example
 
-
-### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -1157,7 +1158,8 @@ namespace Example
 }
 ```
 
-#### Using the TransferEthWithHttpInfo variant
+**Using the TransferEthWithHttpInfo variant**
+
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
@@ -1176,32 +1178,31 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **accountName** | **string** |  |  |
-| **authorization** | **string** |  |  |
-| **inputBody** | [**InputBody**](InputBody.md) |  |  |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **accountName**   | **string**                    |             |       |
+| **authorization** | **string**                    |             |       |
+| **inputBody**     | [**InputBody**](InputBody.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
+#### HTTP response details
 
-### HTTP response details
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

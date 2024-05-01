@@ -1,22 +1,22 @@
 # AaveApi
 
-All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
+## AaveApi
 
-| Method | HTTP request | Description |
-|------------- | ------------- | -------------|
-| [**borrow**](AaveApi.md#borrow) | **POST** /aave/{name}/borrow |  |
-| [**lend**](AaveApi.md#lend) | **POST** /aave/{name}/lend |  |
-| [**repay**](AaveApi.md#repay) | **POST** /aave/{name}/repay |  |
-| [**userReserveData**](AaveApi.md#userReserveData) | **POST** /aave/{name}/user-reserve-data |  |
+All URIs are relative to _https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app_
 
+| Method                                            | HTTP request                            | Description |
+| ------------------------------------------------- | --------------------------------------- | ----------- |
+| [**borrow**](AaveApi.md#borrow)                   | **POST** /aave/{name}/borrow            |             |
+| [**lend**](AaveApi.md#lend)                       | **POST** /aave/{name}/lend              |             |
+| [**repay**](AaveApi.md#repay)                     | **POST** /aave/{name}/repay             |             |
+| [**userReserveData**](AaveApi.md#userReserveData) | **POST** /aave/{name}/user-reserve-data |             |
 
-<a id="borrow"></a>
-# **borrow**
+## **borrow**
+
 > TransactionAPIResponse borrow(authorization, name, aaveInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -61,39 +61,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **aaveInput** | [**AaveInput**](AaveInput.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="lend"></a>
-# **lend**
+## **lend**
+
 > TransactionAPIResponse lend(authorization, name, aaveInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -138,39 +138,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **aaveInput** | [**AaveInput**](AaveInput.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="repay"></a>
-# **repay**
+## **repay**
+
 > TransactionAPIResponse repay(authorization, name, aaveInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -215,39 +215,39 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **aaveInput** | [**AaveInput**](AaveInput.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-<a id="userReserveData"></a>
-# **userReserveData**
+## **userReserveData**
+
 > AaveReservesAPIResponse userReserveData(authorization, name, aaveInput)
 
+#### Example
 
-
-### Example
 ```java
 // Import classes:
 import org.usemoonai.moonsdk.client.ApiClient;
@@ -292,29 +292,29 @@ public class Example {
 }
 ```
 
-### Parameters
+#### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **authorization** | **String**|  | |
-| **name** | **String**|  | |
-| **aaveInput** | [**AaveInput**](AaveInput.md)|  | |
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **authorization** | **String**                    |             |       |
+| **name**          | **String**                    |             |       |
+| **aaveInput**     | [**AaveInput**](AaveInput.md) |             |       |
 
-### Return type
+#### Return type
 
 [**AaveReservesAPIResponse**](AaveReservesAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Ok |  -  |
-
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |

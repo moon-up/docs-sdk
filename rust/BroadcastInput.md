@@ -2,11 +2,9 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**chain_id** | **String** |  | 
-**raw_transaction** | **String** |  | 
+| Name                 | Type       | Description | Notes |
+| -------------------- | ---------- | ----------- | ----- |
+| **chain\_id**        | **String** |             |       |
+| **raw\_transaction** | **String** |             |       |
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)

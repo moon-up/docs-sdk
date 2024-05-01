@@ -1,29 +1,29 @@
-# moonsdk.AccountsApi
+# AccountsApi
 
-All URIs are relative to *https://beta.usemoon.ai*
+## moonsdk.AccountsApi
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**broadcast_tx**](AccountsApi.md#broadcast_tx) | **POST** /accounts/{accountName}/broadcast-tx | 
-[**create_account**](AccountsApi.md#create_account) | **POST** /accounts | 
-[**delete_account**](AccountsApi.md#delete_account) | **DELETE** /accounts/{accountName} | 
-[**deploy_contract**](AccountsApi.md#deploy_contract) | **POST** /accounts/{accountName}/deploy | 
-[**get_account**](AccountsApi.md#get_account) | **GET** /accounts/{accountName} | 
-[**get_balance**](AccountsApi.md#get_balance) | **GET** /accounts/{accountName}/balance | 
-[**get_nonce**](AccountsApi.md#get_nonce) | **GET** /accounts/{accountName}/nonce | 
-[**list_accounts**](AccountsApi.md#list_accounts) | **GET** /accounts | 
-[**sign_message**](AccountsApi.md#sign_message) | **POST** /accounts/{accountName}/sign-message | 
-[**sign_transaction**](AccountsApi.md#sign_transaction) | **POST** /accounts/{accountName}/sign-transaction | 
-[**sign_typed_data**](AccountsApi.md#sign_typed_data) | **POST** /accounts/{accountName}/sign-typed-data | 
-[**transfer_eth**](AccountsApi.md#transfer_eth) | **POST** /accounts/{accountName}/transfer-eth | 
+All URIs are relative to _https://beta.usemoon.ai_
 
+| Method                                                    | HTTP request                                      | Description |
+| --------------------------------------------------------- | ------------------------------------------------- | ----------- |
+| [**broadcast\_tx**](AccountsApi.md#broadcast\_tx)         | **POST** /accounts/{accountName}/broadcast-tx     |             |
+| [**create\_account**](AccountsApi.md#create\_account)     | **POST** /accounts                                |             |
+| [**delete\_account**](AccountsApi.md#delete\_account)     | **DELETE** /accounts/{accountName}                |             |
+| [**deploy\_contract**](AccountsApi.md#deploy\_contract)   | **POST** /accounts/{accountName}/deploy           |             |
+| [**get\_account**](AccountsApi.md#get\_account)           | **GET** /accounts/{accountName}                   |             |
+| [**get\_balance**](AccountsApi.md#get\_balance)           | **GET** /accounts/{accountName}/balance           |             |
+| [**get\_nonce**](AccountsApi.md#get\_nonce)               | **GET** /accounts/{accountName}/nonce             |             |
+| [**list\_accounts**](AccountsApi.md#list\_accounts)       | **GET** /accounts                                 |             |
+| [**sign\_message**](AccountsApi.md#sign\_message)         | **POST** /accounts/{accountName}/sign-message     |             |
+| [**sign\_transaction**](AccountsApi.md#sign\_transaction) | **POST** /accounts/{accountName}/sign-transaction |             |
+| [**sign\_typed\_data**](AccountsApi.md#sign\_typed\_data) | **POST** /accounts/{accountName}/sign-typed-data  |             |
+| [**transfer\_eth**](AccountsApi.md#transfer\_eth)         | **POST** /accounts/{accountName}/transfer-eth     |             |
 
-# **broadcast_tx**
-> BroadCastRawTransactionAPIResponse broadcast_tx(authorization, account_name, broadcast_input)
+## **broadcast\_tx**
 
+> BroadCastRawTransactionAPIResponse broadcast\_tx(authorization, account\_name, broadcast\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -74,44 +74,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->broadcast_tx: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                 | Type                                    | Description | Notes |
+| -------------------- | --------------------------------------- | ----------- | ----- |
+| **authorization**    | **str**                                 |             |       |
+| **account\_name**    | **str**                                 |             |       |
+| **broadcast\_input** | [**BroadcastInput**](BroadcastInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **broadcast_input** | [**BroadcastInput**](BroadcastInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**BroadCastRawTransactionAPIResponse**](BroadCastRawTransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **create_account**
-> AccountAPIResponse create_account(authorization, create_account_input)
+## **create\_account**
 
+> AccountAPIResponse create\_account(authorization, create\_account\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -161,43 +157,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->create_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                       | Type                                            | Description | Notes |
+| -------------------------- | ----------------------------------------------- | ----------- | ----- |
+| **authorization**          | **str**                                         |             |       |
+| **create\_account\_input** | [**CreateAccountInput**](CreateAccountInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **create_account_input** | [**CreateAccountInput**](CreateAccountInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **delete_account**
-> AccountAPIResponse delete_account(authorization, account_name)
+## **delete\_account**
 
+> AccountAPIResponse delete\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -246,43 +238,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->delete_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **deploy_contract**
-> TransactionAPIResponse deploy_contract(authorization, account_name, deploy_input)
+## **deploy\_contract**
 
+> TransactionAPIResponse deploy\_contract(authorization, account\_name, deploy\_input)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -333,44 +321,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->deploy_contract: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **authorization** | **str**                           |             |       |
+| **account\_name** | **str**                           |             |       |
+| **deploy\_input** | [**DeployInput**](DeployInput.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
- **deploy_input** | [**DeployInput**](DeployInput.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_account**
-> AccountAPIResponse get_account(authorization, account_name)
+## **get\_account**
 
+> AccountAPIResponse get\_account(authorization, account\_name)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -419,43 +403,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->get_account: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
+| **account\_name** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
- **account_name** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_balance**
-> BalanceAPIResponse get_balance(account_name, authorization, chain_id)
+## **get\_balance**
 
+> BalanceAPIResponse get\_balance(account\_name, authorization, chain\_id)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -505,44 +485,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->get_balance: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **account\_name** | **str** |             |       |
+| **authorization** | **str** |             |       |
+| **chain\_id**     | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **chain_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**BalanceAPIResponse**](BalanceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **get_nonce**
-> NonceAPIResponse get_nonce(account_name, authorization)
+## **get\_nonce**
 
+> NonceAPIResponse get\_nonce(account\_name, authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -591,43 +567,39 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->get_nonce: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **account\_name** | **str** |             |       |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**NonceAPIResponse**](NonceAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **list_accounts**
-> AccountAPIResponse list_accounts(authorization)
+## **list\_accounts**
 
+> AccountAPIResponse list\_accounts(authorization)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -675,42 +647,38 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->list_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type    | Description | Notes |
+| ----------------- | ------- | ----------- | ----- |
+| **authorization** | **str** |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**AccountAPIResponse**](AccountAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_message**
-> SignMessageAPIResponse sign_message(account_name, authorization, sign_message)
+## **sign\_message**
 
+> SignMessageAPIResponse sign\_message(account\_name, authorization, sign\_message)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -761,44 +729,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->sign_message: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                              | Description | Notes |
+| ----------------- | --------------------------------- | ----------- | ----- |
+| **account\_name** | **str**                           |             |       |
+| **authorization** | **str**                           |             |       |
+| **sign\_message** | [**SignMessage**](SignMessage.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **sign_message** | [**SignMessage**](SignMessage.md)|  | 
-
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_transaction**
-> TransactionAPIResponse sign_transaction(account_name, authorization, input_body)
+## **sign\_transaction**
 
+> TransactionAPIResponse sign\_transaction(account\_name, authorization, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -849,44 +813,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->sign_transaction: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **account\_name** | **str**                       |             |       |
+| **authorization** | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **sign_typed_data**
-> SignMessageAPIResponse sign_typed_data(account_name, authorization, sign_typed_data)
+## **sign\_typed\_data**
 
+> SignMessageAPIResponse sign\_typed\_data(account\_name, authorization, sign\_typed\_data)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -937,44 +897,40 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->sign_typed_data: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name                  | Type                                  | Description | Notes |
+| --------------------- | ------------------------------------- | ----------- | ----- |
+| **account\_name**     | **str**                               |             |       |
+| **authorization**     | **str**                               |             |       |
+| **sign\_typed\_data** | [**SignTypedData**](SignTypedData.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **sign_typed_data** | [**SignTypedData**](SignTypedData.md)|  | 
-
-### Return type
+#### Return type
 
 [**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
-# **transfer_eth**
-> TransactionAPIResponse transfer_eth(account_name, authorization, input_body)
+## **transfer\_eth**
 
+> TransactionAPIResponse transfer\_eth(account\_name, authorization, input\_body)
 
-
-### Example
+#### Example
 
 * Api Key Authentication (ApiKeyAuth):
 * Api Key Authentication (BearerAuth):
@@ -1025,35 +981,31 @@ async with moonsdk.ApiClient(configuration) as api_client:
         print("Exception when calling AccountsApi->transfer_eth: %s\n" % e)
 ```
 
+#### Parameters
 
+| Name              | Type                          | Description | Notes |
+| ----------------- | ----------------------------- | ----------- | ----- |
+| **account\_name** | **str**                       |             |       |
+| **authorization** | **str**                       |             |       |
+| **input\_body**   | [**InputBody**](InputBody.md) |             |       |
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_name** | **str**|  | 
- **authorization** | **str**|  | 
- **input_body** | [**InputBody**](InputBody.md)|  | 
-
-### Return type
+#### Return type
 
 [**TransactionAPIResponse**](TransactionAPIResponse.md)
 
-### Authorization
+#### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | Ok          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](AccountsApi.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

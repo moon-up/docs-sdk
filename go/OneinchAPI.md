@@ -1,23 +1,19 @@
 # \OneinchAPI
 
-All URIs are relative to *https://beta.usemoon.ai*
+All URIs are relative to _https://beta.usemoon.ai_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**ApproveCallData**](OneinchAPI.md#ApproveCallData) | **Post** /oneinch/approve-call-data | 
-[**ApproveSpender**](OneinchAPI.md#ApproveSpender) | **Post** /oneinch/approve-spender | 
-[**Protocols**](OneinchAPI.md#Protocols) | **Post** /oneinch/protocols | 
-[**Quote**](OneinchAPI.md#Quote) | **Post** /oneinch/quote | 
-[**Swap**](OneinchAPI.md#Swap) | **Post** /oneinch/{accountName}/swap | 
-[**Tokens**](OneinchAPI.md#Tokens) | **Post** /oneinch/tokens | 
-
-
+| Method                                               | HTTP request                         | Description |
+| ---------------------------------------------------- | ------------------------------------ | ----------- |
+| [**ApproveCallData**](OneinchAPI.md#ApproveCallData) | **Post** /oneinch/approve-call-data  |             |
+| [**ApproveSpender**](OneinchAPI.md#ApproveSpender)   | **Post** /oneinch/approve-spender    |             |
+| [**Protocols**](OneinchAPI.md#Protocols)             | **Post** /oneinch/protocols          |             |
+| [**Quote**](OneinchAPI.md#Quote)                     | **Post** /oneinch/quote              |             |
+| [**Swap**](OneinchAPI.md#Swap)                       | **Post** /oneinch/{accountName}/swap |             |
+| [**Tokens**](OneinchAPI.md#Tokens)                   | **Post** /oneinch/tokens             |             |
 
 ## ApproveCallData
 
 > interface{} ApproveCallData(ctx).Body(body).Execute()
-
-
 
 ### Example
 
@@ -48,16 +44,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveCallDataRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **interface{}** |  | 
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **body** | **interface{}** |             |       |
 
 ### Return type
 
@@ -65,23 +58,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## ApproveSpender
 
 > interface{} ApproveSpender(ctx).Body(body).Execute()
-
-
 
 ### Example
 
@@ -112,16 +100,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiApproveSpenderRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **interface{}** |  | 
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **body** | **interface{}** |             |       |
 
 ### Return type
 
@@ -129,23 +114,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Protocols
 
 > interface{} Protocols(ctx).Body(body).Execute()
-
-
 
 ### Example
 
@@ -176,16 +156,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiProtocolsRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **interface{}** |  | 
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **body** | **interface{}** |             |       |
 
 ### Return type
 
@@ -193,23 +170,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Quote
 
 > interface{} Quote(ctx).Body(body).Execute()
-
-
 
 ### Example
 
@@ -240,16 +212,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiQuoteRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **interface{}** |  | 
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **body** | **interface{}** |             |       |
 
 ### Return type
 
@@ -257,23 +226,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Swap
 
 > interface{} Swap(ctx, accountName).Authorization(authorization).GetSwapDto(getSwapDto).Execute()
-
-
 
 ### Example
 
@@ -306,22 +270,16 @@ func main() {
 
 ### Path Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**accountName** | **string** |  | 
+| Name            | Type                | Description                                                                 | Notes |
+| --------------- | ------------------- | --------------------------------------------------------------------------- | ----- |
+| **ctx**         | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc. |       |
+| **accountName** | **string**          |                                                                             |       |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSwapRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **authorization** | **string** |  | 
- **getSwapDto** | [**GetSwapDto**](GetSwapDto.md) |  | 
+**authorization** | **string** | | **getSwapDto** | [**GetSwapDto**](GetSwapDto.md) | |
 
 ### Return type
 
@@ -329,23 +287,18 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)
 
 ## Tokens
 
 > interface{} Tokens(ctx).Body(body).Execute()
-
-
 
 ### Example
 
@@ -376,16 +329,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiTokensRequest struct via the builder pattern
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **interface{}** |  | 
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **body** | **interface{}** |             |       |
 
 ### Return type
 
@@ -393,14 +343,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth), [BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](./#ApiKeyAuth), [BearerAuth](./#BearerAuth)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
+[\[Back to top\]](OneinchAPI.md) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to Model list\]](./#documentation-for-models) [\[Back to README\]](./)

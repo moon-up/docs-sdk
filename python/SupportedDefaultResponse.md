@@ -1,12 +1,11 @@
 # SupportedDefaultResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**defaults** | [**SupportedDefaultResponseDefaults**](SupportedDefaultResponseDefaults.md) |  | 
-**recommended** | [**SupportedDefaultResponseDefaultsId**](SupportedDefaultResponseDefaultsId.md) |  | 
+| Name            | Type                                                                            | Description | Notes |
+| --------------- | ------------------------------------------------------------------------------- | ----------- | ----- |
+| **defaults**    | [**SupportedDefaultResponseDefaults**](SupportedDefaultResponseDefaults.md)     |             |       |
+| **recommended** | [**SupportedDefaultResponseDefaultsId**](SupportedDefaultResponseDefaultsId.md) |             |       |
 
 ## Example
 
@@ -25,6 +24,5 @@ supported_default_response_dict = supported_default_response_instance.to_dict()
 # create an instance of SupportedDefaultResponse from a dict
 supported_default_response_form_dict = supported_default_response.from_dict(supported_default_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[\[Back to Model list\]](./#documentation-for-models) [\[Back to API list\]](./#documentation-for-api-endpoints) [\[Back to README\]](./)
