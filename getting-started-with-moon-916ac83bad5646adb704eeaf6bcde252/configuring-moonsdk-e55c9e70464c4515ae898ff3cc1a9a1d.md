@@ -17,20 +17,6 @@ import { MoonSDK } from '@moonup/moon-sdk';
 
 The Moon SDK houses numerous modules for handling blockchain transactions, accounts, authentication, and specific blockchain protocols like Ethereum, Bitcoin, Solana, etc.
 
-The MoonSDK class is defined with a constructor that takes a configuration object as a parameter. This configuration object, known as MoonSDKConfig, encapsulates essential setup parameters required for initializing the Moon SDK. It encompasses authentication settings which specify the type of authentication token and any associated credentials, storage options dictating how data is stored locally or remotely, and a list of supported networks detailing blockchain networks compatible with the SDK. The MoonSDKConfig structure code below is composed of three key components:
-
-1. **Auth:** defines authentication-related configurations through the MoonToken interface
-2. **Storage:** specifies storage settings through the MoonStorage interface
-3. **Networks:** an array of Chain objects representing supported blockchain networks.
-
-```jsx
-export interface MoonSDKConfig {
-	Auth: MoonToken;
-	Storage: MoonStorage;
-	Networks: Chain[];
-}
-```
-
 Below is an example MoonSDK initialization function showcasing authentication, storage, and network setup. It utilizes the Sepolia testnet, defined within the Chain array. The moonInstance variable, responsible for setting up the new MoonSDK, references this network configuration alongside authentication and storage parameters.
 
 ```tsx
@@ -112,9 +98,9 @@ export const useMoonHook = () => {
 The useMoonHook can be imported into various components of the React project:
 
 ```jsx
-import { useMoon } from '@moonup/react';
-.....
-  const { moon, updateToken, createAccount, listAccounts } = useMoonHook();
+import { useMoonHook } from '@moonup/react';
+
+const { moon, updateToken, createAccount, listAccounts } = useMoonHook();
 ```
 
 > 💡It's worth noting that while this guide focuses on integrating the Moon SDK within the React/Next.js Moon Create boilerplate environment, using TypeScript as a default language, there are numerous alternative methods for incorporating the SDK into projects.

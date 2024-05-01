@@ -16,13 +16,27 @@
 
 🛠 \*\*To install the Moon Ethers:\*\*
 
-Using npm:
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @moonup/ethers
+```
+{% endtab %}
 
-`npm install @moonup/ethers`
+{% tab title="yarn" %}
+```bash
+yarn add @moonup/ethers
+```
+{% endtab %}
 
-Using yarn:
+{% tab title="Untitled" %}
+```bash
+pnpm install @moonup/ethers
+```
+{% endtab %}
+{% endtabs %}
 
-`yarn add @moonup/ethers`
+
 
 This will add an “ethers” package to the project’s @moonup node module.
 

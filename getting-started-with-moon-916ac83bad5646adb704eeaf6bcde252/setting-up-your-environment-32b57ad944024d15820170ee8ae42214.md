@@ -12,14 +12,23 @@ Moon Create guides users through the process of establishing a tailored React & 
 
     🪄 \*\*To create the boilerplate:\*\*
 
-    Using npm:
+{% tabs %}
+{% tab title="npx" %}
+```bash
+npx @moonup/create
+```
+{% endtab %}
 
-    `` `npx @moonup/create ``
+{% tab title="yarn" %}
+```bash
+yarn create @moonup
+```
+{% endtab %}
+{% endtabs %}
 
-    Using yarn:
 
-    `yarn create @moonup`
-2. Answer the questions in the terminal to tailor the boilerplate to the project’s needs. Once finished, Moon Create will generate the boilerplate in the desired directory:
+
+1. Answer the questions in the terminal to tailor the boilerplate to the project’s needs. Once finished, Moon Create will generate the boilerplate in the desired directory:
 
 ```bash
 ? What is your project named? » ‘define project name here’
@@ -45,10 +54,19 @@ Adding Moon to an existing website, app, or dApp is as simple as **installing th
 
 🛠 \*\*To install the SDK:\*\*
 
-Using npm:
 
-`npm install @moonup/moon-sdk`
 
-Using yarn:
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @moonup/moon-sdk
+```
+{% endtab %}
 
-`yarn add @moonup/moon-sdk`
+{% tab title="yarn" %}
+```bash
+yarn add @moonup/moon-sdkbas
+```
+{% endtab %}
+{% endtabs %}
+

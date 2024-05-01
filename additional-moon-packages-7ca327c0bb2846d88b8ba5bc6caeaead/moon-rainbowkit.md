@@ -8,13 +8,33 @@ Rainbow kit library
 
 Install the package
 
-```
+
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
 npm install @moonup/moon-rainbowkit
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @moonup/moon-rainbowkit
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm install @moonup/moon-rainbowkit
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 import the provider
 
-```typescript
+```tsx
 import {RainbowKitUseMoonProvider} from '@moonup/moon-rainbowkit';
 import {
   RainbowKitProvider,

@@ -1,4 +1,4 @@
-# Moon viem
+# Moon Viem
 
 ### @moonup/viem
 
@@ -12,9 +12,29 @@ Viem library
 
 Install the package
 
-```
+
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
 npm install @moonup/viem
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn install @moonup/viem
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm install @moonup/viem
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 import the provider
 
