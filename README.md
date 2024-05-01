@@ -12,8 +12,4 @@
 
 [Additional Moon packages](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/)
 
-[Moon GPT](broken-reference)
-
-[Moon Data](broken-reference)
-
 [Debugging](debugging-5b8a0a25b4164f1f95d8c9463f1bd6d7.md)
