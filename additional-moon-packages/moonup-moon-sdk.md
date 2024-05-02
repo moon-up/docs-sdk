@@ -4,7 +4,7 @@
 
 ## **About Moon SDK:**
 
-**Moon API provides low level API endpoint wrappers with expected input and output data types**
+**Moon API provides low level API endpoint wrappers with expected input and output data types.**
 
 ## **Installing Moon SDK:**
 

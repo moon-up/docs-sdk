@@ -6,11 +6,13 @@
 
 
 
+What is viem?
+
 ## **Installing Moon Viem:**
 
 To utilize the Moon Viem package, first install it to the desired directory of the project:
 
-#### To install Moon Viem
+#### To install Moon Viem:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -32,11 +34,7 @@ pnpm add @moonup/viem
 {% endtab %}
 {% endtabs %}
 
-
-
-## Usage:
-
-`createAccount`
+## Configuration
 
 Below is an example of how to configure moon viem for a project:
 

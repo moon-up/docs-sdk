@@ -4,10 +4,6 @@
 
 ## Usage
 
-
-
-
-
 ```typescript
 import { HttpClient, RequestParams } from '@moonup/moon-api';
 import { Aave } from '@moonup/moon-api';
@@ -38,7 +34,7 @@ aave.userReserveData(name, aaveInput);
 
 
 
-## Functions
+## Aave Class
 
 This class provides methods to interact with the Aave protocol.
 

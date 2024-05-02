@@ -1,12 +1,12 @@
 # @moonup/moon-rainbowkit
 
-## Moon Viem
+## Moon **Rainbowkit**
 
-## **About Moon viem:**
+## **About Moon Rainbowkit:**
 
+Moon rainbowkit provides a siwe functionality for rainbowkit using moon.
 
-
-## **Installing Moon Viem:**
+## **Installing Moon Rainbowkit:**
 
 To utilize the Moon Viem package, first install it to the desired directory of the project:
 
@@ -31,8 +31,6 @@ pnpm add @moonup/moon-rainbowkit
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ### Usage
 

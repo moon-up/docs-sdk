@@ -4,9 +4,7 @@
 
 ## **About Moon API:**
 
-**Moon API provides low level API endpoint wrappers with expected input and output data types**
-
-
+**Moon API provides low level API endpoint wrappers with expected input and output data types.**
 
 ## **Installing Moon API:**
 
@@ -33,10 +31,6 @@ pnpm add @moonup/moon-api
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-
 
 ## Configuration
 
