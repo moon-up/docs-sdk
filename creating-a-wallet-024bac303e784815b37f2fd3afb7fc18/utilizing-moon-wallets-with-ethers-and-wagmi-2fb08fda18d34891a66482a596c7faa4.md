@@ -10,7 +10,7 @@ Ethers.js facilitates secure communication between the Moon backend and blockcha
 
 [Moon Ethers](../additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/moon-ethers-f381fbf881c647e1aab3d43fb4ad0600/)
 
-## 🌙Utilizing Moon Wallets with Wagmi
+## Utilizing Moon Wallets with Wagmi
 
 Moon can leverage Wagmi's context provider for React applications to seamlessly integrate wallet creation functionalities into its frontend interface. By wrapping the Moon application with Wagmi's context provider, developers can ensure that the application is aware of Wagmi's state and caching mechanisms, enhancing user experience and performance.
 
