@@ -5,5 +5,4 @@
 * **NFT Marketplaces:** Developers can build NFT marketplaces with Moon's SDK, featuring secure asset trading and authentication functionalities.
 * **Blockchain Gaming Platforms:** Moon empowers the creation of blockchain gaming platforms with secure asset ownership and fair gameplay.
 * **Identity Verification:** Moon's authentication capabilities can be used for a plethora of decentralized identity solutions, including chatbots and social media platforms.
-* **Asset Tokenization:** Moon enables the tokenization of real-world assets, fostering fractional ownership and increased liquidity.
 * …and more!!
