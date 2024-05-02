@@ -8,7 +8,7 @@ For tools to help build and customize a MoonWallet UI, we recommend using these 
 
 **@moonup/moon-api:** Low level api package
 
-[moonup-moon-api](../additional-moon-packages/moonup-moon-api/ "mention")
+[moonup-moon-api.md](moonup-moon-api.md "mention")
 
 **@moonup/ethers:** for smooth interaction with the Ethereum Blockchain
 

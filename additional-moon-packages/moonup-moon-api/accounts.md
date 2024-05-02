@@ -115,4 +115,3 @@ Signs typed data.
 
 Transfers ETH from an account.
 
-Please note that this is a basic documentation. For a complete and useful documentation, each method should have a detailed description, including its parameters, return value, and any side effects or errors it might produce.
