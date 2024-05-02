@@ -1,14 +1,16 @@
 # @moonup/moon-rainbowkit
 
-Rainbow kit library
+## Moon Viem
 
-#### usage
-
-
-
-Install the package
+## **About Moon viem:**
 
 
+
+## **Installing Moon Viem:**
+
+To utilize the Moon Viem package, first install it to the desired directory of the project:
+
+#### To install Moon Viem
 
 {% tabs %}
 {% tab title="npm" %}
@@ -31,6 +33,8 @@ pnpm add @moonup/moon-rainbowkit
 {% endtabs %}
 
 
+
+### Usage
 
 import the provider
 

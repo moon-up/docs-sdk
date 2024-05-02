@@ -2,8 +2,9 @@
 
 ### Moon SDK
 
-\
-Installation
+
+
+### Installation
 
 {% tabs %}
 {% tab title="npm" %}
@@ -25,15 +26,16 @@ pnpm add @moonup/moon-sdk
 {% endtab %}
 {% endtabs %}
 
-Usage\
-
+### Usage
 
 ```typescript
 import { MoonSDK } from '@moonup/moon-sdk'
 const sdk = new MoonSDK()
 ```
 
-Functions
+
+
+### Functions
 
 #### `connect()`
 

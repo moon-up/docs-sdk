@@ -1,8 +1,18 @@
 # @moonup/moon-api
 
-\
-\
-Installation
+## Moon API
+
+## **About Moon API:**
+
+**Moon API provides low level API endpoint wrappers with expected input and output data types**
+
+
+
+## **Installing Moon API:**
+
+To use the Moon API package, first install it to a project:
+
+#### To install Moon **API**:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -19,17 +29,19 @@ yarn add @moonup/moon-api
 
 {% tab title="pnpm" %}
 ```bash
-npm add @moonup/moon-api
+pnpm add @moonup/moon-api
 ```
 {% endtab %}
 {% endtabs %}
 
 
 
-Usage
+
+
+## Configuration
 
 ```typescript
-import { Accounts, ContentType } from '@moonup/moon-api'
+import { Accounts, ContentType, HttpClient } from '@moonup/moon-api'
 const baseApiParams: ApiConfig = {
     baseUrl:
     'https://beta.usemoon.ai',
@@ -48,10 +60,14 @@ securityWorker: async (securityData: any) => {
     });
     },
 };
-const accounts = new Accounts(baseApiParams);
-accounts.setSecurityData({
+
+
+
+const http = new HttpClient(baseApiParams);
+http.setSecurityData({
     token: token,
 });
+const accounts = new Accounts(http)
 const newAccount = await accounts.createAccount({})
 const accounts = await accounts.listAccounts()
 ```
