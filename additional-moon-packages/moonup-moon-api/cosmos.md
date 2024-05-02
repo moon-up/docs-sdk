@@ -5,8 +5,8 @@
 ### Usage
 
 ```typescript
-import { HttpClient, RequestParams } from './http-client';
-import { Cosmos } from './Cosmos';
+import { HttpClient, RequestParams } from '@moonup/moon-api';
+import { Cosmos } from '@moonup/moon-api';
 
 // Initialize HttpClient
 const httpClient = new HttpClient();

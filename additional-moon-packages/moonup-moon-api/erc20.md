@@ -5,9 +5,9 @@
 ### Usage
 
 ```typescript
-import { HttpClient, RequestParams } from './http-client';
-import { Erc20 } from './Erc20';
-import { InputBody } from './data-contracts';
+import { HttpClient, RequestParams } from '@moonup/moon-api';
+import { Erc20 } from '@moonup/moon-api';
+import { InputBody } from '@moonup/moon-api';
 
 // Initialize HttpClient
 const httpClient = new HttpClient();

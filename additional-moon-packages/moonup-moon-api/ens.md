@@ -5,9 +5,9 @@
 ### Usage
 
 ```typescript
-import { HttpClient, RequestParams } from './http-client';
-import { Ens } from './Ens';
-import { EnsResolveInput } from './data-contracts';
+import { HttpClient, RequestParams } from '@moonup/moon-api';
+import { Ens } from '@moonup/moon-api';
+import { EnsResolveInput } from '@moonup/moon-api';
 
 // Initialize HttpClient
 const httpClient = new HttpClient();
