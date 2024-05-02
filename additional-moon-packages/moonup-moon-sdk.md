@@ -12,28 +12,109 @@
 npm install @moonup/moon-sdk
 ```
 {% endtab %}
-
-{% tab title="yarn" %}
-```bash
-yarn add @moonup/moon-sdk
-```
-{% endtab %}
-
-{% tab title="pnpm" %}
-```bash
-pnpm add @moonup/moon-sdk
-```
-{% endtab %}
 {% endtabs %}
 
 ### Usage
 
 ```typescript
-import { MoonSDK } from '@moonup/moon-sdk'
-const sdk = new MoonSDK()
+import { MoonSDK } from '@moonup/moon-sdk';
+
+// Create an instance of the MoonSDK class
+const moonSDK = new MoonSDK();
+
+// Connect to the Moon API
+await moonSDK.connect();
+
+// Disconnect from the Moon API
+await moonSDK.disconnect();
+
+// Get the Moon API client
+const moonAuth = moonSDK.getMoonAuth();
+
+// Get the user session
+const userSession = await moonSDK.getUserSession();
+
+// Get the Solana SDK
+const solanaSDK = moonSDK.getSolanaSDK();
+
+// Get the Bitcoin SDK
+const bitcoinSDK = moonSDK.getBitcoinSDK();
+
+// Get the Cosmos SDK
+const cosmosSDK = moonSDK.getCosmosSDK();
+
+// Get the Eos SDK
+const eosSDK = moonSDK.getEosSDK();
+
+// Get the Litecoin SDK
+const litecoinSDK = moonSDK.getLitecoinSDK();
+
+// Get the Ripple SDK
+const rippleSDK = moonSDK.getRippleSDK();
+
+// Get the Tron SDK
+const tronSDK = moonSDK.getTronSDK();
+
+// Get the Bitcoincash SDK
+const bitcoincashSDK = moonSDK.getBitcoincashSDK();
+
+// Get the Dogecoin SDK
+const dogecoinSDK = moonSDK.getDogecoinSDK();
+
+// Get the Accounts SDK
+const accountsSDK = moonSDK.getAccountsSDK();
+
+// Get the Aave SDK
+const aaveSDK = moonSDK.getAaveSDK();
+
+// Get the Conveyorfinance SDK
+const conveyorfinanceSDK = moonSDK.getConveyorfinanceSDK();
+
+// Get the ENS SDK
+const ensSDK = moonSDK.getENSSDK();
+
+// Get the Erc20 SDK
+const erc20SDK = moonSDK.getErc20SDK();
+
+// Get the Erc1155 SDK
+const erc1155SDK = moonSDK.getErc1155SDK();
+
+// Get the Erc721 SDK
+const erc721SDK = moonSDK.getErc721SDK();
+
+// Get the Oneinch SDK
+const oneinchSDK = moonSDK.getOneinchSDK();
+
+// Get the Uniswap SDK
+const uniswapSDK = moonSDK.getUniswapSDK();
+
+// Get the Yearn SDK
+const yearnSDK = moonSDK.getYearnSDK();
+
+// List all accounts
+const accounts = await moonSDK.listAccounts();
+
+// Create a new account
+const newAccount = await moonSDK.createAccount();
+
+// Sign a transaction
+const signedTransaction = await moonSDK.SignTransaction('wallet', { /* transaction data */ });
+
+// Sign a message
+const signedMessage = await moonSDK.SignMessage('wallet', 'message');
+
+// Sign typed data
+const signedTypedData = await moonSDK.SignTypedData('wallet', { /* domain data */ }, { /* types data */ }, { /* value data */ });
+
+// Send a transaction
+const transactionResponse = await moonSDK.SendTransaction('wallet', 'rawTransaction', 'chain_id');
+
+// Get all chains
+const chains = await moonSDK.getChains();
+
+// Get a chain by its ID
+const chain = await moonSDK.getChainById('id');
 ```
-
-
 
 ### Functions
 

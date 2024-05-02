@@ -3,9 +3,9 @@
 ### Usage
 
 ```typescript
-import { HttpClient, RequestParams } from './http-client';
-import { Tron } from './Tron';
-import { TronInput, TronTransactionInput } from './data-contracts';
+import { HttpClient, RequestParams } from '@moonup/moon-api';
+import { Tron } from '@moonup/moon-api';
+import { TronInput, TronTransactionInput } from '@moonup/moon-api';
 
 // Initialize HttpClient
 const httpClient = new HttpClient// Initialize Tron
