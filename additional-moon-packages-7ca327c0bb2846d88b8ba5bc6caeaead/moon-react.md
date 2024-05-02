@@ -1,16 +1,16 @@
 # @moonup/react
 
-## Moon Viem
+## Moon React
 
-## **About Moon viem:**
+## **About Moon React:**
 
 
 
-## **Installing Moon Viem:**
+## **Installing Moon React:**
 
-To utilize the Moon Viem package, first install it to the desired directory of the project:
+To utilize the Moon React package, first install it to the desired directory of the project:
 
-#### To install Moon Viem
+#### To install Moon React
 
 {% tabs %}
 {% tab title="npm" %}

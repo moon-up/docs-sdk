@@ -67,7 +67,46 @@ const http = new HttpClient(baseApiParams);
 http.setSecurityData({
     token: token,
 });
-const accounts = new Accounts(http)
-const newAccount = await accounts.createAccount({})
-const accounts = await accounts.listAccounts()
+
 ```
+
+## Classes
+
+\
+[aave.md](../additional-moon-packages/moonup-moon-api/aave.md "mention")
+
+[accounts.md](../additional-moon-packages/moonup-moon-api/accounts.md "mention")
+
+[bitcoin.md](../additional-moon-packages/moonup-moon-api/bitcoin.md "mention")
+
+[bitcoin-cash.md](../additional-moon-packages/moonup-moon-api/bitcoin-cash.md "mention")
+
+[conveyorfinance.md](../additional-moon-packages/moonup-moon-api/conveyorfinance.md "mention")
+
+[cosmos.md](../additional-moon-packages/moonup-moon-api/cosmos.md "mention")
+
+[ens.md](../additional-moon-packages/moonup-moon-api/ens.md "mention")
+
+[eos.md](../additional-moon-packages/moonup-moon-api/eos.md "mention")
+
+[erc20.md](../additional-moon-packages/moonup-moon-api/erc20.md "mention")
+
+[erc721.md](../additional-moon-packages/moonup-moon-api/erc721.md "mention")
+
+[erc1155.md](../additional-moon-packages/moonup-moon-api/erc1155.md "mention")
+
+[litecoin.md](../additional-moon-packages/moonup-moon-api/litecoin.md "mention")
+
+[oneinch.md](../additional-moon-packages/moonup-moon-api/oneinch.md "mention")
+
+[onramper.md](../additional-moon-packages/moonup-moon-api/onramper.md "mention")
+
+[ripple.md](../additional-moon-packages/moonup-moon-api/ripple.md "mention")
+
+[solana.md](../additional-moon-packages/moonup-moon-api/solana.md "mention")
+
+[tron.md](../additional-moon-packages/moonup-moon-api/tron.md "mention")
+
+[uniswap.md](../additional-moon-packages/moonup-moon-api/uniswap.md "mention")
+
+[yearn.md](../additional-moon-packages/moonup-moon-api/yearn.md "mention")

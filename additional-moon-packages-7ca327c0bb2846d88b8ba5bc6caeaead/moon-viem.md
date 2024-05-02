@@ -34,7 +34,11 @@ pnpm add @moonup/viem
 
 
 
-### Usage
+## Usage:
+
+`createAccount`
+
+Below is an example of how to configure moon viem for a project:
 
 ```typescript
 import { MoonSDK } from '@moonup/moon-sdk'

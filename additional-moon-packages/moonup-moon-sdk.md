@@ -2,9 +2,15 @@
 
 ### Moon SDK
 
+## **About Moon SDK:**
 
+**Moon API provides low level API endpoint wrappers with expected input and output data types**
 
-### Installation
+## **Installing Moon SDK:**
+
+To utilize the Moon SDK package, first install it to the desired directory of the project:
+
+#### To install Moon SDK:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -128,7 +134,7 @@ const chains = await moonSDK.getChains();
 const chain = await moonSDK.getChainById('id');
 ```
 
-### Functions
+### MoonSDK class
 
 #### `connect()`
 
