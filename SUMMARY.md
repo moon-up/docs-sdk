@@ -13,6 +13,7 @@
   * [OAuth 2 0](authentication-750f0518f1d64f82a7ef38dd5cbc4b64/oauth-2-0-bb827a25ff8f4952abd36548961d97be.md)
   * [SIWE](authentication-750f0518f1d64f82a7ef38dd5cbc4b64/siwe-d911f742cd684feca1f334c41c785602.md)
   * [Token Refreshing](authentication/token-refreshing.md)
+  * [Passkey](authentication/passkey.md)
 * [Creating a Wallet](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/README.md)
   * [Moon’s Wallet Initialization Flow](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/moontashs-wallet-initialization-flow-d27cf8ca5f3944b2a2b05afe89a53354.md)
   * [Creation and Retrieval of Wallets](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/creation-and-retrieval-of-wallets-dc2f0558373e4142b25d9bbff63adb71.md)
