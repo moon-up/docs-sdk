@@ -63,3 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
   );
 }
 ```
+
+## Example Project
+
+[https://github.com/moon-up/moon-sdk/tree/main/examples/moon-sdk-rainbowkit-next-example](https://github.com/moon-up/moon-sdk/tree/main/examples/moon-sdk-rainbowkit-next-example)
