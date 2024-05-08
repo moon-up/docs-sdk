@@ -26,6 +26,6 @@ For tools to help build and customize a MoonWallet UI, we recommend using these 
 
 [moon-rainbowkit.md](moon-rainbowkit.md "mention")
 
-**@moonup/reac**t: Moon react components
+**@moonup/moon-reac**t: Moon react components
 
 [moon-react.md](moon-react.md "mention")

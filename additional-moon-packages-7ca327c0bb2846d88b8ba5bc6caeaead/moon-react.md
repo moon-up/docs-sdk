@@ -1,4 +1,4 @@
-# @moonup/react
+# @moonup/moon-react
 
 ## Moon React
 
@@ -15,19 +15,19 @@ To utilize the Moon React package, first install it to the desired directory of 
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @moonup/react
+npm install @moonup/moon-react
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @moonup/react
+yarn add @moonup/moon-react
 ```
 {% endtab %}
 
 {% tab title="pnpm" %}
 ```bash
-pnpm install @moonup/react
+pnpm install @moonup/moon-react
 ```
 {% endtab %}
 {% endtabs %}
@@ -35,5 +35,5 @@ pnpm install @moonup/react
 ## Usage
 
 ```tsx
-import { useMoonSDK } from '@moonup/react';
+import { useMoonSDK } from '@moonup/moon-react';
 ```

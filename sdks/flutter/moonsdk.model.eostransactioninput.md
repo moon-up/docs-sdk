@@ -1,0 +1,2 @@
+# moonsdk.model.EosTransactionInput
+
