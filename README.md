@@ -8,7 +8,7 @@
 
 [Creating a Wallet](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/)
 
-[Sending Transactions](sending-transactions-21d933fecafc4cb998bf0e90a3bfcb03.md)
+[Sending Transactions](sending-transactions-21d933fecafc4cb998bf0e90a3bfcb03/)
 
 [Additional Moon packages](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/)
 
