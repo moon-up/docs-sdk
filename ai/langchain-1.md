@@ -2,11 +2,9 @@
 
 ### Summary
 
-This documentation provides a guide on how to use the `useWhisper` function to integrate with the OpenAPI specification provided by Moon API. The `useWhisper` function facilitates audio recording and transcription using OpenAI's Whisper model, which can then be processed through the LangChain API.
+The `langchain` library is a powerful tool for building applications that leverage language models to perform tasks such as text generation, summarization, and question answering. One of the ways to enhance the capabilities of a language model is to integrate it with external APIs that provide additional data or functionality. The `createOpenAPIChain` function in `langchain` allows you to easily integrate with an API that is described by an OpenAPI specification.
 
-### Installation
-
-To get started, ensure you have the necessary dependencies installed. You can add them to your project using npm, yarn, or pnpm:
+In this documentation page, we will show you how to use the `useWhisper` function from the `@chengsokdara/use-whisper` package to integrate with the OpenAPI specification provided by Moon API. Moon API is a comprehensive library that provides a set of APIs for interacting with various blockchain networks and decentralized finance (DeFi) protocols. By integrating with Moon API using Whisper, you can build applications that leverage audio input to perform tasks such as managing blockchain accounts, interacting with DeFi protocols, and more.
 
 ### Installation
 
@@ -32,10 +30,12 @@ pnpm add langchain @langchain/openai @chengsokdara/use-whisper
 
 ### Usage
 
+Here is an example of how to use the `useWhisper` function to integrate with the OpenAPI specification provided by Moon API:
+
 ```typescript
 import { ChatOpenAI } from '@langchain/openai';
 import { createOpenAPIChain } from 'langchain/chains';
-import { useWhisper } from '@chengsokdara/use-whisper'
+import { useWhisper } from '@chengsokdara/use-whisper';
 import { useEffect, useState } from 'react';
 
 function Whisper() {
@@ -52,6 +52,7 @@ function Whisper() {
   } = useWhisper({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY
   });
+
   useEffect(() => {
     const initializeChat = async () => {
       const chatModel = new ChatOpenAI({
@@ -69,6 +70,7 @@ function Whisper() {
     };
     initializeChat();
   }, []);
+
   const sendMessage = async () => {
     if (chain) {
       const result = await chain.run(transcript.text);
@@ -76,6 +78,7 @@ function Whisper() {
       setResults((prevResults) => [...prevResults, result]);
     }
   };
+
   return (
     <div>
       <p>Recording: {recording}</p>
@@ -94,15 +97,17 @@ function Whisper() {
 }
 
 export default Whisper;
- 
+
+
+
+
 ```
 
-This code snippet demonstrates how to:
+In this example, we first import the `ChatOpenAI` class from `@langchain/openai`, the `createOpenAPIChain` function from `langchain/chains`, and the `useWhisper` function from `@chengsokdara/use-whisper`. We then define a functional component `Whisper` that uses the `useWhisper` hook to handle audio recording and transcription.
 
-1. Initialize a chat model using OpenAI's GPT-4.
-2. Create an OpenAPI chain using the LangChain API.
-3. Use the `useWhisper` hook to handle audio recording and transcription.
-4. Send the transcribed text to the Moon API and display the results.
+We initialize a chat model using OpenAI's GPT-4 and create an OpenAPI chain using the Moon API OpenAPI specification in the `useEffect` hook. We then define a `sendMessage` function that sends the transcribed text to the Moon API and displays the results.
 
-By following this example, you can leverage OpenAI's Whisper for audio input and integrate it seamlessly with various API endpoints using LangChain.
+The component renders the recording, speaking, and transcribing status, the transcribed text, and buttons to start, pause, and stop recording, as well as a button to send the transcribed text to the Moon API. The results are displayed below the buttons.
+
+By integrating with Moon API using the `useWhisper` function, you can build applications that leverage audio input to perform a wide range of tasks related to blockchain networks and DeFi protocols. Whether you're building a simple wallet application or a complex decentralized finance platform, Moon API and `langchain` have the tools you need to get the job done.
 

@@ -2,58 +2,96 @@
 
 
 
-### Usage
+The `Eos` class from the `@moonup/moon-api` package provides methods to interact with EOS accounts and transactions.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
-import { Eos } from '@moonup/moon-api';
+### Initialization
 
-// Initialize HttpClient
-const httpClient = new HttpClient();
+To use the `Eos` class, you need to create an instance of it by passing an instance of the `HttpClient` class to its constructor. The `HttpClient` class is also part of the `@moonup/moon-api` package and provides a convenient way to make HTTP requests.
 
-// Initialize Eos
-const eos = new Eos(httpClient);
+Here's an example of how to create an instance of the `Eos` class:
 
-// Example data
-const accountName = 'myEosAccount';
-const eosInput = { /* your data here */ };
-const eosTransactionInput = { /* your data here */ };
+```javascript
+import { HttpClient, Eos } from '@moonup/moon-api';
 
-// Use createEosAccount
-eos.createEosAccount(eosInput);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Use getEosAccount
-eos.getEosAccount(accountName);
-
-// Use listEosAccounts
-eos.listEosAccounts();
-
-// Use signEosTransaction
-eos.signEosTransaction(accountName, eosTransactionInput);
+const eos = new Eos(http);
 ```
 
-### Eos Class
+### Methods
 
-This class provides methods to interact with EOS accounts.
+The `Eos` class provides the following methods:
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+1.  `createEosAccount(data: EosInput, params?: RequestParams): Promise<CreateEosAccountData>`
 
-Creates a new instance of the Eos class.
+    * Creates a new EOS account.
+    * `data` is an object of type `EosInput` that contains the necessary information to create the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `CreateEosAccountData`.
 
-#### `createEosAccount(data: EosInput, params: RequestParams = {})`
+    Example usage:
 
-Creates a new EOS account.
+    ```javascript
+    const data = {
+      network: 'testnet',
+      private_key: 'private_key',
+    };
+    const result = await eos.createEosAccount(data);
+    console.log(result);
+    ```
+2.  `getEosAccount(accountName: string, params?: RequestParams): Promise<GetEosAccountData>`
 
-#### `getEosAccount(accountName: string, params: RequestParams = {})`
+    * Retrieves information about a specific EOS account.
+    * `accountName` is a string that represents the name of the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `GetEosAccountData`.
 
-Fetches details of a specific EOS account.
+    Example usage:
 
-#### `listEosAccounts(params: RequestParams = {})`
+    ```javascript
+    const accountName = 'my_account';
+    const result = await eos.getEosAccount(accountName);
+    console.log(result);
+    ```
+3.  `listEosAccounts(params?: RequestParams): Promise<ListEosAccountsData>`
 
-Lists all EOS accounts.
+    * Retrieves a list of all EOS accounts.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `ListEosAccountsData`.
 
-#### `signEosTransaction(accountName: string, data: EosTransactionInput, params: RequestParams = {})`
+    Example usage:
 
-Signs an EOS transaction.
+    ```javascript
+    const result = await eos.listEosAccounts();
+    console.log(result);
+    ```
+4.  `signEosTransaction(accountName: string, data: EosTransactionInput, params?: RequestParams): Promise<SignEosTransactionData>`
 
-Please note that this is a basic documentation. For a complete and useful documentation, each method should have a detailed description, including its parameters, return value, and any side effects or errors it might produce.
+    * Signs an EOS transaction for a specific account.
+    * `accountName` is a string that represents the name of the account.
+    * `data` is an object of type `EosTransactionInput` that contains the necessary information to sign the transaction.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `SignEosTransactionData`.
+
+    Example usage:
+
+    ```javascript
+    const accountName = 'my_account';
+    const data = {
+      to: 'recipient_address',
+      value: 0.1,
+    };
+    const result = await eos.signEosTransaction(accountName, data);
+    console.log(result);
+    ```
+
+These methods can be used to perform various operations on EOS accounts and transactions, such as creating new accounts, retrieving account information, signing transactions, and more. The `Eos` class is a part of the `@moonup/moon-api` package, which provides a convenient way to interact with the Moon API.

@@ -1,54 +1,95 @@
 # Litecoin
 
-### Usage
+The `Litecoin` class from the `@moonup/moon-api` package provides methods to interact with Litecoin accounts and transactions.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
-import { Litecoin } from '@moonup/moon-api';
-import { LitecoinInput, LitecoinTransactionInput } from '@moonup/moon-api';
+### Initialization
 
-// Initialize HttpClient
-const httpClient = new HttpClient// Initialize Litecoin
-const litecoin = new Litecoin(httpClient);
+To use the `Litecoin` class, you need to create an instance of it by passing an instance of the `HttpClient` class to its constructor. The `HttpClient` class is also part of the `@moonup/moon-api` package and provides a convenient way to make HTTP requests.
 
-// Example data
-const litecoinInput: LitecoinInput = { /* your data here */ };
-const litecoinTransactionInput: LitecoinTransactionInput = { /* your data here */ };
-const accountName = 'myAccount';
+Here's an example of how to create an instance of the `Litecoin` class:
 
-// Use createLitecoinAccount
-litecoin.createLitecoinAccount(litecoinInput);
+```javascript
+import { HttpClient, Litecoin } from '@moonup/moon-api';
 
-// Use getLitecoinAccount
-litecoin.getLitecoinAccount(accountName);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Use listLitecoinAccounts
-litecoin.listLitecoinAccounts();
-
-// Use signLitecoinTransaction
-litecoin.signLitecoinTransaction(accountName, litecoinTransactionInput);
+const litecoin = new Litecoin(http);
 ```
 
-### Litecoin Class
+### Methods
 
-This class provides methods to interact with Litecoin accounts and transactions.
+The `Litecoin` class provides the following methods:
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+1.  `createLitecoinAccount(data: LitecoinInput, params?: RequestParams): Promise<CreateLitecoinAccountData>`
 
-Creates a new instance of the Litecoin class.
+    * Creates a new Litecoin account.
+    * `data` is an object of type `LitecoinInput` that contains the necessary information to create the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `CreateLitecoinAccountData`.
 
-#### `createLitecoinAccount(data: LitecoinInput, params: RequestParams = {})`
+    Example usage:
 
-Creates a new Litecoin account.
+    ```javascript
+    const data = {
+      network: 'testnet',
+      private_key: 'private_key',
+    };
+    const result = await litecoin.createLitecoinAccount(data);
+    console.log(result);
+    ```
+2.  `getLitecoinAccount(accountName: string, params?: RequestParams): Promise<GetLitecoinAccountData>`
 
-#### `getLitecoinAccount(accountName: string, params: RequestParams = {})`
+    * Retrieves information about a specific Litecoin account.
+    * `accountName` is a string that represents the name of the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `GetLitecoinAccountData`.
 
-Fetches data for a specific Litecoin account.
+    Example usage:
 
-#### `listLitecoinAccounts(params: RequestParams = {})`
+    ```javascript
+    const accountName = 'my_account';
+    const result = await litecoin.getLitecoinAccount(accountName);
+    console.log(result);
+    ```
+3.  `listLitecoinAccounts(params?: RequestParams): Promise<ListLitecoinAccountsData>`
 
-Lists all Litecoin accounts.
+    * Retrieves a list of all Litecoin accounts.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `ListLitecoinAccountsData`.
 
-#### `signLitecoinTransaction(accountName: string, data: LitecoinTransactionInput, params: RequestParams = {})`
+    Example usage:
 
-Signs a Litecoin transaction.
+    ```javascript
+    const result = await litecoin.listLitecoinAccounts();
+    console.log(result);
+    ```
+4.  `signLitecoinTransaction(accountName: string, data: LitecoinTransactionInput, params?: RequestParams): Promise<SignLitecoinTransactionData>`
+
+    * Signs a Litecoin transaction for a specific account.
+    * `accountName` is a string that represents the name of the account.
+    * `data` is an object of type `LitecoinTransactionInput` that contains the necessary information to sign the transaction.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `SignLitecoinTransactionData`.
+
+    Example usage:
+
+    ```javascript
+    const accountName = 'my_account';
+    const data = {
+      to: 'recipient_address',
+      value: 0.1,
+    };
+    const result = await litecoin.signLitecoinTransaction(accountName, data);
+    console.log(result);
+    ```
+
+These methods can be used to perform various operations on Litecoin accounts and transactions, such as creating new accounts, retrieving account information, signing transactions, and more. The `Litecoin` class is a part of the `@moonup/moon-api` package, which provides a convenient way to interact with the Moon API.

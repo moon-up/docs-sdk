@@ -1,10 +1,14 @@
 # Langchain
 
-### Summary
+## Langchain Documentation: Integrating with Moon API
 
-Here is an example of how to use the `createOpenAPIChain` function to integrate with the OpenAPI specification provided by Moon API.
+The `langchain` library is a powerful tool for building applications that leverage language models to perform tasks such as text generation, summarization, and question answering. One of the ways to enhance the capabilities of a language model is to integrate it with external APIs that provide additional data or functionality. The `createOpenAPIChain` function in `langchain` allows you to easily integrate with an API that is described by an OpenAPI specification.
+
+In this documentation page, we will show you how to use the `createOpenAPIChain` function to integrate with the OpenAPI specification provided by Moon API. Moon API is a comprehensive library that provides a set of APIs for interacting with various blockchain networks and decentralized finance (DeFi) protocols. By integrating with Moon API, you can build applications that leverage language models to perform tasks such as managing blockchain accounts, interacting with DeFi protocols, and more.
 
 ### Installation
+
+To use the `createOpenAPIChain` function, you will need to install the `langchain` and `@langchain/openai` packages. You can install these packages using npm, Yarn, or pnpm:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -28,28 +32,40 @@ pnpm add langchain @langchain/openai
 
 ### Usage
 
-```typescript
+Here is an example of how to use the `createOpenAPIChain` function to integrate with the OpenAPI specification provided by Moon API:
+
+```javascript
 import { ChatOpenAI } from '@langchain/openai';
 import { createOpenAPIChain } from 'langchain/chains';
 
+// Initialize the chat model using OpenAI's GPT-4
 const chatModel = new ChatOpenAI({
   modelName: 'gpt-4-1106-preview',
   temperature: 0,
   openAIApiKey: process.env.OPENAI_API_KEY,
 });
+
+// Create an OpenAPI chain using the Moon API OpenAPI specification
 const chain = await createOpenAPIChain('https://beta.usemoon.ai/.well-known/swagger.json', {
   llm: chatModel,
   headers: {
     Authorization: `Bearer ${MOON_API_KEY}`,
   },
 });
-  
+
+// Run a message through the chain and log the result
+const message = 'Create a new Ethereum account';
 const result = await chain.run(message);
 console.log(JSON.stringify(result, null, 2));
- 
 ```
 
-This code snippet initializes a chat model using OpenAI's GPT-4, creates an OpenAPI chain, and runs a message through the chain, logging the result.
+In this example, we first import the `ChatOpenAI` class from `@langchain/openai` and the `createOpenAPIChain` function from `langchain/chains`. We then initialize a chat model using OpenAI's GPT-4 and create an OpenAPI chain using the Moon API OpenAPI specification. We pass the chat model and an authorization header to the `createOpenAPIChain` function.
+
+We then define a message that we want to run through the chain, which in this case is 'Create a new Ethereum account'. We call the `run` method on the chain with the message as an argument, which sends the message to the chat model and the OpenAPI chain, and returns the result. We log the result to the console.
+
+The `createOpenAPIChain` function automatically generates a prompt that describes the API endpoints and their input and output schemas, and uses the chat model to generate a request that matches the API specification. The function then sends the request to the API and returns the response.
+
+By integrating with Moon API using the `createOpenAPIChain` function, you can build applications that leverage language models to perform a wide range of tasks related to blockchain networks and DeFi protocols. Whether you're building a simple wallet application or a complex decentralized finance platform, Moon API and `langchain` have the tools you need to get the job done.
 
 ### Swagger Definitions
 

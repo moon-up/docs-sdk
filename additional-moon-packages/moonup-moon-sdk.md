@@ -1,10 +1,10 @@
 # @moonup/moon-sdk
 
-### Moon SDK
+## @moonup/moon-sdk Package Documentation
 
 ## **About Moon SDK:**
 
-**Moon API provides low level API endpoint wrappers with expected input and output data types.**
+The `@moonup/moon-sdk` package is a comprehensive SDK that provides easy access to various blockchain functionalities. It supports multiple chains such as Ethereum, Solana, Bitcoin, Cosmos, EOS, Litecoin, Ripple, Tron, Bitcoincash, and Dogecoin. The SDK includes functionalities for managing accounts, interacting with DeFi protocols like Aave, Uniswap, and Yearn, and working with NFTs (ERC-20, ERC-721, and ERC-1155).
 
 ## **Installing Moon SDK:**
 
@@ -34,228 +34,285 @@ pnpm add @moonup/moon-sdk
 
 ### Usage
 
-```typescript
+Here's a basic example of how to use the SDK:
+
+```javascript
 import { MoonSDK } from '@moonup/moon-sdk';
 
-// Create an instance of the MoonSDK class
-const moonSDK = new MoonSDK();
+const moonSDK = new MoonSDK({ apiKey: 'your-api-key' });
 
-// Connect to the Moon API
-await moonSDK.connect();
-
-// Disconnect from the Moon API
-await moonSDK.disconnect();
-
-// Get the Moon API client
-const moonAuth = moonSDK.getMoonAuth();
-
-// Get the user session
-const userSession = await moonSDK.getUserSession();
-
-// Get the Solana SDK
-const solanaSDK = moonSDK.getSolanaSDK();
-
-// Get the Bitcoin SDK
-const bitcoinSDK = moonSDK.getBitcoinSDK();
-
-// Get the Cosmos SDK
-const cosmosSDK = moonSDK.getCosmosSDK();
-
-// Get the Eos SDK
-const eosSDK = moonSDK.getEosSDK();
-
-// Get the Litecoin SDK
-const litecoinSDK = moonSDK.getLitecoinSDK();
-
-// Get the Ripple SDK
-const rippleSDK = moonSDK.getRippleSDK();
-
-// Get the Tron SDK
-const tronSDK = moonSDK.getTronSDK();
-
-// Get the Bitcoincash SDK
-const bitcoincashSDK = moonSDK.getBitcoincashSDK();
-
-// Get the Dogecoin SDK
-const dogecoinSDK = moonSDK.getDogecoinSDK();
-
-// Get the Accounts SDK
-const accountsSDK = moonSDK.getAccountsSDK();
-
-// Get the Aave SDK
-const aaveSDK = moonSDK.getAaveSDK();
-
-// Get the Conveyorfinance SDK
-const conveyorfinanceSDK = moonSDK.getConveyorfinanceSDK();
-
-// Get the ENS SDK
-const ensSDK = moonSDK.getENSSDK();
-
-// Get the Erc20 SDK
-const erc20SDK = moonSDK.getErc20SDK();
-
-// Get the Erc1155 SDK
-const erc1155SDK = moonSDK.getErc1155SDK();
-
-// Get the Erc721 SDK
-const erc721SDK = moonSDK.getErc721SDK();
-
-// Get the Oneinch SDK
-const oneinchSDK = moonSDK.getOneinchSDK();
-
-// Get the Uniswap SDK
-const uniswapSDK = moonSDK.getUniswapSDK();
-
-// Get the Yearn SDK
-const yearnSDK = moonSDK.getYearnSDK();
-
-// List all accounts
+// List accounts
 const accounts = await moonSDK.listAccounts();
+console.log(accounts);
 
 // Create a new account
 const newAccount = await moonSDK.createAccount();
+console.log(newAccount);
 
 // Sign a transaction
-const signedTransaction = await moonSDK.SignTransaction('wallet', { /* transaction data */ });
+const signedTx = await moonSDK.SignTransaction(wallet, transaction);
+console.log(signedTx);
 
-// Sign a message
-const signedMessage = await moonSDK.SignMessage('wallet', 'message');
-
-// Sign typed data
-const signedTypedData = await moonSDK.SignTypedData('wallet', { /* domain data */ }, { /* types data */ }, { /* value data */ });
-
-// Send a transaction
-const transactionResponse = await moonSDK.SendTransaction('wallet', 'rawTransaction', 'chain_id');
-
-// Get all chains
-const chains = await moonSDK.getChains();
-
-// Get a chain by its ID
-const chain = await moonSDK.getChainById('id');
+// Broadcast a transaction
+const txHash = await moonSDK.SendTransaction(wallet, signedTx, chain_id);
+console.log(txHash);
 ```
 
-### MoonSDK class
+### Events
 
-#### `connect()`
+The `MoonSDK` class emits various events that you can listen to in order to handle specific actions or errors. Here's an example of how to listen to events:
 
-Returns a `Promise<void>`. Establishes a connection.
+```javascript
+import { MoonSDK } from '@moonup/moon-sdk';
 
-#### `disconnect()`
+const moonSDK = new MoonSDK();
 
-Returns a `Promise<void>`. Closes the established connection.
+moonSDK.on('accountCreated', (account) => {
+  console.log(`Account created: ${account}`);
+});
 
-#### `getUserSession()`
+moonSDK.on('transactionSigned', (signedTransaction) => {
+  console.log(`Transaction signed: ${signedTransaction}`);
+});
 
-Returns a `Promise` that resolves to the user's session data or an error.
+moonSDK.on('messageSigned', (signedMessage) => {
+  console.log(`Message signed: ${signedMessage}`);
+});
 
-#### `getSolanaSDK()`
+moonSDK.on('typedDataSigned', (signedTypedData) => {
+  console.log(`Typed data signed: ${signedTypedData}`);
+});
 
-Returns an instance of the Solana SDK.
+moonSDK.on('transactionSent', (transactionHash) => {
+  console.log(`Transaction sent: ${transactionHash}`);
+});
 
-#### `getBitcoinSDK()`
+moonSDK.on('chainsFetched', (chains) => {
+  console.log(`Chains fetched: ${JSON.stringify(chains)}`);
+});
 
-Returns an instance of the Bitcoin SDK.
+moonSDK.on('chainFetched', (chain) => {
+  console.log(`Chain fetched: ${JSON.stringify(chain)}`);
+});
 
-#### `getCosmosSDK()`
+moonSDK.on('error', (error) => {
+  console.error(`An error occurred: ${error.message}`);
+});
+```
 
-Returns an instance of the Cosmos SDK.
+The available events are:
 
-#### `getEosSDK()`
+* `accountCreated`: Emitted when a new account is created.
+* `transactionSigned`: Emitted when a transaction is signed.
+* `messageSigned`: Emitted when a message is signed.
+* `typedDataSigned`: Emitted when typed data is signed.
+* `transactionSent`: Emitted when a transaction is sent.
+* `chainsFetched`: Emitted when the list of supported chains is fetched.
+* `chainFetched`: Emitted when a specific chain is fetched.
+* `error`: Emitted when an error occurs.
 
-Returns an instance of the EOS SDK.
+### API Reference
 
-#### `getLitecoinSDK()`
+#### `MoonSDK` Class
 
-Returns an instance of the Litecoin SDK.
+**Constructor**
 
-#### `getRippleSDK()`
+* `new MoonSDK(config?: MoonSDKConfig)`
+  * `config` (optional): Configuration object for the SDK.
+    * `apiKey` (string): Your API key for authentication.
+    * `authInstance` (SupabaseClient): An existing Supabase client instance for authentication.
+    * `httpParams` (ApiConfig): Configuration for the HTTP client.
+    * `httpInstance` (HttpClient): An existing HttpClient instance.
 
-Returns an instance of the Ripple SDK.
+**Methods**
 
-#### `getTronSDK()`
+* `connect(accessToken?: string, refreshToken?: string)`: Establishes a connection to the Moon API.
+  *   Example:
 
-Returns an instance of the Tron SDK.
+      ```javascript
+      await moonSDK.connect('access-token', 'refresh-token');
+      ```
+* `disconnect()`: Disconnects from the Moon API.
+  *   Example:
 
-#### `getBitcoincashSDK()`
+      ```javascript
+      await moonSDK.disconnect();
+      ```
+* `getMoonAuth()`: Returns the Supabase client instance for authentication.
+  *   Example:
 
-Returns an instance of the Bitcoin Cash SDK.
+      ```javascript
+      const authClient = moonSDK.getMoonAuth();
+      ```
+* `getUserSession()`: Returns the current user session.
+  *   Example:
 
-#### `getDogecoinSDK()`
+      ```javascript
+      const session = await moonSDK.getUserSession();
+      ```
+* `getSolanaSDK()`: Returns the Solana SDK instance.
+  *   Example:
 
-Returns an instance of the Dogecoin SDK.
+      ```javascript
+      const solanaSDK = moonSDK.getSolanaSDK();
+      ```
+* `getBitcoinSDK()`: Returns the Bitcoin SDK instance.
+  *   Example:
 
-#### `getAccountsSDK()`
+      ```javascript
+      const bitcoinSDK = moonSDK.getBitcoinSDK();
+      ```
+* `getCosmosSDK()`: Returns the Cosmos SDK instance.
+  *   Example:
 
-Returns an instance of the Accounts SDK.
+      ```javascript
+      const cosmosSDK = moonSDK.getCosmosSDK();
+      ```
+* `getEosSDK()`: Returns the EOS SDK instance.
+  *   Example:
 
-#### `getAaveSDK()`
+      ```javascript
+      const eosSDK = moonSDK.getEosSDK();
+      ```
+* `getLitecoinSDK()`: Returns the Litecoin SDK instance.
+  *   Example:
 
-Returns an instance of the Aave SDK.
+      ```javascript
+      const litecoinSDK = moonSDK.getLitecoinSDK();
+      ```
+* `getRippleSDK()`: Returns the Ripple SDK instance.
+  *   Example:
 
-#### `getConveyorfinanceSDK()`
+      ```javascript
+      const rippleSDK = moonSDK.getRippleSDK();
+      ```
+* `getTronSDK()`: Returns the Tron SDK instance.
+  *   Example:
 
-Returns an instance of the Conveyor Finance SDK.
+      ```javascript
+      const tronSDK = moonSDK.getTronSDK();
+      ```
+* `getBitcoincashSDK()`: Returns the Bitcoincash SDK instance.
+  *   Example:
 
-#### `getENSSDK()`
+      ```javascript
+      const bitcoincashSDK = moonSDK.getBitcoincashSDK();
+      ```
+* `getDogecoinSDK()`: Returns the Dogecoin SDK instance.
+  *   Example:
 
-Returns an instance of the ENS SDK.
+      ```javascript
+      const dogecoinSDK = moonSDK.getDogecoinSDK();
+      ```
+* `getAccountsSDK()`: Returns the Accounts SDK instance.
+  *   Example:
 
-#### `getErc20SDK()`
+      ```javascript
+      const accountsSDK = moonSDK.getAccountsSDK();
+      ```
+* `getAaveSDK()`: Returns the Aave SDK instance.
+  *   Example:
 
-Returns an instance of the ERC20 SDK.
+      ```javascript
+      const aaveSDK = moonSDK.getAaveSDK();
+      ```
+* `getConveyorfinanceSDK()`: Returns the Conveyorfinance SDK instance.
+  *   Example:
 
-#### `getErc1155SDK()`
+      ```javascript
+      const conveyorfinanceSDK = moonSDK.getConveyorfinanceSDK();
+      ```
+* `getENSSDK()`: Returns the ENS SDK instance.
+  *   Example:
 
-Returns an instance of the ERC1155 SDK.
+      ```javascript
+      const ensSDK = moonSDK.getENSSDK();
+      ```
+* `getErc20SDK()`: Returns the ERC-20 SDK instance.
+  *   Example:
 
-#### `getErc721SDK()`
+      ```javascript
+      const erc20SDK = moonSDK.getErc20SDK();
+      ```
+* `getErc1155SDK()`: Returns the ERC-1155 SDK instance.
+  *   Example:
 
-Returns an instance of the ERC721 SDK.
+      ```javascript
+      const erc1155SDK = moonSDK.getErc1155SDK();
+      ```
+* `getErc721SDK()`: Returns the ERC-721 SDK instance.
+  *   Example:
 
-#### `getOneinchSDK()`
+      ```javascript
+      const erc721SDK = moonSDK.getErc721SDK();
+      ```
+* `getOneinchSDK()`: Returns the 1inch SDK instance.
+  *   Example:
 
-Returns an instance of the 1inch SDK.
+      ```javascript
+      const oneinchSDK = moonSDK.getOneinchSDK();
+      ```
+* `getUniswapSDK()`: Returns the Uniswap SDK instance.
+  *   Example:
 
-#### `getUniswapSDK()`
+      ```javascript
+      const uniswapSDK = moonSDK.getUniswapSDK();
+      ```
+* `getYearnSDK()`: Returns the Yearn SDK instance.
+  *   Example:
 
-Returns an instance of the Uniswap SDK.
+      ```javascript
+      const yearnSDK = moonSDK.getYearnSDK();
+      ```
+* `listAccounts()`: Lists all available accounts.
+  *   Example:
 
-#### `getYearnSDK()`
+      ```javascript
+      const accounts = await moonSDK.listAccounts();
+      ```
+* `createAccount()`: Creates a new account.
+  *   Example:
 
-Returns an instance of the Yearn Finance SDK.
+      ```javascript
+      const newAccount = await moonSDK.createAccount();
+      ```
+* `SignTransaction(wallet: string, transaction: InputBody)`: Signs a transaction.
+  *   Example:
 
-#### `listAccounts()`
+      ```javascript
+      const signedTx = await moonSDK.SignTransaction(wallet, transaction);
+      ```
+* `SignMessage(wallet: string, message: BytesLike)`: Signs a message.
+  *   Example:
 
-Returns a `Promise<string[]>` that resolves to a list of accounts.
+      ```javascript
+      const signedMessage = await moonSDK.SignMessage(wallet, message);
+      ```
+* `SignTypedData(wallet: string, domain: TypedDataDomain, types: Record<string, Array<TypedDataField>>, value: Record<string, string>)`: Signs typed data.
+  *   Example:
 
-#### `createAccount()`
+      ```javascript
+      const signedTypedData = await moonSDK.SignTypedData(wallet, domain, types, value);
+      ```
+* `SendTransaction(wallet: string, rawTransaction: string, chain_id: string)`: Broadcasts a transaction.
+  *   Example:
 
-Returns a `Promise<string>` that resolves to the created account.
+      ```javascript
+      const txHash = await moonSDK.SendTransaction(wallet, signedTx, chain_id);
+      ```
+* `getChains()`: Retrieves a list of supported chains.
+  *   Example:
 
-#### `moonTransactionResponseToTransactions(tx: Transaction)`
+      ```javascript
+      const chains = await moonSDK.getChains();
+      ```
+* `getChainById(id: string)`: Retrieves a chain by its ID.
+  *   Example:
 
-Converts a moon transaction response to transactions data.
+      ```javascript
+      const chain = await moonSDK.getChainById('chain-id');
+      ```
 
-#### `SignTransaction(wallet: string, transaction: InputBody)`
 
-Signs a transaction and returns a `Promise<string>` that resolves to the signed transaction.
 
-#### `SignMessage(wallet: string, message: BytesLike)`
-
-Signs a message and returns a `Promise<string>` that resolves to the signed message.
-
-#### `SignTypedData(wallet: string, domain: TypedDataDomain, types: Record<string, Array<TypedDataField>>, value: Record<string, string>)`
-
-Signs typed data and returns a `Promise<string>` that resolves to the signed data.
-
-#### `SendTransaction(wallet: string, rawTransaction: string, chain_id: string)`
-
-Sends a transaction and returns a `Promise<string>` that resolves to the transaction hash.
-
-#### `getChains()`
-
-Returns a `Promise<Chains[]>` that resolves to a list of supported chains.
-
-#### `getChainById(id: string)`
-
-Returns a `Promise<Chains>` that resolves to the chain with the specified ID
+###

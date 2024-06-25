@@ -1,18 +1,14 @@
 # @moonup/ethers
 
-## Moon Ethers
+## @moonup/ethers Package Documentation
 
-## **About Moon Ethers:**
+### Summary
 
-**Moon Ethers** bridges the powerful capabilities of the **Ethers.js** library with the **MoonSDK**, streamlining the development of Moon integrated projects.
+The `@moonup/ethers` package is a utility package that provides a `MoonProvider` class and a `MoonSigner` class for interacting with Ethereum-based blockchains using the MoonSDK from the `@moonup/moon-sdk` package. The `MoonProvider` class implements the `Provider` and `IEthereumProvider` interfaces from the `ethers` library, while the `MoonSigner` class implements the `Signer` and `TypedDataSigner` interfaces from the `ethers` library.
 
-#### What is Ethers.js?
+### Setup
 
-[Ethers.js](https://docs.ethers.org/v5/) is the most popular and powerful library for interacting with the Ethereum blockchain. It enables developers to build decentralized applications without the hassle of directly managing blockchain connections or the intricacies of smart contract interactions, streamlining the development process with its comprehensive suite of tools and utilities
-
-## **Installing Moon Ethers:**
-
-To utilize the Moon Ethers package, first install it to the desired directory of the project:
+To use the `@moonup/ethers` package, you need to install it and import the `MoonProvider` and `MoonSigner` classes.
 
 #### To install Moon Ethers:
 
@@ -36,24 +32,75 @@ pnpm add @moonup/ethers
 {% endtab %}
 {% endtabs %}
 
+#### Importing the classes
 
+To import the `MoonProvider` and `MoonSigner` classes, you can use the following code:
 
-This will add an “ethers” package to the project’s @moonup node module.
+```javascript
+import { MoonProvider, MoonSigner } from '@moonup/ethers';
+```
 
-## **Moon Ethers Provider and Signer:**
+### Usage
 
-Like [**Ethers.js**](https://docs.ethers.org/v5/), **Moon Ethers** organizes its functionalities into two abstractions: **provider** and **signer**:
+#### MoonProvider
 
-**The Provider:** MoonProvider\`
+The `MoonProvider` class is a provider for interacting with Ethereum-based blockchains using the MoonSDK. It can be used to sign messages, transactions, and typed data using the MoonSDK, and it implements the `Provider` and `IEthereumProvider` interfaces from the `ethers` library.
 
-* offers functions that are **read-only**
-*   Documentation here:
+To create a new instance of the `MoonProvider` class, you need to provide a configuration object that contains the following properties:
 
-    [`MoonProvider`](moonprovider-98424fc361554e529b42c6618739e9be.md)
+* `SDK` (MoonSDK): An instance of the MoonSDK.
+* `address` (string): The Ethereum address of the account.
+* `chainId` (number): The ID of the Ethereum chain.
 
-**The Signer:** \`MoonSigner\`
+Here's an example of how to create a new instance of the `MoonProvider` class:
 
-* offers functions that handle **signing**, **creating**, and **sending transactions**
-*   Documentation here:
+```javascript
+import { MoonSDK } from '@moonup/moon-sdk';
+import { MoonProvider } from '@moonup/ethers';
 
-    [MoonSigner](moonsigner-48c2980a33ab459b98198d189f18f641.md)
+const SDK = new MoonSDK({ /* your configuration */ });
+const address = '0xYourEthereumAddress';
+const chainId = 1; // mainnet
+
+const provider = new MoonProvider({ SDK, address, chainId });
+```
+
+Documentation here:
+
+[`MoonProvider`](moonprovider-98424fc361554e529b42c6618739e9be.md)
+
+#### MoonSigner
+
+The `MoonSigner` class is a signer for signing messages, transactions, and typed data using the MoonSDK. It implements the `Signer` and `TypedDataSigner` interfaces from the `ethers` library.
+
+To create a new instance of the `MoonSigner` class, you need to provide a configuration object that contains the following properties:
+
+* `SDK` (MoonSDK): An instance of the MoonSDK.
+* `address` (string): The Ethereum address of the account.
+* `chainId` (number): The ID of the Ethereum chain.
+
+Here's an example of how to create a new instance of the `MoonSigner` class:
+
+```javascript
+import { MoonSDK } from '@moonup/moon-sdk';
+import { MoonSigner } from '@moonup/ethers';
+
+const SDK = new MoonSDK({ /* your configuration */ });
+const address = '0xYourEthereumAddress';
+const chainId = 1; // mainnet
+
+const signer = new MoonSigner({ SDK, address, chainId });
+```
+
+Documentation here:
+
+[MoonSigner](moonsigner-48c2980a33ab459b98198d189f18f641.md)
+
+### Additional notes
+
+* The `MoonProvider` class can be connected to a `MoonSigner` instance using the `getSigner` method.
+* The `MoonSigner` class can be connected to a `MoonProvider` instance using the `connect` method.
+* The `MoonProvider` class and the `MoonSigner` class can be used with other `ethers` classes and functions, such as `Contract`, `Wallet`, and `utils`.
+* The `MoonProvider` class and the `MoonSigner` class are compatible with the Ethereum JSON-RPC API, which means that they can be used with other Ethereum clients and tools that support JSON-RPC.
+* The `MoonProvider` class and the `MoonSigner` class are designed to be used with the MoonSDK, which is a software development kit for building decentralized applications on the Moonbeam and Moonriver networks. However, they can also be used with other Ethereum-based blockchains that support the Ethereum JSON-RPC API.
+

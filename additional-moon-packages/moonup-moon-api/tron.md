@@ -1,54 +1,129 @@
 # Tron
 
-### Usage
+The `Tron` class from `@moonup/moon-api` provides a convenient way to interact with the Tron blockchain. This API allows you to perform various operations related to Tron accounts and transactions.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
+Here's a detailed documentation for the `Tron` class:
+
+### Initialization
+
+To use the `Tron` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Tron API.
+
+Here's an example of how to create an instance of the `Tron` class:
+
+```javascript
+import { HttpClient } from '@moonup/moon-api';
 import { Tron } from '@moonup/moon-api';
-import { TronInput, TronTransactionInput } from '@moonup/moon-api';
 
-// Initialize HttpClient
-const httpClient = new HttpClient// Initialize Tron
-const tron = new Tron(httpClient);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Example data
-const tronInput: TronInput = { /* your data here */ };
-const tronTransactionInput: TronTransactionInput = { /* your data here */ };
-const accountName = 'myAccount';
-
-// Use createTronAccount
-tron.createTronAccount(tronInput);
-
-// Use getTronAccount
-tron.getTronAccount(accountName);
-
-// Use listTronAccounts
-tron.listTronAccounts();
-
-// Use signTronTransaction
-tron.signTronTransaction(accountName, tronTransactionInput);
+const tron = new Tron(http);
 ```
 
-### Tron Class
+### Class: Tron
 
-This class provides methods to interact with Tron accounts and transactions.
+#### Methods
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+**`createTronAccount(data: TronInput, params?: RequestParams)`**
 
-Creates a new instance of the Tron class.
+This method is used to create a new Tron account.
 
-#### `createTronAccount(data: TronInput, params: RequestParams = {})`
+* **Parameters:**
+  * `data`: An object containing the input data for creating the Tron account.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the created Tron account.
+*   **Example:**
 
-Creates a new Tron account.
+    ```javascript
+    const data = {
+      network: 'mainnet',
+      // Other input data
+    };
 
-#### `getTronAccount(accountName: string, params: RequestParams = {})`
+    try {
+      const response = await tron.createTronAccount(data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
 
-Fetches data for a specific Tron account.
+**`getTronAccount(accountName: string, params?: RequestParams)`**
 
-#### `listTronAccounts(params: RequestParams = {})`
+This method is used to get the details of a specific Tron account.
 
-Lists all Tron accounts.
+* **Parameters:**
+  * `accountName`: The name of the Tron account.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the specified Tron account.
+*   **Example:**
 
-#### `signTronTransaction(accountName: string, data: TronTransactionInput, params: RequestParams = {})`
+    ```javascript
+    const accountName = 'myTronAccount';
 
-Signs a Tron transaction.
+    try {
+      const response = await tron.getTronAccount(accountName);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`listTronAccounts(params?: RequestParams)`**
+
+This method is used to list all Tron accounts.
+
+* **Parameters:**
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of all Tron accounts.
+*   **Example:**
+
+    ```javascript
+    try {
+      const response = await tron.listTronAccounts();
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`signTronTransaction(accountName: string, data: TronTransactionInput, params?: RequestParams)`**
+
+This method is used to sign a Tron transaction for a specific account.
+
+* **Parameters:**
+  * `accountName`: The name of the Tron account.
+  * `data`: An object containing the input data for signing the Tron transaction.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the signed Tron transaction.
+*   **Example:**
+
+    ```javascript
+    const accountName = 'myTronAccount';
+    const data = {
+      to: 'tronAddress',
+      value: 10,
+      network: 'mainnet',
+    };
+
+    try {
+      const response = await tron.signTronTransaction(accountName, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+#### Usage
+
+To use the `Tron` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Tron API.
+
+You can then use the `tron` instance to call the various methods of the `Tron` class. Make sure to handle any potential errors that may occur during the API calls using `try-catch` blocks.

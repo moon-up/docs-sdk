@@ -1,94 +1,198 @@
 # Erc20
 
+The `Erc20` class from the `@moonup/moon-api` package provides methods to interact with ERC-20 tokens.
 
+### Initialization
 
-### Usage
+To use the `Erc20` class, you need to create an instance of it by passing an instance of the `HttpClient` class to its constructor. The `HttpClient` class is also part of the `@moonup/moon-api` package and provides a convenient way to make HTTP requests.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
-import { Erc20 } from '@moonup/moon-api';
-import { InputBody } from '@moonup/moon-api';
+Here's an example of how to create an instance of the `Erc20` class:
 
-// Initialize HttpClient
-const httpClient = new HttpClient();
+```javascript
+import { HttpClient, Erc20 } from '@moonup/moon-api';
 
-// Initialize Erc20
-const erc20 = new Erc20(httpClient);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Example data
-const name = 'myErc20Token';
-const inputBody: InputBody = { /* your data here */ };
-
-// Use allowanceErc20
-erc20.allowanceErc20(name, inputBody);
-
-// Use approveErc20
-erc20.approveErc20(name, inputBody);
-
-// Use balanceOfErc20
-erc20.balanceOfErc20(name, inputBody);
-
-// Use decimalsErc20
-erc20.decimalsErc20(name, inputBody);
-
-// Use nameErc20
-erc20.nameErc20(name, inputBody);
-
-// Use symbolErc20
-erc20.symbolErc20(name, inputBody);
-
-// Use totalSupplyErc20
-erc20.totalSupplyErc20(name, inputBody);
-
-// Use transferErc20
-erc20.transferErc20(name, inputBody);
-
-// Use transferFromErc20
-erc20.transferFromErc20(name, inputBody);
+const erc20 = new Erc20(http);
 ```
 
+### Methods
 
+The `Erc20` class provides the following methods:
 
-### Erc20 Class
+1.  `allowanceErc20(name: string, data: InputBody, params?: RequestParams): Promise<AllowanceErc20Data>`
 
-This class provides methods to interact with ERC20 tokens.
+    * Retrieves the amount of tokens that an owner has allowed to be spent by a spender.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `AllowanceErc20Data`.
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+    Example usage:
 
-Creates a new instance of the Erc20 class.
+    ```javascript
+    const name = 'my_token';
+    const data = {
+      owner: 'owner_address',
+      spender: 'spender_address',
+      contract_address: 'contract_address',
+    };
+    const result = await erc20.allowanceErc20(name, data);
+    console.log(result);
+    ```
+2.  `approveErc20(name: string, data: InputBody, params?: RequestParams): Promise<ApproveErc20Data>`
 
-#### `allowanceErc20(name: string, data: InputBody, params: RequestParams = {})`
+    * Approves a spender to spend a certain amount of tokens on behalf of the owner.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `ApproveErc20Data`.
 
-Fetches the amount of tokens that an owner allowed to a spender.
+    Example usage:
 
-#### `approveErc20(name: string, data: InputBody, params: RequestParams = {})`
+    ```javascript
+    const name = 'my_token';
+    const data = {
+      spender: 'spender_address',
+      amount: '100',
+      contract_address: 'contract_address',
+    };
+    const result = await erc20.approveErc20(name, data);
+    console.log(result);
+    ```
+3.  `balanceOfErc20(name: string, data: InputBody, params?: RequestParams): Promise<BalanceOfErc20Data>`
 
-Approves to spend a certain amount of tokens from the owner to another address.
+    * Retrieves the balance of a specific account for a given ERC-20 token.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `BalanceOfErc20Data`.
 
-#### `balanceOfErc20(name: string, data: InputBody, params: RequestParams = {})`
+    Example usage:
 
-Fetches the token balance of an account.
+    ```javascript
+    const name = 'my_token';
+    const data = {
+      account: 'account_address',
+      contract_address: 'contract_address',
+    };
+    const result = await erc20.balanceOfErc20(name, data);
+    console.log(result);
+    ```
+4.  `decimalsErc20(name: string, data: InputBody, params?: RequestParams): Promise<DecimalsErc20Data>`
 
-#### `decimalsErc20(name: string, data: InputBody, params: RequestParams = {})`
+    * Retrieves the number of decimals used by a given ERC-20 token.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `DecimalsErc20Data`.
 
-Fetches the number of decimals the token uses.
+    Example usage:
 
-#### `nameErc20(name: string, data: InputBody, params: RequestParams = {})`
+    ```javascript
+    const name = 'my_token';
+    const data = {  contract_address: 'contract_address'};
+    const result = await erc20.decimalsErc20(name, data);
+    console.log(result);
+    ```
+5.  `nameErc20(name: string, data: InputBody, params?: RequestParams): Promise<NameErc20Data>`
 
-Fetches the name of the token.
+    * Retrieves the name of a given ERC-20 token.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `NameErc20Data`.
 
-#### `symbolErc20(name: string, data: InputBody, params: RequestParams = {})`
+    Example usage:
 
-Fetches the symbol of the token.
+    ```javascript
+    const name = 'my_token';
+    const data = {  contract_address: 'contract_address' };
+    const result = await erc20.nameErc20(name, data);
+    console.log(result);
+    ```
+6.  `symbolErc20(name: string, data: InputBody, params?: RequestParams): Promise<SymbolErc20Data>`
 
-#### `totalSupplyErc20(name: string, data: InputBody, params: RequestParams = {})`
+    * Retrieves the symbol of a given ERC-20 token.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `SymbolErc20Data`.
 
-Fetches the total token supply.
+    Example usage:
 
-#### `transferErc20(name: string, data: InputBody, params: RequestParams = {})`
+    ```javascript
+    const name = 'my_token';
+    const data = {  contract_address: 'contract_address' };
+    const result = await erc20.symbolErc20(name, data);
+    console.log(result);
+    ```
+7.  `totalSupplyErc20(name: string, data: InputBody, params?: RequestParams): Promise<TotalSupplyErc20Data>`
 
-Transfers a certain amount of tokens to another address.
+    * Retrieves the total supply of a given ERC-20 token.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `TotalSupplyErc20Data`.
 
-#### `transferFromErc20(name: string, data: InputBody, params: RequestParams = {})`
+    Example usage:
 
-Transfers a certain amount of tokens from one address to another.
+    ```javascript
+    const name = 'my_token';
+    const data = {  contract_address: 'contract_address',};
+    const result = await erc20.totalSupplyErc20(name, data);
+    console.log(result);
+    ```
+8.  `transferErc20(name: string, data: InputBody, params?: RequestParams): Promise<TransferErc20Data>`
+
+    * Transfers a certain amount of tokens from the sender's account to a recipient's account.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `TransferErc20Data`.
+
+    Example usage:
+
+    ```javascript
+    const name = 'my_token';
+    const data = {
+      to: 'recipient_address',
+      amount: '100',
+      contract_address: 'contract_address',
+    };
+    const result = await erc20.transferErc20(name, data);
+    console.log(result);
+    ```
+9.  `transferFromErc20(name: string, data: InputBody, params?: RequestParams): Promise<TransferFromErc20Data>`
+
+    * Transfers a certain amount of tokens from a sender's account to a recipient's account on behalf of the sender.
+    * `name` is a string that represents the name of the ERC-20 token.
+    * `data` is an object of type `InputBody` that contains the necessary information to make the request.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `TransferFromErc20Data`.
+
+    Example usage:
+
+    ```javascript
+    const name = 'my_token';
+    const data = {
+      from: 'sender_address',
+      to: 'recipient_address',
+      amount: '100',
+      contract_address: 'contract_address',
+
+    };
+    const result = await erc20.transferFromErc20(name, data);
+    console.log(result);
+    ```
+
+These methods can be used to perform various operations on ERC-20 tokens, such as checking token balances, approving spenders, transferring tokens, and more. The `Erc20` class is a part of the `@moonup/moon-api` package, which provides a convenient way to interact with the Moon API.

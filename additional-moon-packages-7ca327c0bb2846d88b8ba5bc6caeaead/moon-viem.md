@@ -1,12 +1,8 @@
 # @moonup/viem
 
-## Moon Viem
+## @moonup/viem Package Documentation
 
-## **About Moon viem:**
-
-
-
-What is viem?
+The `@moonup/viem` package is a utility package that allows for the creation of a local account using the MoonSDK from the `@moonup/moon-sdk` package. This local account can be used with the `viem` library for signing messages, transactions, and typed data.=
 
 ## **Installing Moon Viem:**
 
@@ -34,18 +30,40 @@ pnpm add @moonup/viem
 {% endtab %}
 {% endtabs %}
 
-## Configuration
+### Usage Examples
 
-Below is an example of how to configure moon viem for a project:
+Here's a basic example of how to use the `createMoonAccount` function:
 
-```typescript
-import { MoonSDK } from '@moonup/moon-sdk'
-import { createAccount } from '@moonup/viem'
-const sdk = new MoonSDK()
-const config = {
-    SDK: sdk,
-    ethereumAddress: '0x000',
-}
-const viem = createAccount(config)
-const account = await viem.getAccount()
+```javascript
+import { MoonSDK } from '@moonup/moon-sdk';
+import { createMoonAccount } from '@moonup/viem';
+
+const sdk = new MoonSDK({ /* your configuration */ });
+const ethereumAddress = '0xYourEthereumAddress';
+
+const account = await createMoonAccount({ sdk, ethereumAddress });
+
+// Now you can use the account with viem
+```
+
+### API Reference
+
+#### `createMoonAccount`
+
+Creates a local account using the MoonSDK.
+
+**Parameters**
+
+* `input` (Object)
+  * `sdk` (MoonSDK): An instance of the MoonSDK.
+  * `ethereumAddress` (string): The Ethereum address of the account.
+
+**Returns**
+
+A promise that resolves to a `LocalAccount` object.
+
+**Example**
+
+```javascript
+const account = await createMoonAccount({ sdk, ethereumAddress });
 ```

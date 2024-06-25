@@ -1,16 +1,17 @@
 # @moonup/moon-rainbowkit
 
-## Moon **Rainbowkit**
+## @moonup/moon-rainbowkit Package Documentation**:**
 
-## **About Moon Rainbowkit:**
+The `@moonup/moon-rainbowkit` package is a React component that provides authentication functionality using the Moon SDK and RainbowKit. This package allows users to sign in with Ethereum to the app using SIWE (Sign-In with Ethereum) and manages the authentication state.
 
-Moon rainbowkit provides a siwe functionality for rainbowkit using moon.
+\
+
 
 ## **Installing Moon Rainbowkit:**
 
-To utilize the Moon Viem package, first install it to the desired directory of the project:
+To utilize the Moon rainbowkit package, first install it to the desired directory of the project:
 
-#### To install Moon Viem
+#### To install Moon rainbowkit
 
 {% tabs %}
 {% tab title="npm" %}
@@ -32,9 +33,13 @@ pnpm add @moonup/moon-rainbowkit
 {% endtab %}
 {% endtabs %}
 
+
+
 ### Usage
 
-import the provider
+Import the `RainbowMoonProvider` component from the package and wrap your application with it.
+
+
 
 ```tsx
 import {RainbowKitUseMoonProvider} from '@moonup/moon-rainbowkit';

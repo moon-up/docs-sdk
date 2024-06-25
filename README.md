@@ -1,15 +1,9 @@
-# Moon Documentation
+# Introduction
 
-[Moon Overview](moon-overview-d7cea3031453418b9610b3c21d3fcbe3/)
+Moon is a highly composable wallet and authentication infrastructure designed to simplify user-friendly, AI-compatible dApp development.
 
-[Getting started with Moon](getting-started-with-moon-916ac83bad5646adb704eeaf6bcde252/)
+[What Can Moon Do?](moon-overview-d7cea3031453418b9610b3c21d3fcbe3/what-can-moon-do-74d061268b68403dbb078374c7035be4.md)
 
-[Authentication](authentication-750f0518f1d64f82a7ef38dd5cbc4b64/)
+[What are Moon’s Use Cases?](moon-sdk/Moon%20Documentation%2058cadf8d24b64b3c90fb5137d98fd9c2/Moon%20Overview%20d7cea3031453418b9610b3c21d3fcbe3/What%20are%20Moon%E2%80%99s%20Use%20Cases%2045f6bdf4020641e4a8df0c81e5fdc71b.md)
 
-[Creating a Wallet](creating-a-wallet-024bac303e784815b37f2fd3afb7fc18/)
-
-[Sending Transactions](sending-transactions-21d933fecafc4cb998bf0e90a3bfcb03/)
-
-[Additional Moon packages](additional-moon-packages-7ca327c0bb2846d88b8ba5bc6caeaead/)
-
-[Debugging](debugging-5b8a0a25b4164f1f95d8c9463f1bd6d7.md)
+[What Features Come with Moon?](moon-overview-d7cea3031453418b9610b3c21d3fcbe3/what-features-come-with-moon-0de8a91f3e534ba58c43b69528fcb84b.md)

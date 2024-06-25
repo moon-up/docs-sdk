@@ -1,54 +1,129 @@
 # Ripple
 
-### Usage
+The `Ripple` class from `@moonup/moon-api` provides a convenient way to interact with the Ripple API. This API allows you to perform various operations related to Ripple accounts and transactions.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
+Here's a detailed documentation for the `Ripple` class:
+
+### Initialization
+
+To use the `Ripple` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Ripple API.
+
+Here's an example of how to create an instance of the `Ripple` class:
+
+```javascript
+import { HttpClient } from '@moonup/moon-api';
 import { Ripple } from '@moonup/moon-api';
-import { RippleInput, RippleTransactionInput } from '@moonup/moon-api';
 
-// Initialize HttpClient
-const httpClient = new HttpClient// Initialize Ripple
-const ripple = new Ripple(httpClient);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Example data
-const rippleInput: RippleInput = { /* your data here */ };
-const rippleTransactionInput: RippleTransactionInput = { /* your data here */ };
-const accountName = 'myAccount';
-
-// Use createRippleAccount
-ripple.createRippleAccount(rippleInput);
-
-// Use getRippleAccount
-ripple.getRippleAccount(accountName);
-
-// Use listRippleAccounts
-ripple.listRippleAccounts();
-
-// Use signRippleTransaction
-ripple.signRippleTransaction(accountName, rippleTransactionInput);
+const ripple = new Ripple(http);
 ```
 
-### Ripple Class
+### Class: Ripple
 
-This class provides methods to interact with Ripple accounts and transactions.
+#### Methods
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+**`createRippleAccount(data: RippleInput, params?: RequestParams)`**
 
-Creates a new instance of the Ripple class.
+This method is used to create a new Ripple account.
 
-#### `createRippleAccount(data: RippleInput, params: RequestParams = {})`
+* **Parameters:**
+  * `data`: An object containing the input data for creating the Ripple account.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the created Ripple account.
+*   **Example:**
 
-Creates a new Ripple account.
+    ```javascript
+    const data = {
+      network: 'testnet',
+      // Other input data
+    };
 
-#### `getRippleAccount(accountName: string, params: RequestParams = {})`
+    try {
+      const response = await ripple.createRippleAccount(data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
 
-Fetches data for a specific Ripple account.
+**`getRippleAccount(accountName: string, params?: RequestParams)`**
 
-#### `listRippleAccounts(params: RequestParams = {})`
+This method is used to get the details of a specific Ripple account.
 
-Lists all Ripple accounts.
+* **Parameters:**
+  * `accountName`: The name of the Ripple account.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the specified Ripple account.
+*   **Example:**
 
-#### `signRippleTransaction(accountName: string, data: RippleTransactionInput, params: RequestParams = {})`
+    ```javascript
+    const accountName = 'myRippleAccount';
 
-Signs a Ripple transaction.
+    try {
+      const response = await ripple.getRippleAccount(accountName);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`listRippleAccounts(params?: RequestParams)`**
+
+This method is used to list all Ripple accounts.
+
+* **Parameters:**
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of all Ripple accounts.
+*   **Example:**
+
+    ```javascript
+    try {
+      const response = await ripple.listRippleAccounts();
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`signRippleTransaction(accountName: string, data: RippleTransactionInput, params?: RequestParams)`**
+
+This method is used to sign a Ripple transaction for a specific account.
+
+* **Parameters:**
+  * `accountName`: The name of the Ripple account.
+  * `data`: An object containing the input data for signing the Ripple transaction.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the signed Ripple transaction.
+*   **Example:**
+
+    ```javascript
+    const accountName = 'myRippleAccount';
+    const data = {
+      to: 'rBTCAddress',
+      value: 10,
+      // Other input data
+    };
+
+    try {
+      const response = await ripple.signRippleTransaction(accountName, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+#### Usage
+
+To use the `Ripple` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Ripple API.
+
+You can then use the `ripple` instance to call the various methods of the `Ripple` class. Make sure to handle any potential errors that may occur during the API calls using `try-catch` blocks.

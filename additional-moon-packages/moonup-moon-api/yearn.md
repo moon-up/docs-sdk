@@ -1,53 +1,143 @@
 # Yearn
 
-### Usage
+The `Yearn` class from `@moonup/moon-api` provides a convenient way to interact with the Yearn Finance protocol. This API allows you to perform various operations related to adding liquidity, removing liquidity, and managing your Yearn vaults.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
+Here's a detailed documentation for the `Yearn` class:
+
+### Initialization
+
+To use the `Yearn` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Yearn API.
+
+Here's an example of how to create an instance of the `Yearn` class:
+
+```javascript
+import { HttpClient } from '@moonup/moon-api';
 import { Yearn } from '@moonup/moon-api';
-import { InputBody } from '@moonup/moon-api';
 
-// Initialize HttpClient
-const httpClient = new HttpClient// Initialize Yearn
-const yearn = new Yearn(httpClient);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Example data
-const inputBody: InputBody = { /* your data here */ };
-const poolName = 'myPool';
-
-// Use addLiquidity
-yearn.addLiquidity(poolName, inputBody);
-
-// Use addLiquidityWeth
-yearn.addLiquidityWeth(poolName, inputBody);
-
-// Use removeLiquidity
-yearn.removeLiquidity(poolName, inputBody);
-
-// Use removeLiquidityWeth
-yearn.removeLiquidityWeth(poolName, inputBody);
+const yearn = new Yearn(http);
 ```
 
-### Yearn Class
+### Class: Yearn
 
-This class provides methods to interact with Yearn liquidity pools and transactions.
+#### Methods
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+**`addLiquidity(name: string, data: InputBody, params?: RequestParams)`**
 
-Creates a new instance of the Yearn class.
+This method is used to add liquidity to a Yearn vault.
 
-#### `addLiquidity(name: string, data: InputBody, params: RequestParams = {})`
+* **Parameters:**
+  * `name`: The name of the Yearn vault.
+  * `data`: An object containing the input data for adding liquidity.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the result of the liquidity addition.
+*   **Example:**
 
-Adds liquidity to a Yearn pool.
+    ```javascript
+    const name = 'myYearnVault';
+    const data = {
+      value: '1000000000000000000', // 1 ETH
+      // Other input data
+    };
 
-#### `addLiquidityWeth(name: string, data: InputBody, params: RequestParams = {})`
+    try {
+      const response = await yearn.addLiquidity(name, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
 
-Adds liquidity to a Yearn pool with WETH.
+**`addLiquidityWeth(name: string, data: InputBody, params?: RequestParams)`**
 
-#### `removeLiquidity(name: string, data: InputBody, params: RequestParams = {})`
+This method is used to add WETH liquidity to a Yearn vault.
 
-Removes liquidity from a Yearn pool.
+* **Parameters:**
+  * `name`: The name of the Yearn vault.
+  * `data`: An object containing the input data for adding WETH liquidity.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the WETH liquidity addition.
+*   **Example:**
 
-#### `removeLiquidityWeth(name: string, data: InputBody, params: RequestParams = {})`
+    ```javascript
+    const name = 'myYearnVault';
+    const data = {
+      value: '1000000000000000000', // 1 WETH
+      // Other input data
+    };
 
-Removes liquidity from a Yearn pool with WETH.
+    try {
+      const response = await yearn.addLiquidityWeth(name, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`removeLiquidity(name: string, data: InputBody, params?: RequestParams)`**
+
+This method is used to remove liquidity from a Yearn vault.
+
+* **Parameters:**
+  * `name`: The name of the Yearn vault.
+  * `data`: An object containing the input data for removing liquidity.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the result of the liquidity removal.
+*   **Example:**
+
+    ```javascript
+    const name = 'myYearnVault';
+    const data = {
+      amount: '1000000000000000000', // 1 LP token
+      // Other input data
+    };
+
+    try {
+      const response = await yearn.removeLiquidity(name, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+**`removeLiquidityWeth(name: string, data: InputBody, params?: RequestParams)`**
+
+This method is used to remove WETH liquidity from a Yearn vault.
+
+* **Parameters:**
+  * `name`: The name of the Yearn vault.
+  * `data`: An object containing the input data for removing WETH liquidity.
+  * `params`: Optional request parameters.
+* **Returns:** A promise that resolves to the data of the WETH liquidity removal.
+*   **Example:**
+
+    ```javascript
+    const name = 'myYearnVault';
+    const data = {
+      amount: '1000000000000000000', // 1 WETH
+      // Other input data
+    };
+
+    try {
+      const response = await yearn.removeLiquidityWeth(name, data);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+#### Usage
+
+To use the `Yearn` class, you need to create an instance of it with a configured `HttpClient`. The `HttpClient` is responsible for making HTTP requests to the Yearn API.
+
+You can then use the `yearn` instance to call the various methods of the `Yearn` class. Make sure to handle any potential errors that may occur during the API calls using `try-catch` blocks.

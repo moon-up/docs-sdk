@@ -1,59 +1,95 @@
 # Dogecoin
 
+The `Dogecoin` class from the `@moonup/moon-api` package provides methods to interact with Dogecoin accounts and transactions.
 
+### Initialization
 
-### Usage
+To use the `Dogecoin` class, you need to create an instance of it by passing an instance of the `HttpClient` class to its constructor. The `HttpClient` class is also part of the `@moonup/moon-api` package and provides a convenient way to make HTTP requests.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
-import { Dogecoin } from '@moonup/moon-api';
+Here's an example of how to create an instance of the `Dogecoin` class:
 
-// Initialize HttpClient
-const httpClient = new HttpClient();
+```javascript
+import { HttpClient, Dogecoin } from '@moonup/moon-api';
 
-// Initialize Dogecoin
-const dogecoin = new Dogecoin(httpClient);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Example data
-const accountName = 'myDogecoinAccount';
-const dogeCoinInput = { /* your data here */ };
-const dogeCoinTransactionInput = { /* your data here */ };
-
-// Use createDogeCoinAccount
-dogecoin.createDogeCoinAccount(dogeCoinInput);
-
-// Use getDogeCoinAccount
-dogecoin.getDogeCoinAccount(accountName);
-
-// Use listDogeCoinAccounts
-dogecoin.listDogeCoinAccounts();
-
-// Use signDogeCoinTransaction
-dogecoin.signDogeCoinTransaction(accountName, dogeCoinTransactionInput);
+const dogecoin = new Dogecoin(http);
 ```
 
-### Dogecoin Class
+### Methods
 
-This class provides methods to interact with Dogecoin accounts.
+The `Dogecoin` class provides the following methods:
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+1.  `createDogeCoinAccount(data: DogeCoinInput, params?: RequestParams): Promise<CreateDogeCoinAccountData>`
 
-Creates a new instance of the Dogecoin class.
+    * Creates a new Dogecoin account.
+    * `data` is an object of type `DogeCoinInput` that contains the necessary information to create the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `CreateDogeCoinAccountData`.
 
-#### `createDogeCoinAccount(data: DogeCoinInput, params: RequestParams = {})`
+    Example usage:
 
-Creates a new Dogecoin account.
+    ```javascript
+    const data = {
+      network: 'testnet',
+      private_key: 'private_key',
+    };
+    const result = await dogecoin.createDogeCoinAccount(data);
+    console.log(result);
+    ```
+2.  `getDogeCoinAccount(accountName: string, params?: RequestParams): Promise<GetDogeCoinAccountData>`
 
-#### `getDogeCoinAccount(accountName: string, params: RequestParams = {})`
+    * Retrieves information about a specific Dogecoin account.
+    * `accountName` is a string that represents the name of the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `GetDogeCoinAccountData`.
 
-Fetches details of a specific Dogecoin account.
+    Example usage:
 
-#### `listDogeCoinAccounts(params: RequestParams = {})`
+    ```javascript
+    const accountName = 'my_account';
+    const result = await dogecoin.getDogeCoinAccount(accountName);
+    console.log(result);
+    ```
+3.  `listDogeCoinAccounts(params?: RequestParams): Promise<ListDogeCoinAccountsData>`
 
-Lists all Dogecoin accounts.
+    * Retrieves a list of all Dogecoin accounts.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `ListDogeCoinAccountsData`.
 
-#### `signDogeCoinTransaction(accountName: string, data: DogeCoinTransactionInput, params: RequestParams = {})`
+    Example usage:
 
-Signs a Dogecoin transaction.
+    ```javascript
+    const result = await dogecoin.listDogeCoinAccounts();
+    console.log(result);
+    ```
+4.  `signDogeCoinTransaction(accountName: string, data: DogeCoinTransactionInput, params?: RequestParams): Promise<SignDogeCoinTransactionData>`
 
-Please note that this is a basic documentation. For a complete and useful documentation, each method should have a detailed description, including its parameters, return value, and any side effects or errors it might produce.
+    * Signs a Dogecoin transaction for a specific account.
+    * `accountName` is a string that represents the name of the account.
+    * `data` is an object of type `DogeCoinTransactionInput` that contains the necessary information to sign the transaction.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `SignDogeCoinTransactionData`.
+
+    Example usage:
+
+    ```javascript
+    const accountName = 'my_account';
+    const data = {
+      to: 'recipient_address',
+      value: 0.1,
+    };
+    const result = await dogecoin.signDogeCoinTransaction(accountName, data);
+    console.log(result);
+    ```
+
+These methods can be used to perform various operations on Dogecoin accounts and transactions, such as creating new accounts, retrieving account information, signing transactions, and more. The `Dogecoin` class is a part of the `@moonup/moon-api` package, which provides a convenient way to interact with the Moon API.

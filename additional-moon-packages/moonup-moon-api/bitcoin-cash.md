@@ -1,57 +1,95 @@
 # Bitcoin Cash
 
-### Usage
+The `Bitcoincash` class from the `@moonup/moon-api` package provides methods to interact with Bitcoin Cash accounts and transactions.
 
-```typescript
-import { HttpClient, RequestParams } from '@moonup/moon-api';
-import { Bitcoincash } from '@moonup/moon-api';
+### Initialization
 
-// Initialize HttpClient
-const httpClient = new HttpClient();
+To use the `Bitcoincash` class, you need to create an instance of it by passing an instance of the `HttpClient` class to its constructor. The `HttpClient` class is also part of the `@moonup/moon-api` package and provides a convenient way to make HTTP requests.
 
-// Initialize Bitcoincash
-const bitcoincash = new Bitcoincash(httpClient);
+Here's an example of how to create an instance of the `Bitcoincash` class:
 
-// Example data
-const accountName = 'myBitcoinCashAccount';
-const bitcoinCashInput = { /* your data here */ };
-const bitcoinCashTransactionInput = { /* your data here */ };
+```javascript
+import { HttpClient, Bitcoincash } from '@moonup/moon-api';
 
-// Use createBitcoinCashAccount
-bitcoincash.createBitcoinCashAccount(bitcoinCashInput);
+const http = new HttpClient({
+  baseUrl: 'https://beta.usemoon.ai',
+  securityWorker: async (securityData) => {
+    return {
+      headers: {
+        Authorization: `Bearer ${securityData.token}`,
+      },
+    };
+  },
+});
 
-// Use getBitcoinCashAccount
-bitcoincash.getBitcoinCashAccount(accountName);
-
-// Use listBitcoinCashAccounts
-bitcoincash.listBitcoinCashAccounts();
-
-// Use signBitcoinCashTransaction
-bitcoincash.signBitcoinCashTransaction(accountName, bitcoinCashTransactionInput);
+const bitcoincash = new Bitcoincash(http);
 ```
 
-### Bitcoincash Class
+### Methods
 
-This class provides methods to interact with Bitcoin Cash accounts.
+The `Bitcoincash` class provides the following methods:
 
-#### `constructor(http: HttpClient<SecurityDataType>)`
+1.  `createBitcoinCashAccount(data: BitcoinCashInput, params?: RequestParams): Promise<CreateBitcoinCashAccountData>`
 
-Creates a new instance of the Bitcoincash class.
+    * Creates a new Bitcoin Cash account.
+    * `data` is an object of type `BitcoinCashInput` that contains the necessary information to create the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `CreateBitcoinCashAccountData`.
 
-#### `createBitcoinCashAccount(data: BitcoinCashInput, params: RequestParams = {})`
+    Example usage:
 
-Creates a new Bitcoin Cash account.
+    ```javascript
+    const data = {
+      network: 'testnet',
+      private_key: 'private_key',
+    };
+    const result = await bitcoincash.createBitcoinCashAccount(data);
+    console.log(result);
+    ```
+2.  `getBitcoinCashAccount(accountName: string, params?: RequestParams): Promise<GetBitcoinCashAccountData>`
 
-#### `getBitcoinCashAccount(accountName: string, params: RequestParams = {})`
+    * Retrieves information about a specific Bitcoin Cash account.
+    * `accountName` is a string that represents the name of the account.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `GetBitcoinCashAccountData`.
 
-Fetches details of a specific Bitcoin Cash account.
+    Example usage:
 
-#### `listBitcoinCashAccounts(params: RequestParams = {})`
+    ```javascript
+    const accountName = 'my_account';
+    const result = await bitcoincash.getBitcoinCashAccount(accountName);
+    console.log(result);
+    ```
+3.  `listBitcoinCashAccounts(params?: RequestParams): Promise<ListBitcoinCashAccountsData>`
 
-Lists all Bitcoin Cash accounts.
+    * Retrieves a list of all Bitcoin Cash accounts.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `ListBitcoinCashAccountsData`.
 
-#### `signBitcoinCashTransaction(accountName: string, data: BitcoinCashTransactionInput, params: RequestParams = {})`
+    Example usage:
 
-Signs a Bitcoin Cash transaction.
+    ```javascript
+    const result = await bitcoincash.listBitcoinCashAccounts();
+    console.log(result);
+    ```
+4.  `signBitcoinCashTransaction(accountName: string, data: BitcoinCashTransactionInput, params?: RequestParams): Promise<SignBitcoinCashTransactionData>`
 
-Please note that this is a basic documentation. For a complete and useful documentation, each method should have a detailed description, including its parameters, return value, and any side effects or errors it might produce.
+    * Signs a Bitcoin Cash transaction for a specific account.
+    * `accountName` is a string that represents the name of the account.
+    * `data` is an object of type `BitcoinCashTransactionInput` that contains the necessary information to sign the transaction.
+    * `params` is an optional object of type `RequestParams` that can be used to customize the request.
+    * Returns a promise that resolves to an object of type `SignBitcoinCashTransactionData`.
+
+    Example usage:
+
+    ```javascript
+    const accountName = 'my_account';
+    const data = {
+      to: 'recipient_address',
+      value: 0.1,
+    };
+    const result = await bitcoincash.signBitcoinCashTransaction(accountName, data);
+    console.log(result);
+    ```
+
+These methods can be used to perform various operations on Bitcoin Cash accounts and transactions, such as creating new accounts, retrieving account information, signing transactions, and more. The `Bitcoincash` class is a part of the `@moonup/moon-api` package, which provides a convenient way to interact with the Moon API.

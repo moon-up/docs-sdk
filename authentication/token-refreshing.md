@@ -29,7 +29,7 @@ import axios from 'axios';
 
 const refreshToken = 'your_refresh_token_here';
 
-axios.post('/auth/refresh', { refresh_token: refreshToken })
+axios.post('https://beta.usemoon.ai/auth/refresh', { refresh_token: refreshToken })
   .then(response => {
     console.log(response.data);
   })
