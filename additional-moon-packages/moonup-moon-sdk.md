@@ -126,6 +126,7 @@ new MoonSDK(config?: MoonSDKConfig)
   * `authInstance` (SupabaseClient): An existing Supabase client instance for authentication.
   * `httpParams` (ApiConfig): Configuration for the HTTP client.
   * `httpInstance` (HttpClient): An existing HttpClient instance.
+  * clientId (string): Moon oauth2 client id param
 
 **Methods**
 
@@ -290,6 +291,59 @@ new MoonSDK(config?: MoonSDKConfig)
 ### Authentication Methods
 
 The Moon SDK supports various authentication methods to provide secure access to the blockchain functionalities. The following authentication methods are available:
+
+### Usage
+
+Here's a basic example of how to use the SDK:
+
+```javascript
+import { MoonSDK } from '@moonup/moon-sdk';
+
+const moonSDK = new MoonSDK({ clientId: 'your-client-id' });
+
+// Discord OAuth
+await moonSDK.performDiscordOAuth();
+// After obtaining the authorization code, exchange it for an access token and refresh token
+const discordToken = await moonSDK.performDiscordOauthCodeExchange(code);
+
+// GitHub OAuth
+await moonSDK.performGithubOAuth();
+// After obtaining the authorization code, exchange it for an access token and refresh token
+const githubToken = await moonSDK.performGithubOauthCodeExchange(code);
+
+// Google OAuth
+await moonSDK.performGoogleOAuth();
+// After obtaining the authorization code, exchange it for an access token and refresh token
+const googleToken = await moonSDK.performGoogleOauthCodeExchange(code);
+
+// Twitter OAuth
+await moonSDK.performTwitterOauth();
+// After obtaining the authorization code, exchange it for an access token and refresh token
+const twitterToken = await moonSDK.performTwitterOauthCodeExchange(code);
+
+// Magic Link
+await moonSDK.sendMagicLink(email, redirectTo);
+
+// Email and Password
+await moonSDK.signUp(email, password);
+await moonSDK.signInWithPassword(email, password);
+
+// Phone and Password
+await moonSDK.signInWithPhone(phone, password);
+
+// Passkey
+const passkeyOptions = await moonSDK.handlePassKeyLogin(email);
+// Use the passkeyOptions to authenticate the user using their passkey
+const passkeyResponse = await moonSDK.handlePasskeyLoginVerify(email, credential);
+
+// SIWE (Sign-In with Ethereum)
+const nonce = await moonSDK.getSIWENonce(address);
+// Sign the SIWE message using the Ethereum wallet
+const siweResponse = await moonSDK.verifySIWESignature(address, signedMessage, nonce, message);
+
+// Embedded Account
+const session = await moonSDK.embeddedAccount(email, uuid, domain);
+```
 
 #### Discord OAuth
 
