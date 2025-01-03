@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Getting started with Moon
 
 Incorporating Moon into an existing application is as simple as running a few commands and writing a few lines of code! Follow the step-by-step guide below to get started:
