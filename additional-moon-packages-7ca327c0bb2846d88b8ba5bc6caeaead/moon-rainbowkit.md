@@ -1,6 +1,6 @@
 # @moonup/moon-rainbowkit
 
-## @moonup/moon-rainbowkit Package Documentation**:**
+## @moonup/moon-rainbowkit Package Documentatio&#x6E;**:**
 
 The `@moonup/moon-rainbowkit` package is a React component that provides authentication functionality using the Moon SDK and RainbowKit. This package allows users to sign in with Ethereum to the app using SIWE (Sign-In with Ethereum) and manages the authentication state.
 
